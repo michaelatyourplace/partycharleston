@@ -63,13 +63,474 @@
             color: #0277bd;
             font-weight: 600;
         }
+        .section-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #d63384;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 2em;
+        }
+        .intro-text {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 35px;
+            line-height: 1.8;
+            font-style: italic;
+        }
+        .guide-section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe8f0 100%);
+            border-radius: 10px;
+            border-left: 5px solid #d63384;
+        }
+        .guide-title {
+            color: #d63384;
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .guide-title .icon {
+            font-size: 1.2em;
+            margin-right: 12px;
+        }
+        .subsection {
+            background: white;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .subsection-title {
+            font-weight: 700;
+            color: #212529;
+            font-size: 1.15em;
+            margin-bottom: 12px;
+        }
+        .subsection-content {
+            color: #495057;
+            line-height: 1.7;
+        }
+        .tip-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .tip-box strong {
+            color: #155724;
+        }
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .warning-box strong {
+            color: #856404;
+        }
+        .highlight {
+            background-color: #ffe8f0;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #d63384;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #495057;
+        }
+        .location-tag {
+            display: inline-block;
+            background: #6c757d;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+        /* Nightlife Menu Styling */
+.nightlife-menu-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 4px solid #d63384;
+}
+
+.menu-title {
+    color: #d63384;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.menu-intro {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.vibe-card {
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.vibe-card.wild {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%);
+    border-left: 6px solid #dc3545;
+}
+
+.vibe-card.classy {
+    background: linear-gradient(135deg, #f5f5ff 0%, #e0e0ff 100%);
+    border-left: 6px solid #6f42c1;
+}
+
+.vibe-card.activity {
+    background: linear-gradient(135deg, #f5fff5 0%, #e0ffe0 100%);
+    border-left: 6px solid #28a745;
+}
+
+.vibe-header {
+    margin-bottom: 25px;
+}
+
+.vibe-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.wild-badge {
+    background: #dc3545;
+    color: white;
+}
+
+.classy-badge {
+    background: #6f42c1;
+    color: white;
+}
+
+.activity-badge {
+    background: #28a745;
+    color: white;
+}
+
+.vibe-title {
+    color: #212529;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.vibe-itinerary {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.itinerary-step {
+    display: flex;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.itinerary-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    background: #d63384;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 15px;
+    font-size: 1.1em;
+}
+
+.step-content {
+    flex: 1;
+    color: #495057;
+    line-height: 1.7;
+}
+
+.step-content strong {
+    color: #212529;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.highlight-step {
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+    margin-top: 10px;
+}
+
+.after-party-options {
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 6px;
+}
+
+.after-party-options a {
+    color: #d63384;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.after-party-options a:hover {
+    text-decoration: underline;
+}
+
+.vibe-footer {
+    background: rgba(255,255,255,0.7);
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    line-height: 1.8;
+}
+
+.bonus-section {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 40px;
+    border: 2px solid #d63384;
+}
+
+.bonus-section h3 {
+    color: #d63384;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.bonus-vibe {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 3px solid #6c757d;
+    line-height: 1.7;
+}
+
+.bonus-vibe strong:first-child {
+    color: #d63384;
+}
+
+.planning-tip {
+    background: #d4edda;
+    border-left: 4px solid #28a745;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-size: 1.05em;
+}
+
+.planning-tip strong {
+    color: #155724;
+}
+/* Budget Calculator Styling */
+.budget-calculator-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 4px solid #17a2b8;
+}
+
+.calculator-title {
+    color: #17a2b8;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.calculator-intro {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 1.8;
+    font-style: italic;
+    background: #d1ecf1;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #17a2b8;
+}
+
+.budget-card {
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.budget-card.budget-tier {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e0f2ff 100%);
+    border-left: 6px solid #28a745;
+}
+
+.budget-card.mid-tier {
+    background: linear-gradient(135deg, #fff8f0 0%, #ffe8d9 100%);
+    border-left: 6px solid #fd7e14;
+}
+
+.budget-card.boujee-tier {
+    background: linear-gradient(135deg, #fff0f8 0%, #ffe0f0 100%);
+    border-left: 6px solid #e83e8c;
+}
+
+.tier-header {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tier-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+}
+
+.budget-badge {
+    background: #28a745;
+}
+
+.mid-badge {
+    background: #fd7e14;
+}
+
+.boujee-badge {
+    background: #e83e8c;
+}
+
+.tier-price {
+    font-size: 2em;
+    font-weight: 700;
+    color: #212529;
+}
+
+.tier-breakdown {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.breakdown-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.line-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f8f9fa;
+    font-weight: 600;
+}
+
+.item-name {
+    color: #212529;
+    font-size: 1.05em;
+}
+
+.item-cost {
+    color: #17a2b8;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.item-details {
+    color: #6c757d;
+    font-size: 0.95em;
+    padding: 8px 0 15px 0;
+    line-height: 1.6;
+}
+
+.item-details strong {
+    color: #495057;
+}
+
+.item-details a {
+    color: #e83e8c;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.item-details a:hover {
+    text-decoration: underline;
+}
+
+.tier-vibe {
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.05em;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.tier-vibe strong {
+    color: #212529;
+    font-style: normal;
+}
+
+.calculator-tips {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 40px;
+    border: 2px solid #17a2b8;
+}
     </style>
 </head>
 <body>
     <div class="hero">
         <div class="container">
             <div class="text-center">
-                <h1>Girls Night Out Ideas Charleston</h1>
+                <h1>The Insider’s Guide to a Charleston Girls Night Out: Itineraries for Every Vibe</h1>
                 <p class="lead">Looking for unforgettable <span class="keyword-highlight">girls night out ideas Charleston</span> has to offer? Whether you're planning a ladies night out in Charleston with your best friends, celebrating a bachelorette party, or simply want to explore the best girls night activities Charleston SC provides, you've come to the right place. From luxurious spa experiences and dessert tastings to rooftop cocktails and interactive adventures, Charleston offers endless options for an amazing night out with the girls.</p>
                 <div class="hero-image">
                     <img src="elevate-uoKSgGrLcAY-unsplash.jpg" class="img-fluid" style="height: 100%;">
@@ -77,6 +538,369 @@
             </div>
         </div>
     </div>
+
+    <div class="section-container">
+        <h2>🚨 The Logistics Survival Guide</h2>
+        
+        <p class="intro-text">
+            Because nobody talks about the cobblestones until you're crying in the street at midnight with broken heels. Here's the real talk about navigating Charleston's girls night out—from getting around without surge pricing to avoiding tourist traps and dressing for success (spoiler: those Instagram heels are a mistake).
+        </p>
+
+        <!-- GETTING AROUND -->
+        <div class="guide-section">
+            <h3 class="guide-title">
+                <span class="icon">🚗</span>
+                Getting Around: The Transportation Reality Check
+            </h3>
+
+            <div class="subsection">
+                <div class="subsection-title">The Uber/Lyft Surge Nightmare</div>
+                <div class="subsection-content">
+                    Let's be real: <span class="highlight">Uber surges HARD on King Street between 10 PM - 2 AM</span>, especially on Friday and Saturday nights. We're talking $40+ for a 10-minute ride. Don't be that group scrambling for rides at midnight when prices are 3x normal.
+                </div>
+                <div class="tip-box">
+                    <strong>💡 Pro Move:</strong> Schedule pickups at <span class="highlight">Marion Square</span> (corner of Meeting & Calhoun) or <span class="highlight">Charleston Place Hotel</span> (205 Meeting Street) instead of directly on King Street. Walk 2 blocks, save $20-30 per ride. These spots have better pickup logistics and less congestion.
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Party Bus/Limo: Worth It For Groups</div>
+                <div class="subsection-content">
+                    For groups of 8+, booking a party bus or limo for the whole night (4-6 hours) runs $400-800 total. That's <span class="highlight">$50-100 per person</span> for unlimited transportation, no surge pricing, and no waiting. Plus you can drink between stops (legally, as long as the driver doesn't).
+                </div>
+                <div class="tip-box">
+                    <strong>🎉 Local Companies:</strong> Charleston Black Cab, Absolutely Charleston, and Charleston Party Ride offer great group transportation. Book 2-3 weeks ahead for weekends.
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Walking It? Know Your Distances</div>
+                <div class="subsection-content">
+                    Charleston's downtown is walkable, but those cobblestones add up. Here's the real walk times:
+                    <ul>
+                        <li><strong>Lower King to Upper King:</strong> 20-25 minutes (farther than it looks on the map)</li>
+                        <li><strong>King Street to Waterfront:</strong> 10-15 minutes depending on where you start</li>
+                        <li><strong>Market to King Street bars:</strong> 5-10 minutes</li>
+                    </ul>
+                </div>
+                <div class="warning-box">
+                    <strong>⚠️ Reality Check:</strong> Those "quick 10-minute walks" become 20+ minutes when you're in heels, slightly tipsy, and stopping for photos. Factor in extra time.
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Pedicabs: Tourist Fun or Legit Option?</div>
+                <div class="subsection-content">
+                    Pedicabs are everywhere downtown, especially near Market Street. They're <span class="highlight">$5-10 per person for short trips</span>, but negotiate the price BEFORE getting in. Great for: short hops when you're tired, avoiding surge pricing, and fun photo ops. Not great for: long distances or when you're in a hurry.
+                </div>
+            </div>
+        </div>
+
+        <!-- SAFETY -->
+        <div class="guide-section">
+            <h3 class="guide-title">
+                <span class="icon">🛡️</span>
+                Safety: Safe Spots vs. Tourist Traps
+            </h3>
+
+            <div class="subsection">
+                <div class="subsection-title">The Safe Zones (Where Locals Actually Go)</div>
+                <div class="subsection-content">
+                    <ul>
+                        <li><strong>Upper King Street</strong> <span class="location-tag">SAFE</span> - Well-lit, lots of foot traffic until 2 AM, police presence. This is where locals party.</li>
+                        <li><strong>The Crosstown/Spring Street Area</strong> <span class="location-tag">SAFE</span> - Trendy neighborhood bars, residential feel, locals everywhere.</li>
+                        <li><strong>Lower King (Broad to Market)</strong> <span class="location-tag">SAFE</span> - High-end shopping area, well-patrolled, safe but quieter after 9 PM.</li>
+                        <li><strong>Waterfront Park Area</strong> <span class="location-tag">SAFE</span> - Tourist-heavy but safe, well-lit, lots of cameras.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">The Tourist Trap Zones (Stay Alert)</div>
+                <div class="subsection-content">
+                    <ul>
+                        <li><strong>City Market After 10 PM</strong> <span class="location-tag">CAUTION</span> - Crowded, aggressive vendors, pickpocket central. Not dangerous, just annoying.</li>
+                        <li><strong>Side Streets Off King (East Side)</strong> <span class="location-tag">CAUTION</span> - Some streets are poorly lit. Stick to main roads or walk in groups.</li>
+                        <li><strong>Anywhere Near the Bus Station</strong> <span class="location-tag">AVOID</span> - Just... don't wander over there at night.</li>
+                    </ul>
+                </div>
+                <div class="warning-box">
+                    <strong>⚠️ Real Talk:</strong> Charleston is generally VERY safe for tourists, but use common sense. Don't flash expensive jewelry, watch your drinks, stick together, and trust your gut. If a street feels sketchy, it probably is—turn around.
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">The Buddy System & Phone Charging</div>
+                <div class="subsection-content">
+                    <span class="highlight">Never leave a girl behind.</span> Seriously. Charleston's historic district is a maze, cell service can be spotty in some buildings, and drunk navigation is impossible. Designate a "mom friend" to keep the group together.
+                </div>
+                <div class="tip-box">
+                    <strong>💡 Life Saver:</strong> Bring a portable charger. Dead phones = lost friends = nightmare scenarios. Most bars have outlets but good luck finding one at 11 PM on a Saturday.
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Where to Go If Things Go Wrong</div>
+                <div class="subsection-content">
+                    <ul>
+                        <li><strong>Charleston Place Hotel</strong> (205 Meeting Street) - 24/7 lobby, security, bathrooms, safe space to regroup</li>
+                        <li><strong>CVS on King Street</strong> (Multiple locations) - Open late, bright, safe, has everything you might need</li>
+                        <li><strong>Any Hotel Lobby</strong> - Don't be shy, walk into a hotel lobby if you need help, water, or to call an Uber safely</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- DRESS CODE -->
+        <div class="guide-section">
+            <h3 class="guide-title">
+                <span class="icon">👠</span>
+                Dress Code: Heels or Flats? The Great Charleston Debate
+            </h3>
+
+            <div class="subsection">
+                <div class="subsection-title">The Cobblestone Reality</div>
+                <div class="subsection-content">
+                    Here's what nobody tells you: <span class="highlight">Charleston's historic cobblestone streets will DESTROY stilettos</span>. Those cute Instagram heels? They're going straight between the stones, and you're going straight to the ground. Even locals who wear heels bring backup flats.
+                </div>
+                <div class="warning-box">
+                    <strong>⚠️ The Heel Horror Stories:</strong> We've seen broken ankles, ruined designer shoes, and girls walking barefoot (gross) down King Street at midnight. Don't be that girl.
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">What Actually Works</div>
+                <div class="subsection-content">
+                    <strong>Smart Heel Choices:</strong>
+                    <ul>
+                        <li><strong>Wedges or Block Heels</strong> - Distribute weight better, won't get stuck in cobblestones</li>
+                        <li><strong>Strappy Sandals with Thicker Heels</strong> - Cute but functional (2-3 inch max)</li>
+                        <li><strong>Platform Heels</strong> - Give height without the wobble factor</li>
+                        <li><strong>Dressy Flats or Loafers</strong> - Still stylish, infinitely more practical</li>
+                    </ul>
+                </div>
+                <div class="tip-box">
+                    <strong>💡 The Pro Move:</strong> Wear cute flats or sneakers while walking between venues, carry heels in your bag, and change when you arrive. Many girls do this—no shame, all brain.
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Venue-Specific Dress Codes</div>
+                <div class="subsection-content">
+                    <strong>Upscale/Rooftop Bars (Prohibition, Ritual, Citrus Club):</strong><br>
+                    "Charleston Chic" - Sundresses, rompers, nice jeans with heels or wedges, blouses. No athletic wear, flip-flops, or super casual looks.
+                    
+                    <br><br><strong>Casual Bars (Silver Dollar, Bay Street Biergarten):</strong><br>
+                    Anything goes - Jeans, t-shirts, sneakers, whatever. These places don't care.
+                    
+                    <br><br><strong>Clubs (Trio, Republic):</strong><br>
+                    Dress to impress - Heels/wedges expected, dresses or going-out tops, no sneakers (unless they're designer and you can pull it off).
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Weather Reality Check</div>
+                <div class="subsection-content">
+                    <ul>
+                        <li><strong>Summer (May-September):</strong> It's HOT and HUMID. Think 85-95°F even at night. Light, breathable fabrics. Bring blotting papers. Your makeup WILL melt.</li>
+                        <li><strong>Spring/Fall (March-April, October-November):</strong> Perfect weather! 60-75°F at night. Bring a light cardigan or jacket for later.</li>
+                        <li><strong>Winter (December-February):</strong> Can be chilly (40-60°F). Bring a cute jacket—you'll need it walking between bars.</li>
+                    </ul>
+                </div>
+                <div class="warning-box">
+                    <strong>⚠️ Summer Survival:</strong> Charleston humidity is NO JOKE. Hair straightening is pointless (it'll frizz in 10 minutes), waterproof mascara is mandatory, and deodorant is your best friend. Plan accordingly.
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">The Purse Situation</div>
+                <div class="subsection-content">
+                    <strong>Best Options:</strong>
+                    <ul>
+                        <li><strong>Crossbody Bag</strong> - Keeps hands free, harder to steal, perfect for bar hopping</li>
+                        <li><strong>Small Clutch</strong> - Works for sit-down dinner spots, but annoying at crowded bars</li>
+                        <li><strong>Belt Bag (Fanny Pack)</strong> - Yes, they're back. No, we're not judging. Actually super practical.</li>
+                    </ul>
+                    What to bring: ID, credit card, phone, lipstick, portable charger, emergency $20. That's it.
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info mt-4">
+            <strong>🎉 Bottom Line:</strong> Charleston girls night out is AMAZING when you plan smart. Comfortable shoes + reliable transportation + staying in safe zones = legendary night. Ignore this advice and you'll be the cautionary tale your friends tell for years. Your choice! 💕
+        </div>
+    </div>
+
+     <!-- THE NIGHTLIFE MENU -->
+     <div class="nightlife-menu-section">
+        <h2 class="menu-title">🌙 The Nightlife Menu: Choose Your Vibe</h2>
+        
+        <p class="menu-intro">
+            Not all girls nights are created equal. Some crews want to rage until 2 AM, others prefer craft cocktails and conversation, and some want activities first, party second. Here's your curated menu of Charleston nightlife vibes—pick your adventure.
+        </p>
+
+        <!-- WILD NIGHT -->
+        <div class="vibe-card wild">
+            <div class="vibe-header">
+                <span class="vibe-badge wild-badge">🔥 THE WILD NIGHT</span>
+                <h3 class="vibe-title">Dance Until You Can't Feel Your Feet</h3>
+            </div>
+            
+            <div class="vibe-itinerary">
+                <div class="itinerary-step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <strong>Dinner at Republic Garden & Lounge</strong> (489 King Street)<br>
+                        Start with dinner and craft cocktails at this upscale King Street hotspot. The food is great, the drinks are strong, and the atmosphere gets you hyped for what's ahead. Reserve a table for 7-8 PM.
+                    </div>
+                </div>
+
+                <div class="itinerary-step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <strong>Party Bus Takeover</strong><br>
+                        Your pre-booked party bus picks you up at 10 PM. Blast music, pop champagne, and cruise downtown while your friends take over the dance floor on wheels. Hit 2-3 bars for quick drinks and photos.
+                    </div>
+                </div>
+
+                <div class="itinerary-step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <strong>Club Until Close</strong><br>
+                        End at <strong>Trio Nightclub</strong> or <strong>Uptown Social</strong> around midnight. Dance to live DJs, bottle service if you're feeling fancy, and rage until last call at 2 AM.
+                    </div>
+                </div>
+            </div>
+
+            <div class="vibe-footer">
+                <strong>Perfect for:</strong> Bachelorette parties, milestone birthdays, "we're only young once" energy<br>
+                <strong>Budget:</strong> $$ (Party bus + club cover + bottle service adds up)<br>
+                <strong>Shoe recommendation:</strong> Wedges or platforms (you'll be dancing ALL night)
+            </div>
+        </div>
+
+        <!-- CLASSY NIGHT -->
+        <div class="vibe-card classy">
+            <div class="vibe-header">
+                <span class="vibe-badge classy-badge">🥂 THE CLASSY NIGHT</span>
+                <h3 class="vibe-title">Sophisticated Sipping & Conversation</h3>
+            </div>
+            
+            <div class="vibe-itinerary">
+                <div class="itinerary-step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <strong>Rooftop Cocktails at The Spectator Hotel</strong> (67 State Street)<br>
+                        Start your evening at this intimate rooftop bar overlooking Charleston's historic district. Craft cocktails, sunset views, and an upscale atmosphere perfect for catching up with your crew.
+                    </div>
+                </div>
+
+                <div class="itinerary-step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <strong>Dinner at Peninsula Grill or Halls Chophouse</strong><br>
+                        Splurge on dinner at one of Charleston's finest. Peninsula Grill's coconut cake is legendary, and Halls Chophouse never disappoints. Make reservations weeks in advance.
+                    </div>
+                </div>
+
+                <div class="itinerary-step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <strong>Live Jazz at The Commodore</strong> (334 King Street)<br>
+                        Cap the night with smooth jazz, dim lighting, and nightcaps at The Commodore. It's intimate, locals love it, and you can actually hear each other talk. The perfect ending to a classy evening.
+                    </div>
+                </div>
+            </div>
+
+            <div class="vibe-footer">
+                <strong>Perfect for:</strong> 30+ friend groups, date night doubles, sophisticated celebrations<br>
+                <strong>Budget:</strong> $$ (You're paying for quality and ambiance)<br>
+                <strong>Shoe recommendation:</strong> Your best heels—you're sitting most of the night anyway
+            </div>
+        </div>
+
+        <!-- ACTIVITY NIGHT -->
+        <div class="vibe-card activity">
+            <div class="vibe-header">
+                <span class="vibe-badge activity-badge">🎨 THE ACTIVITY NIGHT</span>
+                <h3 class="vibe-title">Create First, Celebrate After</h3>
+            </div>
+            
+            <div class="vibe-itinerary">
+                <div class="itinerary-step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <strong>Candle Making at Candlefish</strong> (or Charleston Candle Co, pottery class, floral workshop)<br>
+                        Start with a hands-on activity where you create something to take home. Candle making, pottery, floral arranging—Charleston has tons of options. Book for early evening (5-7 PM).
+                    </div>
+                </div>
+
+                <div class="itinerary-step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <strong>Casual Dinner on Upper King</strong><br>
+                        Hit a casual spot like <strong>Taco Boy</strong>, <strong>The Daily</strong>, or <strong>Basic Kitchen</strong>. Good food, relaxed vibe, won't break the bank, and you can laugh about your candle-making disasters.
+                    </div>
+                </div>
+
+                <div class="itinerary-step highlight-step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <strong>And when you're done making candles, here's where to go for the AFTER-PARTY...</strong><br><br>
+                        
+                        <div class="after-party-options">
+                            <strong>Option A: Bar Crawl Upper King</strong><br>
+                            Hit <strong>Prohibition</strong> → <strong>Vintage Lounge</strong> → <strong>Burns Alley</strong>. All within 3 blocks, all have different vibes, all perfect for continuing the celebration.
+                            
+                            <br><br><strong>Option B: Private Entertainment at Your Rental</strong><br>
+                            Take the party back to your Airbnb or hotel suite and book <strong><a href="https://michaelatyourplace.com" target="_blank">Michael At Your Place</a></strong>—an interactive, high-energy show that brings Vegas-level entertainment to your living room. It's wild, it's hilarious, and it's the PERFECT way to end an activity night with something completely unexpected.
+                            
+                            <br><br><strong>Option C: Dessert + Rooftop Views</strong><br>
+                            Grab dessert at <strong>Carmella's</strong> (187 Meeting Street) then head to <strong>Citrus Club</strong> rooftop for nightcaps and photos with Charleston's skyline lit up behind you.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vibe-footer">
+                <strong>Perfect for:</strong> Mixed-vibe friend groups, when some want activities and others want drinks, creative types<br>
+                <strong>Budget:</strong> $ - $$ (Activity + dinner is moderate, after-party varies)<br>
+                <strong>Shoe recommendation:</strong> Flats or sneakers for the activity, heels in your bag for later
+            </div>
+        </div>
+
+        <!-- BONUS VIBES -->
+        <div class="bonus-section">
+            <h3>🎭 Bonus Curated Vibes</h3>
+            
+            <div class="bonus-vibe">
+                <strong>The "Bougie Brunch to Boozy Sunset" Vibe:</strong><br>
+                Brunch at <strong>Poogan's Porch</strong> → King Street shopping → Sunset drinks at <strong>The Rooftop at The Vendue</strong> → Dinner at <strong>167 Raw</strong> → Late-night dancing at <strong>Mynt</strong>
+            </div>
+
+            <div class="bonus-vibe">
+                <strong>The "Foodie Tour" Vibe:</strong><br>
+                Progressive dinner crawl: Appetizers at <strong>The Ordinary</strong> → Small plates at <strong>The Macintosh</strong> → Dessert at <strong>Kaminsky's</strong> → Digestifs at <strong>The Gin Joint</strong>
+            </div>
+
+            <div class="bonus-vibe">
+                <strong>The "Local Secret" Vibe:</strong><br>
+                Skip King Street entirely. Start at <strong>Edmund's Oast</strong> (brewery vibes) → <strong>The Rarebit</strong> (neighborhood bar) → <strong>Home Team BBQ</strong> on Sullivan's Island (yes, at night) → Beach bonfire if weather permits
+            </div>
+
+            <div class="bonus-vibe">
+                <strong>The "Zero-Proof Celebration" Vibe:</strong><br>
+                For the pregnant bride, designated drivers, or sober-curious crew: Hit the <strong>Charleston Mocktail Trail</strong> we mentioned earlier—The Gin Joint, Citrus Club, Little Palm Bar, and Basic Kitchen all do zero-proof drinks right. You won't feel like you're missing out.
+            </div>
+        </div>
+
+        <div class="planning-tip">
+            <strong>🎯 Pro Planning Tip:</strong> Share this menu with your group via text or group chat and let everyone vote on their vibe. You'll avoid the "where do we go?" arguments and ensure everyone's excited about the plan. Democracy in action! 🗳️
+        </div>
+    </div>
+</div>
+
+
 
     <div class="container">
         <div class="row">
@@ -199,6 +1023,209 @@
             </div>
         </div>
     </div>
+
+     <!-- THE GNO CALCULATOR -->
+     <div class="budget-calculator-section">
+        <h2 class="calculator-title">💰 The GNO Calculator: What Does It Actually Cost?</h2>
+        
+        <p class="calculator-intro">
+            Travel bloggers won't tell you this because they're sponsored, but we will: Here's the REAL breakdown of what a girls night out in Charleston costs per person. No BS, no hidden fees, just honest numbers so you can plan accordingly.
+        </p>
+
+        <!-- BUDGET TIER -->
+        <div class="budget-card budget-tier">
+            <div class="tier-header">
+                <span class="tier-badge budget-badge">💵 THE BUDGET NIGHT</span>
+                <div class="tier-price">$50-75 per person</div>
+            </div>
+            
+            <div class="tier-breakdown">
+                <div class="breakdown-title">What You Get:</div>
+                
+                <div class="line-item">
+                    <span class="item-name">Dinner</span>
+                    <span class="item-cost">$15-20</span>
+                </div>
+                <div class="item-details">
+                    Pizza at <strong>EVO</strong>, tacos at <strong>Taco Boy</strong>, or burgers at <strong>Coast Bar & Grill</strong>. Split appetizers, skip the fancy entrees.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Drinks (3-4 drinks)</span>
+                    <span class="item-cost">$20-30</span>
+                </div>
+                <div class="item-details">
+                    Hit happy hours (4-7 PM) at <strong>Burns Alley</strong> or <strong>Bay Street Biergarten</strong>. Stick to beer/well drinks. Pro tip: Pre-game at your Airbnb.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Transportation</span>
+                    <span class="item-cost">$10-15</span>
+                </div>
+                <div class="item-details">
+                    Split Ubers/Lyfts, walk when possible, avoid surge pricing by leaving before 11 PM.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Cover Charges/Tips</span>
+                    <span class="item-cost">$5-10</span>
+                </div>
+                <div class="item-details">
+                    Most dive bars have no cover. Tip your bartenders (20% minimum, karma is real).
+                </div>
+            </div>
+
+            <div class="tier-vibe">
+                <strong>The Vibe:</strong> Casual, fun, zero pretension. You're here for the company, not the Instagram clout. Dive bars, local spots, maybe some karaoke at <strong>Silver Dollar</strong>. Perfectly good time without breaking the bank.
+            </div>
+        </div>
+
+        <!-- MID-TIER -->
+        <div class="budget-card mid-tier">
+            <div class="tier-header">
+                <span class="tier-badge mid-badge">💳 THE MIDDLE GROUND</span>
+                <div class="tier-price">$150-200 per person</div>
+            </div>
+            
+            <div class="tier-breakdown">
+                <div class="breakdown-title">What You Get:</div>
+                
+                <div class="line-item">
+                    <span class="item-name">Nice Dinner</span>
+                    <span class="item-cost">$50-75</span>
+                </div>
+                <div class="item-details">
+                    Reservations at <strong>The Ordinary</strong>, <strong>167 Raw</strong>, or <strong>The Macintosh</strong>. Entrees, shared apps, maybe dessert. One or two cocktails with dinner.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Craft Cocktails/Bar Crawl</span>
+                    <span class="item-cost">$40-60</span>
+                </div>
+                <div class="item-details">
+                    Hit 2-3 craft cocktail bars like <strong>Prohibition</strong>, <strong>The Gin Joint</strong>, or rooftop spots. $12-18 per cocktail adds up fast.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Transportation</span>
+                    <span class="item-cost">$20-30</span>
+                </div>
+                <div class="item-details">
+                    Ubers/Lyfts throughout the night, maybe one surge pricing ride. Or split a party bus with a bigger group.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Activity/Entertainment</span>
+                    <span class="item-cost">$25-40</span>
+                </div>
+                <div class="item-details">
+                    Club cover charges ($10-20), candle making class ($35), ghost tour ($30), or tips for live entertainment.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Tips & Incidentals</span>
+                    <span class="item-cost">$15-20</span>
+                </div>
+            </div>
+
+            <div class="tier-vibe">
+                <strong>The Vibe:</strong> This is the sweet spot. Good food, good drinks, maybe an activity. You're dressing up, taking photos, and feeling fancy without going full Wall Street. Most bachelorette parties land here.
+            </div>
+        </div>
+
+        <!-- BOUJEE TIER -->
+        <div class="budget-card boujee-tier">
+            <div class="tier-header">
+                <span class="tier-badge boujee-badge">💎 THE BOUJEE NIGHT</span>
+                <div class="tier-price">$300-500+ per person</div>
+            </div>
+            
+            <div class="tier-breakdown">
+                <div class="breakdown-title">What You Get:</div>
+                
+                <div class="line-item">
+                    <span class="item-name">High-End Dinner</span>
+                    <span class="item-cost">$100-150</span>
+                </div>
+                <div class="item-details">
+                    <strong>Peninsula Grill</strong>, <strong>Halls Chophouse</strong>, or <strong>FIG</strong>. Multi-course meals, wine pairings, maybe champagne. You're getting the full Charleston fine dining experience.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">VIP Bottle Service</span>
+                    <span class="item-cost">$80-150</span>
+                </div>
+                <div class="item-details">
+                    Table at <strong>Trio</strong> or <strong>Ritual Rooftop</strong>. Bottle minimums run $400-800, split among your group. Includes mixers and your own server.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Party Bus/Limo (All Night)</span>
+                    <span class="item-cost">$50-100</span>
+                </div>
+                <div class="item-details">
+                    Private transportation for 4-6 hours. Driver waits for you, no surge pricing, champagne on board. Total luxury.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Spa/Activity Earlier</span>
+                    <span class="item-cost">$100-150</span>
+                </div>
+                <div class="item-details">
+                    Start the day at <strong>The Spa at Charleston Place</strong> with massages, facials, pool access. This is the full pampering experience.
+                </div>
+
+                <div class="line-item">
+                    <span class="item-name">Private Entertainment</span>
+                    <span class="item-cost">$50-100</span>
+                </div>
+                <div class="item-details">
+                    Book <a href="https://michaelatyourplace.com" target="_blank"><strong>Michael At Your Place</strong></a> for a private show at your rental, or hire a private mixology class at your Airbnb.
+                </div>
+            </div>
+
+            <div class="tier-vibe">
+                <strong>The Vibe:</strong> Go big or go home. This is milestone birthday, major bachelorette, or "we just got our bonuses" energy. VIP treatment everywhere, no expense spared, memories that'll last forever. You're living your best life.
+            </div>
+        </div>
+
+        <!-- COST BREAKDOWN TIPS -->
+        <div class="calculator-tips">
+            <h3>💡 Smart Money Moves</h3>
+            
+            <div class="money-tip">
+                <strong>Split Strategically:</strong> Create a Venmo group or use Splitwise BEFORE the night starts. Decide upfront if you're splitting evenly or going itemized. Nobody wants drunk math at 1 AM.
+            </div>
+
+            <div class="money-tip">
+                <strong>The Hidden Costs Nobody Mentions:</strong>
+                <ul>
+                    <li><strong>Late-night food:</strong> Add $10-15 for pizza/chicken fingers at 2 AM (you know you will)</li>
+                    <li><strong>ATM fees:</strong> Bring cash for cash-only bars ($3-5 per withdrawal)</li>
+                    <li><strong>Coat check:</strong> $5-10 if you're clubbing in winter</li>
+                    <li><strong>Aspirin & Gatorade:</strong> $10 at CVS at midnight (plan ahead)</li>
+                </ul>
+            </div>
+
+            <div class="money-tip">
+                <strong>When to Splurge, When to Save:</strong> Splurge on ONE thing (amazing dinner OR bottle service OR spa day), save on everything else. You'll remember the highlight, not the mid-tier cocktails.
+            </div>
+
+            <div class="money-tip">
+                <strong>Group Size Matters:</strong>
+                <ul>
+                    <li><strong>2-4 people:</strong> Hard to split party buses/bottles, stick to bar crawls</li>
+                    <li><strong>6-10 people:</strong> Perfect size for group deals and splitting costs</li>
+                    <li><strong>10+ people:</strong> Group rates kick in but coordinating becomes a nightmare</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="calculator-reality-check">
+            <strong>🚨 The Reality Check:</strong> Most Charleston girls nights land in the $125-175 per person range when everything's said and done. Travel bloggers say "$50-100" because they're comped or trying to sell you something. We're telling you the truth so you're not shocked when the Venmo requests start rolling in. Plan accordingly, have fun responsibly, and remember—the memories are priceless even if the bar tab isn't. 💕
+        </div>
+    </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
