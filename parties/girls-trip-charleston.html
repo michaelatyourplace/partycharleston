@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charleston Girls Trip: 10 Best Places to Visit for an Unforgettable Weekend</title>
+    <meta name="description" content="Planning the perfect Charleston girls trip? Discover the top 10 must-visit spots for bachelorette parties, girlfriends getaways, and unforgettable celebrations in Charleston, SC.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #2C5F7C;
+            --secondary-color: #F4A460;
+            --accent-color: #E8B4B8;
+            --dark-text: #2C3E50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-text);
+            line-height: 1.7;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1a3d52 100%);
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 50px;
+        }
+        
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-section .lead {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+        
+        .intro-section {
+            margin-bottom: 60px;
+        }
+        
+        .intro-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--secondary-color);
+        }
+        
+        .destination-card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .destination-card .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+        
+        .destination-card .card-body {
+            padding: 25px;
+        }
+        
+        .destination-card .card-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+        
+        .destination-card .card-text {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        
+        .destination-card .btn-visit {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .destination-card .btn-visit:hover {
+            background: #1a3d52;
+        }
+        
+        .destination-badge {
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .charleston-photo {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+            margin: 40px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .additional-links {
+            background: #f8f9fa;
+            padding: 50px 0;
+            margin-top: 60px;
+        }
+        
+        .additional-links .list-group-item {
+            border: none;
+            background: white;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
+        }
+        
+        .additional-links .list-group-item:hover {
+            transform: translateX(5px);
+            background: var(--accent-color);
+        }
+        
+        .additional-links .list-group-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        
+        .additional-links .list-group-item a:hover {
+            color: white;
+        }
+        
+        .additional-links .list-group-item i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .honorable-mentions {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .honorable-mentions h3 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        
+        .honorable-mentions ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .honorable-mentions ul li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.05rem;
+        }
+        
+        .honorable-mentions ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .honorable-mentions ul li::before {
+            content: '✨ ';
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+        
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-section .lead {
+                font-size: 1.1rem;
+            }
+            
+            .charleston-photo {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h1>The Ultimate Charleston Girls Trip Guide</h1>
+                    <img src="girls-trip.jpg" class="img-fluid" alt="">
+                    <p class="lead">Discover the 10 Best Places for an Unforgettable Girlfriends Getaway in Charleston, SC</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <div class="container intro-section">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <p class="text-center">Planning a <strong>Charleston girls trip</strong> is the perfect way to celebrate friendship, mark special occasions, or simply escape for a weekend of Southern charm and unforgettable memories. Whether you're organizing a bachelorette party, celebrating a milestone birthday, or gathering your closest friends for a much-needed getaway, Charleston offers the ideal blend of historic beauty, culinary excellence, beachside relaxation, and vibrant nightlife. From sunrise strolls along cobblestone streets to sunset cruises on the harbor, this coastal gem delivers experiences that will have your group laughing, bonding, and creating stories you'll reminisce about for years to come. Get ready to discover why thousands of women choose Charleston for their ultimate girlfriends escape.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charleston Photo Placeholder -->
+    <div class="container">
+        <div class="charleston-photo">
+            <img src="historic-waterfront.png" class="img-fluid" alt="">
+        </div>
+        <p class="text-center text-muted"><em>Charleston Historic Waterfront</em></p>
+    </div>
+
+    <!-- Top 10 Destinations -->
+    <div class="container my-5">
+        <h2 class="section-title">Top 10 Must-Visit Destinations</h2>
+        
+        <div class="row">
+            <!-- Card 1: Charleston City Market -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="charleston-market.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Shopping & Culture</span>
+                        <h3 class="card-title">Charleston City Market</h3>
+                        <p class="card-text">Step into Charleston's historic heart at the City Market, where local artisans showcase handwoven sweetgrass baskets, Southern crafts, and unique treasures. This iconic four-block marketplace is perfect for finding authentic Charleston souvenirs while soaking up the vibrant atmosphere of the Holy City. Your girls will love browsing the countless vendor stalls filled with jewelry, art, and local delicacies.</p>
+                        <a href="https://www.thecharlestoncitymarket.com/" target="_blank" rel="noopener" class="btn btn-visit">Visit Charleston City Market <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Walking Ghost Tours -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="charleston-ghost-tour.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Adventure & Thrills</span>
+                        <h3 class="card-title">Walking Ghost Tours</h3>
+                        <p class="card-text">Experience Charleston's spooky side with an evening ghost tour through the city's haunted historic district. Led by knowledgeable guides, you'll hear chilling tales of restless spirits, tragic love stories, and centuries-old mysteries while walking cobblestone streets by lantern light. It's an entertaining and slightly eerie way to explore Charleston's dark history with your crew.</p>
+                        <a href="https://www.bulldogtours.com/" target="_blank" rel="noopener" class="btn btn-visit">Book a Ghost Tour <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Folly Beach -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="folly-beach.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Beach & Relaxation</span>
+                        <h3 class="card-title">Folly Beach</h3>
+                        <p class="card-text">Known as "The Edge of America," Folly Beach offers laid-back vibes, pristine sandy shores, and perfect waves just 15 minutes from downtown Charleston. Spend your day sunbathing, paddle boarding, or sipping cocktails at beachfront bars. The iconic Folly Beach Pier provides stunning photo opportunities, while the local surf shops and casual eateries complete the quintessential beach town experience.</p>
+                        <a href="https://www.visitfollybeach.com/" target="_blank" rel="noopener" class="btn btn-visit">Explore Folly Beach <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: The Citrus Club -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="citrus-club-chs.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Nightlife & Dancing</span>
+                        <h3 class="card-title">The Citrus Club</h3>
+                        <p class="card-text">Get ready to dance the night away at The Citrus Club, Charleston's premier nightlife destination on Upper King Street. This multi-level venue features a rooftop bar with skyline views, multiple dance floors with different music genres, and an energetic atmosphere perfect for bachelorette parties and girls' nights out. The club's vibrant energy and top-notch DJs make it the ultimate spot to celebrate.</p>
+                        <a href="https://www.thecitrusclub.com/" target="_blank" rel="noopener" class="btn btn-visit">Visit The Citrus Club <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Wine Tasting Class -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="chs-wine-tasting.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Culinary & Wine</span>
+                        <h3 class="card-title">Wine Tasting Class</h3>
+                        <p class="card-text">Elevate your Charleston girls trip with a sophisticated wine tasting experience where you'll sample exquisite wines while learning about varietals, regions, and pairing techniques. Local wine bars and tasting rooms offer intimate group experiences perfect for bonding over bold reds, crisp whites, and sparkling rosés. Many venues can customize private tastings for bachelorette groups and special celebrations.</p>
+                        <a href="https://www.charlestonwinetours.com/" target="_blank" rel="noopener" class="btn btn-visit">Book Wine Tasting <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Welton's Tiny Bakery -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="weltons-tiny-bakery.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Sweet Treats</span>
+                        <h3 class="card-title">Welton's Tiny Bakery</h3>
+                        <p class="card-text">Indulge your sweet tooth at Welton's Tiny Bakery, a charming bakery serving up heavenly pastries, cookies, and seasonal treats made with locally sourced ingredients. From flaky croissants to decadent brownies and creative seasonal offerings, every bite is Instagram-worthy and absolutely delicious. Arrive early because these handcrafted goodies sell out fast!</p>
+                        <a href="https://www.weltonstinybakery.com/" target="_blank" rel="noopener" class="btn btn-visit">Visit Welton's <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Callie's Hot Little Biscuit -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="callies-biscuit-chs.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Breakfast & Brunch</span>
+                        <h3 class="card-title">Callie's Hot Little Biscuit</h3>
+                        <p class="card-text">Start your day right at Callie's Hot Little Biscuit, a beloved Charleston institution famous for their buttery, flaky biscuits piled high with Southern-inspired toppings. From the classic Calhoun (buttermilk biscuit with aged cheddar and sausage gravy) to sweet options with jam and honey butter, these handmade biscuits are the ultimate comfort food to fuel your Charleston adventures.</p>
+                        <a href="https://www.calliesbiscuits.com/" target="_blank" rel="noopener" class="btn btn-visit">Visit Callie's Biscuit <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8: Rainbow Row -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="rainbow-row-charleston.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Historic Landmark</span>
+                        <h3 class="card-title">Rainbow Row</h3>
+                        <p class="card-text">Capture the perfect group photo at Rainbow Row, Charleston's most photographed street featuring 13 colorful Georgian row houses painted in pastel hues. Located on East Bay Street near The Battery, these iconic 18th-century homes create a stunning backdrop for your girls trip memories. Golden hour lighting makes the colors pop even more beautifully in photos.</p>
+                        <a href="https://www.charleston-sc.gov/DocumentCenter/View/28059/Rainbow-Row-PDF" target="_blank" rel="noopener" class="btn btn-visit">Learn About Rainbow Row <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9: Sunset Boat Tour -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="sunset-cruise-charleston.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Scenic Experience</span>
+                        <h3 class="card-title">Sunset Boat Tour</h3>
+                        <p class="card-text">Experience Charleston's breathtaking beauty from the water with a sunset harbor cruise. Sip champagne with your girls while watching the sun paint the sky in brilliant oranges and pinks behind Charleston's historic skyline and waterfront mansions. These tours often include narration about Charleston's maritime history, views of Fort Sumter, and dolphins playing in the wake.</p>
+                        <a href="https://www.spiritlinecruises.com/" target="_blank" rel="noopener" class="btn btn-visit">Book Sunset Cruise <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10: Food and Wine Tours -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card destination-card">
+                    <div class="card-img-top">
+                        <img src="chs-wine-tasting.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="destination-badge">Culinary Adventure</span>
+                        <h3 class="card-title">Food and Wine Tours</h3>
+                        <p class="card-text">Savor Charleston's renowned culinary scene with a guided food and wine tour through the historic district. Sample Lowcountry favorites like she-crab soup, shrimp and grits, and fresh oysters while visiting award-winning restaurants, hidden gems, and local markets. Expert guides share the stories behind Charleston's food culture while you taste your way through the city with your crew.</p>
+                        <a href="https://www.charlestonculinarytours.com/" target="_blank" rel="noopener" class="btn btn-visit">Book Food Tour <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charleston Photo Placeholder -->
+    <div class="container">
+        <div class="charleston-photo">
+            <img src="historic-charleston.png" class="img-fluid" alt="">
+        </div>
+        <p class="text-center text-muted"><em>Charleston Historic District</em></p>
+    </div>
+
+    <!-- Additional Links and Honorable Mentions Section -->
+    <div class="additional-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="section-title">More Charleston Resources</h2>
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <a href="#"><i class="bi bi-calendar-event"></i> Charleston Bachelorette Party Planning Guide</a>
+                        </div>
+                        <div class="list-group-item">
+                            <a href="#"><i class="bi bi-map"></i> Complete Charleston Nightlife Guide</a>
+                        </div>
+                        <div class="list-group-item">
+                            <a href="#"><i class="bi bi-house-heart"></i> Best Hotels for Girls Trips in Charleston</a>
+                        </div>
+                        <div class="list-group-item">
+                            <a href="#"><i class="bi bi-cart"></i> Charleston Shopping Districts Guide</a>
+                        </div>
+                        <div class="list-group-item">
+                            <a href="#"><i class="bi bi-camera-reels"></i> Most Instagram-Worthy Spots in Charleston</a>
+                        </div>
+                        <div class="list-group-item">
+                            <a href="#"><i class="bi bi-sun"></i> Charleston Beach Guide for Groups</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="honorable-mentions">
+                        <h3>Honorable Mentions</h3>
+                        <p>While our top 10 list covers the essentials, Charleston has so much more to offer! Here are additional spots that deserve recognition for your girls trip:</p>
+                        <ul>
+                            <li>Michael At Your Place Charleston - fun show to energize your group at midday or night</li>
+                            <li>King Street Shopping - Premier shopping district with boutiques and national brands</li>
+                            <li>Magnolia Plantation & Gardens - Beautiful historic gardens perfect for photos</li>
+                            <li>Waterfront Park - Iconic pineapple fountain and harbor views</li>
+                            <li>Upper King Street - Trendy restaurants, bars, and nightlife scene</li>
+                            <li>Charleston Tea Plantation - Only tea plantation in North America</li>
+                            <li>The Darling Oyster Bar - Fresh seafood and lively atmosphere</li>
+                            <li>Rooftop Bars (Market Pavilion, The Vendue) - Cocktails with skyline views</li>
+                            <li>Second Sunday on King Street - Monthly street festival (seasonal)</li>
+                            <li>Charleston Farmers Market - Local produce and artisan goods (Saturday mornings)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charleston Photo Placeholder -->
+    <div class="container mb-5">
+        <div class="charleston-photo">
+            <img src="michafterdark.png" class="img-fluid" alt="">
+        </div>
+        <p class="text-center text-muted"><em>Michael At Your Place Charleston</em></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Charleston Girls Trip Guide. All Rights Reserved.</p>
+            <p>Experience the Best of Charleston, South Carolina</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
