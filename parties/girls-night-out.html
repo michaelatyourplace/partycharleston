@@ -3,1113 +3,1476 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girls Night Out | Charleston SC </title>
-    <meta name="description" content="Discover the best girls night out ideas Charleston has to offer! From spa experiences to dessert tastings, find perfect ladies night activities in Charleston SC.">
+    <title>Girls Night Out Charleston SC | The Show — Live Entertainment with Michael</title>
+    <meta name="description" content="The ultimate Girls Night Out Charleston experience. Girls Night Out The Show features Michael — live entertainment, comedy, dancing & an unforgettable performance for your crew. Book now.">
+    <meta name="keywords" content="girls night out charleston, girls night out charleston sc, charleston girls night out, girls night out show charleston, girls night out the show">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
+        :root {
+            --gold: #C9A84C;
+            --gold-light: #E8C97A;
+            --gold-dim: #8A6A2A;
+            --black: #0A0A0A;
+            --charcoal: #141414;
+            --dark-card: #1A1A1A;
+            --mid-gray: #2A2A2A;
+            --text-muted: #999;
+            --text-body: #CCC;
+            --white: #F5F0E8;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            background-color: #e3f2fd;
-            color: #212529;
+            background-color: var(--black);
+            color: var(--text-body);
+            font-family: 'Barlow', sans-serif;
+            font-weight: 300;
+            overflow-x: hidden;
         }
+
+        /* ── NOISE TEXTURE OVERLAY ── */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.4;
+        }
+
+        /* ── GOLD RULE ── */
+        .gold-rule {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 0 auto;
+        }
+
+        /* ══════════════════════════════════
+           HERO
+        ══════════════════════════════════ */
         .hero {
-            background: linear-gradient(135deg, #b3e5fc 0%, #81d4fa 100%);
-            padding: 80px 0;
-            margin-bottom: 50px;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px 60px;
+            background:
+                radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 80% at 80% 100%, rgba(201,168,76,0.06) 0%, transparent 60%),
+                var(--black);
+            overflow: hidden;
         }
-        .hero h1 {
-            color: #01579b;
-            font-weight: bold;
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 120px;
+            background: linear-gradient(to bottom, transparent, var(--black));
+        }
+
+        .hero-eyebrow {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.35em;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 28px;
+            animation: fadeUp 0.8s ease both;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: clamp(3.2rem, 9vw, 7.5rem);
+            line-height: 0.92;
+            color: var(--white);
+            margin-bottom: 12px;
+            animation: fadeUp 0.9s 0.1s ease both;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .hero-subtitle-block {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: clamp(1.2rem, 3.5vw, 2rem);
+            letter-spacing: 0.2em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            animation: fadeUp 1s 0.2s ease both;
+        }
+
+        .hero-desc {
+            max-width: 620px;
+            margin: 0 auto 50px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-body);
+            animation: fadeUp 1s 0.3s ease both;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeUp 1s 0.4s ease both;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            color: var(--black);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            display: inline-block;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(201,168,76,0.35);
+            color: var(--black);
+        }
+
+        .btn-outline-gold {
+            background: transparent;
+            color: var(--gold);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 15px 40px;
+            border: 1px solid var(--gold-dim);
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            display: inline-block;
+        }
+        .btn-outline-gold:hover {
+            border-color: var(--gold);
+            background: rgba(201,168,76,0.08);
+            color: var(--gold-light);
+        }
+
+        /* ══════════════════════════════════
+           STATS STRIP
+        ══════════════════════════════════ */
+        .stats-strip {
+            background: var(--dark-card);
+            border-top: 1px solid rgba(201,168,76,0.2);
+            border-bottom: 1px solid rgba(201,168,76,0.2);
+            padding: 36px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+            display: block;
+        }
+
+        .stat-label {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 6px;
+            display: block;
+        }
+
+        /* ══════════════════════════════════
+           SECTION HEADERS
+        ══════════════════════════════════ */
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-eyebrow {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.35em;
+            color: var(--gold);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.05;
+        }
+
+        .section-title em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        /* ══════════════════════════════════
+           SHOW INTRO — ABOUT THE SHOW
+        ══════════════════════════════════ */
+        .show-intro {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .show-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .show-intro-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .show-intro-text h2 em { color: var(--gold); font-style: italic; }
+
+        .show-intro-text p {
+            font-size: 1.05rem;
+            line-height: 1.85;
+            color: var(--text-body);
             margin-bottom: 20px;
         }
-        .hero-image {
+
+        .show-intro-image {
+            position: relative;
+        }
+
+        .show-image-frame {
             width: 100%;
-            max-width: 600px;
-            height: 400px;
-            background: #90caf9;
-            border-radius: 15px;
+            aspect-ratio: 3/4;
+            background: var(--dark-card);
+            border: 1px solid rgba(201,168,76,0.25);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .show-image-frame img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+        }
+
+        .show-image-frame::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(10,10,10,0.6) 0%, transparent 50%);
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 2;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        .corner-accent {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-color: var(--gold);
+            border-style: solid;
+            opacity: 0.5;
+        }
+        .corner-tl { top: -10px; left: -10px; border-width: 2px 0 0 2px; }
+        .corner-br { bottom: -10px; right: -10px; border-width: 0 2px 2px 0; }
+
+        /* ══════════════════════════════════
+           WHAT'S IN THE SHOW
+        ══════════════════════════════════ */
+        .show-features {
+            padding: 80px 0;
+            background: var(--charcoal);
+            border-top: 1px solid rgba(201,168,76,0.12);
+            border-bottom: 1px solid rgba(201,168,76,0.12);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            background: rgba(201,168,76,0.08);
+        }
+
+        .feature-item {
+            background: var(--charcoal);
+            padding: 48px 36px;
+            position: relative;
+            transition: background 0.3s ease;
+        }
+        .feature-item:hover { background: var(--dark-card); }
+
+        .feature-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: rgba(201,168,76,0.15);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .feature-title {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: var(--white);
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .feature-desc {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        .feature-accent {
+            width: 30px;
+            height: 2px;
+            background: var(--gold);
+            margin-top: 20px;
+        }
+
+        /* ══════════════════════════════════
+           HOW THE NIGHT WORKS — TIMELINE
+        ══════════════════════════════════ */
+        .night-timeline {
+            padding: 100px 0;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 32px;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .timeline-item:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            left: 39px;
+            top: 60px;
+            bottom: -30px;
+            width: 1px;
+            background: linear-gradient(to bottom, var(--gold-dim), transparent);
+        }
+
+        .timeline-time {
+            text-align: center;
+            padding-top: 4px;
+        }
+
+        .time-circle {
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--gold-dim);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #01579b;
-            font-style: italic;
-            margin: 30px auto;
-        }
-        .idea-card {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .idea-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-        .idea-card h2 {
-            color: #0277bd;
-            margin-bottom: 15px;
-        }
-        .contact-info {
-            background: #f5f5f5;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-        .contact-info strong {
-            color: #01579b;
-        }
-        .keyword-highlight {
-            color: #0277bd;
-            font-weight: 600;
-        }
-        .section-container {
-            max-width: 900px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--gold);
+            background: var(--charcoal);
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #d63384;
-            margin-bottom: 15px;
+
+        .timeline-content {
+            padding-top: 8px;
+        }
+
+        .timeline-label {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            color: var(--gold);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .timeline-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
             font-weight: 700;
-            font-size: 2em;
-        }
-        .intro-text {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 35px;
-            line-height: 1.8;
-            font-style: italic;
-        }
-        .guide-section {
-            margin-bottom: 40px;
-            padding: 25px;
-            background: linear-gradient(135deg, #fff5f7 0%, #ffe8f0 100%);
-            border-radius: 10px;
-            border-left: 5px solid #d63384;
-        }
-        .guide-title {
-            color: #d63384;
-            font-size: 1.6em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-        }
-        .guide-title .icon {
-            font-size: 1.2em;
-            margin-right: 12px;
-        }
-        .subsection {
-            background: white;
-            padding: 20px;
-            margin-bottom: 18px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .subsection-title {
-            font-weight: 700;
-            color: #212529;
-            font-size: 1.15em;
+            color: var(--white);
             margin-bottom: 12px;
         }
-        .subsection-content {
-            color: #495057;
-            line-height: 1.7;
+
+        .timeline-desc {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--text-body);
         }
-        .tip-box {
-            background: #d4edda;
-            border-left: 4px solid #28a745;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
+
+        /* ══════════════════════════════════
+           VENUE CARDS — WHERE TO HOST
+        ══════════════════════════════════ */
+        .venue-section {
+            padding: 80px 0;
+            background: var(--charcoal);
+            border-top: 1px solid rgba(201,168,76,0.1);
         }
-        .tip-box strong {
-            color: #155724;
+
+        .venue-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
-        .warning-box {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
+
+        .venue-card {
+            background: var(--dark-card);
+            border: 1px solid rgba(201,168,76,0.12);
+            padding: 36px 28px;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: default;
         }
-        .warning-box strong {
-            color: #856404;
+        .venue-card:hover {
+            border-color: rgba(201,168,76,0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
         }
-        .highlight {
-            background-color: #ffe8f0;
-            padding: 3px 7px;
-            border-radius: 4px;
-            font-weight: 600;
-            color: #d63384;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 25px;
-        }
-        li {
-            margin-bottom: 8px;
-            color: #495057;
-        }
-        .location-tag {
+
+        .venue-tag {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            color: var(--gold);
+            text-transform: uppercase;
+            background: rgba(201,168,76,0.1);
+            border: 1px solid rgba(201,168,76,0.2);
+            padding: 4px 12px;
             display: inline-block;
-            background: #6c757d;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.85em;
-            font-weight: 600;
-            margin-left: 5px;
+            margin-bottom: 20px;
+            border-radius: 1px;
         }
-        /* Nightlife Menu Styling */
-.nightlife-menu-section {
-    margin-top: 60px;
-    padding-top: 40px;
-    border-top: 4px solid #d63384;
-}
 
-.menu-title {
-    color: #d63384;
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+        .venue-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
 
-.menu-intro {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 35px;
-    line-height: 1.8;
-    font-style: italic;
-}
+        .venue-address {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+        }
 
-.vibe-card {
-    margin-bottom: 40px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+        .venue-desc {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: var(--text-body);
+        }
 
-.vibe-card.wild {
-    background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%);
-    border-left: 6px solid #dc3545;
-}
+        /* ══════════════════════════════════
+           GNO ITINERARIES
+        ══════════════════════════════════ */
+        .itinerary-section {
+            padding: 100px 0;
+        }
 
-.vibe-card.classy {
-    background: linear-gradient(135deg, #f5f5ff 0%, #e0e0ff 100%);
-    border-left: 6px solid #6f42c1;
-}
+        .itinerary-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-bottom: 60px;
+            border: 1px solid rgba(201,168,76,0.2);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+        }
 
-.vibe-card.activity {
-    background: linear-gradient(135deg, #f5fff5 0%, #e0ffe0 100%);
-    border-left: 6px solid #28a745;
-}
+        .itab {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 16px 20px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            border-right: 1px solid rgba(201,168,76,0.2);
+        }
+        .itab:last-child { border-right: none; }
+        .itab.active, .itab:hover {
+            background: rgba(201,168,76,0.12);
+            color: var(--gold);
+        }
 
-.vibe-header {
-    margin-bottom: 25px;
-}
+        .itinerary-panel {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .itinerary-panel.active { display: block; }
 
-.vibe-badge {
-    display: inline-block;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
+        .itin-card {
+            background: var(--dark-card);
+            border: 1px solid rgba(201,168,76,0.12);
+            padding: 48px;
+            margin-bottom: 24px;
+        }
 
-.wild-badge {
-    background: #dc3545;
-    color: white;
-}
+        .itin-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            margin-bottom: 32px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid rgba(201,168,76,0.12);
+        }
 
-.classy-badge {
-    background: #6f42c1;
-    color: white;
-}
+        .itin-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 900;
+            color: rgba(201,168,76,0.2);
+            line-height: 1;
+            flex-shrink: 0;
+            width: 70px;
+        }
 
-.activity-badge {
-    background: #28a745;
-    color: white;
-}
+        .itin-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
 
-.vibe-title {
-    color: #212529;
-    font-size: 1.5em;
-    font-weight: 700;
-    margin: 10px 0;
-}
+        .itin-info .itin-tag {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
 
-.vibe-itinerary {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
+        .itin-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-.itinerary-step {
-    display: flex;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #e9ecef;
-}
+        .itin-step {
+            display: grid;
+            grid-template-columns: 32px 1fr;
+            gap: 16px;
+            align-items: start;
+        }
 
-.itinerary-step:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
+        .step-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+            margin-top: 7px;
+            flex-shrink: 0;
+        }
 
-.step-number {
-    flex-shrink: 0;
-    width: 35px;
-    height: 35px;
-    background: #d63384;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    margin-right: 15px;
-    font-size: 1.1em;
-}
+        .step-text {
+            font-size: 0.98rem;
+            line-height: 1.7;
+            color: var(--text-body);
+        }
+        .step-text strong { color: var(--white); }
 
-.step-content {
-    flex: 1;
-    color: #495057;
-    line-height: 1.7;
-}
+        /* ══════════════════════════════════
+           BOOKING / CTA SECTION
+        ══════════════════════════════════ */
+        .booking-section {
+            padding: 100px 0;
+            background:
+                radial-gradient(ellipse 70% 60% at 50% 50%, rgba(201,168,76,0.1) 0%, transparent 70%),
+                var(--charcoal);
+            text-align: center;
+            border-top: 1px solid rgba(201,168,76,0.15);
+        }
 
-.step-content strong {
-    color: #212529;
-    display: block;
-    margin-bottom: 5px;
-}
+        .booking-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.05;
+            margin-bottom: 24px;
+        }
 
-.highlight-step {
-    background: #fff3cd;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #ffc107;
-    margin-top: 10px;
-}
+        .booking-section h2 em { color: var(--gold); font-style: italic; }
 
-.after-party-options {
-    margin-top: 15px;
-    padding: 15px;
-    background: white;
-    border-radius: 6px;
-}
+        .booking-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-body);
+            max-width: 560px;
+            margin: 0 auto 48px;
+        }
 
-.after-party-options a {
-    color: #d63384;
-    font-weight: 700;
-    text-decoration: none;
-}
+        .booking-details {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
 
-.after-party-options a:hover {
-    text-decoration: underline;
-}
+        .booking-detail {
+            text-align: center;
+        }
 
-.vibe-footer {
-    background: rgba(255,255,255,0.7);
-    padding: 15px;
-    border-radius: 6px;
-    font-size: 0.95em;
-    line-height: 1.8;
-}
+        .detail-label {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 6px;
+        }
 
-.bonus-section {
-    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
-    padding: 30px;
-    border-radius: 12px;
-    margin-top: 40px;
-    border: 2px solid #d63384;
-}
+        .detail-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
 
-.bonus-section h3 {
-    color: #d63384;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+        /* ══════════════════════════════════
+           FAQ SECTION
+        ══════════════════════════════════ */
+        .faq-section {
+            padding: 80px 0;
+            max-width: 760px;
+            margin: 0 auto;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
 
-.bonus-vibe {
-    background: white;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border-left: 3px solid #6c757d;
-    line-height: 1.7;
-}
+        .faq-item {
+            border-bottom: 1px solid rgba(201,168,76,0.12);
+            padding: 28px 0;
+        }
 
-.bonus-vibe strong:first-child {
-    color: #d63384;
-}
+        .faq-q {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            color: var(--white);
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-.planning-tip {
-    background: #d4edda;
-    border-left: 4px solid #28a745;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 8px;
-    font-size: 1.05em;
-}
+        .faq-q::before {
+            content: 'Q';
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: var(--gold);
+            font-style: italic;
+            flex-shrink: 0;
+        }
 
-.planning-tip strong {
-    color: #155724;
-}
-/* Budget Calculator Styling */
-.budget-calculator-section {
-    margin-top: 60px;
-    padding-top: 40px;
-    border-top: 4px solid #17a2b8;
-}
+        .faq-a {
+            font-size: 0.98rem;
+            line-height: 1.78;
+            color: var(--text-body);
+            padding-left: 32px;
+        }
 
-.calculator-title {
-    color: #17a2b8;
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+        /* ══════════════════════════════════
+           COST BREAKDOWN
+        ══════════════════════════════════ */
+        .cost-section {
+            padding: 80px 0;
+            background: var(--charcoal);
+            border-top: 1px solid rgba(201,168,76,0.1);
+        }
 
-.calculator-intro {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 35px;
-    line-height: 1.8;
-    font-style: italic;
-    background: #d1ecf1;
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #17a2b8;
-}
+        .cost-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+            background: rgba(201,168,76,0.06);
+        }
 
-.budget-card {
-    margin-bottom: 40px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+        .cost-tier {
+            background: var(--charcoal);
+            padding: 40px 32px;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        .cost-tier:hover { background: var(--dark-card); }
+        .cost-tier.featured { background: var(--dark-card); }
 
-.budget-card.budget-tier {
-    background: linear-gradient(135deg, #f0f8ff 0%, #e0f2ff 100%);
-    border-left: 6px solid #28a745;
-}
+        .tier-name {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 12px;
+        }
 
-.budget-card.mid-tier {
-    background: linear-gradient(135deg, #fff8f0 0%, #ffe8d9 100%);
-    border-left: 6px solid #fd7e14;
-}
+        .tier-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+            display: block;
+            margin-bottom: 4px;
+        }
 
-.budget-card.boujee-tier {
-    background: linear-gradient(135deg, #fff0f8 0%, #ffe0f0 100%);
-    border-left: 6px solid #e83e8c;
-}
+        .tier-pp {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 24px;
+        }
 
-.tier-header {
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+        .tier-includes {
+            list-style: none;
+            text-align: left;
+            font-size: 0.88rem;
+            line-height: 2;
+            color: var(--text-body);
+        }
 
-.tier-badge {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 1em;
-    color: white;
-}
+        .tier-includes li::before {
+            content: '— ';
+            color: var(--gold-dim);
+        }
 
-.budget-badge {
-    background: #28a745;
-}
+        /* ══════════════════════════════════
+           FOOTER
+        ══════════════════════════════════ */
+        .site-footer {
+            background: var(--black);
+            border-top: 1px solid rgba(201,168,76,0.15);
+            padding: 60px 24px 40px;
+            text-align: center;
+        }
 
-.mid-badge {
-    background: #fd7e14;
-}
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
 
-.boujee-badge {
-    background: #e83e8c;
-}
+        .footer-tagline {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
 
-.tier-price {
-    font-size: 2em;
-    font-weight: 700;
-    color: #212529;
-}
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
 
-.tier-breakdown {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
+        .footer-links a {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .footer-links a:hover { color: var(--gold); }
 
-.breakdown-title {
-    font-size: 1.2em;
-    font-weight: 700;
-    color: #212529;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #e9ecef;
-}
+        .footer-copy {
+            font-size: 0.82rem;
+            color: rgba(153,153,153,0.4);
+        }
 
-.line-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 0;
-    border-bottom: 1px solid #f8f9fa;
-    font-weight: 600;
-}
+        /* ══════════════════════════════════
+           ANIMATIONS
+        ══════════════════════════════════ */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
 
-.item-name {
-    color: #212529;
-    font-size: 1.05em;
-}
+        /* ══════════════════════════════════
+           RESPONSIVE
+        ══════════════════════════════════ */
+        @media (max-width: 900px) {
+            .show-intro-grid { grid-template-columns: 1fr; gap: 40px; }
+            .features-grid { grid-template-columns: 1fr; }
+            .venue-grid { grid-template-columns: 1fr; }
+            .cost-grid { grid-template-columns: 1fr; }
+            .show-image-frame { aspect-ratio: 4/3; max-width: 460px; }
+            .itin-card { padding: 28px; }
+        }
 
-.item-cost {
-    color: #17a2b8;
-    font-size: 1.1em;
-    font-weight: 700;
-}
-
-.item-details {
-    color: #6c757d;
-    font-size: 0.95em;
-    padding: 8px 0 15px 0;
-    line-height: 1.6;
-}
-
-.item-details strong {
-    color: #495057;
-}
-
-.item-details a {
-    color: #e83e8c;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.item-details a:hover {
-    text-decoration: underline;
-}
-
-.tier-vibe {
-    background: rgba(255,255,255,0.8);
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 1.05em;
-    line-height: 1.7;
-    font-style: italic;
-}
-
-.tier-vibe strong {
-    color: #212529;
-    font-style: normal;
-}
-
-.calculator-tips {
-    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
-    padding: 30px;
-    border-radius: 12px;
-    margin-top: 40px;
-    border: 2px solid #17a2b8;
-}
+        @media (max-width: 600px) {
+            .itinerary-tabs { flex-direction: column; max-width: 300px; }
+            .itab { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.2); }
+            .itab:last-child { border-bottom: none; }
+            .booking-details { gap: 30px; }
+            .itin-header { flex-direction: column; gap: 12px; }
+            .itin-number { font-size: 2.5rem; width: auto; }
+        }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <div class="container">
-            <div class="text-center">
-                <h1>Girls Night Out </h1>
-                <p class="lead">Looking for ideas for <span class="keyword-highlight">girls night or places to go for nightlife Charleston SC, activity or fun, this is the article you want</span>. If you planned a night out with your best friends, celebrating a birthday, or simply want to explore the best activities, you've come to the right page.</p>
-                <div class="hero-image">
-                    <img src="girls-trip.jpg" alt="Charleston girlfriends getaway tips" class="img-fluid" style="height: 100%;">
-                </div>
-                <h1>Activities and Options</h1>
-                 <!-- THE NIGHTLIFE MENU -->
-     <div class="nightlife-menu-section">
-        <h2 class="menu-title">🌙 The Nightlife Menu: Best clubbing bars</h2>
-        
-        <p class="menu-intro">
-            Not all crews want the same. Some crews want to rage until 2 AM, others prefer craft cocktails and conversation, and some want activities first, party second. Here's your curated menu of nightlife vibes—pick your adventure.
-        </p>
 
-        <!-- WILD NIGHT -->
-        <div class="vibe-card wild">
-            <div class="vibe-header">
-                <span class="vibe-badge wild-badge">🔥 A LIT NIGHT</span>
+<!-- ══════════════════════════════════
+     HERO
+══════════════════════════════════ -->
+<section class="hero">
+    <p class="hero-eyebrow">Charleston SC · Live Entertainment · Private Performances</p>
 
-                <div class="vibe-footer ">
-                    <div class="idea-card ">
-                        <h2>The Traditional Activity</h2>
-                        <p>Experience Charleston's vibrant entertainment scene with a performer - one of the most fun <span class="keyword-highlight"> and traditional activity</span>.
-                        You host the event at your place, host all the girls at a private location for a performances, <a href="https://michaelatyourplace.com">Michael At Your Place</a> for evening shows after dinner and drinks.
-                        <img src="../bach-party/your-place-live-shows-michael-90-1.png" class="img-fluid" alt="">
-                        </div>
-                   </div>
+    <h1 class="hero-title">
+        Girls Night Out<br><em>The Show</em>
+    </h1>
 
-                <h3 class="vibe-title">Best bars for A Fun Night</h3>
-            </div>
-            
-            <div class="vibe-itinerary">
-                <div class="itinerary-step">
-                    <span class="step-number">1</span>
-                    <div class="step-content">
-                        <img src="houseParty.jpg" alt="">
-                        <strong>Republic Garden & Lounge</strong> (489 King Street)<br>
-                        Start with dinner and craft cocktails at this upscale King Street hotspot. The food is great, the drinks are strong, and the atmosphere gets you hyped for what's ahead. Reserve a table for 7-8 PM.
-                    </div>
-                </div>
+    <p class="hero-subtitle-block">Charleston · Featuring Michael</p>
 
-                <div class="itinerary-step">
-                    <span class="step-number">2</span>
-                    <div class="step-content">
-                        <strong>Party Bus Takeover</strong><br>
-                        Your pre-booked party bus picks you up at 10 PM. Blast music, pop champagne, and cruise downtown while your friends take over the dance floor on wheels. Hit 2-3 bars for quick drinks and photos.
-                    </div>
-                </div>
+    <p class="hero-desc">
+        The ultimate <strong>girls night out Charleston</strong> experience just got an upgrade. Forget ordinary bar crawls — Girls Night Out The Show brings live entertainment, high-energy performances, and unforgettable moments directly to your venue. Featuring Michael as your host and headliner.
+    </p>
 
-                <div class="itinerary-step">
-                    <span class="step-number">3</span>
-                    <div class="step-content">
-                        <img src="uptown.jpg" class="img-fluid" alt="girls night bar">
-                        <strong>Club Until Close</strong><br>
-                        End at <strong>Trio Nightclub</strong> or <strong>Uptown Social</strong> around midnight. Dance to live DJs, bottle service if you're feeling fancy, and rage until last call at 2 AM.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CLASSY NIGHT -->
-        <div class="vibe-card classy">
-            <div class="vibe-header">
-                <span class="vibe-badge classy-badge">🥂 THE CLASSY NIGHT</span>
-                <h3 class="vibe-title">Sophisticated Sipping & Conversation</h3>
-            </div>
-            
-            <div class="vibe-itinerary">
-                <div class="itinerary-step">
-                    <span class="step-number">1</span>
-                    <div class="step-content">
-                        <strong>Rooftop Cocktails at The Spectator Hotel</strong> (67 State Street)<br>
-                        Start your evening at this intimate rooftop bar overlooking the historic district. Craft cocktails, sunset views, and an upscale atmosphere perfect for catching up with your crew.
-                    </div>
-                </div>
-
-                <div class="itinerary-step">
-                    <span class="step-number">2</span>
-                    <div class="step-content">
-                        <strong>Dinner at Peninsula Grill </strong><br>
-                        Splurge on dinner at one of the finest eats. Peninsula Grill's coconut cake is legendary. Make reservations weeks in advance.
-                    </div>
-                </div>
-
-                <div class="itinerary-step">
-                    <span class="step-number">3</span>
-                    <div class="step-content">
-                        <strong>Live Jazz at The Commodore</strong> (334 King Street)<br>
-                        Cap the night with smooth jazz, dim lighting, and nightcaps at The Commodore. It's intimate, locals love it, and you can actually hear each other talk. The perfect ending to a classy evening.
-                    </div>
-                </div>
-            </div>
-
-            <div class="vibe-footer">
-                <strong>Perfect for:</strong> 30+ friend groups, date night doubles, sophisticated celebrations<br>
-                <strong>Budget:</strong> $$ (You're paying for quality and ambiance)<br>
-                <strong>Shoe recommendation:</strong> Your best heels—you're sitting most of the night anyway
-            </div>
-        </div>
-
-        <!-- ACTIVITY NIGHT -->
-        <div class="vibe-card activity">
-            <div class="vibe-header">
-                <span class="vibe-badge activity-badge">🎨 THE ACTIVITY NIGHT</span>
-                <img src="charleston-market.png" class="img-fluid" alt="">
-                <h3 class="vibe-title">Create First, Celebrate After</h3>
-            </div>
-            
-            <div class="vibe-itinerary">
-                <div class="itinerary-step">
-                    <span class="step-number">1</span>
-                    <div class="step-content">
-                        <strong>Candle Making at Candlefish</strong> (or Charleston Candle Co, pottery class, floral workshop)<br>
-                        Start with a hands-on activity where you create something to take home. Candle making, pottery, floral arranging—Charleston has tons of options. Book for early evening (5-7 PM).
-                    </div>
-                </div>
-
-                <div class="itinerary-step">
-                    <span class="step-number">2</span>
-                    <div class="step-content">
-                        <strong>Casual Dinner on Upper King</strong><br>
-                        Hit a casual spot like <strong>Taco Boy</strong>, or <strong>Basic Kitchen</strong>. Good food, relaxed vibe, won't break the bank, and you can laugh about your candle-making disasters.
-                    </div>
-                </div>
-
-                <div class="itinerary-step highlight-step">
-                    <span class="step-number">3</span>
-                    <div class="step-content">
-                        <strong>And when you're done making candles, here's where to go for the AFTER-PARTY...</strong><br><br>
-                        
-                        <div class="after-party-options">
-                            <strong>Option A: Bar Crawl Upper King</strong><br>
-                            Hit <strong>Prohibition</strong> → <strong>Vintage Lounge</strong> → <strong>Burns Alley</strong>. All within 3 blocks, all have different vibes, all perfect for continuing the celebration.
-                            
-                            <br><br><strong>Option B: Dessert + Rooftop Views</strong><br>
-                            Grab dessert at <strong>Carmella's</strong> (187 Meeting Street) then head to <strong>Citrus Club</strong> rooftop for nightcaps and photos with Charleston's skyline lit up behind you.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-        </div>
+    <div class="hero-cta-group">
+        <a href="https://michaelatyourplace.com" class="btn-gold">Book the Show</a>
+        <a href="#how-it-works" class="btn-outline-gold">How It Works</a>
     </div>
-
-    <div class="section-container">
-        <h2>🚨 The Logistics Survival Guide</h2>
-        <img src="rainbow-row-charleston.png" alt="">
-        <p class="intro-text">
-            Because nobody talks about the cobblestones until you're crying in the street at midnight with broken heels. Here's the real talk about navigating or getting around without surge pricing to avoiding tourist traps and dressing for success (spoiler: those Instagram heels are a mistake).
-        </p>
-
-        <!-- GETTING AROUND -->
-        <div class="guide-section">
-            <h3 class="guide-title">
-                <span class="icon">🚗</span>
-                Getting Around: The Transportation Reality Check
-            </h3>
-
-            <div class="subsection">
-                <div class="subsection-title">The Uber/Lyft Surge Nightmare</div>
-                <div class="subsection-content">
-                    Let's be real: <span class="highlight">Uber surges HARD on King Street between 10 PM - 2 AM</span>, especially on Friday and Saturday nights. We're talking $40+ for a 10-minute ride. Don't be that group scrambling for rides at midnight when prices are 3x normal.
-                </div>
-                <div class="tip-box">
-                    <strong>💡 Pro Move:</strong> Schedule pickups at <span class="highlight">Marion Square</span> (corner of Meeting & Calhoun) or <span class="highlight">Charleston Place Hotel</span> (205 Meeting Street) instead of directly on King Street. Walk 2 blocks, save $20-30 per ride. These spots have better pickup logistics and less congestion.
-                </div>
-            </div>
-
-            <div class="subsection">
-                <div class="subsection-title">Walking It? Know Your Distances</div>
-                <div class="subsection-content">
-                    Charleston's downtown is walkable, but those cobblestones add up. Here's the real walk times:
-                    <ul>
-                        <li><strong>Lower King to Upper King:</strong> 20-25 minutes (farther than it looks on the map)</li>
-                        <li><strong>King Street to Waterfront:</strong> 10-15 minutes depending on where you start</li>
-                        <li><strong>Market to King Street bars:</strong> 5-10 minutes</li>
-                    </ul>
-                </div>
-                <div class="warning-box">
-                    <strong>⚠️ Reality Check:</strong> Those "quick 10-minute walks" become 20+ minutes when you're in heels, slightly tipsy, and stopping for photos. Factor in extra time.
-                </div>
-            </div>
-
-            <div class="subsection">
-                <div class="subsection-title">Pedicabs: Tourist Fun or Legit Option?</div>
-                <div class="subsection-content">
-                    Pedicabs are everywhere downtown, especially near Market Street. They're <span class="highlight">$5-10 per person for short trips</span>, but negotiate the price BEFORE getting in. Great for: short hops when you're tired, avoiding surge pricing, and fun photo ops. Not great for: long distances or when you're in a hurry.
-                </div>
-            </div>
-        </div>
-
-        <!-- DRESS CODE -->
-        <div class="guide-section">
-            <h3 class="guide-title">
-                <span class="icon">👠</span>
-                Dress Code: Heels or Flats? The Great Debate
-            </h3>
-            <img src="chs1.jpeg" alt="">
-            <div class="subsection">
-                <div class="subsection-title">The Cobblestone Reality</div>
-                <div class="subsection-content">
-                    Here's what nobody tells you: <span class="highlight">The historic cobblestone streets will DESTROY stilettos</span>. Those cute Instagram heels? They're going straight between the stones, and you're going straight to the ground. Even locals who wear heels bring backup flats.
-                </div>
-                <div class="warning-box">
-                    <strong>⚠️ The Heel Horror Stories:</strong> We've seen broken ankles, ruined designer shoes, and girls walking barefoot (gross) down King Street at midnight. Don't be that girl.
-                </div>
-            </div>
-
-            <div class="subsection">
-                <div class="subsection-title">What Actually Works</div>
-                <div class="subsection-content">
-                    <strong>Smart Heel Choices:</strong>
-                    <ul>
-                        <li><strong>Wedges or Block Heels</strong> - Distribute weight better, won't get stuck in cobblestones</li>
-                        <li><strong>Strappy Sandals with Thicker Heels</strong> - Cute but functional (2-3 inch max)</li>
-                        <li><strong>Platform Heels</strong> - Give height without the wobble factor</li>
-                        <li><strong>Dressy Flats or Loafers</strong> - Still stylish, infinitely more practical</li>
-                    </ul>
-                </div>
-                <div class="tip-box">
-                    <strong>💡 The Pro Move:</strong> Wear cute flats or sneakers while walking between venues, carry heels in your bag, and change when you arrive. Many girls do this—no shame, all brain.
-                </div>
-            </div>
-
-            <div class="subsection">
-                <div class="subsection-title">Venue-Specific Dress Codes</div>
-                <div class="subsection-content">
-                    <strong>Upscale/Rooftop Bars (Prohibition, Ritual, Citrus Club):</strong><br>
-                    "Charleston Chic" - Sundresses, rompers, nice jeans with heels or wedges, blouses. No athletic wear, flip-flops, or super casual looks.
-                    
-                    <br><br><strong>Casual Bars (Silver Dollar, Bay Street Biergarten):</strong><br>
-                    Anything goes - Jeans, t-shirts, sneakers, whatever. These places don't care.
-                    
-                    <br><br><strong>Clubs (Trio, Republic):</strong><br>
-                    Dress to impress - Heels/wedges expected, dresses or going-out tops, no sneakers (unless they're designer and you can pull it off).
-                </div>
-            </div>
-
-        
-        <div class="alert alert-info mt-4">
-            <strong>🎉 Bottom Line:</strong> Ladies night out is AMAZING when you plan smart. Comfortable shoes + reliable transportation + staying in safe zones = legendary night. Ignore this advice and you'll be the cautionary tale your friends tell for years. Your choice! 💕
-        </div>
-    </div>
-
-    
-
-            <div class="vibe-footer">
-                
-                <strong>Perfect for:</strong> Mixed-vibe friend groups, when some want activities and others want drinks, creative types<br>
-                <strong>Budget:</strong> $ - $$ (Activity + dinner is moderate, after-party varies)<br>
-                <strong>Shoe recommendation:</strong> Flats or sneakers for the activity, heels in your bag for later
-            </div>
-        </div>
-
-        <!-- BONUS VIBES -->
-        <div class="bonus-section">
-            <h3>🎭 Bonus Curated Vibes - Cocktail lounges and rooftop bars</h3>
-            
-            <div class="bonus-vibe">
-                <strong>The "Bougie Brunch to Boozy Sunset" Vibe:</strong><br>
-                Brunch at <strong>Poogan's Porch</strong> → King Street shopping → Sunset drinks at <strong>The Rooftop at The Vendue</strong> → Dinner at <strong>167 Raw</strong> → Late-night dancing at <strong>Mynt</strong>
-            </div>
-
-            <div class="bonus-vibe">
-                <strong>The "Foodie Tour" Vibe:</strong><br>
-                Progressive dinner crawl: Appetizers at <strong>The Ordinary</strong> → Small plates at <strong>The Macintosh</strong> → Dessert at <strong>Kaminsky's</strong> → Digestifs at <strong>The Gin Joint</strong>
-            </div>
-
-            <div class="bonus-vibe">
-                <strong>The "Local Secret" Vibe:</strong><br>
-                Skip King Street entirely. Start at <strong>Edmund's Oast</strong> (brewery vibes) → <strong>The Rarebit</strong> (neighborhood bar) → <strong>Home Team BBQ</strong> on Sullivan's Island (yes, at night) → Beach bonfire if weather permits
-            </div>
-
-            <div class="bonus-vibe">
-                <strong>The "Zero-Proof Celebration" Vibe:</strong><br>
-                For the pregnant bride, designated drivers, or sober-curious crew: Hit the <strong>Charleston Mocktail Trail</strong> we mentioned earlier—The Gin Joint, Citrus Club, Little Palm Bar, and Basic Kitchen all do zero-proof drinks right. You won't feel like you're missing out.
-            </div>
-        </div>
-
-        <div class="planning-tip">
-            <strong>🎯 Pro Planning Tip:</strong> Share this menu with your group via text or group chat and let everyone vote on their vibe. You'll avoid the "where do we go?" arguments and ensure everyone's excited about the plan. Democracy in action! 🗳️
-        </div>
-    </div>
-</div>
+</section>
 
 
-
+<!-- ══════════════════════════════════
+     STATS STRIP
+══════════════════════════════════ -->
+<div class="stats-strip">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <img src="bach1.jpg"  class="img-fluid" alt="">
-                <!-- Idea 1 -->
-                <div class="idea-card">
-                    <h2>1. Start with SThe Spa at Charleston Place</h2>
-                    <p>For the ultimate <span class="keyword-highlight">girls night out ideas Charleston</span> style, treat yourselves to a luxurious spa experience at The Spa at Charleston Place. This award-winning European spa, named "Best City Hotel Spa" by Travel + Leisure readers, offers world-class treatments in an elegant downtown setting perfect for a ladies night Charleston celebration.</p>
-                    <p>Book a group spa package that includes couples' suites (perfect for pairs of friends), therapeutic massages with hot Himalayan salt stones, rejuvenating facials with organic botanicals, and luxurious manicures and pedicures. After your treatments, relax in the serene relaxation lounge or enjoy the rooftop saltwater pool with stunning city views. The spa's tranquil atmosphere provides the perfect escape for reconnecting with your girlfriends. Maybe they can fit you in 6pm to close.</p>
-                    <div class="contact-info">
-                        <strong>Address:</strong> 205 Meeting Street, Charleston, SC 29401<br>
-                        <strong>Phone:</strong> (843) 937-8522<br>
-                        <strong>Email:</strong> Spa@CharlestonPlace.com<br>
-                        <strong>Hours:</strong> Mon-Fri 8:00 AM - 8:00 PM, Sat-Sun 8:00 AM - 7:00 PM
-                    </div>
-                </div>
-
-                <!-- Idea 4 -->
-                <div class="idea-card">
-                    <h2>2. Experience Live Music & Rooftop Views at Henry's On The Market</h2>
-                    <p>For <span class="keyword-highlight">girls night out Charleston</span> entertainment, Henry's On The Market delivers multiple floors of fun. This historic venue established in 1932 features a lively rooftop deck with city views, a cozy Whiskey Lounge with speakeasy vibes, and live music seven nights a week - making it one of the top ladies night Charleston destinations.</p>
-                    <p>Each floor offers a different vibe from intimate jazz to energetic bands, so you can bar-hop without leaving the building. The rooftop provides sunset cocktails with incredible views of Charleston's skyline. Try their famous She Crab Soup and stay for the evening entertainment. It's the perfect spot to dance, laugh, and celebrate with your girlfriends.</p>
-                    <div class="contact-info">
-                        <strong>Address:</strong> 54 North Market Street, Charleston, SC 29401<br>
-                        <strong>Phone:</strong> (843) 723-4363<br>
-                        <strong>Hours:</strong> Daily 11:00 AM - 2:00 AM
-                    </div>
-                </div>
-
-                <!-- Idea 5 -->
-                <div class="idea-card">
-                    <h2>3. Craft Cocktails at Award-Winning Speakeasies</h2>
-                    <p>Charleston's sophisticated cocktail scene offers perfect <span class="keyword-highlight">girls night activities Charleston SC</span> style. Visit award-winning speakeasies and craft cocktail bars throughout downtown for an evening of expertly-mixed drinks in glamorous settings. These venues have won national recognition for their cocktail programs and ambiance.</p>
-                    <p>Start at Prohibition for their famous bacon maple old fashioned and live jazz in a 1920s-inspired setting, then explore other craft cocktail destinations like The Gin Joint or Vintage Lounge. Many bars feature talented female bartenders who create innovative cocktails with local ingredients. The intimate atmosphere and creative drinks make for perfect conversation and Instagram-worthy moments with your crew.</p>
-                    <div class="contact-info">
-                        <strong>Prohibition Address:</strong> 547 King Street, Charleston, SC 29403<br>
-                        <strong>Phone:</strong> (843) 793-2964<br>
-                        <strong>Hours:</strong> Mon-Wed 4:00 PM - 2:00 AM, Thu-Sun 11:00 AM - 2:00 AM
-                    </div>
-                </div>
-
-                <!-- Idea 6 -->
-                <div class="idea-card">
-                    <h2>4. Waterfront Wine & Sunset Views</h2>
-                    <p>Charleston's stunning harbor locations provide beautiful settings for <span class="keyword-highlight">ladies night out Charleston</span> experiences. Head to waterfront restaurants and rooftop bars for breathtaking sunset views paired with excellent wine selections. Watch the sun set over Charleston Harbor while enjoying coastal breezes and quality time with your girlfriends.</p>
-                    <p>Many venues offer extensive wine lists featuring selections from around the world, plus local craft beverages. The combination of gorgeous water views, delicious wines, and Charleston's famous church steeples silhouetted against colorful skies creates an unforgettable evening. Reserve a waterfront table in advance, especially during peak season.</p>
-                </div>
-
-                <!-- Idea 7 -->
-                <div class="idea-card">
-                    <h2>5. Moonlight Ghost Tours</h2>
-                    <p>Add thrills to your <span class="keyword-highlight">girls night out ideas Charleston</span> adventure with an evening ghost tour through the city's haunted historic district. Charleston ranks as one of America's most haunted cities, and moonlight tours blend history, mystery, and entertainment perfectly for groups of girlfriends seeking something different.</p>
-                    <p>Professional guides lead 90-120 minute walking tours through moonlit graveyards, haunted churches, and historic homes while sharing spine-tingling tales of Charleston's past. Tours like those offered by Bulldog Tours and Nightly Spirits provide engaging storytelling and surprising scares. It's an interactive way to explore Charleston's fascinating history while bonding over shared thrills with your friends.</p>
-                </div>
-
-                <!-- Idea 8 -->
-                <div class="idea-card">
-                    <h2>6. King Street Shopping & Bar Crawl</h2>
-                    <p>Combine retail therapy with cocktails on historic King Street for a classic <span class="keyword-highlight">Charleston girls night out</span> experience. This walkable street spans over three miles with distinct shopping districts, trendy bars, and restaurants, making it ideal for an evening of exploring with your girlfriends.</p>
-                    <p>Start at Lower King for upscale boutiques, browse Upper King for vintage finds and local designers, then pop into stylish cocktail bars along the way. Try spots like Bar Felix for espresso martinis or Little Palm for tropical drinks. The pedestrian-friendly street makes it easy to window shop, try on outfits, and enjoy drinks all in one memorable night.</p>
-                </div>
-
-                <!-- Idea 9 -->
-                <div class="idea-card">
-                    <h2>7. Wine Tasting & Blending Classes</h2>
-                    <p>For sophisticated <span class="keyword-highlight">girls night out ideas Charleston</span> offers, book a wine blending or tasting class where you'll become vintners for the evening. Expert sommeliers guide you through tasting multiple varietals while teaching about wine profiles, food pairings, and blending techniques.</p>
-                    <p>Create your own custom wine blend to bottle and take home as a keepsake from your ladies night Charleston adventure. These intimate classes appeal to wine enthusiasts and novices alike, providing education in a fun, social setting. Several wine bars and hotels throughout Charleston offer these experiences - perfect for bachelorette parties or birthday celebrations.</p>
-                </div>
-
-                <!-- Idea 11 -->
-                <div class="idea-card">
-                    <h2>11. Charleston Harbor Sunset Cruise</h2>
-                    <p>Take your <span class="keyword-highlight">girls night out Charleston</span> celebration onto the water with a harbor cruise or sunset sail. Options range from relaxing dolphin tours to party boats with music and dancing. Seeing Charleston's skyline from the water during golden hour provides magical photo opportunities and a unique perspective of the Holy City.</p>
-                    <p>Most cruises last 90-120 minutes and many allow you to bring your own beverages. You'll likely spot dolphins playing in the harbor, catch stunning views of Rainbow Row and the Arthur Ravenel Jr. Bridge, and enjoy coastal breezes. It's especially popular for bachelorette parties and milestone birthday celebrations with your closest girlfriends.</p>
-                </div>
-
-                <!-- Closing Section -->
-                <div class="idea-card" style="background: #b3e5fc;">
-                    <h2>Planning Your Perfect Charleston Girls Night Out</h2>
-                    <p>Charleston truly excels when it comes to <span class="keyword-highlight">girls night out ideas Charleston</span> style. Whether you prefer pampering spa experiences, sweet dessert tastings, rooftop cocktails, or waterfront adventures, the Holy City delivers memorable experiences for every type of friend group.</p>
-                    <p>Most downtown Charleston venues are within walking distance, making it easy to combine multiple activities into one epic <span class="keyword-highlight">ladies night out Charleston</span> adventure. Many restaurants and bars offer ladies night promotions and happy hour specials throughout the week. Charleston's Southern hospitality ensures warm welcomes everywhere you go.</p>
-                    <p>From bachelorette parties to casual catch-ups with your besties, these <span class="keyword-highlight">girls night activities Charleston SC</span> style guarantee an amazing time in one of America's most charming and welcoming cities. Cheers to unforgettable nights with your favorite people!</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-     <!-- THE GNO CALCULATOR -->
-     <div class="budget-calculator-section">
-        <h2 class="calculator-title">💰 The GNO Calculator: What Does It Actually Cost?</h2>
-        
-        <p class="calculator-intro">
-            Travel bloggers won't tell you this because they're sponsored, but we will: Here's the REAL breakdown of what the night out costs per person. No BS, no hidden fees, just honest numbers so you can plan accordingly.
-        </p>
-
-        <!-- BUDGET TIER -->
-        <div class="budget-card budget-tier">
-            <div class="tier-header">
-                <span class="tier-badge budget-badge">💵 THE BUDGET NIGHT</span>
-                <div class="tier-price">$50-75 per person</div>
-            </div>
-            
-            <div class="tier-breakdown">
-                <div class="breakdown-title">What You Get:</div>
-                
-                <div class="line-item">
-                    <span class="item-name">Dinner</span>
-                    <span class="item-cost">$15-20</span>
-                </div>
-                <div class="item-details">
-                    Pizza at <strong>EVO</strong>, tacos at <strong>Taco Boy</strong>, or burgers at <strong>Coast Bar & Grill</strong>. Split appetizers, skip the fancy entrees.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Drinks (3-4 drinks)</span>
-                    <span class="item-cost">$20-30</span>
-                </div>
-                <div class="item-details">
-                    Hit happy hours (4-7 PM) at <strong>Burns Alley</strong> or <strong>Bay Street Biergarten</strong>. Stick to beer/well drinks. Pro tip: Pre-game at your Airbnb.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Transportation</span>
-                    <span class="item-cost">$10-15</span>
-                </div>
-                <div class="item-details">
-                    Split Ubers/Lyfts, walk when possible, avoid surge pricing by leaving before 11 PM.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Cover Charges/Tips</span>
-                    <span class="item-cost">$5-10</span>
-                </div>
-                <div class="item-details">
-                    Most dive bars have no cover. Tip your bartenders (20% minimum, karma is real).
+        <div class="row text-center justify-content-center g-4">
+            <div class="col-6 col-md-3">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Shows Performed</span>
                 </div>
             </div>
-
-            <div class="tier-vibe">
-                <strong>The Vibe:</strong> Casual, fun, zero pretension. You're here for the company, not the Instagram clout. Dive bars, local spots, maybe some karaoke at <strong>Silver Dollar</strong>. Perfectly good time without breaking the bank.
-            </div>
-        </div>
-
-        <!-- MID-TIER -->
-        <div class="budget-card mid-tier">
-            <div class="tier-header">
-                <span class="tier-badge mid-badge">💳 THE MIDDLE GROUND</span>
-                <div class="tier-price">$150-200 per person</div>
-            </div>
-            
-            <div class="tier-breakdown">
-                <div class="breakdown-title">What You Get:</div>
-                
-                <div class="line-item">
-                    <span class="item-name">Nice Dinner</span>
-                    <span class="item-cost">$50-75</span>
-                </div>
-                <div class="item-details">
-                    Reservations at <strong>The Ordinary</strong>, <strong>167 Raw</strong>, or <strong>The Macintosh</strong>. Entrees, shared apps, maybe dessert. One or two cocktails with dinner.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Craft Cocktails/Bar Crawl</span>
-                    <span class="item-cost">$40-60</span>
-                </div>
-                <div class="item-details">
-                    Hit 2-3 craft cocktail bars like <strong>Prohibition</strong>, <strong>The Gin Joint</strong>, or rooftop spots. $12-18 per cocktail adds up fast.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Transportation</span>
-                    <span class="item-cost">$20-30</span>
-                </div>
-                <div class="item-details">
-                    Ubers/Lyfts throughout the night, maybe one surge pricing ride. Or split a party bus with a bigger group.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Activity/Entertainment</span>
-                    <span class="item-cost">$25-40</span>
-                </div>
-                <div class="item-details">
-                    Club cover charges ($10-20), candle making class ($35), ghost tour ($30), or tips for live entertainment.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Tips & Incidentals</span>
-                    <span class="item-cost">$15-20</span>
+            <div class="col-6 col-md-3">
+                <div class="stat-item">
+                    <span class="stat-number">5★</span>
+                    <span class="stat-label">Average Rating</span>
                 </div>
             </div>
-
-            <div class="tier-vibe">
-                <strong>The Vibe:</strong> This is the sweet spot. Good food, good drinks, maybe an activity. You're dressing up, taking photos, and feeling fancy without going full Wall Street. Most bachelorette parties land here.
-            </div>
-        </div>
-
-        <!-- BOUJEE TIER -->
-        <div class="budget-card boujee-tier">
-            <div class="tier-header">
-                <span class="tier-badge boujee-badge">💎 THE BOUJEE NIGHT</span>
-                <div class="tier-price">$300-500+ per person</div>
-            </div>
-            
-            <div class="tier-breakdown">
-                <div class="breakdown-title">What You Get:</div>
-                
-                <div class="line-item">
-                    <span class="item-name">High-End Dinner</span>
-                    <span class="item-cost">$100-150</span>
-                </div>
-                <div class="item-details">
-                    <strong>Peninsula Grill</strong>, or <strong>FIG</strong>. Multi-course meals, wine pairings, maybe champagne. You're getting the full Charleston fine dining experience.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">VIP Bottle Service</span>
-                    <span class="item-cost">$80-150</span>
-                </div>
-                <div class="item-details">
-                    Table at <strong>Trio</strong> or <strong>Ritual Rooftop</strong>. Bottle minimums run $400-800, split among your group. Includes mixers and your own server.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Party Bus/Limo (All Night)</span>
-                    <span class="item-cost">$50-100</span>
-                </div>
-                <div class="item-details">
-                    Private transportation for 4-6 hours. Driver waits for you, no surge pricing, champagne on board. Total luxury.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Spa/Activity Earlier</span>
-                    <span class="item-cost">$100-150</span>
-                </div>
-                <div class="item-details">
-                    Start the day at <strong>The Spa at Charleston Place</strong> with massages, facials, pool access. This is the full pampering experience.
-                </div>
-
-                <div class="line-item">
-                    <span class="item-name">Private Entertainment</span>
-                    <span class="item-cost">$50-100</span>
-                </div>
-                <div class="item-details">
-                    Book <a href="https://michaelatyourplace.com" target="_blank"><strong>Michael At Your Place</strong></a> for a private show at your rental, or hire a private mixology class at your Airbnb.
+            <div class="col-6 col-md-3">
+                <div class="stat-item">
+                    <span class="stat-number">90<span style="font-size:1.8rem">min</span></span>
+                    <span class="stat-label">Full Show Runtime</span>
                 </div>
             </div>
-
-            <div class="tier-vibe">
-                <strong>The Vibe:</strong> Go big or go home. This is milestone birthday, major bachelorette, or "we just got our bonuses" energy. VIP treatment everywhere, no expense spared, memories that'll last forever. You're living your best life.
+            <div class="col-6 col-md-3">
+                <div class="stat-item">
+                    <span class="stat-number">#1</span>
+                    <span class="stat-label">Charleston Girls Night</span>
+                </div>
             </div>
-        </div>
-
-        <!-- COST BREAKDOWN TIPS -->
-        <div class="calculator-tips">
-            <h3>💡 Smart Money Moves</h3>
-            
-            <div class="money-tip">
-                <strong>Split Strategically:</strong> Create a Venmo group or use Splitwise BEFORE the night starts. Decide upfront if you're splitting evenly or going itemized. Nobody wants drunk math at 1 AM.
-            </div>
-
-            <div class="money-tip">
-                <strong>The Hidden Costs Nobody Mentions:</strong>
-                <ul>
-                    <li><strong>Late-night food:</strong> Add $10-15 for pizza/chicken fingers at 2 AM (you know you will)</li>
-                    <li><strong>ATM fees:</strong> Bring cash for cash-only bars ($3-5 per withdrawal)</li>
-                    <li><strong>Coat check:</strong> $5-10 if you're clubbing in winter</li>
-                    <li><strong>Aspirin & Gatorade:</strong> $10 at CVS at midnight (plan ahead)</li>
-                    <li><strong>Add a idea to brunch instead:</strong>yes instead of night <a href="../bach-party/bachelorette-brunch-show-charleston-sc.html">brunch entertainment</a> a night idea.</li>
-                </ul>
-            </div>
-
-            <div class="money-tip">
-                <strong>When to Splurge, When to Save:</strong> Splurge on ONE thing (amazing dinner OR bottle service OR spa day), save on everything else. You'll remember the highlight, not the mid-tier cocktails.
-            </div>
-
-            <div class="money-tip">
-                <strong>Group Size Matters:</strong>
-                <ul>
-                    <li><strong>2-4 people:</strong> Hard to split party buses/bottles, stick to bar crawls</li>
-                    <li><strong>6-10 people:</strong> Perfect size for group deals and splitting costs</li>
-                    <li><strong>10+ people:</strong> Group rates kick in but coordinating becomes a nightmare</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="calculator-reality-check">
-            <strong>🚨 The Reality Check:</strong> Most nights land in the $125-175 per person range when everything's said and done. Travel bloggers say "$50-100" because they're comped or trying to sell you something. We're telling you the truth so you're not shocked when the Venmo requests start rolling in. Plan accordingly, have fun responsibly, and remember—the memories are priceless even if the bar tab isn't. 💕
         </div>
     </div>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ══════════════════════════════════
+     ABOUT THE SHOW
+══════════════════════════════════ -->
+<section class="show-intro">
+    <div class="show-intro-grid">
+        <div class="show-intro-text">
+            <h2>Charleston's Premier<br><em>Girls Night Out Show</em></h2>
+            <p>
+                Girls Night Out Charleston isn't just a night out — it's a full production. Michael brings a high-energy, crowd-interactive live show designed specifically for ladies celebrating bachelorette parties, birthdays, girls trips, and milestone moments in the Holy City.
+            </p>
+            <p>
+                The show combines live performance, comedy, crowd interaction, and non-stop entertainment in a completely private setting — your Airbnb, rented venue, or event space. No cover charges, no waiting in line, no competing with strangers for the vibe. Just your crew, your night, and an experience crafted entirely around you.
+            </p>
+            <p>
+                This is the <strong>Charleston girls night out</strong> experience locals actually recommend — and why visitors keep coming back.
+            </p>
+            <div class="mt-4">
+                <a href="https://michaelatyourplace.com" class="btn-gold">Check Availability</a>
+            </div>
+        </div>
+
+        <div class="show-intro-image">
+            <div class="corner-accent corner-tl"></div>
+            <div class="corner-accent corner-br"></div>
+            <div class="show-image-frame">
+                <img src="../bach-party/your-place-live-shows-michael-90-1.png" alt="Girls Night Out The Show Charleston SC - Michael performing live" onerror="this.style.display='none'">
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:0;">
+                    <span style="font-size:4rem;opacity:0.15">★</span>
+                    <span style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--gold);opacity:0.4;letter-spacing:0.1em;">MICHAEL</span>
+                </div>
+                <div class="image-caption">Girls Night Out The Show · Charleston SC</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     WHAT'S IN THE SHOW
+══════════════════════════════════ -->
+<section class="show-features">
+    <div class="container mb-5">
+        <div class="section-header">
+            <span class="section-eyebrow">The Experience</span>
+            <h2 class="section-title">What <em>Girls Night Out</em><br>The Show Includes</h2>
+        </div>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-item">
+            <span class="feature-icon">🎭</span>
+            <div class="feature-number">01</div>
+            <div class="feature-title">Live Headline Performance</div>
+            <p class="feature-desc">Michael takes the stage as the headlining performer for your private girls night out show — a full live set tailored to your group's energy and celebration.</p>
+            <div class="feature-accent"></div>
+        </div>
+
+        <div class="feature-item">
+            <span class="feature-icon">🎤</span>
+            <div class="feature-number">02</div>
+            <div class="feature-title">Crowd Interaction & Comedy</div>
+            <p class="feature-desc">This isn't a passive show. Michael works directly with your crew — games, laughs, personalized moments, and crowd participation that makes every show one-of-a-kind.</p>
+            <div class="feature-accent"></div>
+        </div>
+
+        <div class="feature-item">
+            <span class="feature-icon">🥂</span>
+            <div class="feature-number">03</div>
+            <div class="feature-title">Private Venue Experience</div>
+            <p class="feature-desc">The show comes to your Airbnb, vacation rental, or private event space anywhere in Charleston. Your location, your playlist pre-show, your vibe — we just bring the entertainment.</p>
+            <div class="feature-accent"></div>
+        </div>
+
+        <div class="feature-item">
+            <span class="feature-icon">📸</span>
+            <div class="feature-number">04</div>
+            <div class="feature-title">Photo-Worthy Moments</div>
+            <p class="feature-desc">The show is designed for unforgettable memories and shareable content. Sash-worthy, crown-worthy moments are built into every performance.</p>
+            <div class="feature-accent"></div>
+        </div>
+
+        <div class="feature-item">
+            <span class="feature-icon">🎶</span>
+            <div class="feature-number">05</div>
+            <div class="feature-title">Custom Set & Music</div>
+            <p class="feature-desc">Send your playlist requests in advance. Michael integrates your favorite songs and themes into the show so it feels personal — because it is.</p>
+            <div class="feature-accent"></div>
+        </div>
+
+        <div class="feature-item">
+            <span class="feature-icon">🎉</span>
+            <div class="feature-number">06</div>
+            <div class="feature-title">Any Occasion, Any Size</div>
+            <p class="feature-desc">Bachelorette parties, milestone birthdays, girls trips, divorce parties, ladies' night — the show scales for groups of 8 to 40. All ages, all vibes welcomed.</p>
+            <div class="feature-accent"></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     HOW THE NIGHT WORKS
+══════════════════════════════════ -->
+<section id="how-it-works" style="padding:100px 0;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-eyebrow">Step by Step</span>
+            <h2 class="section-title">How Your <em>Girls Night Out</em><br>Night Comes Together</h2>
+        </div>
+    </div>
+
+    <div class="night-timeline" style="max-width:800px;margin:0 auto;padding:0 24px;">
+
+        <div class="timeline-item">
+            <div class="timeline-time">
+                <div class="time-circle">1</div>
+            </div>
+            <div class="timeline-content">
+                <span class="timeline-label">Step One</span>
+                <h3 class="timeline-title">Book the Show</h3>
+                <p class="timeline-desc">
+                    Head to <a href="https://michaelatyourplace.com" style="color:var(--gold);">michaelatyourplace.com</a> and lock in your date. Spots fill fast on weekends in Charleston, especially during peak bachelorette season (March–October). Book early, confirm your address, and tell us about the occasion.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-time">
+                <div class="time-circle">2</div>
+            </div>
+            <div class="timeline-content">
+                <span class="timeline-label">Step Two</span>
+                <h3 class="timeline-title">Pre-Show Setup — Dinner & Drinks</h3>
+                <p class="timeline-desc">
+                    While Michael is en route, your crew gets dinner, pours drinks, and gets ready. Grab food at Republic Garden & Lounge or order in. The show typically starts at 9–10 PM, giving everyone time to arrive, settle in, and get in the celebratory mood.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-time">
+                <div class="time-circle">3</div>
+            </div>
+            <div class="timeline-content">
+                <span class="timeline-label">Step Three</span>
+                <h3 class="timeline-title">Girls Night Out — The Show Begins</h3>
+                <p class="timeline-desc">
+                    Michael arrives, sets up in minutes, and the Charleston girls night out show kicks off. 60–90 minutes of live entertainment, crowd games, personalized moments, and non-stop energy. The guest of honor gets the full VIP spotlight treatment.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-time">
+                <div class="time-circle">4</div>
+            </div>
+            <div class="timeline-content">
+                <span class="timeline-label">Step Four</span>
+                <h3 class="timeline-title">After the Show — Hit Charleston</h3>
+                <p class="timeline-desc">
+                    Post-show, your crew is buzzing. Head out to King Street bars, rooftop spots, or keep the party going at the rental. The show leaves you energized — not exhausted — so the night is just getting started. Uptown Social, Prohibition, or The Commodore are all within easy reach.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     WHERE TO HOST
+══════════════════════════════════ -->
+<section class="venue-section">
+    <div class="container mb-5">
+        <div class="section-header">
+            <span class="section-eyebrow">Private Venues</span>
+            <h2 class="section-title">Where to Host Your<br><em>Charleston Girls Night Out</em></h2>
+        </div>
+    </div>
+
+    <div class="venue-grid">
+        <div class="venue-card">
+            <span class="venue-tag">Most Popular</span>
+            <div class="venue-name">Your Airbnb or Vacation Rental</div>
+            <div class="venue-address">Downtown Charleston · Any neighborhood</div>
+            <p class="venue-desc">The most common setup. Book a house or condo on King Street, Cannonborough, or the French Quarter, and Michael brings the show directly to your door. Full control of the space, the playlist, and the vibe.</p>
+        </div>
+
+        <div class="venue-card">
+            <span class="venue-tag">Private Event</span>
+            <div class="venue-name">Rented Event Space</div>
+            <div class="venue-address">Downtown Charleston</div>
+            <p class="venue-desc">For larger groups of 20+, book a private event space or suite. Several downtown venues offer hourly rental for private parties. We coordinate arrival time and setup with your venue coordinator.</p>
+        </div>
+
+        <div class="venue-card">
+            <span class="venue-tag">Local Option</span>
+            <div class="venue-name">Private Home or Estate</div>
+            <div class="venue-address">Charleston · Mount Pleasant · Isle of Palms</div>
+            <p class="venue-desc">Hosting at a local's home? Even better. The show works anywhere in the Charleston metro area — including beach rentals on Folly Beach, Isle of Palms, or Sullivan's Island.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     ITINERARIES
+══════════════════════════════════ -->
+<section class="itinerary-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-eyebrow">Plan Your Night</span>
+            <h2 class="section-title">Sample <em>Girls Night Out</em><br>Charleston Itineraries</h2>
+        </div>
+    </div>
+
+    <div class="itinerary-tabs" style="max-width:700px;margin:0 auto 60px;display:flex;border:1px solid rgba(201,168,76,0.2);">
+        <button class="itab active" onclick="showTab('bachelorette')">Bachelorette</button>
+        <button class="itab" onclick="showTab('birthday')">Birthday Night</button>
+        <button class="itab" onclick="showTab('girlstrip')">Girls Trip</button>
+    </div>
+
+    <!-- BACHELORETTE -->
+    <div class="itinerary-panel active" id="tab-bachelorette">
+        <div class="itin-card">
+            <div class="itin-header">
+                <div class="itin-number">A</div>
+                <div class="itin-info">
+                    <div class="itin-tag">Bachelorette Special</div>
+                    <h3>The Full Bachelorette Girls Night Out</h3>
+                </div>
+            </div>
+            <div class="itin-steps">
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>5:00 PM — Arrival & Airbnb Setup</strong><br>Everyone checks into the rental, decorates for the bride, and gets the drinks flowing. Pre-game responsibly — the real show starts later.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>6:30 PM — Dinner Out</strong><br>Reservations at <strong>Republic Garden & Lounge</strong> (489 King St) or <strong>The Macintosh</strong>. Group dinner, toasts, and the obligatory sash-and-crown photos on King Street.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>8:00 PM — Back at the Rental</strong><br>Return to the Airbnb, freshen up, pour champagne, put on the playlist, and wait for the star of the show.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>9:00 PM — Girls Night Out: The Show</strong><br><strong>Michael arrives.</strong> 90 minutes of live entertainment, crowd games featuring the bride, personalized moments, and a performance your entire group will be talking about for years.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>11:00 PM — Hit King Street</strong><br>Energized and ready. Head to <strong>Prohibition</strong>, <strong>Uptown Social</strong>, or <strong>Trio Nightclub</strong> for the after-party. The show sets the tone for an unstoppable night out.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BIRTHDAY -->
+    <div class="itinerary-panel" id="tab-birthday">
+        <div class="itin-card">
+            <div class="itin-header">
+                <div class="itin-number">B</div>
+                <div class="itin-info">
+                    <div class="itin-tag">Birthday Celebration</div>
+                    <h3>The Upscale Birthday Girls Night</h3>
+                </div>
+            </div>
+            <div class="itin-steps">
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>4:00 PM — Spa & Pampering</strong><br>Start at <strong>The Spa at Charleston Place</strong> (205 Meeting St) for massages or facials. Birthday girl gets the full treatment — this sets the luxury tone for the night.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>7:00 PM — Fine Dining</strong><br><strong>Peninsula Grill</strong> or <strong>FIG</strong> for a proper birthday dinner. Make reservations weeks ahead. Champagne toast, legendary coconut cake, the works.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>9:30 PM — Private Girls Night Out Show</strong><br>Back at the rental, <strong>Michael performs</strong> the exclusive Girls Night Out Charleston show with the birthday girl as the evening's VIP. Personalized, high-energy, and unforgettable.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>11:00 PM — Rooftop Nightcaps</strong><br>Close the night at <strong>The Rooftop at The Vendue</strong> or <strong>Citrus Club</strong> with cocktails and the Charleston skyline as your backdrop. Classy ending to a legendary night.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GIRLS TRIP -->
+    <div class="itinerary-panel" id="tab-girlstrip">
+        <div class="itin-card">
+            <div class="itin-header">
+                <div class="itin-number">C</div>
+                <div class="itin-info">
+                    <div class="itin-tag">Weekend Girls Trip</div>
+                    <h3>The Full Girls Trip Night Out Experience</h3>
+                </div>
+            </div>
+            <div class="itin-steps">
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>Afternoon — Charleston Exploring</strong><br>Rainbow Row photos, the City Market, waterfront strolls, and shopping on King Street. Get the tourist checklist done early so the evening is pure celebration.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>6:00 PM — Sunset Cocktails</strong><br>Rooftop drinks at <strong>The Spectator Hotel</strong> (67 State St) with sunset views over the historic district. Craft cocktails, city skyline, perfect crew photos.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>8:00 PM — Casual Group Dinner</strong><br><strong>Taco Boy</strong> or <strong>Basic Kitchen</strong> on Upper King — relaxed, affordable, and great food to set the base before the main event.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>9:30 PM — Girls Night Out: The Show</strong><br>The headline event of the trip. <strong>Michael performs</strong> live at your rental — the group experience that nobody expected and everyone needed. This is the moment the whole trip is remembered by.</p>
+                </div>
+                <div class="itin-step">
+                    <div class="step-dot"></div>
+                    <p class="step-text"><strong>11:30 PM — Bar Crawl or Wind Down</strong><br>Choose your own adventure: <strong>bar crawl on Upper King</strong> (Burns Alley → Vintage Lounge → Prohibition) or keep the party going at the rental with the playlist still running. Your night, your call.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════
+     COST BREAKDOWN
+══════════════════════════════════ -->
+<section class="cost-section">
+    <div class="container mb-5">
+        <div class="section-header">
+            <span class="section-eyebrow">Budget Planning</span>
+            <h2 class="section-title">What Your <em>Girls Night Out</em><br>Charleston Will Cost</h2>
+        </div>
+    </div>
+
+    <div class="cost-grid">
+        <div class="cost-tier">
+            <span class="tier-name">Budget Night</span>
+            <span class="tier-price">$75</span>
+            <span class="tier-pp">per person</span>
+            <ul class="tier-includes">
+                <li>Casual dinner ($15–20)</li>
+                <li>Happy hour drinks ($20–30)</li>
+                <li>Shared rideshares ($10–15)</li>
+                <li>Cover charges & tips ($10)</li>
+                <li>Pre-game at the rental</li>
+            </ul>
+        </div>
+
+        <div class="cost-tier featured">
+            <span class="tier-name">The Sweet Spot</span>
+            <span class="tier-price">$175</span>
+            <span class="tier-pp">per person · most popular</span>
+            <ul class="tier-includes">
+                <li>Nice group dinner ($50–75)</li>
+                <li>Craft cocktail bars ($40–60)</li>
+                <li>Girls Night Out — The Show*</li>
+                <li>Private transport ($20–30)</li>
+                <li>Activity or club entry ($25–40)</li>
+            </ul>
+        </div>
+
+        <div class="cost-tier">
+            <span class="tier-name">Full Boujee</span>
+            <span class="tier-price">$400<span style="font-size:1.5rem">+</span></span>
+            <span class="tier-pp">per person</span>
+            <ul class="tier-includes">
+                <li>Spa at Charleston Place ($100–150)</li>
+                <li>Fine dining — Peninsula Grill ($100–150)</li>
+                <li>Girls Night Out The Show (private)</li>
+                <li>Party bus all night ($50–100)</li>
+                <li>VIP bottle service ($80–150)</li>
+            </ul>
+        </div>
+    </div>
+
+    <p style="text-align:center;font-size:0.85rem;color:var(--text-muted);margin-top:24px;padding:0 24px;">
+        *Girls Night Out The Show is booked separately at <a href="https://michaelatyourplace.com" style="color:var(--gold);">michaelatyourplace.com</a>. Show pricing varies by group size and date. Contact for a custom quote.
+    </p>
+</section>
+
+
+<!-- ══════════════════════════════════
+     FAQ
+══════════════════════════════════ -->
+<section style="padding:80px 0;">
+    <div class="container mb-5">
+        <div class="section-header">
+            <span class="section-eyebrow">Common Questions</span>
+            <h2 class="section-title">Girls Night Out Charleston<br><em>FAQ</em></h2>
+        </div>
+    </div>
+
+    <div class="faq-section" style="max-width:760px;margin:0 auto;padding:0 24px;">
+
+        <div class="faq-item">
+            <div class="faq-q">What exactly is Girls Night Out The Show?</div>
+            <p class="faq-a">Girls Night Out The Show is a live private entertainment experience in Charleston, SC featuring Michael as the headline performer. It's a crowd-interactive performance — with music, games, comedy, and personalized moments — held at your private venue. Think live show meets celebration, not a bar night.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">How do I book Girls Night Out Charleston with Michael?</div>
+            <p class="faq-a">Visit <a href="https://michaelatyourplace.com" style="color:var(--gold);">michaelatyourplace.com</a> to check availability and book your date. Weekend dates during bachelorette season (March through October) fill fast — book at least 2–4 weeks in advance for best availability.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Where does the show take place?</div>
+            <p class="faq-a">The show comes to your location — Airbnb, vacation rental, private home, or event space anywhere in the Charleston metro area including downtown Charleston, Mount Pleasant, Isle of Palms, Folly Beach, and Sullivan's Island. You provide the space, Michael provides the show.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">How large does the group need to be?</div>
+            <p class="faq-a">Girls Night Out The Show works for groups from 8 to 40 guests. The sweet spot is 10–20 for the most interactive experience. Larger groups can be accommodated — contact for custom group pricing.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">What other girls night out activities pair well with the show?</div>
+            <p class="faq-a">The show works best as the evening's centerpiece. Pair it with dinner on King Street beforehand (Republic, The Macintosh, or The Ordinary), then hit rooftop bars like Prohibition or Uptown Social after. Daytime options like spa at Charleston Place, harbor cruises, or candle-making at Candlefish pair well for full-day itineraries.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Is the show appropriate for all ages?</div>
+            <p class="faq-a">Yes — Girls Night Out The Show is designed for all adult ages. Whether your group is 21 or 51, the show is built to entertain and delight. Mixed-age friend groups, moms celebrating birthdays, divorce parties, girls trips — all are welcome.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     BOOKING CTA
+══════════════════════════════════ -->
+<section class="booking-section">
+    <div class="container">
+        <h2>Ready for the Best<br><em>Girls Night Out</em> in Charleston?</h2>
+        <p>
+            Stop scrolling bar crawl lists and planning around surge pricing. Book Girls Night Out The Show and let the entertainment come to you. Charleston's most talked-about private show experience — featuring Michael — is one click away.
+        </p>
+
+        <div class="booking-details">
+            <div class="booking-detail">
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Charleston SC</span>
+            </div>
+            <div class="booking-detail">
+                <span class="detail-label">Show Duration</span>
+                <span class="detail-value">60–90 min</span>
+            </div>
+            <div class="booking-detail">
+                <span class="detail-label">Group Size</span>
+                <span class="detail-value">8–40 Guests</span>
+            </div>
+            <div class="booking-detail">
+                <span class="detail-label">Occasions</span>
+                <span class="detail-value">Any & All</span>
+            </div>
+        </div>
+
+        <div class="hero-cta-group">
+            <a href="https://michaelatyourplace.com" class="btn-gold">Book Girls Night Out The Show</a>
+            <a href="https://michaelatyourplace.com" class="btn-outline-gold">View Availability</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer class="site-footer">
+    <div class="gold-rule" style="max-width:200px;margin:0 auto 40px;"></div>
+
+    <div class="footer-brand">Girls Night Out Charleston</div>
+    <div class="footer-tagline">The Show · Featuring Michael · Live Entertainment</div>
+
+    <div class="footer-links">
+        <a href="https://michaelatyourplace.com">Book the Show</a>
+        <a href="https://michaelatyourplace.com">About Michael</a>
+        <a href="https://bachelorettepartay.com">Bachelorette Parties</a>
+        <a href="https://michaelafterdark.com">Michael After Dark</a>
+    </div>
+
+    <div class="gold-rule" style="max-width:400px;margin:0 auto 24px;"></div>
+
+    <p class="footer-copy">
+        &copy; 2025 Girls Night Out Charleston. Serving Charleston SC, Mount Pleasant, Isle of Palms, Folly Beach &amp; Sullivan's Island.
+    </p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function showTab(tab) {
+    document.querySelectorAll('.itinerary-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.itab').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + tab).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
 </body>
 </html>
