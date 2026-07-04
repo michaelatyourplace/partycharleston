@@ -1,1552 +1,863 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charleston Bachelor Party - Southern Gentleman's Celebration</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-        }
-        
-        /* Row 1 - Photo Section */
-        .row-1 {
-            padding: 2rem 0;
-            background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
-            min-height: 350px;
-        }
-        
-        .photo-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border: 3px solid #4682b4;
-        }
-        
-        .photo-placeholder {
-            width: 100%;
-            height: 250px;
-            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
-            border: 2px dashed #1e90ff;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: #666;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .photo-placeholder:hover {
-            background: linear-gradient(45deg, #f0f8ff, #e6f3ff);
-            border-color: #0066cc;
-        }
-        
-        .photo-placeholder i {
-            font-size: 3rem;
-            color: #1e90ff;
-            margin-bottom: 1rem;
-        }
-        
-        /* Row 2 - Hero/Header */
-        .row-2 {
-            background: linear-gradient(135deg, rgba(30, 144, 255, 0.9), rgba(0, 102, 204, 0.8)), 
-                        url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            text-align: center;
-            padding: 5rem 0;
-            position: relative;
-            min-height: 400px;
-        }
-        
-        .hero-content h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
-            margin-bottom: 1rem;
-        }
-        
-        .hero-content p {
-            font-size: 1.4rem;
-            font-style: italic;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        
-        /* Row 3 - Welcome/Opening */
-        .row-3 {
-            padding: 4rem 0;
-            background: white;
-        }
-        
-        .welcome-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 3rem;
-            background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border: 3px solid #4682b4;
-            text-align: center;
-        }
-        
-        .welcome-content h2 {
-            color: #0066cc;
-            font-size: 2.2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .welcome-content p {
-            font-size: 1.1rem;
-            color: #444;
-            line-height: 1.8;
-        }
-        
-        /* Row 4 - Activities Grid */
-        .row-4 {
-            padding: 4rem 0;
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-        }
-        
-        .activities-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .activity-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            border-left: 5px solid #1e90ff;
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-        
-        .activity-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        }
-        
-        .activity-card h4 {
-            color: #0066cc;
-            margin-bottom: 1.5rem;
-            font-size: 1.4rem;
-        }
-        
-        .activity-list {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .activity-list li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        
-        .activity-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .activity-list i {
-            color: #1e90ff;
-            margin-right: 0.8rem;
-            width: 20px;
-        }
-        
-        /* Row 5 - Restaurant Section */
-        .row-5 {
-            padding: 4rem 0;
-            background: linear-gradient(135deg, #fffbf0, #fff8e7);
-        }
-        
-        .restaurant-section {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .restaurant-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border-left: 5px solid #ff8c00;
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-        
-        .restaurant-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-            border-left-color: #ff6347;
-        }
-        
-        .restaurant-card h4 {
-            color: #ff6347;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-        }
-        
-        .restaurant-type {
-            background: linear-gradient(45deg, #ff8c00, #ffa500);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-        
-        .restaurant-description {
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        
-        .restaurant-highlights {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .restaurant-highlights li {
-            padding: 0.3rem 0;
-            color: #555;
-        }
-        
-        .restaurant-highlights i {
-            color: #ff6347;
-            margin-right: 0.5rem;
-            width: 15px;
-        }
-        
-        .price-range {
-            color: #228b22;
-            font-weight: bold;
-            margin-top: 1rem;
-        }
-        
-        /* Row 6 - Contact/Footer */
-        .row-6 {
-            padding: 3rem 0;
-            background: linear-gradient(135deg, #1e90ff, #0066cc);
-            color: white;
-            text-align: center;
-        }
-        
-        .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .contact-content h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: white;
-        }
-        
-        .contact-info {
-            background: rgba(255,255,255,0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-        
-        /* Decorative Elements */
-        .cheers-divider {
-            text-align: center;
-            font-size: 1.5rem;
-            color: #1e90ff;
-            margin: 2rem 0;
-        }
-        
-        .cheers-divider i {
-            margin: 0 0.5rem;
-            animation: cheers 2s ease-in-out infinite;
-        }
-        
-        @keyframes cheers {
-            0% { transform: scale(1) rotate(0deg); }
-            50% { transform: scale(1.1) rotate(5deg); }
-            100% { transform: scale(1) rotate(0deg); }
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .section-title h2 {
-            color: #0066cc;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .section-title p {
-            color: #666;
-            font-style: italic;
-            font-size: 1.1rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charleston Bachelor Party Guide | The Holy City Send-Off</title>
+<meta name="description" content="The complete Charleston bachelor party guide: day club pool parties, live music bars, the newest Resy-approved restaurants, and the Lowcountry's best bar crawl.">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --indigo-deep:#152238;
+    --indigo-mid:#28405e;
+    --indigo-soft:#3d5a80;
+    --brass:#b8935f;
+    --brass-light:#e3c48c;
+    --oyster:#f4efe3;
+    --oyster-dim:#eae3d2;
+    --ink:#1c1a17;
+    --brick:#a8442c;
+    --brick-light:#c46246;
+    --line:rgba(28,26,23,0.1);
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--ink);
+    background:var(--oyster);
+    line-height:1.65;
+  }
+
+  h1,h2,h3,h4,h5{
+    font-family:'Fraunces', serif;
+    letter-spacing:-0.01em;
+  }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.75rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--brass);
+    font-weight:600;
+  }
+
+  a{color:inherit;}
+
+  /* NAVBAR */
+  .navbar{
+    background:var(--indigo-deep) !important;
+    border-bottom:1px solid rgba(227,196,140,0.25);
+    padding:0.9rem 0;
+  }
+  .navbar-brand{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:1.3rem;
+    color:var(--brass-light) !important;
+  }
+  .nav-link{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--oyster) !important;
+    padding:0.5rem 1rem !important;
+  }
+  .nav-link:hover, .nav-link.active{color:var(--brass-light) !important;}
+  .dropdown-menu-dark{background:var(--indigo-mid); border:1px solid rgba(227,196,140,0.2);}
+  .dropdown-item{font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--oyster);}
+  .dropdown-item:hover{background:var(--indigo-deep); color:var(--brass-light);}
+
+  /* HERO */
+  .hero{
+    position:relative;
+    min-height:78vh;
+    display:flex;
+    align-items:flex-end;
+    background:
+      linear-gradient(180deg, rgba(21,34,56,0.35) 0%, rgba(21,34,56,0.55) 55%, rgba(21,34,56,0.96) 100%),
+      url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+    background-size:cover;
+    background-position:center;
+    padding:3rem 0 4rem;
+  }
+  .hero-inner{max-width:820px;}
+  .hero .eyebrow{color:var(--brass-light);}
+  .hero h1{
+    font-size:clamp(2.6rem, 6vw, 4.6rem);
+    color:var(--oyster);
+    font-weight:700;
+    margin:0.6rem 0 1rem;
+  }
+  .hero p.lede{
+    color:rgba(244,239,227,0.85);
+    font-size:1.2rem;
+    max-width:560px;
+    font-style:italic;
+  }
+
+  /* PHOTO STRIP */
+  .photo-strip{
+    background:var(--indigo-deep);
+    padding:0 0 3.5rem;
+  }
+  .photo-frame{
+    border-radius:4px;
+    overflow:hidden;
+    border:1px solid rgba(227,196,140,0.3);
+    box-shadow:0 25px 50px rgba(0,0,0,0.35);
+  }
+  .photo-frame img{width:100%; display:block;}
+  .photo-caption{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--brass-light);
+    margin-top:0.75rem;
+  }
+
+  /* UPLOAD PLACEHOLDER (kept functional pattern, restyled) */
+  .upload-slot{
+    border:1.5px dashed rgba(184,147,95,0.55);
+    border-radius:4px;
+    background:rgba(244,239,227,0.03);
+    min-height:220px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    color:var(--brass-light);
+    transition:all .25s ease;
+    text-align:center;
+    padding:1.5rem;
+  }
+  .upload-slot:hover{background:rgba(184,147,95,0.08); border-color:var(--brass-light);}
+  .upload-slot i{font-size:2rem; margin-bottom:0.75rem;}
+  .upload-slot small{color:rgba(244,239,227,0.55); font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.05em; margin-top:0.4rem;}
+
+  /* SECTION SCAFFOLDING */
+  section{padding:5rem 0;}
+  .section-cream{background:var(--oyster);}
+  .section-dim{background:var(--oyster-dim);}
+  .section-dark{background:var(--indigo-deep); color:var(--oyster);}
+
+  .kicker{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    margin-bottom:2.5rem;
+  }
+  .kicker .num{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.8rem;
+    color:var(--brass);
+    border:1px solid var(--brass);
+    border-radius:50%;
+    width:34px; height:34px;
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .kicker h2{font-size:2rem; margin:0; color:var(--indigo-deep);}
+  .section-dark .kicker h2{color:var(--oyster);}
+  .kicker-sub{color:#6b6558; font-family:'Inter'; font-size:1rem; margin-top:0.3rem;}
+  .section-dark .kicker-sub{color:rgba(244,239,227,0.65);}
+
+  /* WELCOME */
+  .welcome-box{
+    max-width:760px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .welcome-box p{font-size:1.12rem; color:#4a463d;}
+  .rule{
+    width:64px; height:2px; background:var(--brass);
+    margin:1.75rem auto;
+  }
+
+  /* TIDE TIMELINE (signature element) */
+  .tide-wrap{position:relative; padding:2rem 0 1rem;}
+  .tide-svg{width:100%; height:auto; display:block;}
+  .tide-blocks{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:1.25rem;
+    margin-top:-1.5rem;
+  }
+  .tide-block{
+    background:var(--indigo-mid);
+    border-radius:6px;
+    padding:1.5rem 1.25rem;
+    color:var(--oyster);
+    position:relative;
+  }
+  .tide-block .time-tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    color:var(--brass-light);
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+  }
+  .tide-block h4{color:var(--oyster); font-size:1.15rem; margin:0.4rem 0 0.6rem;}
+  .tide-block p{color:rgba(244,239,227,0.75); font-size:0.92rem; margin:0;}
+  @media (max-width:900px){.tide-blocks{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.tide-blocks{grid-template-columns:1fr;}}
+
+  /* VENUE SPOTLIGHT CARDS (Palma / OnAir feature) */
+  .spotlight{
+    background:#fff;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 18px 40px rgba(28,26,23,0.08);
+    height:100%;
+    display:flex;
+    flex-direction:column;
+  }
+  .spotlight-photo{
+    aspect-ratio:16/10;
+  }
+  .spotlight-body{padding:1.75rem;}
+  .tag-row{margin-bottom:0.9rem;}
+  .venue-tag{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    background:var(--brick);
+    color:#fff;
+    padding:0.28rem 0.7rem;
+    border-radius:20px;
+    margin-right:0.4rem;
+  }
+  .venue-tag.new{background:var(--brass); color:var(--ink);}
+  .spotlight h3{font-size:1.5rem; color:var(--indigo-deep); margin-bottom:0.6rem;}
+  .spotlight p{color:#4a463d; font-size:0.98rem;}
+  .spotlight .meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--indigo-soft);
+    border-top:1px solid var(--line);
+    margin-top:1rem;
+    padding-top:1rem;
+  }
+
+  /* BAR LIST */
+  .bar-row{
+    display:flex;
+    gap:1.25rem;
+    padding:1.4rem 0;
+    border-bottom:1px solid var(--line);
+  }
+  .bar-row:last-child{border-bottom:none;}
+  .bar-icon{
+    width:44px; height:44px; border-radius:50%;
+    background:var(--indigo-deep); color:var(--brass-light);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0; font-size:1.1rem;
+  }
+  .bar-row h5{margin:0 0 0.3rem; font-family:'Fraunces', serif; font-size:1.2rem; color:var(--indigo-deep);}
+  .bar-row p{margin:0; color:#5c574c; font-size:0.95rem;}
+
+  /* ACTIVITY GRID */
+  .activity-card{
+    background:#fff;
+    border-radius:8px;
+    padding:2rem;
+    height:100%;
+    border-top:3px solid var(--brass);
+    box-shadow:0 10px 25px rgba(28,26,23,0.06);
+  }
+  .activity-card h4{color:var(--indigo-deep); font-size:1.25rem; margin-bottom:1.1rem;}
+  .activity-card h4 i{color:var(--brick); margin-right:0.5rem;}
+  .activity-list{list-style:none; padding:0; margin:0;}
+  .activity-list li{padding:0.4rem 0; color:#4a463d; font-size:0.95rem; border-bottom:1px dashed var(--line);}
+  .activity-list li:last-child{border-bottom:none;}
+  .activity-list i{color:var(--brass); margin-right:0.6rem; width:18px;}
+
+  /* DINING */
+  .meal-block{margin-bottom:3rem;}
+  .meal-block h3{
+    font-size:1.6rem; color:var(--indigo-deep);
+    display:flex; align-items:center; gap:0.6rem;
+    border-bottom:2px solid var(--brass-light);
+    padding-bottom:0.9rem; margin-bottom:1.5rem;
+  }
+  .restaurant-item{
+    background:#fff;
+    border-radius:6px;
+    padding:1.4rem 1.6rem;
+    margin-bottom:1rem;
+    border-left:3px solid var(--indigo-soft);
+    box-shadow:0 4px 14px rgba(28,26,23,0.05);
+  }
+  .restaurant-item h4{font-size:1.15rem; color:var(--indigo-deep); margin-bottom:0.4rem;}
+  .restaurant-item h4 i{color:var(--brick); margin-right:0.5rem; font-size:0.95rem;}
+  .rbadge{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    background:var(--oyster-dim);
+    color:var(--indigo-deep);
+    padding:0.25rem 0.65rem;
+    border-radius:3px;
+    margin-bottom:0.6rem;
+  }
+  .rbadge.new{background:var(--brass); color:var(--ink);}
+  .restaurant-item p{color:#4a463d; font-size:0.95rem; margin:0;}
+  .price{color:var(--brick); font-weight:600; font-size:0.9rem; margin-top:0.6rem; font-family:'IBM Plex Mono', monospace;}
+
+  /* TIP CALLOUT */
+  .callout{
+    background:linear-gradient(135deg, var(--brick), var(--brick-light));
+    color:#fff;
+    border-radius:10px;
+    padding:2.5rem;
+    margin-top:1rem;
+  }
+  .callout h4{color:#fff; margin-bottom:1.5rem;}
+  .callout i{font-size:1.6rem; margin-bottom:0.7rem; display:block; color:var(--oyster);}
+
+  /* FOOTER */
+  .footer-section{
+    background:var(--indigo-deep);
+    color:var(--oyster);
+    padding:4rem 0 3rem;
+    text-align:center;
+  }
+  .footer-section h3{color:var(--brass-light); margin-bottom:1rem;}
+  .footer-divider{
+    width:64px; height:2px; background:var(--brass); margin:1.5rem auto;
+  }
+  .footer-quote{font-style:italic; color:rgba(244,239,227,0.7);}
+</style>
 </head>
 <body>
 
-    <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="../index.html"><i class="bi bi-cup-straw"></i> Charleston Party Hub</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../about.html">About</a>
-                </li>
-                <!-- Dropdown 1: Party Guides -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPartyGuides" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Party Guides
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownPartyGuides">
-                        <li><a class="dropdown-item" href="../parties/birthday-parties.html">Birthday Parties</a></li>
-                        <li><a class="dropdown-item" href="../parties/bridal-showers.html">Bridal Showers</a></li>
-                        <li><a class="dropdown-item" href="../parties/college.html">College Scene</a></li>
-                        <li><a class="dropdown-item" href="../parties/passion-party.html">Passion Parties</a></li>
-                        <li><a class="dropdown-item" href="../parties/work-parties.html">After Work Parties</a></li>
-                        <li><a class="dropdown-item" href="../parties/just-because.html">Just Because Parties</a></li>
-                    </ul>
-                </li>
-                <!-- Dropdown 2: Charleston Info -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCharlestonInfo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Bach Info
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownCharlestonInfo">
-                        <li><a class="dropdown-item" href="charleston-bachelor-party.html">Bachelor</a></li>
-                        <li><a class="dropdown-item" href="charleston-bachelorette-party.html">Bachelorette</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../privacy-policy.html">Privacy Policy</a>
-                </li>
-            </ul>
-        </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html"><i class="fas fa-anchor"></i> Charleston Party Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPartyGuides" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Guides</a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownPartyGuides">
+            <li><a class="dropdown-item" href="../parties/birthday-parties.html">Birthday Parties</a></li>
+            <li><a class="dropdown-item" href="../parties/bridal-showers.html">Bridal Showers</a></li>
+            <li><a class="dropdown-item" href="../parties/college.html">College Scene</a></li>
+            <li><a class="dropdown-item" href="../parties/passion-party.html">Passion Parties</a></li>
+            <li><a class="dropdown-item" href="../parties/work-parties.html">After Work Parties</a></li>
+            <li><a class="dropdown-item" href="../parties/just-because.html">Just Because Parties</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCharlestonInfo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bach Info</a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownCharlestonInfo">
+            <li><a class="dropdown-item" href="charleston-bachelor-party.html">Bachelor</a></li>
+            <li><a class="dropdown-item" href="charleston-bachelorette-party.html">Bachelorette</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../privacy-policy.html">Privacy Policy</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
-<header class="header-container text-center">
-    <!-- Replace the src with your gif URL -->
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW0xaXQxNnRhcjQ4cmN1cDFiZ2NoajJ6NnJsbHR1M3JrMmJtdnNvMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/S65JaHHLHKjjQZ7Ee7/giphy.gif" 
-         alt="bachelor party charleston sc" 
-         class="header-gif">
-    
-    <!-- <h1 class="header-title"></h1> --><!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Charleston Bachelor Party - Southern Gentleman's Celebration</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-        <style>
-            body {
-                font-family: 'Georgia', serif;
-                line-height: 1.6;
-            }
-            
-            /* Row 1 - Photo Section */
-            .row-1 {
-                padding: 2rem 0;
-                background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
-                min-height: 350px;
-            }
-            
-            .photo-container {
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 2rem;
-                background: white;
-                border-radius: 20px;
-                box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-                border: 3px solid #4682b4;
-            }
-            
-            .photo-placeholder {
-                width: 100%;
-                height: 250px;
-                background: linear-gradient(45deg, #f8f9fa, #e9ecef);
-                border: 2px dashed #1e90ff;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                color: #666;
-                font-size: 1.1rem;
-                cursor: pointer;
-                transition: all 0.3s ease;
-            }
-            
-            .photo-placeholder:hover {
-                background: linear-gradient(45deg, #f0f8ff, #e6f3ff);
-                border-color: #0066cc;
-            }
-            
-            .photo-placeholder i {
-                font-size: 3rem;
-                color: #1e90ff;
-                margin-bottom: 1rem;
-            }
-            
-            /* Row 2 - Hero/Header */
-            .row-2 {
-                background: linear-gradient(135deg, rgba(30, 144, 255, 0.9), rgba(0, 102, 204, 0.8)), 
-                            url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
-                background-size: cover;
-                background-position: center;
-                background-attachment: fixed;
-                color: white;
-                text-align: center;
-                padding: 5rem 0;
-                position: relative;
-                min-height: 400px;
-            }
-            
-            .hero-content h1 {
-                font-size: 3.5rem;
-                font-weight: bold;
-                text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
-                margin-bottom: 1rem;
-            }
-            
-            .hero-content p {
-                font-size: 1.4rem;
-                font-style: italic;
-                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            }
-            
-            /* Row 3 - Welcome/Opening */
-            .row-3 {
-                padding: 4rem 0;
-                background: white;
-            }
-            
-            .welcome-content {
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 3rem;
-                background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
-                border-radius: 20px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-                border: 3px solid #4682b4;
-                text-align: center;
-            }
-            
-            .welcome-content h2 {
-                color: #0066cc;
-                font-size: 2.2rem;
-                margin-bottom: 2rem;
-            }
-            
-            .welcome-content p {
-                font-size: 1.1rem;
-                color: #444;
-                line-height: 1.8;
-            }
-            
-            /* NEW - Guide Section */
-            .guide-section {
-                padding: 4rem 0;
-                background: linear-gradient(135deg, #fff8dc, #ffefd5);
-            }
-            
-            .guide-container {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            
-            .section-title {
-                text-align: center;
-                margin-bottom: 3rem;
-            }
-            
-            .section-title h2 {
-                font-size: 2.5rem;
-                color: #0066cc;
-                margin-bottom: 1rem;
-            }
-            
-            .section-title p {
-                font-size: 1.2rem;
-                color: #666;
-                font-style: italic;
-            }
-            
-            .guide-card {
-                background: white;
-                border-radius: 15px;
-                padding: 2.5rem;
-                margin-bottom: 2.5rem;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-                border-left: 6px solid #ff8c00;
-                transition: all 0.3s ease;
-            }
-            
-            .guide-card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-            }
-            
-            .guide-card h3 {
-                color: #0066cc;
-                font-size: 1.8rem;
-                margin-bottom: 1.5rem;
-                border-bottom: 2px solid #f0f0f0;
-                padding-bottom: 1rem;
-            }
-            
-            .guide-card h3 i {
-                color: #ff8c00;
-                margin-right: 0.8rem;
-            }
-            
-            .guide-item {
-                margin-bottom: 2rem;
-                padding: 1.5rem;
-                background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-                border-radius: 10px;
-                border-left: 4px solid #1e90ff;
-            }
-            
-            .guide-item:last-child {
-                margin-bottom: 0;
-            }
-            
-            .guide-item h4 {
-                color: #0066cc;
-                font-size: 1.4rem;
-                margin-bottom: 1rem;
-            }
-            
-            .guide-item h4 i {
-                color: #1e90ff;
-                margin-right: 0.5rem;
-            }
-            
-            .guide-item p {
-                color: #555;
-                font-size: 1.05rem;
-                line-height: 1.7;
-                margin: 0;
-            }
-            
-            .bar-list {
-                margin-top: 1rem;
-            }
-            
-            .bar-item {
-                background: white;
-                padding: 1rem 1.5rem;
-                margin-bottom: 0.8rem;
-                border-radius: 8px;
-                border-left: 3px solid #ff8c00;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            }
-            
-            .bar-item h5 {
-                color: #0066cc;
-                font-size: 1.2rem;
-                margin-bottom: 0.5rem;
-            }
-            
-            .bar-item h5 i {
-                color: #ff8c00;
-                margin-right: 0.5rem;
-                font-size: 1rem;
-            }
-            
-            .bar-item p {
-                color: #666;
-                font-size: 0.95rem;
-                margin: 0;
-            }
-            
-            /* Row 4 - Activities Grid */
-            .row-4 {
-                padding: 4rem 0;
-                background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            }
-            
-            .activities-grid {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            
-            .activity-card {
-                background: white;
-                border-radius: 15px;
-                padding: 2rem;
-                margin-bottom: 2rem;
-                box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-                border-left: 5px solid #1e90ff;
-                transition: all 0.3s ease;
-                height: 100%;
-            }
-            
-            .activity-card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            }
-            
-            .activity-card h4 {
-                color: #0066cc;
-                margin-bottom: 1.5rem;
-                font-size: 1.4rem;
-            }
-            
-            .activity-list {
-                list-style: none;
-                padding: 0;
-            }
-            
-            .activity-list li {
-                padding: 0.5rem 0;
-                border-bottom: 1px solid #f0f0f0;
-            }
-            
-            .activity-list li:last-child {
-                border-bottom: none;
-            }
-            
-            .activity-list i {
-                color: #1e90ff;
-                margin-right: 0.8rem;
-                width: 20px;
-            }
-            
-            /* Row 5 - Dining Listicles */
-            .row-5 {
-                padding: 4rem 0;
-                background: linear-gradient(135deg, #fffbf0, #fff8e7);
-            }
-            
-            .dining-section {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            
-            .meal-category {
-                background: white;
-                border-radius: 15px;
-                padding: 2.5rem;
-                margin-bottom: 2.5rem;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-                border-left: 6px solid #ff8c00;
-            }
-            
-            .meal-category h3 {
-                color: #0066cc;
-                font-size: 2rem;
-                margin-bottom: 2rem;
-                border-bottom: 3px solid #f0f0f0;
-                padding-bottom: 1rem;
-            }
-            
-            .meal-category h3 i {
-                color: #ff8c00;
-                margin-right: 1rem;
-            }
-            
-            .restaurant-item {
-                margin-bottom: 2rem;
-                padding: 1.5rem;
-                background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-                border-radius: 10px;
-                border-left: 4px solid #1e90ff;
-                transition: all 0.3s ease;
-            }
-            
-            .restaurant-item:hover {
-                background: linear-gradient(135deg, #e9ecef, #dee2e6);
-                transform: translateX(5px);
-            }
-            
-            .restaurant-item:last-child {
-                margin-bottom: 0;
-            }
-            
-            .restaurant-item h4 {
-                color: #0066cc;
-                font-size: 1.4rem;
-                margin-bottom: 0.5rem;
-            }
-            
-            .restaurant-item h4 i {
-                color: #ff8c00;
-                margin-right: 0.5rem;
-            }
-            
-            .restaurant-type-badge {
-                display: inline-block;
-                background: linear-gradient(135deg, #1e90ff, #0066cc);
-                color: white;
-                padding: 0.3rem 1rem;
-                border-radius: 20px;
-                font-size: 0.85rem;
-                font-weight: bold;
-                margin-bottom: 0.8rem;
-            }
-            
-            .restaurant-item p {
-                color: #555;
-                font-size: 1.05rem;
-                line-height: 1.6;
-                margin: 0;
-            }
-            
-            .price-indicator {
-                color: #ff8c00;
-                font-weight: bold;
-                font-size: 1.1rem;
-                margin-top: 0.5rem;
-            }
-            
-            /* Row 6 - Contact/Footer Section */
-            .row-6 {
-                background: linear-gradient(135deg, rgba(30, 144, 255, 0.9), rgba(0, 102, 204, 0.8));
-                color: white;
-                padding: 3rem 0;
-                text-align: center;
-            }
-            
-            .contact-content {
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 2rem;
-            }
-            
-            .contact-content h3 {
-                font-size: 2rem;
-                margin-bottom: 1.5rem;
-                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            }
-            
-            .contact-info {
-                background: rgba(255, 255, 255, 0.1);
-                padding: 2rem;
-                border-radius: 15px;
-                backdrop-filter: blur(10px);
-            }
-            
-            .cheers-divider {
-                margin: 1.5rem 0;
-                font-size: 2rem;
-            }
-            
-            .cheers-divider i {
-                margin: 0 1rem;
-            }
-        </style>
-    </head>
-    <body>
-       
-        <!-- ROW 2: Hero/Header -->
-        <section class="row-2">
-            <div class="container hero-content">
-                <h1>Charleston Bachelor Party</h1>
-                <p>Where Southern Charm Meets Legendary Celebrations</p>
-            </div>
-        </section>
-    
-        <!-- ROW 3: Welcome/Opening -->
-        <section class="row-3">
-            <div class="container">
-                <div class="welcome-content">
-                    <h3><i class="fas fa-glass-cheers"></i> Gentlemen, Welcome to Charleston!</h3>
-                    <p>
-                        Get ready for the ultimate bachelor party experience in the Holy City. Charleston offers the perfect blend of 
-                        Southern hospitality, historic charm, world-class dining, exciting activities, and an unforgettable nightlife. 
-                        Whether you're looking for adventure on the water, championship golf, premium dining, or the best bar scene in 
-                        the South, Charleston has everything you need to send off the groom in legendary style.
-                    </p>
-                    <p class="mt-3">
-                        This weekend is about creating memories that will last a lifetime. Let's make it count!
-                    </p>
-                </div>
-            </div>
-        </section>
-    
-        <!-- NEW: GUIDE SECTION -->
-        <section class="guide-section">
-            <div class="container guide-container">
-                <div class="section-title">
-                    <h2><i class="fas fa-map-marked-alt"></i> Your Complete Charleston Bachelor Party Guide</h2>
-                    <p>Everything you need to know for an epic weekend in the Holy City</p>
-                </div>
-    
-                <!-- Daytime Activities -->
-                <div class="guide-card">
-                    <h3><i class="fas fa-sun"></i> Daytime Activities</h3>
-                    
-                    <div class="guide-item">
-                        <h4><i class="fas fa-umbrella-beach"></i> Folly Beach & Isle of Palms</h4>
-                        <p>
-                            Hit the pristine beaches just minutes from downtown Charleston. Folly Beach offers a laid-back surf town vibe 
-                            with beach bars, volleyball, and great waves. Isle of Palms provides a more upscale beach experience with 
-                            calmer waters perfect for swimming and relaxing. Both beaches have rental options for chairs, umbrellas, and 
-                            water sports equipment. Don't miss the iconic Folly Beach Pier for fishing and sunset views, or grab cold beers 
-                            and fish tacos at the beach bars along Center Street.
-                        </p>
-                    </div>
-    
-                    <div class="guide-item">
-                        <h4><i class="fas fa-anchor"></i> Boat Tours & Charter Boats</h4>
-                        <p>
-                            Experience Charleston from the water with private charter boats for fishing, harbor cruises, or sunset tours. 
-                            Deep-sea fishing charters are perfect for reeling in king mackerel, cobia, and grouper. For something more 
-                            relaxed, book a harbor tour to see Fort Sumter, the USS Yorktown, and dolphins playing in the wake. Private 
-                            yacht charters offer luxury experiences with open bars and catering. Sandbar parties are legendary - anchor at 
-                            a popular sandbar, bring your cooler, and join other boaters for an unforgettable afternoon on the water.
-                        </p>
-                    </div>
-    
-                    <div class="guide-item">
-                        <h4><i class="fas fa-landmark"></i> Downtown Charleston</h4>
-                        <p>
-                            Explore one of America's most historic and beautiful cities. Walk the cobblestone streets of Rainbow Row, tour 
-                            historic homes and plantations, or take a carriage ride through the French Quarter. Check out the historic City 
-                            Market for local crafts and food. Visit The Battery and White Point Garden for stunning waterfront views. The 
-                            area around King Street offers world-class shopping, galleries, and hundreds of restaurants. Don't miss a ghost 
-                            tour at night to hear spooky tales of Charleston's haunted past, or a historic pub crawl to experience taverns 
-                            dating back to the 1700s.
-                        </p>
-                    </div>
-                </div>
-    
-                <!-- Fun Activities -->
-                <div class="guide-card">
-                    <h3><i class="fas fa-gamepad"></i> Fun Activities</h3>
-                    
-                    <div class="guide-item">
-                        <h4><i class="fas fa-golf-ball"></i> Topgolf</h4>
-                        <p>
-                            Located in Mount Pleasant, Topgolf offers climate-controlled hitting bays with microchipped golf balls that track 
-                            your accuracy and distance. It's perfect for groups of all skill levels - compete in games, enjoy food and drinks 
-                            delivered to your bay, and experience this high-tech driving range entertainment. They offer bachelor party packages 
-                            that include private bays, food credits, and unlimited gameplay. Great for afternoon or evening entertainment with 
-                            the guys, combining golf, games, food, and drinks all in one spot. Reserve your bay in advance, especially for 
-                            weekend prime time slots.
-                        </p>
-                    </div>
-    
-                    <div class="guide-item">
-                        <h4><i class="fas fa-bullseye"></i> Chucktown Axe Throwing</h4>
-                        <p>
-                            Release your inner lumberjack at Charleston's premier axe throwing venue. Professional instructors teach you proper 
-                            technique before you compete in tournament-style competitions with your crew. They offer private lanes for bachelor 
-                            parties where you can bring your own drinks and food. Perfect icebreaker activity that gets everyone laughing and 
-                            competing. Located in Park Circle, it's a unique Charleston experience that combines skill, competition, and fun. 
-                            Book a 90-minute session for your group and they'll provide everything you need including axes, targets, and 
-                            instruction. It's one of the most memorable and talked-about activities you can do for a bachelor party.
-                        </p>
-                    </div>
-                </div>
-    
-                <!-- Bar Crawls -->
-                <div class="guide-card">
-                    <h3><i class="fas fa-beer"></i> Bar Crawls for Bachelors</h3>
-                    <p style="margin-bottom: 2rem; color: #555; font-size: 1.1rem;">
-                        Charleston's nightlife is legendary. Here's your ultimate guide to the best bars for your bachelor party crew:
-                    </p>
-                    
-                    <div class="bar-list">
-                        <div class="bar-item">
-                            <h5><i class="fas fa-building"></i> The Rooftop Bar at The Vendue</h5>
-                            <p>
-                                Start your night with stunning 360-degree views of Charleston from this iconic rooftop bar. Craft cocktails, 
-                                outdoor fire pits, and the best sunset views in the city. Perfect for the group photo before hitting the town.
-                            </p>
-                        </div>
-    
-                        <div class="bar-item">
-                            <h5><i class="fas fa-music"></i> Republic Garden & Lounge</h5>
-                            <p>
-                                Upscale nightclub with live DJs, VIP bottle service, and a sophisticated crowd. Multi-level venue with indoor 
-                                and outdoor spaces. Great for dancing and partying late into the night. Book a VIP table for your crew.
-                            </p>
-                        </div>
-    
-                        <div class="bar-item">
-                            <h5><i class="fas fa-cocktail"></i> Proof</h5>
-                            <p>
-                                Speakeasy-style bar with expert mixologists crafting amazing cocktails. Upscale but not pretentious, with a 
-                                great whiskey selection. Perfect mid-crawl stop for quality drinks in a cool atmosphere.
-                            </p>
-                        </div>
-    
-                        <div class="bar-item">
-                            <h5><i class="fas fa-beer"></i> Rec Room</h5>
-                            <p>
-                                Massive arcade bar with vintage games, skeeball, foosball, and more. Casual vibe with plenty of beers on tap. 
-                                Great spot to let loose and get competitive with the guys while enjoying affordable drinks.
-                            </p>
-                        </div>
-    
-                        <div class="bar-item">
-                            <h5><i class="fas fa-glass-whiskey"></i> Barrel</h5>
-                            <p>
-                                Premium bourbon and whiskey bar with over 400 selections. Intimate setting perfect for groups who appreciate 
-                                fine spirits. Great cocktails and knowledgeable bartenders who can recommend the perfect dram.
-                            </p>
-                        </div>
-    
-                        <div class="bar-item">
-                            <h5><i class="fas fa-drum"></i> Mynt</h5>
-                            <p>
-                                High-energy nightclub on Upper King Street with top DJs and dancing until 2 AM. Modern club atmosphere with 
-                                bottle service available. This is where you end your night when you want to keep the party going.
-                            </p>
-                        </div>
-    
-                        <div class="bar-item">
-                            <h5><i class="fas fa-beer-foam"></i> Burns Alley Tavern</h5>
-                            <p>
-                                Dive bar with character located in a historic alley. No-frills environment with strong drinks and a loyal local 
-                                crowd. Perfect for a more authentic Charleston bar experience away from the tourist spots.
-                            </p>
-                        </div>
-    
-                        <div class="bar-item">
-                            <h5><i class="fas fa-martini-glass"></i> The Cocktail Club</h5>
-                            <p>
-                                Craft cocktail bar with creative drinks and a stylish interior. Great for starting the night or a more 
-                                sophisticated drinking experience. Excellent bartenders who take their craft seriously.
-                            </p>
-                        </div>
-    
-                        <div class="bar-item">
-                            <h5><i class="fas fa-ship"></i> Tommy Condon's Irish Pub</h5>
-                            <p>
-                                Traditional Irish pub with live music most nights. Large groups welcome with plenty of seating. Great pub food 
-                                and Guinness on tap. Family-owned since 1987, it's a Charleston institution.
-                            </p>
-                        </div>
-    
-                        <div class="bar-item">
-                            <h5><i class="fas fa-pizza-slice"></i> Huriyali</h5>
-                            <p>
-                                Late-night garden bar and restaurant open until 2 AM. Perfect for when you need food during your bar crawl. 
-                                Outdoor seating, good vibes, and tasty bites to keep the party going.
-                            </p>
-                        </div>
-                    </div>
-    
-                    <div class="mt-4 p-3" style="background: linear-gradient(135deg, #1e90ff, #0066cc); border-radius: 10px; color: white;">
-                        <h5 class="mb-3"><i class="fas fa-lightbulb"></i> Pro Bar Crawl Tips</h5>
-                        <ul style="margin: 0; padding-left: 1.5rem;">
-                            <li>Stay hydrated - alternate water between bars</li>
-                            <li>Use Uber/Lyft - parking is difficult and expensive downtown</li>
-                            <li>Most bars don't have cover charges except on special event nights</li>
-                            <li>King Street is the main bar crawl hub - everything is walkable</li>
-                            <li>Bring cash for tips and smaller bars that may not take cards</li>
-                            <li>Start around 8-9 PM, bars stay open until 2 AM</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-         <!-- ROW 1: Photo Section -->
-         <section class="row-1">
-            <div class="container">
-                <div class="photo-container">
-                    <div class="photo-placeholder" onclick="document.getElementById('photoUpload').click()">
-                        <i class="fas fa-camera"></i>
-                        <div>Click to Upload Group Photo</div>
-                        <small style="color: #999; margin-top: 0.5rem;">Add your bachelor party crew!</small>
-                    </div>
-                    <input type="file" id="photoUpload" accept="image/*" style="display: none;">
-                </div>
-            </div>
-        </section>
-    
-    
-        <!-- ROW 4: Activities Grid -->
-        <section class="row-4">
-            <div class="container activities-grid">
-                <div class="section-title">
-                    <h3><i class="fas fa-rocket"></i> More Epic Activities</h3>
-                    <p>Choose your adventure and make it unforgettable!</p>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="activity-card">
-                            <h4><i class="fas fa-utensils"></i> Dining & Nightlife</h4>
-                            <ul class="activity-list">
-                                <li><i class="fas fa-steak"></i> Premium steakhouses</li>
-                                <li><i class="fas fa-beer"></i> Rooftop bars & breweries</li>
-                                <li><i class="fas fa-cocktail"></i> Craft cocktail lounges</li>
-                                <li><i class="fas fa-music"></i> Live music venues</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="activity-card">
-                            <h4><i class="fas fa-water"></i> Water Activities</h4>
-                            <ul class="activity-list">
-                                <li><i class="fas fa-fish"></i> Deep sea fishing charters</li>
-                                <li><i class="fas fa-ship"></i> Private yacht rentals</li>
-                                <li><i class="fas fa-water"></i> Harbor boat tours</li>
-                                <li><i class="fas fa-swimming-pool"></i> Beach day adventures</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="activity-card">
-                            <h4><i class="fas fa-golf-ball-tee"></i> Sports & Games</h4>
-                            <ul class="activity-list">
-                                <li><i class="fas fa-golf-ball"></i> Championship golf courses</li>
-                                <li><i class="fas fa-bullseye"></i> Clay pigeon shooting</li>
-                                <li><i class="fas fa-bowling-ball"></i> Bowling tournaments</li>
-                                <li><i class="fas fa-dice"></i> Casino gaming</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="activity-card">
-                            <h4><i class="fas fa-binoculars"></i> Adventures</h4>
-                            <ul class="activity-list">
-                                <li><i class="fas fa-horse"></i> Historic carriage tours</li>
-                                <li><i class="fas fa-ghost"></i> Ghost walking tours</li>
-                                <li><i class="fas fa-car"></i> Race track experiences</li>
-                                <li><i class="fas fa-campfire"></i> Private chef experiences</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- ROW 5: Dining Listicles -->
-        <section class="row-5">
-            <div class="container dining-section">
-                <div class="section-title">
-                    <h3><i class="fas fa-utensils"></i> Best Restaurants in Charleston</h3>
-                    <p>Fuel up with the finest cuisine throughout the day!</p>
-                </div>
-                
-                <!-- Breakfast -->
-                <div class="meal-category">
-                    <h3><i class="fas fa-coffee"></i> Breakfast</h3>
-                    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-bacon"></i> Hominy Grill</h4>
-                        <span class="restaurant-type-badge">Southern Breakfast</span>
-                        <p>
-                            Classic Charleston breakfast spot famous for their shrimp and grits, big nasty biscuit, and perfect 
-                            sweet potato pancakes. Casual, welcoming atmosphere perfect for groups recovering from the night before. 
-                            Expect a wait on weekends, but it's worth it for authentic Lowcountry breakfast.
-                        </p>
-                        <div class="price-indicator">$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-egg"></i> Callie's Hot Little Biscuit</h4>
-                        <span class="restaurant-type-badge">Biscuits & Coffee</span>
-                        <p>
-                            Grab-and-go biscuit shop with incredible handmade biscuits served with various toppings from fried chicken 
-                            to pimento cheese. Multiple locations around Charleston. Perfect for a quick, delicious start to your day 
-                            before hitting activities. Their buttermilk biscuits are legendary.
-                        </p>
-                        <div class="price-indicator">$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-mug-hot"></i> Toast All Day</h4>
-                        <span class="restaurant-type-badge">Brunch Spot</span>
-                        <p>
-                            Modern brunch restaurant with creative breakfast options and bottomless mimosas. Great for groups with 
-                            diverse tastes - everything from healthy avocado toast to indulgent chicken and waffles. Fun, energetic 
-                            atmosphere perfect for bachelor party mornings.
-                        </p>
-                        <div class="price-indicator">$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-pancakes"></i> Page's Okra Grill</h4>
-                        <span class="restaurant-type-badge">Lowcountry Breakfast</span>
-                        <p>
-                            Family-owned restaurant serving authentic Lowcountry breakfast since 1997. Known for massive portions, 
-                            friendly service, and homestyle cooking. Try their crab omelet or country fried steak. Cash only, 
-                            so come prepared. True local favorite off the tourist path.
-                        </p>
-                        <div class="price-indicator">$</div>
-                    </div>
-                </div>
-    
-                <!-- Lunch -->
-                <div class="meal-category">
-                    <h3><i class="fas fa-hamburger"></i> Lunch</h3>
-                    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-fire"></i> Lewis Barbecue</h4>
-                        <span class="restaurant-type-badge">Texas BBQ</span>
-                        <p>
-                            Award-winning Texas-style BBQ with massive portions and incredible brisket. Get there early because they 
-                            sell out. Casual picnic table seating perfect for groups. Craft beer selection and great sides. The brisket 
-                            and beef ribs are legendary - easily some of the best BBQ in the South.
-                        </p>
-                        <div class="price-indicator">$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-fish"></i> Fleet Landing</h4>
-                        <span class="restaurant-type-badge">Waterfront Seafood</span>
-                        <p>
-                            Waterfront restaurant on a restored naval building with stunning harbor views. Perfect lunch spot with 
-                            fresh seafood, famous shrimp and grits, and cold beers. Large group-friendly with indoor and outdoor 
-                            seating. Great place to relax and enjoy Charleston's waterfront.
-                        </p>
-                        <div class="price-indicator">$$-$$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-burger"></i> Boxcar Betty's</h4>
-                        <span class="restaurant-type-badge">Fried Chicken</span>
-                        <p>
-                            No-frills fried chicken sandwich spot that's become a Charleston institution. Simple menu done 
-                            exceptionally well - fried chicken, slaw, pickles, sauce on a bun. Quick service, casual 
-                            atmosphere, perfect for lunch between activities. The Betty sandwich is a must-try.
-                        </p>
-                        <div class="price-indicator">$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-pizza-slice"></i> EVO Pizzeria</h4>
-                        <span class="restaurant-type-badge">Pizza & Craft Beer</span>
-                        <p>
-                            Awesome pizza spot with creative pies, huge portions, and excellent craft beer selection. Located in 
-                            Park Circle, it's perfect for casual group lunches. Try their monthly specials and don't skip the 
-                            wings. Great outdoor patio for nice weather.
-                        </p>
-                        <div class="price-indicator">$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-bread-slice"></i> Butcher & Bee</h4>
-                        <span class="restaurant-type-badge">Mediterranean Sandwiches</span>
-                        <p>
-                            Trendy spot with incredible sandwiches, salads, and small plates. Known for their whipped feta, 
-                            lamb burger, and creative vegetarian options. Hip atmosphere with communal seating. Great for 
-                            groups who want something fresh and different.
-                        </p>
-                        <div class="price-indicator">$$</div>
-                    </div>
-                </div>
-    
-                <!-- Dinner -->
-                <div class="meal-category">
-                    <h3><i class="fas fa-moon"></i> Dinner</h3>
-                    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-fire"></i> Hall's Chophouse</h4>
-                        <span class="restaurant-type-badge">Premium Steakhouse</span>
-                        <p>
-                            Charleston's premier steakhouse with dry-aged beef, impeccable service, and live gospel music on Sundays. 
-                            Perfect for the bachelor party dinner with an extensive wine list and premium cuts. VIP private dining 
-                            rooms available for groups. Dress code enforced - jackets recommended. An experience worth the splurge.
-                        </p>
-                        <div class="price-indicator">$$$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-whiskey-glass"></i> The Macintosh</h4>
-                        <span class="restaurant-type-badge">Bourbon & Modern Southern</span>
-                        <p>
-                            Upscale restaurant with innovative Southern cuisine and one of the best bourbon selections in Charleston. 
-                            Chef-driven menu that changes seasonally. Sophisticated but not stuffy atmosphere. Great for groups who 
-                            appreciate creative food and premium spirits. The duck and oysters are standouts.
-                        </p>
-                        <div class="price-indicator">$$$-$$$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-drumstick-bite"></i> Hank's Seafood</h4>
-                        <span class="restaurant-type-badge">Upscale Seafood</span>
-                        <p>
-                            Classic Charleston seafood restaurant in a historic building in the heart of downtown. Known for fresh 
-                            oysters, she-crab soup, and an extensive seafood menu. Upscale but welcoming atmosphere perfect for 
-                            special dinners. Great raw bar and wine list. Make reservations for large groups.
-                        </p>
-                        <div class="price-indicator">$$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-leaf"></i> FIG</h4>
-                        <span class="restaurant-type-badge">Farm-to-Table</span>
-                        <p>
-                            Award-winning restaurant focusing on seasonal, locally-sourced ingredients. Menu changes regularly based 
-                            on what's fresh. Intimate setting perfect for groups who want an elevated dining experience. Reservation 
-                            essential. Known as one of Charleston's best restaurants - book well in advance.
-                        </p>
-                        <div class="price-indicator">$$$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-building"></i> The Rooftop Bar & Restaurant</h4>
-                        <span class="restaurant-type-badge">Rooftop Dining</span>
-                        <p>
-                            Stunning rooftop restaurant with 360-degree views of Charleston. Perfect for dinner and drinks with the 
-                            guys while watching the sunset. Shareable plates, craft cocktails, and an energetic atmosphere. Great 
-                            spot to start your evening before hitting the bars. Make reservations for the best tables.
-                        </p>
-                        <div class="price-indicator">$$$</div>
-                    </div>
-    
-                    <div class="restaurant-item">
-                        <h4><i class="fas fa-pepper-hot"></i> Obstinate Daughter</h4>
-                        <span class="restaurant-type-badge">Italian - Sullivan's Island</span>
-                        <p>
-                            Creative Italian restaurant on Sullivan's Island with wood-fired pizzas, house-made pasta, and fresh 
-                            seafood. Trendy spot worth the drive from downtown. Great for groups with its communal atmosphere and 
-                            shareable dishes. Try the pork shoulder pizza and any pasta special.
-                        </p>
-                        <div class="price-indicator">$$$</div>
-                    </div>
-                </div>
-    
-                <!-- Dining Tips -->
-                <div class="mt-5 p-4" style="background: linear-gradient(45deg, #ff6347, #ff4500); border-radius: 20px; color: white; text-align: center;">
-                    <h4 class="mb-3" style="color: white;">
-                        <i class="fas fa-lightbulb"></i> Bachelor Dining Tips
-                    </h4>
-                    <div class="row g-3">
-                        <div class="col-md-4">
-                            <i class="fas fa-calendar-check" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                            <p class="mb-0"><strong>Make Reservations</strong><br>Book ahead for large groups, especially for dinner</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fas fa-users" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                            <p class="mb-0"><strong>Group Menus</strong><br>Many offer special bachelor packages and private dining</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fas fa-credit-card" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                            <p class="mb-0"><strong>Split Checks</strong><br>Most places can accommodate splits, just ask ahead</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- ROW 6: Contact/Footer Section -->
-        <section class="row-6">
-            <div class="container">
-                <div class="contact-content">
-                    <h3><i class="fas fa-handshake"></i> Let's Plan Your Epic Weekend!</h3>
-                    <div class="contact-info">
-                        <p class="mb-3" style="font-size: 1.1rem;">
-                            Ready to create unforgettable memories in Charleston?
-                        </p>
-                        <div class="cheers-divider" style="color: white;">
-                            <i class="fas fa-anchor"></i>
-                            <i class="fas fa-beer"></i>
-                            <i class="fas fa-anchor"></i>
-                        </div>
-                        <p class="fst-italic mb-0">
-                            "Charleston: Where Southern hospitality meets legendary bachelor parties"
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    </body>
-    </html>
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="eyebrow">The Holy City Send-Off</div>
+    <h1>Charleston Bachelor Party</h1>
+    <p class="lede">Southern charm by day, day club by afternoon, and a King Street bar crawl that runs till 2AM. Here's the whole weekend, planned out.</p>
+  </div>
 </header>
-    <!-- ROW 1: Photo Upload Section -->
-    <section class="row-1">
-        <div class="container">
-            <div class="photo-container">
-                
-                <div class="container">
-                    <!-- Replace the src with your gif URL -->
-                    <img class="img-fluid" src="charleston.jpg" 
-                         alt="photo of Ravenel bridge" 
-                         class="header-gif">
-                    
-                    <!-- <h1 class="header-title"></h1> -->
-                </div>
-               
-        </div>
-    </section>
 
-    <!-- ROW 2: Hero/Header Section -->
-    <section class="row-2">
-        <div class="container">
-            <div class="hero-content">
-                <h3>Charleston Bachelor Party</h3>
-                <p>Southern Hospitality Meets Epic Adventure</p>
-                <div class="cheers-divider">
-                    <i class="fas fa-beer"></i>
-                    <i class="fas fa-crown" style="color: #ffd700;"></i>
-                    <i class="fas fa-beer"></i>
-                </div>
-            </div>
+<!-- PHOTO STRIP -->
+<section class="photo-strip">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="photo-frame">
+          <img src="charleston.jpg" alt="Ravenel Bridge, Charleston SC">
         </div>
-    </section>
+        <div class="photo-caption text-center">The Arthur Ravenel Jr. Bridge — your backdrop for the weekend</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ROW 3: Welcome/Opening Section -->
-    <section class="row-3">
-        <div class="container">
-            <div class="welcome-content">
-                <h3><i class="fas fa-handshake"></i> Welcome to Charleston, Gentlemen!</h3>
-                <p class="mb-4">
-                    <strong>Ready for the ultimate bachelor party experience in the Holy City?</strong> 
-                    Charleston's historic charm, world-class cuisine, and legendary nightlife create the perfect 
-                    setting for an unforgettable send-off for the groom. From bourbon tastings at renowned distilleries 
-                    to deep-sea fishing adventures, craft brewery tours through the city's best spots, championship 
-                    golf courses with stunning views, and exclusive gentleman's clubs, Charleston delivers the ideal 
-                    blend of Southern sophistication and wild adventure that will make this bachelor party absolutely legendary.
-                </p>
-                <div class="cheers-divider">
-                    <i class="fas fa-beer"></i>
-                    <i class="fas fa-anchor" style="color: #32cd32;"></i>
-                    <i class="fas fa-beer"></i>
-                </div>
-                <p class="text-muted fst-italic">
-                    Experience the perfect combination of Southern charm and bachelor party excitement 
-                    in America's most gentlemanly city.
-                </p>
-            </div>
+<!-- WELCOME -->
+<section class="section-cream">
+  <div class="container welcome-box">
+    <div class="eyebrow">Gentlemen, Welcome</div>
+    <h2 class="mt-2 mb-3" style="color:var(--indigo-deep); font-size:2.1rem;">Southern Hospitality Meets Serious Nightlife</h2>
+    <div class="rule"></div>
+    <p>
+      Charleston's bachelor party scene has changed fast. On top of the historic pub crawls and rooftop bars, the Holy City
+      now has a full daytime day club with cabanas and international DJs, a wagyu-burger-and-live-music bar that's the new
+      go-to before a night out, and a wave of new restaurants worth building the whole weekend around. This is the current
+      version of that weekend — the classics that still hold up, plus what just opened.
+    </p>
+  </div>
+</section>
+
+<!-- TIDE TIMELINE -->
+<section class="section-dim">
+  <div class="container">
+    <div class="kicker">
+      <div class="num">01</div>
+      <div>
+        <h2>The Lineup</h2>
+        <div class="kicker-sub">Charleston runs on the tide — so does your weekend. Here's how the day breaks down.</div>
+      </div>
+    </div>
+
+    <div class="tide-wrap">
+      <svg class="tide-svg" viewBox="0 0 1200 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,55 C150,10 300,90 450,50 C600,10 750,85 900,45 C1000,20 1100,60 1200,35" fill="none" stroke="#b8935f" stroke-width="2" opacity="0.55"/>
+      </svg>
+      <div class="tide-blocks">
+        <div class="tide-block">
+          <div class="time-tag">Morning</div>
+          <h4><i class="fas fa-mug-hot" style="color:var(--brass-light);"></i> Fuel Up</h4>
+          <p>Biscuits, shrimp and grits, or bottomless mimosas before the group scatters to boats, the beach, or the golf course.</p>
         </div>
-    </section>
-
-    <!-- ROW 4: Activities Section -->
-    <section class="row-4">
-        <div class="container activities-grid">
-            <div class="section-title">
-                <h3><i class="fas fa-list-check"></i> Epic Bachelor Activities</h3>
-                <p>Create legendary memories with the boys in the Holy City!</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="activity-card">
-                        <h4><i class="fas fa-beer"></i> Breweries & Bars</h4>
-                        <ul class="activity-list">
-                            <li><i class="fas fa-beer-mug-empty"></i> Craft brewery tours</li>
-                            <li><i class="fas fa-whiskey-glass"></i> Bourbon distillery visits</li>
-                            <li><i class="fas fa-cocktail"></i> Rooftop bar crawls</li>
-                            <li><i class="fas fa-wine-bottle"></i> Whiskey tastings</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="activity-card">
-                        <h4><i class="fas fa-anchor"></i> Water Activities</h4>
-                        <ul class="activity-list">
-                            <li><i class="fas fa-fish"></i> Deep-sea fishing charters</li>
-                            <li><i class="fas fa-ship"></i> Private yacht rentals</li>
-                            <li><i class="fas fa-water"></i> Harbor boat tours</li>
-                            <li><i class="fas fa-swimming-pool"></i> Beach day adventures</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="activity-card">
-                        <h4><i class="fas fa-golf-ball-tee"></i> Sports & Games</h4>
-                        <ul class="activity-list">
-                            <li><i class="fas fa-golf-ball"></i> Championship golf courses</li>
-                            <li><i class="fas fa-bullseye"></i> Clay pigeon shooting</li>
-                            <li><i class="fas fa-bowling-ball"></i> Bowling tournaments</li>
-                            <li><i class="fas fa-dice"></i> Casino gaming</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="activity-card">
-                        <h4><i class="fas fa-binoculars"></i> Adventures</h4>
-                        <ul class="activity-list">
-                            <li><i class="fas fa-horse"></i> Historic carriage tours</li>
-                            <li><i class="fas fa-ghost"></i> Ghost walking tours</li>
-                            <li><i class="fas fa-car"></i> Race track experiences</li>
-                            <li><i class="fas fa-campfire"></i> Private chef experiences</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="tide-block">
+          <div class="time-tag">Afternoon</div>
+          <h4><i class="fas fa-water" style="color:var(--brass-light);"></i> Water & Sun</h4>
+          <p>Fishing charters, sandbar parties, Folly Beach, or a cabana at Palma Day Club with a DJ set running until 8PM.</p>
         </div>
-    </section>
-
-    <!-- ROW 5: Restaurant Section -->
-    <section class="row-5">
-        <div class="container restaurant-section">
-            <div class="section-title">
-                <h3><i class="fas fa-utensils"></i> Best Restaurants in Charleston</h3>
-                <p>Fuel up with the finest cuisine and premium dining experiences!</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="restaurant-card">
-                        <span class="restaurant-type">Steakhouse</span>
-                        <h4><i class="fas fa-fire"></i> Hall's Chophouse</h4>
-                        <p class="restaurant-description">
-                            Premium steakhouse with dry-aged beef, craft cocktails, and an extensive wine list perfect for bachelor celebrations.
-                        </p>
-                        <ul class="restaurant-highlights">
-                            <li><i class="fas fa-cut"></i> Prime dry-aged steaks</li>
-                            <li><i class="fas fa-wine-glass"></i> Award-winning wine cellar</li>
-                            <li><i class="fas fa-crown"></i> VIP private dining rooms</li>
-                        </ul>
-                        <div class="price-range">$$$$</div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="restaurant-card">
-                        <span class="restaurant-type">Seafood</span>
-                        <h4><i class="fas fa-fish"></i> Fleet Landing</h4>
-                        <p class="restaurant-description">
-                            Waterfront dining with spectacular harbor views, specializing in fresh seafood and Lowcountry classics.
-                        </p>
-                        <ul class="restaurant-highlights">
-                            <li><i class="fas fa-water"></i> Harbor views</li>
-                            <li><i class="fas fa-shrimp"></i> Famous shrimp & grits</li>
-                            <li><i class="fas fa-beer"></i> Craft beer selection</li>
-                        </ul>
-                        <div class="price-range">$$$</div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="restaurant-card">
-                        <span class="restaurant-type">Rooftop Bar</span>
-                        <h4><i class="fas fa-building"></i> The Rooftop Bar</h4>
-                        <p class="restaurant-description">
-                            Stunning rooftop views of Charleston with craft cocktails and shareable plates perfect for bachelor groups.
-                        </p>
-                        <ul class="restaurant-highlights">
-                            <li><i class="fas fa-city"></i> 360° city views</li>
-                            <li><i class="fas fa-cocktail"></i> Signature cocktails</li>
-                            <li><i class="fas fa-users"></i> Group-friendly space</li>
-                        </ul>
-                        <div class="price-range">$$$</div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="restaurant-card">
-                        <span class="restaurant-type">BBQ</span>
-                        <h4><i class="fas fa-fire"></i> Lewis Barbecue</h4>
-                        <p class="restaurant-description">
-                            Texas-style BBQ joint with massive portions, craft beer, and a laid-back atmosphere perfect for the guys.
-                        </p>
-                        <ul class="restaurant-highlights">
-                            <li><i class="fas fa-drumstick-bite"></i> Authentic BBQ meats</li>
-                            <li><i class="fas fa-beer"></i> Local craft beers</li>
-                            <li><i class="fas fa-users-friends"></i> Casual group dining</li>
-                        </ul>
-                        <div class="price-range">$$</div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="restaurant-card">
-                        <span class="restaurant-type">Bourbon Bar</span>
-                        <h4><i class="fas fa-whiskey-glass"></i> The Macintosh</h4>
-                        <p class="restaurant-description">
-                            Sophisticated dining with an impressive bourbon selection and innovative Southern cuisine in a stylish setting.
-                        </p>
-                        <ul class="restaurant-highlights">
-                            <li><i class="fas fa-wine-bottle"></i> Premium bourbon selection</li>
-                            <li><i class="fas fa-utensils"></i> Chef-driven menu</li>
-                            <li><i class="fas fa-couch"></i> Upscale atmosphere</li>
-                        </ul>
-                        <div class="price-range">$$$$</div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="restaurant-card">
-                        <span class="restaurant-type">Sports Bar</span>
-                        <h4><i class="fas fa-tv"></i> Jestine's Kitchen</h4>
-                        <p class="restaurant-description">
-                            Classic Southern comfort food with large portions, cold beer, and a fun atmosphere perfect for bachelor groups.
-                        </p>
-                        <ul class="restaurant-highlights">
-                            <li><i class="fas fa-drumstick-bite"></i> Hearty comfort food</li>
-                            <li><i class="fas fa-beer"></i> Cold beer selection</li>
-                            <li><i class="fas fa-users"></i> Group-friendly service</li>
-                        </ul>
-                        <div class="price-range">$$</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Special Bachelor Dining Tips -->
-            <div class="mt-5 p-4" style="background: linear-gradient(45deg, #ff6347, #ff4500); border-radius: 20px; color: white; text-align: center;">
-                <h4 class="mb-3" style="color: white;">
-                    <i class="fas fa-lightbulb"></i> Bachelor Dining Tips
-                </h4>
-                <div class="row g-3">
-                    <div class="col-md-4">
-                        <i class="fas fa-calendar-check" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <p class="mb-0"><strong>Make Reservations</strong><br>Book ahead for large groups</p>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="fas fa-users" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <p class="mb-0"><strong>Group Menus</strong><br>Many offer special bachelor packages</p>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="fas fa-credit-card" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <p class="mb-0"><strong>Split Checks</strong><br>Most places can accommodate splits</p>
-                    </div>
-                </div>
-            </div>
+        <div class="tide-block">
+          <div class="time-tag">Evening</div>
+          <h4><i class="fas fa-utensils" style="color:var(--brass-light);"></i> The Big Dinner</h4>
+          <p>Book the steakhouse or the new waterfront spot early — the good tables in Charleston go fast on weekends.</p>
         </div>
-    </section>
-
-    <!-- ROW 6: Contact/Footer Section -->
-    <section class="row-6">
-        <div class="container">
-            <div class="contact-content">
-                <h3><i class="fas fa-handshake"></i> Let's Plan Your Epic Weekend!</h3>
-                <div class="contact-info">
-                    <p class="mb-3" style="font-size: 1.1rem;">
-                        Ready to create unforgettable memories in Charleston?
-                    </p>
-                    <div class="cheers-divider" style="color: white;">
-                        <i class="fas fa-anchor"></i>
-                        <i class="fas fa-beer"></i>
-                        <i class="fas fa-anchor"></i>
-                    </div>
-                    <p class="fst-italic mb-0">
-                        "Charleston: Where Southern hospitality meets legendary bachelor parties"
-                    </p>
-                </div>
-            </div>
+        <div class="tide-block">
+          <div class="time-tag">Night</div>
+          <h4><i class="fas fa-beer" style="color:var(--brass-light);"></i> King Street</h4>
+          <p>Live music at On Air, rooftop cocktails, then the crawl down King Street until last call at 2AM.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- DAY CLUB + ON AIR SPOTLIGHT -->
+<section class="section-cream">
+  <div class="container">
+    <div class="kicker">
+      <div class="num">02</div>
+      <div>
+        <h2>New This Season</h2>
+        <div class="kicker-sub">The two spots every Charleston bachelor party is asking about right now.</div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="spotlight">
+          <div class="spotlight-photo upload-slot" style="border-radius:0; min-height:0; aspect-ratio:16/10;" onclick="document.getElementById('palmaPhoto').click()">
+            <img src="palma1.png" class="img-fluid" alt="palma day">
+        </div>
+          <div class="spotlight-body">
+            <div class="tag-row">
+              <span class="venue-tag new">New Opening</span>
+              <span class="venue-tag">Day Club</span>
+            </div>
+            <h3>Palma Day Club</h3>
+            <p>
+              A Hamptons-style pool party transplanted onto Meeting Street. Palma runs poolside sets from touring house DJs
+              every Saturday through Labor Day, with a full cocktail bar and a menu built around a CHS Wagyu smash burger.
+              VIP cabanas hold up to ten guests and include a dedicated server and bottle service — the move for a bachelor
+              party that wants daytime energy before the real night starts.
+            </p>
+            <div class="meta"><i class="fas fa-location-dot"></i> 1705 Meeting St &nbsp;·&nbsp; Noon–8PM Saturdays &nbsp;·&nbsp; 21+, cabanas by reservation</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="spotlight">
+          <div class="spotlight-photo upload-slot" style="border-radius:0; min-height:0; aspect-ratio:16/10;" onclick="document.getElementById('onairPhoto').click()">
+            <img src="onairlive.png" class="img-fluid" alt="on air live">
+        </div>
+          <div class="spotlight-body">
+            <div class="tag-row">
+              <span class="venue-tag new">New Opening</span>
+              <span class="venue-tag">Live Music</span>
+            </div>
+            <h3>On Air</h3>
+            <p>
+              Half live-music bar, half burger spot, all crowd. The lineup rotates constantly, but the reason everyone keeps
+              coming back is the same: a wagyu double smash burger with grilled onions and bacon that's become the thing
+              people talk about the next morning. A solid first or last stop for a bachelor party crew that wants music
+              without the cover charge of a full club.
+            </p>
+            <div class="meta"><i class="fas fa-location-dot"></i> Charleston &nbsp;·&nbsp; Live music nightly &nbsp;·&nbsp; Book a table on Resy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAR CRAWL -->
+<section class="section-dim">
+  <div class="container">
+    <div class="kicker">
+      <div class="num">03</div>
+      <div>
+        <h2>The King Street Crawl</h2>
+        <div class="kicker-sub">Everything is walkable. Start at 8, end at 2.</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+        <div class="bar-row">
+          <div class="bar-icon"><i class="fas fa-building"></i></div>
+          <div><h5>The Rooftop Bar at The Vendue</h5><p>360-degree views and the best sunset in the city — start here for the group photo.</p></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-icon"><i class="fas fa-headphones"></i></div>
+          <div><h5>On Air</h5><p>Grab the wagyu smash burger and catch whoever's playing before you move on.</p></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-icon"><i class="fas fa-music"></i></div>
+          <div><h5>Republic Garden & Lounge</h5><p>Upscale, multi-level nightclub with live DJs and VIP bottle service.</p></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-icon"><i class="fas fa-cocktail"></i></div>
+          <div><h5>Proof</h5><p>Speakeasy-style cocktails and a serious whiskey list — a good mid-crawl reset.</p></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-icon"><i class="fas fa-dice"></i></div>
+          <div><h5>Rec Room</h5><p>Arcade bar with skeeball and foosball for when the group wants to get competitive.</p></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-icon"><i class="fas fa-whiskey-glass"></i></div>
+          <div><h5>Barrel</h5><p>Over 400 bourbon and whiskey selections in an intimate setting.</p></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-icon"><i class="fas fa-drum"></i></div>
+          <div><h5>Mynt</h5><p>High-energy club on Upper King with dancing until 2AM — end the night here.</p></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-icon"><i class="fas fa-beer"></i></div>
+          <div><h5>Burns Alley Tavern</h5><p>A real dive bar tucked in a historic alley, away from the tourist spots.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout mt-5">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <i class="fas fa-droplet"></i>
+          <strong>Alternate Water</strong>
+          <p class="mb-0">Between bars, every time. King Street nights are long.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-car"></i>
+          <strong>Skip the Car</strong>
+          <p class="mb-0">Downtown parking is scarce and pricey — use rideshare.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-money-bill-wave"></i>
+          <strong>Carry Cash</strong>
+          <p class="mb-0">A few of the smaller bars still prefer it for tips.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES GRID -->
+<section class="section-cream">
+  <div class="container">
+    <div class="kicker">
+      <div class="num">04</div>
+      <div>
+        <h2>Daytime Adventures</h2>
+        <div class="kicker-sub">For the hours before the day club and the dinner reservation.</div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="activity-card">
+          <h4><i class="fas fa-anchor"></i>On the Water</h4>
+          <ul class="activity-list">
+            <li><i class="fas fa-fish"></i>Deep-sea fishing charters</li>
+            <li><i class="fas fa-ship"></i>Private yacht rentals</li>
+            <li><i class="fas fa-water"></i>Harbor boat tours</li>
+            <li><i class="fas fa-umbrella-beach"></i>Sandbar parties</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="activity-card">
+          <h4><i class="fas fa-golf-ball-tee"></i>Sports & Games</h4>
+          <ul class="activity-list">
+            <li><i class="fas fa-golf-ball"></i>Championship golf courses</li>
+            <li><i class="fas fa-bullseye"></i>Chucktown Axe Throwing</li>
+            <li><i class="fas fa-flag-checkered"></i>Topgolf, Mount Pleasant</li>
+            <li><i class="fas fa-dice"></i>Casino gaming</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="activity-card">
+          <h4><i class="fas fa-landmark"></i>Downtown History</h4>
+          <ul class="activity-list">
+            <li><i class="fas fa-horse"></i>Historic carriage tours</li>
+            <li><i class="fas fa-ghost"></i>Ghost walking tours</li>
+            <li><i class="fas fa-store"></i>Historic City Market</li>
+            <li><i class="fas fa-mug-saucer"></i>1700s tavern crawl</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="activity-card">
+          <h4><i class="fas fa-sun"></i>Beach Days</h4>
+          <ul class="activity-list">
+            <li><i class="fas fa-person-swimming"></i>Folly Beach & the Pier</li>
+            <li><i class="fas fa-water-ladder"></i>Isle of Palms</li>
+            <li><i class="fas fa-volleyball"></i>Beach volleyball</li>
+            <li><i class="fas fa-shrimp"></i>Fish tacos on Center St</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DINING -->
+<section class="section-dim">
+  <div class="container">
+    <div class="kicker">
+      <div class="num">05</div>
+      <div>
+        <h2>Where to Eat</h2>
+        <div class="kicker-sub">New openings worth booking, plus the local favorites that never miss.</div>
+      </div>
+    </div>
+
+    <!-- New & Notable -->
+    <div class="meal-block">
+      <h3><i class="fas fa-star" style="color:var(--brass);"></i> New & Notable</h3>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <span class="rbadge new">New on Resy</span>
+            <h4><i class="fas fa-glass-water"></i>Lou Lou's Tavern</h4>
+            <p>Shrimp and grits, duck fat truffle fries, and charcuterie — the right dinner before a show or a night out.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <span class="rbadge new">New on Resy</span>
+            <h4><i class="fas fa-water"></i>The Crossing</h4>
+            <p>The Cooper's signature restaurant on the French Quarter waterfront — Eastern Mediterranean fare, a raw bar, and rare true harbor views.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <span class="rbadge new">New Opening</span>
+            <h4><i class="fas fa-leaf"></i>Terra</h4>
+            <p>Modern Mediterranean cuisine inside the Live Oak hotel, built on Lowcountry farms, foragers, and fisheries.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <span class="rbadge">Park Circle</span>
+            <h4><i class="fas fa-bowl-rice"></i>Katsubō</h4>
+            <p>An izakaya built for a group — ramen, baos, twice-fried chicken, and Japanese-inspired cocktails made to keep the table talking.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <span class="rbadge new">New Opening</span>
+            <h4><i class="fas fa-cigarette"></i>King's Leaf Point Hope</h4>
+            <p>Cigars, premium liquor, and a "poker table" reservation option — book ahead if that's the vibe you're after.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <span class="rbadge new">New Opening</span>
+            <h4><i class="fas fa-shrimp"></i>The Lick at 10 Windermere</h4>
+            <p>West Ashley fine dining with a raw bar and Australian and Japanese wagyu — swanky enough that it's worth the drive.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <span class="rbadge">Good for Groups</span>
+            <h4><i class="fas fa-fish"></i>Victor's Seafood and Steak</h4>
+            <p>A dependable surf-and-turf pick for a bachelor party table that wants steak and seafood both on the menu.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <span class="rbadge">Good for Groups</span>
+            <h4><i class="fas fa-wine-glass"></i>Vincent Chicco's</h4>
+            <p>An Italian steakhouse built for a crowd, with a serious cocktail program to match.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Breakfast -->
+    <div class="meal-block">
+      <h3><i class="fas fa-mug-hot"></i> Breakfast</h3>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-bacon"></i>Hominy Grill</h4>
+            <p>Shrimp and grits, the "Big Nasty" biscuit, and sweet potato pancakes for the group recovering from the night before.</p>
+            <div class="price">$$</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-egg"></i>Callie's Hot Little Biscuit</h4>
+            <p>Grab-and-go handmade biscuits, from fried chicken to pimento cheese, at locations across Charleston.</p>
+            <div class="price">$</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-champagne-glasses"></i>Toast All Day</h4>
+            <p>Bottomless mimosas and a menu wide enough for the whole group, from avocado toast to chicken and waffles.</p>
+            <div class="price">$$</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-drumstick-bite"></i>Page's Okra Grill</h4>
+            <p>Homestyle Lowcountry breakfast since 1997 — try the crab omelet. Cash only.</p>
+            <div class="price">$</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lunch -->
+    <div class="meal-block">
+      <h3><i class="fas fa-hamburger"></i> Lunch</h3>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-fire"></i>Lewis Barbecue</h4>
+            <p>Award-winning Texas-style brisket and beef ribs — get there early, it sells out.</p>
+            <div class="price">$$</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-water"></i>Fleet Landing</h4>
+            <p>Fresh seafood and cold beer on a restored naval building with harbor views.</p>
+            <div class="price">$$-$$$</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-burger"></i>Boxcar Betty's</h4>
+            <p>A simple, exceptional fried chicken sandwich — the Betty is a must-try between activities.</p>
+            <div class="price">$</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-bread-slice"></i>Butcher & Bee</h4>
+            <p>Whipped feta, a lamb burger, and creative vegetarian options in a hip, communal space.</p>
+            <div class="price">$$</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dinner -->
+    <div class="meal-block">
+      <h3><i class="fas fa-moon"></i> Dinner</h3>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-fire"></i>Hall's Chophouse</h4>
+            <p>Charleston's premier steakhouse — dry-aged beef, an extensive wine list, and VIP private dining rooms for the group.</p>
+            <div class="price">$$$$</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-whiskey-glass"></i>The Macintosh</h4>
+            <p>Seasonal Southern cuisine paired with one of the best bourbon selections in the city.</p>
+            <div class="price">$$$-$$$$</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-shrimp"></i>Hank's Seafood</h4>
+            <p>Fresh oysters and she-crab soup in a historic downtown building — reserve ahead for large groups.</p>
+            <div class="price">$$$</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="restaurant-item">
+            <h4><i class="fas fa-seedling"></i>FIG</h4>
+            <p>Seasonal, locally-sourced, and one of the best tables in Charleston — book well in advance.</p>
+            <div class="price">$$$$</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <i class="fas fa-calendar-check"></i>
+          <strong>Make Reservations</strong>
+          <p class="mb-0">Book ahead for large groups, especially the new spots.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-users"></i>
+          <strong>Group Menus</strong>
+          <p class="mb-0">Many offer bachelor packages and private dining rooms.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-credit-card"></i>
+          <strong>Split Checks</strong>
+          <p class="mb-0">Most places can split the bill — just ask ahead.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section">
+  <div class="container">
+    <h3><i class="fas fa-anchor"></i> Let's Plan Your Epic Weekend</h3>
+    <p>Ready to build the itinerary — day club, dinner, and the crawl?</p>
+    <div class="footer-divider"></div>
+    <p class="footer-quote">"Charleston: where Southern hospitality meets a legendary bachelor party."</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
