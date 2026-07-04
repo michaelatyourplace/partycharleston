@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Charleston Nightlife Under 21: 18-20 Fun & Evening Entertainment</title>
   <link rel="canonical" href="https://www.partycharleston.com/charleston-college-party-scene/charleston-nightlife-under-21.html">
-  <meta name="description" content="Explore Charleston’s under-21 nightlife and all-ages entertainment options, including late-night dining, live music, and social hangouts.">
+  <meta name="description" content="Explore Charleston's under-21 nightlife and all-ages entertainment options, including late-night dining, live music, and social hangouts.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -14,7 +18,7 @@
     "@type": "Place",
     "name": "Charleston Nightlife Under 21",
     "url": "https://www.partycharleston.com/charleston-party-scene/nightlife-under-21.html",
-    "description": "Informational page about under-21 nightlife in Charleston, including late-night restaurants, arcades, live events, and music venues.",
+    "description": "Informational page about under-21 nightlife in Charleston, including late-night restaurants, live music venues, and social hangouts.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Charleston",
@@ -27,17 +31,192 @@
       "longitude": -79.9311
     },
     "areaServed": "Charleston, SC",
-    "mainEntityOfPage": "https://www.partycharleston.com/parties/college.html"
+    "mainEntityOfPage": "https://www.partycharleston.com/charleston-party-scene/college-party-scene.html"
   }
   </script>
 
   <style>
-    .hero { background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('/images/charleston-under21.jpg'); background-size: cover; color: #fff; padding: 4rem 0; }
-    .card-link { text-decoration: none; }
+    :root{
+      --teal-deep:#1f4e4e;
+      --teal-mid:#2d6a6a;
+      --coral:#e8734a;
+      --coral-light:#f4a482;
+      --cream:#faf6ef;
+      --navy:#24303d;
+      --ink:#22282c;
+      --line:rgba(31,78,78,0.14);
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      font-family:'Inter', sans-serif;
+      color:var(--ink);
+      background:var(--cream);
+      line-height:1.7;
+    }
+
+    h1,h2,h3,h4{
+      font-family:'Poppins', sans-serif;
+      font-weight:600;
+      color:var(--teal-deep);
+    }
+
+    a{color:var(--teal-mid);}
+    a:hover{color:var(--coral);}
+
+    .navbar{
+      background:var(--navy) !important;
+      padding:0.9rem 0;
+    }
+    .navbar-brand{
+      font-family:'Poppins', sans-serif;
+      font-weight:700;
+      color:var(--coral-light) !important;
+      letter-spacing:0.01em;
+    }
+    .nav-link{
+      color:#eef2f0 !important;
+      font-weight:500;
+      font-size:0.95rem;
+      padding:0.5rem 1rem !important;
+    }
+    .nav-link:hover, .nav-link.active{color:var(--coral-light) !important;}
+
+    .hero{
+      position:relative;
+      background:
+        linear-gradient(180deg, rgba(31,78,78,0.55), rgba(36,48,61,0.85)),
+        url('/images/charleston-under21.jpg');
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+      padding:5rem 0 4rem;
+      text-align:center;
+    }
+    .hero .eyebrow{
+      font-size:0.8rem;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:var(--coral-light);
+      font-weight:600;
+    }
+    .hero h1{color:#fff; font-size:clamp(2.2rem, 5vw, 3.2rem); margin:0.6rem 0 1rem;}
+    .hero .lead{color:rgba(255,255,255,0.9); max-width:620px; margin:0 auto 2rem; font-size:1.15rem;}
+    .hero-photo{
+      max-width:640px;
+      margin:0 auto;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 20px 45px rgba(0,0,0,0.35);
+      border:3px solid rgba(255,255,255,0.25);
+    }
+    .hero-photo img{width:100%; display:block;}
+
+    main{padding-top:1rem;}
+
+    .intro-box{
+      max-width:760px;
+      margin:0 auto 3.5rem;
+      text-align:center;
+    }
+    .intro-box p{font-size:1.08rem; color:#3d453f;}
+
+    .section-block{
+      background:#fff;
+      border-radius:14px;
+      padding:2.5rem;
+      margin-bottom:2.5rem;
+      box-shadow:0 10px 30px rgba(31,78,78,0.07);
+      border-top:4px solid var(--coral);
+    }
+    .section-block h2{
+      display:flex;
+      align-items:center;
+      gap:0.7rem;
+      font-size:1.6rem;
+      margin-bottom:1.1rem;
+    }
+    .section-block h2 i{color:var(--coral); font-size:1.3rem;}
+    .section-block p{color:#3d453f; font-size:1.02rem;}
+    .section-photo{
+      border-radius:10px;
+      overflow:hidden;
+      margin-bottom:1.5rem;
+    }
+    .section-photo img{width:100%; display:block;}
+
+    .venue-pill-row{margin-top:1rem;}
+    .venue-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:0.4rem;
+      background:var(--cream);
+      border:1px solid var(--line);
+      border-radius:30px;
+      padding:0.5rem 1.1rem;
+      margin:0.25rem 0.35rem 0.25rem 0;
+      font-size:0.92rem;
+      font-weight:500;
+      color:var(--teal-deep);
+      text-decoration:none;
+    }
+    .venue-pill:hover{background:var(--teal-deep); color:#fff; border-color:var(--teal-deep);}
+    .venue-pill i{color:var(--coral); font-size:0.85rem;}
+    .venue-pill:hover i{color:var(--coral-light);}
+
+    .spotlight-card{
+      background:linear-gradient(135deg, var(--teal-deep), var(--teal-mid));
+      color:#fff;
+      border-radius:14px;
+      padding:2.25rem;
+      margin-top:1.5rem;
+    }
+    .spotlight-card .tag{
+      display:inline-block;
+      background:var(--coral);
+      color:#fff;
+      font-size:0.72rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      font-weight:600;
+      padding:0.3rem 0.8rem;
+      border-radius:20px;
+      margin-bottom:0.9rem;
+    }
+    .spotlight-card h3{color:#fff; font-size:1.4rem; margin-bottom:0.6rem;}
+    .spotlight-card p{color:rgba(255,255,255,0.88); margin-bottom:0;}
+
+    .topic-card{
+      background:#fff;
+      border-radius:10px;
+      padding:1.5rem 1.6rem;
+      height:100%;
+      border:1px solid var(--line);
+      transition:all 0.2s ease;
+      text-decoration:none;
+      display:block;
+    }
+    .topic-card:hover{
+      border-color:var(--coral);
+      transform:translateY(-3px);
+      box-shadow:0 12px 24px rgba(31,78,78,0.1);
+    }
+    .topic-card h5{color:var(--teal-deep); font-family:'Poppins', sans-serif; font-weight:600; margin-bottom:0.4rem;}
+    .topic-card p{color:#5c655f; font-size:0.92rem; margin:0;}
+
+    footer{
+      background:var(--navy);
+      color:rgba(255,255,255,0.7);
+      text-align:center;
+      padding:2.5rem 0;
+      font-size:0.9rem;
+      margin-top:2rem;
+    }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
     <a class="navbar-brand" href="/">PartyCharleston</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -49,7 +228,6 @@
         <li class="nav-item"><a class="nav-link" href="/charleston-party-scene/college-party-scene.html">College</a></li>
         <li class="nav-item"><a class="nav-link" href="/charleston-party-scene/nightlife-21-plus.html">21+ Nightlife</a></li>
         <li class="nav-item"><a class="nav-link active" href="/charleston-party-scene/nightlife-under-21.html">Under 21</a></li>
-        <li class="nav-item"><a class="nav-link" href="/charleston-party-scene/under-18-bachelorette-parties.html">Under 18 Parties</a></li>
       </ul>
     </div>
   </div>
@@ -57,90 +235,454 @@
 
 <header class="hero">
   <div class="container">
-    <h1 class="display-5">Charleston Nightlife Under 21</h1>
-    <img src="../parties/cofc1.webp" class="img-fluid" alt="">
-    <p class="lead">Discover Charleston’s nightlife options for guests under 21</p>
+    <div class="eyebrow">Under 21 Guide</div>
+    <h1>Charleston Nightlife Under 21</h1>
+    <p class="lead">The best of Charleston after dark for guests under 21 — live music, late-night eats, and social spots across the Holy City.</p>
+    <div class="hero-photo">
+      <img src="../parties/cofc1.webp" alt="College of Charleston campus at night">
+    </div>
   </div>
 </header>
 
 <main class="container my-5">
   <article>
-    <section>
-      <h2>Charleston’s 18-20 Nightlife Culture</h2>
-      <p>Charleston offers more than just bars and clubs. Its under-21 nightlife includes an energetic mix of live music, waterfront dining, and late-night coffeehouses that welcome younger crowds. With its walkable streets and compact downtown, students and visitors under the legal drinking age can easily find safe, social environments to enjoy Charleston’s cultural vibrancy without alcohol-centered venues.</p>
-    </section>
 
-    <img src="/parties/rooftopbar.png" class="img-fluid" alt="">
+    <div class="intro-box">
+      <h2 class="mb-3" style="font-size:1.5rem;">A City Built for Walking, Not Just Bar-Hopping</h2>
+      <p>Charleston offers more than just bars and clubs. Its under-21 nightlife includes an energetic mix of live music, waterfront dining, and late-night eateries that welcome younger crowds. With its walkable streets and compact downtown, students and visitors under the legal drinking age can easily find safe, social environments to enjoy Charleston's cultural vibrancy without alcohol-centered venues.</p>
+    </div>
 
-    <section class="mt-4">
-      <h2>Late-Night Dining and Spots</h2>
-      <p>Many restaurants in Charleston keep their kitchens open late, providing a relaxed setting for groups under 21. Places like <a href="http://fuelcharleston.com/">Fuel</a>, <a href="https://kickinchicken.com/">Kickin’ Chicken</a>, and <a href="http://carmellasdessertbar.com/">Carmella’s Café</a> offer a mix of sweet and savory menus ideal for post-event hangouts.</p>
-    </section>
-
-    <img src="/king-street-bar-crawl/king3.png" class="img-fluid" alt="">
-
-    <section class="mt-4">
-      <h2>Music and Live Events</h2>
-      <p>Concerts and open-air performances are a core part of Charleston’s entertainment calendar. Venues such as <a href="https://www.musicfarm.com/">Music Farm</a> and <a href="https://charlestonpourhouse.com/">Pour House</a> frequently host under-21-friendly shows, while arcades and escape rooms on King Street provide group activities that last into the evening. City Market and Waterfront Park often feature seasonal events and pop-up art nights that attract a diverse crowd of younger attendees.</p>
-    </section>
-
-    <section class="mt-4">
-      <h2>The 18+ Ideas</h2>
-      <div class="row g-4 my-4">
-
-        <div class="col-md-6">
-          <img src="/parties/dance.jpg" class="img-fluid rounded shadow-sm" alt="Charleston activity photo">
-        </div>
-      
-        <div class="col-md-6">
-          <img src="/bach-party/charlestonbacheloretteentertainment.png" class="img-fluid rounded shadow-sm" alt="Charleston activity photo">
-        </div>
-      
+    <section class="section-block">
+      <h2><i class="fas fa-utensils"></i> Late-Night Dining and Spots</h2>
+      <div class="section-photo">
+        <img src="/parties/rooftopbar.png" class="img-fluid" alt="Charleston late-night dining spot">
       </div>
-      <p>Your are over 18 so and their are adult adoptions, for the boys <a href="http://www.kingstreetcabaret.com/">King Street Cabaret</a> or for the girls <a href="https://michaelatyourplace.com">Stay in for Michael at Your Place</a>.</p>
-    </section>
+      <p>Many restaurants in Charleston keep their kitchens open late, providing a relaxed setting for groups under 21. Places like <a href="http://fuelcharleston.com/">Fuel</a>, <a href="https://kickinchicken.com/">Kickin' Chicken</a>, and <a href="http://carmellasdessertbar.com/">Carmella's Café</a> offer a mix of sweet and savory menus ideal for post-event hangouts.</p>
 
-    <section class="mt-4">
-      <h2>Connected Charleston Nightlife Topics</h2>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <a class="card card-link" href="https://www.partycharleston.com/charleston-party-scene/college-party-scene.html">
-            <div class="card-body">
-              <h5 class="card-title">Charleston College Party Scene</h5>
-              <p class="card-text">Explore social events, Greek life, and campus nightlife insights.</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6 mb-3">
-          <a class="card card-link" href="https://www.partycharleston.com/charleston-party-scene/nightlife-21-plus.html">
-            <div class="card-body">
-              <h5 class="card-title">Charleston Nightlife 21+</h5>
-              <p class="card-text">Discover Charleston’s 21+ bars, rooftop venues, and live entertainment.</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6 mb-3">
-          <a class="card card-link" href="https://www.partycharleston.com/charleston-party-scene/under-18-bachelorette-parties.html">
-            <div class="card-body">
-              <h5 class="card-title">Under-18 Bachelorette Parties</h5>
-              <p class="card-text">Unique ideas for safe, fun group celebrations for younger audiences.</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6 mb-3">
-          <a class="card card-link" href="https://www.partycharleston.com/charleston-party-scene/index.html">
-            <div class="card-body">
-              <h5 class="card-title">Charleston Party Scene Hub</h5>
-              <p class="card-text">Return to the main nightlife overview.</p>
-            </div>
-          </a>
-        </div>
+      <div class="spotlight-card">
+        <span class="tag">Live Music + Food</span>
+        <h3>On Air</h3>
+        <p>One of Charleston's newest live-music spots pairs a rotating lineup of performers with an all-day food menu, including its wagyu smash burger. It's a solid stop for a group looking for music and a late meal without the bar-crawl scene.</p>
       </div>
     </section>
 
+    <section class="section-block">
+      <h2><i class="fas fa-music"></i> Music and Live Events</h2>
+      <div class="section-photo">
+        <img src="/king-street-bar-crawl/king3.png" class="img-fluid" alt="King Street Charleston evening scene">
+      </div>
+      <p>Concerts and open-air performances are a core part of Charleston's entertainment calendar. Venues such as <a href="https://www.musicfarm.com/">Music Farm</a> and <a href="https://charlestonpourhouse.com/">Pour House</a> frequently host all-ages and under-21-friendly shows, while arcades and escape rooms on King Street provide group activities that last into the evening. City Market and Waterfront Park often feature seasonal events and pop-up art nights that attract a diverse crowd of younger attendees.</p>
+      <div class="venue-pill-row">
+        <a class="venue-pill" href="https://www.musicfarm.com/"><i class="fas fa-guitar"></i>Music Farm</a>
+        <a class="venue-pill" href="https://charlestonpourhouse.com/"><i class="fas fa-drum"></i>Pour House</a>
+        <span class="venue-pill"><i class="fas fa-burger"></i>On Air</span>
+        <span class="venue-pill"><i class="fas fa-gamepad"></i>King Street Arcades</span>
+        <span class="venue-pill"><i class="fas fa-store"></i>City Market</span>
+      </div>
+    </section>
+
+    <section class="mt-4">
+      <h2 class="mb-4" style="font-size:1.5rem;">Connected Charleston Nightlife Topics</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <a class="topic-card" href="https://www.partycharleston.com/charleston-party-scene/college-party-scene.html">
+            <h5>Charleston College Party Scene</h5>
+            <p>Explore social events, Greek life, and campus nightlife insights.</p>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a class="topic-card" href="https://www.partycharleston.com/charleston-party-scene/nightlife-21-plus.html">
+            <h5>Charleston Nightlife 21+</h5>
+            <p>Discover Charleston's 21+ bars, rooftop venues, and live entertainment.</p>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a class="topic-card" href="https://www.partycharleston.com/charleston-party-scene/index.html">
+            <h5>Charleston Party Scene Hub</h5>
+            <p>Return to the main nightlife overview.</p>
+          </a>
+        </div>
+      </div>
+    </section><!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Charleston Nightlife Under 21: 18-20 Fun & Evening Entertainment</title>
+      <link rel="canonical" href="https://www.partycharleston.com/charleston-college-party-scene/charleston-nightlife-under-21.html">
+      <meta name="description" content="Explore Charleston's under-21 nightlife and all-ages entertainment options, including late-night dining, live music, and social hangouts.">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Place",
+        "name": "Charleston Nightlife Under 21",
+        "url": "https://www.partycharleston.com/charleston-party-scene/nightlife-under-21.html",
+        "description": "Informational page about under-21 nightlife in Charleston, including late-night restaurants, live music venues, and social hangouts.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Charleston",
+          "addressRegion": "SC",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 32.7765,
+          "longitude": -79.9311
+        },
+        "areaServed": "Charleston, SC",
+        "mainEntityOfPage": "https://www.partycharleston.com/charleston-party-scene/college-party-scene.html"
+      }
+      </script>
+    
+      <style>
+        :root{
+          --teal-deep:#1f4e4e;
+          --teal-mid:#2d6a6a;
+          --coral:#e8734a;
+          --coral-light:#f4a482;
+          --cream:#faf6ef;
+          --navy:#24303d;
+          --ink:#22282c;
+          --line:rgba(31,78,78,0.14);
+        }
+    
+        *{box-sizing:border-box;}
+    
+        body{
+          font-family:'Inter', sans-serif;
+          color:var(--ink);
+          background:var(--cream);
+          line-height:1.7;
+        }
+    
+        h1,h2,h3,h4{
+          font-family:'Poppins', sans-serif;
+          font-weight:600;
+          color:var(--teal-deep);
+        }
+    
+        a{color:var(--teal-mid);}
+        a:hover{color:var(--coral);}
+    
+        .navbar{
+          background:var(--navy) !important;
+          padding:0.9rem 0;
+        }
+        .navbar-brand{
+          font-family:'Poppins', sans-serif;
+          font-weight:700;
+          color:var(--coral-light) !important;
+          letter-spacing:0.01em;
+        }
+        .nav-link{
+          color:#eef2f0 !important;
+          font-weight:500;
+          font-size:0.95rem;
+          padding:0.5rem 1rem !important;
+        }
+        .nav-link:hover, .nav-link.active{color:var(--coral-light) !important;}
+    
+        .hero{
+          position:relative;
+          background:
+            linear-gradient(180deg, rgba(31,78,78,0.55), rgba(36,48,61,0.85)),
+            url('/images/charleston-under21.jpg');
+          background-size:cover;
+          background-position:center;
+          color:#fff;
+          padding:5rem 0 4rem;
+          text-align:center;
+        }
+        .hero .eyebrow{
+          font-size:0.8rem;
+          letter-spacing:0.14em;
+          text-transform:uppercase;
+          color:var(--coral-light);
+          font-weight:600;
+        }
+        .hero h1{color:#fff; font-size:clamp(2.2rem, 5vw, 3.2rem); margin:0.6rem 0 1rem;}
+        .hero .lead{color:rgba(255,255,255,0.9); max-width:620px; margin:0 auto 2rem; font-size:1.15rem;}
+        .hero-photo{
+          max-width:640px;
+          margin:0 auto;
+          border-radius:10px;
+          overflow:hidden;
+          box-shadow:0 20px 45px rgba(0,0,0,0.35);
+          border:3px solid rgba(255,255,255,0.25);
+        }
+        .hero-photo img{width:100%; display:block;}
+    
+        main{padding-top:1rem;}
+    
+        .intro-box{
+          max-width:760px;
+          margin:0 auto 3.5rem;
+          text-align:center;
+        }
+        .intro-box p{font-size:1.08rem; color:#3d453f;}
+    
+        .section-block{
+          background:#fff;
+          border-radius:14px;
+          padding:2.5rem;
+          margin-bottom:2.5rem;
+          box-shadow:0 10px 30px rgba(31,78,78,0.07);
+          border-top:4px solid var(--coral);
+        }
+        .section-block h2{
+          display:flex;
+          align-items:center;
+          gap:0.7rem;
+          font-size:1.6rem;
+          margin-bottom:1.1rem;
+        }
+        .section-block h2 i{color:var(--coral); font-size:1.3rem;}
+        .section-block p{color:#3d453f; font-size:1.02rem;}
+        .section-photo{
+          border-radius:10px;
+          overflow:hidden;
+          margin-bottom:1.5rem;
+        }
+        .section-photo img{width:100%; display:block;}
+    
+        .venue-pill-row{margin-top:1rem;}
+        .venue-pill{
+          display:inline-flex;
+          align-items:center;
+          gap:0.4rem;
+          background:var(--cream);
+          border:1px solid var(--line);
+          border-radius:30px;
+          padding:0.5rem 1.1rem;
+          margin:0.25rem 0.35rem 0.25rem 0;
+          font-size:0.92rem;
+          font-weight:500;
+          color:var(--teal-deep);
+          text-decoration:none;
+        }
+        .venue-pill:hover{background:var(--teal-deep); color:#fff; border-color:var(--teal-deep);}
+        .venue-pill i{color:var(--coral); font-size:0.85rem;}
+        .venue-pill:hover i{color:var(--coral-light);}
+    
+        .spotlight-card{
+          background:linear-gradient(135deg, var(--teal-deep), var(--teal-mid));
+          color:#fff;
+          border-radius:14px;
+          padding:2.25rem;
+          margin-top:1.5rem;
+        }
+        .spotlight-card .tag{
+          display:inline-block;
+          background:var(--coral);
+          color:#fff;
+          font-size:0.72rem;
+          letter-spacing:0.08em;
+          text-transform:uppercase;
+          font-weight:600;
+          padding:0.3rem 0.8rem;
+          border-radius:20px;
+          margin-bottom:0.9rem;
+        }
+        .spotlight-card h3{color:#fff; font-size:1.4rem; margin-bottom:0.6rem;}
+        .spotlight-card p{color:rgba(255,255,255,0.88); margin-bottom:0;}
+    
+        /* Events finder section */
+        .events-photo-slot{
+          aspect-ratio:16/9;
+          border-radius:10px;
+          overflow:hidden;
+          border:1.5px dashed rgba(31,78,78,0.35);
+          background:var(--cream);
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+          color:var(--teal-mid);
+          text-align:center;
+          cursor:pointer;
+          padding:1.5rem;
+          transition:all .2s ease;
+        }
+        .events-photo-slot:hover{background:#f0ece0; border-color:var(--coral);}
+        .events-photo-slot i{font-size:2rem; margin-bottom:0.6rem; color:var(--coral);}
+        .events-photo-slot small{color:#7a8580; font-size:0.75rem; margin-top:0.4rem;}
+        .events-list{list-style:none; padding:0; margin:0;}
+        .events-list li{
+          display:flex; gap:0.7rem; align-items:flex-start;
+          padding:0.6rem 0;
+          border-bottom:1px solid var(--line);
+          font-size:0.98rem;
+          color:#3d453f;
+        }
+        .events-list li:last-child{border-bottom:none;}
+        .events-list i{color:var(--coral); margin-top:0.25rem;}
+    
+        .topic-card{
+          background:#fff;
+          border-radius:10px;
+          padding:1.5rem 1.6rem;
+          height:100%;
+          border:1px solid var(--line);
+          transition:all 0.2s ease;
+          text-decoration:none;
+          display:block;
+        }
+        .topic-card:hover{
+          border-color:var(--coral);
+          transform:translateY(-3px);
+          box-shadow:0 12px 24px rgba(31,78,78,0.1);
+        }
+        .topic-card h5{color:var(--teal-deep); font-family:'Poppins', sans-serif; font-weight:600; margin-bottom:0.4rem;}
+        .topic-card p{color:#5c655f; font-size:0.92rem; margin:0;}
+    
+        footer{
+          background:var(--navy);
+          color:rgba(255,255,255,0.7);
+          text-align:center;
+          padding:2.5rem 0;
+          font-size:0.9rem;
+          margin-top:2rem;
+        }
+      </style>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">PartyCharleston</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/charleston-party-scene/index.html">Party Scene</a></li>
+            <li class="nav-item"><a class="nav-link" href="/charleston-party-scene/college-party-scene.html">College</a></li>
+            <li class="nav-item"><a class="nav-link" href="/charleston-party-scene/nightlife-21-plus.html">21+ Nightlife</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/charleston-party-scene/nightlife-under-21.html">Under 21</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <header class="hero">
+      <div class="container">
+        <div class="eyebrow">Your Guide</div>
+        <h1>Charleston Nightlife Under 21</h1>
+        <p class="lead">The best of Charleston after dark for guests under 21 — live music, late-night eats, and social spots across the Holy City.</p>
+        <div class="hero-photo">
+          <img src="../parties/cofc1.webp" alt="College of Charleston campus at night">
+        </div>
+      </div>
+    </header>
+    
+    <main class="container my-5">
+      <article>
+    
+        <div class="intro-box">
+          <h2 class="mb-3" style="font-size:1.5rem;">A City Built for Walking, Not Just Bar-Hopping</h2>
+          <p>Charleston offers more than just bars and clubs. Its under-21 nightlife includes an energetic mix of live music, waterfront dining, and late-night eateries that welcome younger crowds. With its walkable streets and compact downtown, students and visitors under the legal drinking age can easily find safe, social environments to enjoy Charleston's cultural vibrancy without alcohol-centered venues.</p>
+        </div>
+    
+        <section class="section-block">
+          <h2><i class="fas fa-utensils"></i> Late-Night Dining and Spots</h2>
+          <div class="section-photo">
+            <img src="/parties/rooftopbar.png" class="img-fluid" alt="Charleston late-night dining spot">
+          </div>
+          <p>Many restaurants in Charleston keep their kitchens open late, providing a relaxed setting for groups under 21. Places like <a href="http://fuelcharleston.com/">Fuel</a>, <a href="https://kickinchicken.com/">Kickin' Chicken</a>, and <a href="http://carmellasdessertbar.com/">Carmella's Café</a> offer a mix of sweet and savory menus ideal for post-event hangouts.</p>
+    
+          <div class="spotlight-card">
+            <span class="tag">Live Music + Food</span>
+            <h3>On Air</h3>
+            <p>One of Charleston's newest live-music spots pairs a rotating lineup of performers with an all-day food menu, including its wagyu smash burger. It's a solid stop for a group looking for music and a late meal without the bar-crawl scene.</p>
+          </div>
+        </section>
+    
+        <section class="section-block">
+          <h2><i class="fas fa-music"></i> Music and Live Events</h2>
+          <div class="section-photo">
+            <img src="/king-street-bar-crawl/king3.png" class="img-fluid" alt="King Street Charleston evening scene">
+          </div>
+          <p>Concerts and open-air performances are a core part of Charleston's entertainment calendar. Venues such as <a href="https://www.musicfarm.com/">Music Farm</a> and <a href="https://charlestonpourhouse.com/">Pour House</a> frequently host all-ages and under-21-friendly shows, while arcades and escape rooms on King Street provide group activities that last into the evening. City Market and Waterfront Park often feature seasonal events and pop-up art nights that attract a diverse crowd of younger attendees.</p>
+          <div class="venue-pill-row">
+            <a class="venue-pill" href="https://www.musicfarm.com/"><i class="fas fa-guitar"></i>Music Farm</a>
+            <a class="venue-pill" href="https://charlestonpourhouse.com/"><i class="fas fa-drum"></i>Pour House</a>
+            <span class="venue-pill"><i class="fas fa-burger"></i>On Air</span>
+            <span class="venue-pill"><i class="fas fa-gamepad"></i>King Street Arcades</span>
+            <span class="venue-pill"><i class="fas fa-store"></i>City Market</span>
+          </div>
+        </section>
+    
+        <section class="section-block">
+          <h2><i class="fas fa-calendar-days"></i> Find More Events</h2>
+          <div class="row g-4 align-items-center">
+            <div class="col-md-5">
+              <div class="events-photo-slot" onclick="document.getElementById('eventsPhoto').click()">
+              <img src="poshvip.png" alt="posh vip"> 
+            </div>
+            </div>
+            <div class="col-md-7">
+              <p>Looking for what's happening this week? These sources post up-to-date, all-ages event listings across Charleston:</p>
+              <ul class="events-list">
+                <li><i class="fas fa-ticket"></i><span><a href="https://www.musicfarm.com/">Music Farm's show calendar</a> — touring acts and local bills, many marked all-ages</span></li>
+                <li><i class="fas fa-ticket"></i><span><a href="https://posh.vip">Posh VIP</a>Find a event under 21</span></li>
+                <li><i class="fas fa-ticket"></i><span><a href="https://charlestonpourhouse.com/">Pour House's events page</a> — live music and community events</span></li>
+                <li><i class="fas fa-graduation-cap"></i><span>The <a href="https://cofc.edu/">College of Charleston</a> campus events calendar for student-run shows and activities</span></li>
+                <li><i class="fas fa-tree-city"></i><span>The City of Charleston's <a href="https://www.charleston-sc.gov/calendar.aspx">events calendar</a> for Waterfront Park and City Market pop-ups</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    
+        <section class="mt-4">
+          <h2 class="mb-4" style="font-size:1.5rem;">Connected Charleston Nightlife Topics</h2>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <a class="topic-card" href="https://www.partycharleston.com/charleston-party-scene/college-party-scene.html">
+                <h5>Charleston College Party Scene</h5>
+                <p>Explore social events, Greek life, and campus nightlife insights.</p>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a class="topic-card" href="https://www.partycharleston.com/charleston-party-scene/nightlife-21-plus.html">
+                <h5>Charleston Nightlife 21+</h5>
+                <p>Discover Charleston's 21+ bars, rooftop venues, and live entertainment.</p>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a class="topic-card" href="https://www.partycharleston.com/charleston-party-scene/index.html">
+                <h5>Charleston Party Scene Hub</h5>
+                <p>Return to the main nightlife overview.</p>
+              </a>
+            </div>
+          </div>
+        </section>
+    
+      </article>
+    </main>
+    
+    <footer>
+      <div class="container">
+        <p class="mb-0">PartyCharleston — Charleston's guide to social life for every age group.</p>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+
   </article>
 </main>
+
+<footer>
+  <div class="container">
+    <p class="mb-0">PartyCharleston — Charleston's guide to social life for every age group.</p>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
