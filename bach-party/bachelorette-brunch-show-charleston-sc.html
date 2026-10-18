@@ -5,25 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Charleston Brunch Entertainment For Bachelorette Party</title>
-  <meta name="description" content="Book a Charleston brunch show—playful, fun, brunch entertainment for bachelorettes. Call or text 843-360-9438." />
-  <link rel="canonical" href="https://michaelatyourplace.com/bachelorette-brunch-show-charleston-sc" />
+  <meta name="description" content="Charleston brunch show for bachelorettes: a private, playful performance at your rental, $200 for up to 90 minutes, paid on arrival. Call or text 843-360-9438." />
+  <link rel="canonical" href="https://www.partycharleston.com/bach-party/bachelorette-brunch-show-charleston-sc.html" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-  <!-- Performing Arts / Event Schema (JSON-LD) -->
+  <!-- Service Schema (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Charleston Brunch Show (Bachelorette Brunch Entertainment)",
-    "startDate": "2026-02-01T11:00:00-14:00",
-    "description": "A playful, fun, Charleston brunch live show designed for bachelorette brunch celebrations and bridal party entertainment. Book direct with a local entertainer—call or text to reserve.",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "location": {
-      "@type": "Place",
-      "name": "Charleston, SC",
+    "@type": "Service",
+    "name": "Charleston Bachelorette Brunch Show",
+    "serviceType": "Bachelorette Brunch Entertainment",
+    "description": "A private, playful brunch show for bachelorette parties at your rental in the Charleston area. $200 for up to 90 minutes, paid on arrival.",
+    "image": "https://www.partycharleston.com/bach-party/your-place-live-shows-michael-90-1.png",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Michael At Your Place",
+      "url": "https://michaelatyourplace.com/",
+      "telephone": "+1-843-360-9438",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Charleston",
@@ -31,26 +32,12 @@
         "addressCountry": "US"
       }
     },
-    "organizer": {
-      "@type": "PerformingGroup",
-      "name": "Michael At Your Place",
-      "image": [
-            "https://www.partycharleston.com/bach-party/bach-party/your-place-live-shows-michael-90-1.png"
-        ],
-      "areaServed": "Charleston, SC",
-      "telephone": "+1-843-360-9438"
-    },
-    "performer": {
-      "@type": "Person",
-      "name": "Michael",
-      "jobTitle": "Performer"
-    },
+    "areaServed": ["Charleston, SC", "Mount Pleasant, SC", "North Charleston, SC", "Isle of Palms, SC", "Folly Beach, SC"],
     "offers": {
       "@type": "Offer",
       "price": "200",
       "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://michaelatyourplace.com/bachelorette-brunch-show-charleston-sc"
+      "description": "Up to 90 minutes, paid on arrival by cash, Venmo, or Cash App"
     }
   }
   </script>
@@ -68,17 +55,15 @@
     }
     .badge-soft { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); }
     .btn-call { font-weight: 700; }
-    .photo-safe {
-      border: 1px dashed rgba(255,255,255,.25);
+    .photo-frame {
+      border: 1px solid rgba(255,255,255,.15);
       border-radius: 1rem;
       background: rgba(255,255,255,.04);
-      min-height: 320px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 1.5rem;
       text-align: center;
-      padding: 2rem;
     }
+    .fact-list li { padding: .3rem 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .fact-list li:last-child { border-bottom: none; }
     .section { padding: 3.5rem 0; }
     a { color: #9ec5fe; }
     a:hover { color: #cfe2ff; }
@@ -90,6 +75,8 @@
       backdrop-filter: blur(8px);
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
+    .accordion-button { background: #141416; color: #f5f5f7; }
+    .accordion-button:not(.collapsed) { background: #1c1c1f; color: #fff; }
   </style>
 </head>
 
@@ -99,7 +86,7 @@
   <div class="sticky-cta py-2">
     <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2">
       <div class="small muted">
-        Brunch Time Is The Best Time <strong class="text-white">Boujee Brunch</strong>
+        Brunch shows: <strong class="text-white">$200 for up to 90 minutes</strong>
       </div>
       <div class="d-flex gap-2">
         <a class="btn btn-danger btn-sm btn-call" href="tel:+18433609438">Call Now</a>
@@ -123,14 +110,14 @@
           </h1>
 
           <p class="lead muted mb-4">
-            Turn brunch into the highlight experience with a <strong class="text-white">Charleston bachelorette entertainment at brunch</strong>
-            that is perfect after you eat out. A energetic option for Charleston bachelorette
-            entertainment for hire.
+            Turn brunch into the highlight of the weekend with <strong class="text-white">Charleston bachelorette entertainment at brunch</strong>. After you eat out, <a href="https://michaelatyourplace.com/">Michael At Your Place</a> brings a high-energy private show to your rental: <strong class="text-white">$200 for up to 90 minutes</strong>, paid on arrival by cash, Venmo, or Cash App.
           </p>
-          <p class="lead">
-              Serving: Isle of Palms · North Charleston · Folly Beach · Mount Pleasant
-          </p>
-          
+
+          <ul class="fact-list list-unstyled muted mb-4">
+            <li><strong class="text-white">Price:</strong> $200 for up to 90 minutes</li>
+            <li><strong class="text-white">Where:</strong> Downtown Charleston, Mount Pleasant, North Charleston, Isle of Palms, Folly Beach</li>
+            <li><strong class="text-white">When:</strong> brunch or late night, last-minute dates welcome</li>
+          </ul>
 
           <!-- Top CTA -->
           <div class="d-flex flex-column flex-sm-row gap-2 mb-3">
@@ -138,31 +125,24 @@
             <a class="btn btn-outline-light btn-lg" href="sms:+18433609438">Text to Check Availability</a>
           </div>
 
-          <h3 class="h5 fw-bold mt-4">Brunch Bachelorette Party Activities</h3>
+          <h2 class="h5 fw-bold mt-4">Brunch Bachelorette Party Activities</h2>
 
           <p class="small muted mb-0">
-            Quick booking: share your brunch location, day/time, group size, and vibe (playful, classy, high-energy).
+            Quick booking: text your brunch location, day and time, group size, and vibe (playful, classy, or high-energy).
           </p>
         </div>
 
         <div class="col-lg-5">
-          <!-- Safe photo placeholder -->
-          <div class="photo-safe">
-            <div>
-              <h2 class="h5 fw-bold mb-2">The Traditional Idea For Charleston Bachelorette Entertainment</h2>
-              <p class="muted mb-0">
-            <img src="charlestonbacheloretteentertainment.png" class="img-fluid" alt="Charleston SC Brunch Entertainment for bachelorettes">   
-            </p>
-            </div>
+          <div class="photo-frame">
+            <h2 class="h5 fw-bold mb-3">The Traditional Idea For Charleston Bachelorette Entertainment</h2>
+            <img src="charlestonbacheloretteentertainment.png" class="img-fluid rounded" alt="Private bachelorette brunch show in Charleston, SC">
           </div>
 
-          <!-- Michael intro right under the sales pitch -->
           <div class="card mt-3">
             <div class="card-body">
-              <h4 class="h5 fw-bold text-white mb-2">(Michael At Your Place)</h4>
+              <h3 class="h5 fw-bold text-white mb-2">Michael At Your Place</h3>
               <p class="muted mb-0">
-                A fun, upbeat <strong class="text-white">Charleston brunch experience</strong>
-                experience that bachelorettes can book directly.
+                A fun, upbeat <strong class="text-white">Charleston brunch experience</strong> that bachelorettes book directly, with no agency in between.
               </p>
             </div>
           </div>
@@ -179,16 +159,12 @@
         <div class="col-lg-8">
           <h2 class="fw-bold mb-3">Charleston Brunch Show: Bachelorette Entertainment</h2>
           <p class="muted">
-            If you’re building a weekend schedule and want something that fits naturally between coffee, reservations,
-            and photos—this is a polished, daylight-friendly option. Think of it as <strong class="text-white">bachelorette brunch entertainment Charleston</strong>
-            visitors can actually plan around: playful energy, crowd interaction, and a show-style moment that stays fun and tasteful.
+            Building a weekend schedule? This fits naturally between coffee, reservations, and photos. It's <strong class="text-white">bachelorette brunch entertainment</strong> Charleston visitors can actually plan around: playful energy, crowd interaction, and a show-style moment that stays fun and tasteful, all in up to 90 minutes.
           </p>
 
           <h3 class="h5 fw-bold mt-4">Designed for a bride-to-be brunch celebration</h3>
           <p class="muted">
-            This is a great add-on when the group wants a <strong class="text-white">bride-to-be brunch celebration</strong>
-            that feels like an “event,” not just a meal. It’s also popular as <strong class="text-white">bridal party entertainment</strong>
-            when you want one memorable moment without changing the whole day’s itinerary.
+            A great add-on when the group wants a <strong class="text-white">bride-to-be brunch celebration</strong> that feels like an event, not just a meal. It's also popular as <strong class="text-white">bridal party entertainment</strong> when you want one memorable moment without changing the whole day's itinerary. One flat $200 rate, split however the group likes.
           </p>
 
         </div>
@@ -196,10 +172,10 @@
         <div class="col-lg-4">
           <div class="card h-100">
             <div class="card-body">
-              <h4 class="h5 fw-bold mb-3">What to Send in a Text</h4>
+              <h3 class="h5 fw-bold mb-3">What to Send in a Text</h3>
               <ul class="muted mb-0">
-                <li>Date + start time</li>
-                <li>Brunch location (downtown / Folly / IOP / etc.)</li>
+                <li>Date and start time</li>
+                <li>Location (downtown, Folly, IOP, etc.)</li>
                 <li>Group size</li>
                 <li>Your vibe: playful, fun, midday</li>
               </ul>
@@ -209,7 +185,7 @@
                 <a class="btn btn-danger btn-call" href="tel:+18433609438">Call to Book</a>
               </div>
               <p class="small muted mt-3 mb-0">
-                You’re booking direct with Michael.
+                You're booking direct with Michael. $200 for up to 90 minutes, paid on arrival.
               </p>
             </div>
           </div>
@@ -218,9 +194,6 @@
       </div>
     </div>
   </section>
-
- 
-
 
   <!-- FAQ -->
   <section class="section" style="border-top:1px solid rgba(255,255,255,.08);">
@@ -231,13 +204,12 @@
         <div class="accordion-item">
           <h3 class="accordion-header" id="q1">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="a1">
-              Is this a good bachelorette brunch idea?
+              How much does the brunch show cost?
             </button>
           </h3>
           <div id="a1" class="accordion-collapse collapse" aria-labelledby="q1" data-bs-parent="#faq">
             <div class="accordion-body muted">
-              Yes—this is built to feel like a fun activity: upbeat, interactive, and brunch-friendly. If you want a
-              planned moment that fits between reservations and photos, this is a strong option for bachelorette brunch schedules.
+              $200 for up to 90 minutes. You pay when Michael arrives, by cash, Venmo, or Cash App.
             </div>
           </div>
         </div>
@@ -250,7 +222,7 @@
           </h3>
           <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faq">
             <div class="accordion-body muted">
-              Call or text <strong class="text-white">843-360-9438</strong> with your date/time, location, and group size. You’re booking direct with Michael.
+              Call or text <strong class="text-white">843-360-9438</strong> with your date, time, location, and group size. No forms, and last-minute dates are welcome.
             </div>
           </div>
         </div>
@@ -263,7 +235,7 @@
           </h3>
           <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faq">
             <div class="accordion-body muted">
-              Charleston and surrounding areas—downtown and popular weekend spots. Share your brunch location when you text so timing and logistics stay easy.
+              At your home or rental anywhere in the Charleston area, including downtown, Mount Pleasant, North Charleston, Isle of Palms, and Folly Beach.
             </div>
           </div>
         </div>
@@ -276,13 +248,12 @@
           </h3>
           <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faq">
             <div class="accordion-body muted">
-              Absolutely. The vibe is playful, fun, and brunch-time-focused. When you book, tell Michael the tone you want and he’ll tailor it accordingly.
+              Absolutely. Tell Michael the tone you want when you book, and he'll tailor the show to your group.
             </div>
           </div>
         </div>
       </div>
-
-      
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -290,16 +261,15 @@
     <div class="container">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
         <div class="small muted">
-          © <span id="year"></span> Party Charleston • <strong class="text-white">843-360-9438</strong>
+          © <span id="year"></span> Party Charleston • <a href="tel:+18433609438" class="text-white fw-bold text-decoration-none">843-360-9438</a>
         </div>
         <div class="small muted">
-          Playful • Fun • Brunch-friendly entertainment • 
+          Playful • Fun • Brunch-friendly entertainment
         </div>
       </div>
 
-      <!-- Middle (NEW - Service Areas) -->
-      <div class=" mt-3 muted text-center">
-        Serving: Downtown • Mount Pleasant • Isle of Palms • Folly Beach
+      <div class="mt-3 small muted text-center">
+        Serving: Downtown Charleston • Mount Pleasant • North Charleston • Isle of Palms • Folly Beach
       </div>
     </div>
   </footer>
