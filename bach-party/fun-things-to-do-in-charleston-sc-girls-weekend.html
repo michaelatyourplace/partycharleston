@@ -4,235 +4,457 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun Thing To Do In Charleston SC Girls Weekend</title>
-    <meta name="description" content="A Charleston girls weekend idea delivered to your rental, hotel, or Airbnb: a private show for the group or birthday girl, $200 for up to 90 minutes, paid on arrival.">
-    <link rel="canonical" href="https://www.partycharleston.com/bach-party/fun-things-to-do-in-charleston-sc-girls-weekend.html">
+    <meta name="description" content="Fun things to do on a Charleston girls weekend: brunch, boat days, beaches, classes, shows, rooftops and pub crawls, plus a private show at your rental for $200.">
+    <!-- Linking page: kept out of search so it never competes with the main guides, but every link is still followed -->
+    <meta name="robots" content="noindex, follow">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --ink: #0a0a0a;
             --panel: #141414;
+            --panel-2: #1b1b1b;
+            --line: #2a2a2a;
             --gold: #d4af6a;
             --gold-bright: #f0c98a;
             --white: #f7f5f0;
             --muted: #b8b3a8;
         }
-        body {
-            background-color: var(--ink);
-            color: var(--white);
-            font-family: 'Georgia', 'Times New Roman', serif;
-        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--ink); color: var(--white); font-family: 'Inter', Arial, sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; color: var(--white); }
         a { color: var(--gold-bright); }
         a:hover { color: var(--gold); }
-        .eyebrow {
-            font-family: Arial, sans-serif;
-            letter-spacing: .18em;
-            text-transform: uppercase;
-            font-size: .78rem;
-            color: var(--gold);
-        }
-        /* Top bar */
-        .urgency-bar {
-            background: var(--gold);
-            color: var(--ink);
-            font-family: Arial, sans-serif;
-            font-weight: 700;
-            letter-spacing: .04em;
-            text-align: center;
-            padding: 10px 12px;
-            font-size: .92rem;
-        }
-        /* Hero */
-        .hero {
-            padding: 60px 0 40px;
-            border-bottom: 1px solid #2a2a2a;
-        }
-        .hero h1 {
-            font-size: 2.6rem;
-            line-height: 1.15;
-            margin-bottom: 18px;
-        }
-        .hero-sub {
-            font-family: Arial, sans-serif;
-            color: var(--muted);
-            font-size: 1.05rem;
-            line-height: 1.7;
-            margin-bottom: 28px;
-        }
-        .hero-img {
-            border: 1px solid #2a2a2a;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        .hero-img img { width: 100%; height: auto; display: block; }
-        .hero-caption {
-            font-size: 1.1rem;
-            color: var(--gold-bright);
-            margin-top: 14px;
-        }
+        section { scroll-margin-top: 80px; }
+        .eyebrow { letter-spacing: .18em; text-transform: uppercase; font-size: .78rem; color: var(--gold); font-weight: 600; }
 
-        /* CTA buttons */
-        .cta-button {
-            background-color: var(--gold);
-            color: var(--ink) !important;
-            font-family: Arial, sans-serif;
-            font-weight: 700;
-            padding: 16px 36px;
-            font-size: 1.05rem;
-            border: none;
-            border-radius: 3px;
-            letter-spacing: .02em;
-            text-decoration: none;
-            display: inline-block;
-        }
+        /* NAV */
+        .site-nav { background: rgba(10,10,10,.97) !important; border-bottom: 1px solid rgba(212,175,106,.35); padding: .75rem 0; }
+        .site-nav .navbar-brand { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--gold) !important; }
+        .site-nav .nav-link { color: var(--white) !important; font-weight: 600; font-size: .92rem; }
+        .site-nav .nav-link:hover, .site-nav .nav-link.active { color: var(--gold) !important; }
+        .site-nav .dropdown-menu { background: var(--panel-2); border: 1px solid rgba(212,175,106,.25); }
+        .site-nav .dropdown-item { color: var(--muted); }
+        .site-nav .dropdown-item:hover, .site-nav .dropdown-item.active { background: rgba(212,175,106,.12); color: var(--gold); }
+
+        .urgency-bar { background: var(--gold); color: var(--ink); font-weight: 700; letter-spacing: .04em; text-align: center; padding: 10px 12px; font-size: .92rem; }
+
+        /* HERO */
+        .hero { padding: 56px 0 36px; }
+        .hero h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1.1; margin: 10px 0 18px; }
+        .hero-sub { color: var(--muted); font-size: 1.05rem; line-height: 1.75; margin-bottom: 26px; }
+        .hero-img { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--panel); }
+        .hero-img img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+        .hero-caption { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.1rem; color: var(--gold-bright); margin-top: 14px; }
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+        .chips a { color: var(--white); text-decoration: none; border: 1px solid #3a3a3a; border-radius: 999px; padding: .32rem .9rem; font-size: .86rem; font-weight: 600; }
+        .chips a:hover { border-color: var(--gold); color: var(--gold); }
+
+        .cta-button { background-color: var(--gold); color: var(--ink) !important; font-weight: 700; padding: 15px 32px; font-size: 1rem; border: none; border-radius: 3px; text-decoration: none; display: inline-block; }
         .cta-button:hover { background-color: var(--gold-bright); }
-        .cta-outline {
-            border: 1px solid var(--gold);
-            color: var(--gold) !important;
-            font-family: Arial, sans-serif;
-            font-weight: 700;
-            padding: 15px 30px;
-            font-size: 1.05rem;
-            border-radius: 3px;
-            text-decoration: none;
-            display: inline-block;
-        }
+        .cta-outline { border: 1px solid var(--gold); color: var(--gold) !important; font-weight: 700; padding: 14px 28px; font-size: 1rem; border-radius: 3px; text-decoration: none; display: inline-block; }
         .cta-outline:hover { background: rgba(212,175,106,.1); }
-        .cta-sub {
-            font-family: Arial, sans-serif;
-            font-size: .82rem;
-            color: var(--muted);
-            margin-top: 10px;
-        }
+        .cta-sub { font-size: .82rem; color: var(--muted); margin-top: 10px; }
 
-        /* Booking status strip */
-        .status-strip {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 28px;
-            margin: 28px 0;
-            padding: 18px 0;
-            border-top: 1px solid #2a2a2a;
-            border-bottom: 1px solid #2a2a2a;
-        }
+        .status-strip { display: flex; flex-wrap: wrap; gap: 28px; margin: 10px 0 0; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
         .status-item { font-size: .88rem; color: var(--muted); }
-        .status-item b { color: var(--white); display: block; font-size: 1.3rem; font-family: Georgia, serif; }
+        .status-item b { color: var(--white); display: block; font-size: 1.3rem; font-family: 'Playfair Display', serif; }
 
-        /* Sections */
-        section { padding: 56px 0; border-bottom: 1px solid #1f1f1f; }
-        h2 { font-size: 1.9rem; margin-bottom: 22px; }
-        p, li { line-height: 1.8; color: var(--muted); font-family: Arial, sans-serif; font-size: .98rem; }
+        .block { padding: 56px 0; border-bottom: 1px solid #1f1f1f; }
+        h2 { font-size: clamp(1.7rem, 3.6vw, 2.3rem); margin-bottom: 14px; }
+        p, li { line-height: 1.8; color: var(--muted); font-size: .98rem; }
+        .lede { font-size: 1.05rem; max-width: 760px; }
 
-        /* Steps */
+        /* DAY PLAN */
+        .day { margin-top: 40px; }
+        .day-label { display: inline-block; background: var(--gold); color: var(--ink); font-weight: 700; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; padding: .25rem .7rem; border-radius: 3px; margin-bottom: 10px; }
+        .day h3 { font-size: 1.6rem; margin-bottom: 16px; }
+        .idea { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 22px 22px 20px; height: 100%; transition: border-color .2s ease; }
+        .idea:hover { border-color: rgba(212,175,106,.55); }
+        .idea .ico { font-size: 1.5rem; line-height: 1; }
+        .idea h4 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--white); margin: 10px 0 8px; }
+        .idea p { font-size: .94rem; margin-bottom: 0; }
+        .idea.feature { background: linear-gradient(160deg, rgba(212,175,106,.18), var(--panel) 70%); border-color: rgba(212,175,106,.5); }
+
+        /* AREA */
+        .area { background: var(--panel); border-left: 2px solid var(--gold); padding: 16px 18px; height: 100%; }
+        .area h4 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--white); margin-bottom: 6px; }
+        .area p { font-size: .93rem; margin: 0; }
+
         .step { border-left: 2px solid var(--gold); padding-left: 18px; margin-bottom: 26px; }
-        .step-num { font-family: Arial, sans-serif; color: var(--gold); font-weight: 700; font-size: .82rem; letter-spacing: .1em; }
-        .step h3 { font-size: 1.15rem; margin: 6px 0 8px; color: var(--white); }
+        .step-num { color: var(--gold); font-weight: 700; font-size: .82rem; letter-spacing: .1em; }
+        .step h3 { font-size: 1.15rem; margin: 6px 0 8px; }
 
-        .final-cta { text-align: center; padding: 70px 0; }
-        .final-cta h2 { font-size: 2.1rem; }
+        .more a { display: block; text-decoration: none; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; height: 100%; }
+        .more a:hover { border-color: var(--gold); }
+        .more strong { display: block; font-family: 'Playfair Display', serif; color: var(--gold-bright); font-size: 1.1rem; }
+        .more span { font-size: .88rem; color: var(--muted); }
 
-        /* Footer */
-        .site-footer {
-            padding: 40px 0 60px;
-            border-top: 1px solid #1f1f1f;
-            font-family: Arial, sans-serif;
-            font-size: .85rem;
-            color: var(--muted);
-            text-align: center;
+        .final-cta { text-align: center; padding: 64px 0; }
+
+        .site-footer { padding: 44px 0 30px; border-top: 1px solid #1f1f1f; font-size: .9rem; color: var(--muted); }
+        .site-footer h4 { font-family: 'Inter', sans-serif; font-size: .82rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+        .site-footer ul { list-style: none; padding: 0; margin: 0; }
+        .site-footer li { margin-bottom: 6px; }
+        .site-footer a { color: var(--muted); text-decoration: none; }
+        .site-footer a:hover { color: var(--gold); }
+
+        @media (max-width: 767px) {
+            .block { padding: 44px 0; }
+            .status-strip { gap: 16px; }
         }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     </style>
 </head>
 <body>
 
-    <div class="urgency-bar">
-        🔥 Surprise the Group or the Birthday Girl
+<nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html">Party Charleston</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="siteNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bachelorette</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/bach-party/index.html">Bachelorette Guide</a></li>
+            <li><a class="dropdown-item" href="/bach-party/experiences/index.html">Experiences</a></li>
+            <li><a class="dropdown-item" href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="/bach-party/fun-things-to-do-in-charleston-sc-girls-weekend.html">Girls Weekend Ideas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Scene</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+            <li><a class="dropdown-item" href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">King Street</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parties</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/parties/index.html">All Party Guides</a></li>
+            <li><a class="dropdown-item" href="/parties/college.html">College Scene</a></li>
+            <li><a class="dropdown-item" href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="urgency-bar">🔥 Surprise the Group or the Birthday Girl</div>
+
+<div class="container">
+
+    <!-- HERO -->
+    <div class="row hero align-items-center g-4 g-lg-5">
+        <div class="col-lg-6">
+            <div class="eyebrow">The Traditional Surprise for the Birthday Girl</div>
+            <h1>Thing To Do For Your Charleston Girls Weekend</h1>
+            <p class="hero-sub">A fun, private show for your Charleston girls trip, brought to your rental, hotel or Airbnb. <a href="https://michaelatyourplace.com/" target="_blank" rel="noopener">Michael At Your Place</a> performs for $200 for up to 90 minutes, paid on arrival by cash, Venmo or Cash App. It's an affordable surprise full of mystery and fun, with shows at noon, daytime or late night. Below, the rest of the weekend: brunch, boats, beaches, classes and nights out.</p>
+            <div class="d-flex flex-wrap gap-2">
+                <a href="tel:+18433609438" class="cta-button">Call Now →</a>
+                <a href="sms:+18433609438" class="cta-outline">Text 843-360-9438</a>
+            </div>
+            <div class="cta-sub">Last-minute calls are fine, with same-day replies.</div>
+            <nav class="chips" aria-label="Jump to a section">
+                <a href="#weekend">🗓️ Weekend plan</a>
+                <a href="#areas">📍 By area</a>
+                <a href="#show">⭐ The show</a>
+                <a href="#book">📲 Book</a>
+            </nav>
+        </div>
+        <div class="col-lg-6">
+            <div class="hero-img">
+                <img src="images/charlestonbacheloretteentertainment.png" alt="Private girls weekend show at a Charleston, SC rental">
+            </div>
+            <p class="hero-caption">Don't underestimate a midday show.</p>
+        </div>
     </div>
 
-    <div class="container">
-
-        <!-- HERO -->
-        <div class="row hero align-items-center">
-            <div class="col-lg-6">
-                <div class="eyebrow">The Traditional Surprise for the Birthday Girl</div>
-                <h1>Thing To Do For Your Charleston Girls Weekend</h1>
-                <p class="hero-sub">A fun, private show for your Charleston girls trip, brought to your rental, hotel, or Airbnb. <a href="https://michaelatyourplace.com/">Michael At Your Place</a> performs for $200 for up to 90 minutes, paid on arrival by cash, Venmo, or Cash App. It's an affordable surprise full of mystery and fun, with shows at noon, daytime, or late night.</p>
-                <div class="d-flex flex-wrap gap-2">
-                    <a href="tel:+18433609438" class="btn cta-button">Call Now →</a>
-                    <a href="sms:+18433609438" class="btn cta-outline">Text 843-360-9438</a>
-                </div>
-                <div class="cta-sub">Last-minute calls are fine, with same-day replies.</div>
-            </div>
-            <div class="col-lg-6">
-                <div class="hero-img">
-                    <img src="images/charlestonbacheloretteentertainment.png" class="img-fluid" alt="Private girls weekend show at a Charleston, SC rental">
-                </div>
-                <p class="hero-caption">Don't underestimate a midday show.</p>
-            </div>
-        </div>
-
-        <div class="status-strip">
-            <div class="status-item"><b>$200</b>Up to 90 minutes, paid on arrival</div>
-            <div class="status-item"><b>Locations</b>Downtown Charleston · Folly Beach · Isle of Palms · Mount Pleasant</div>
-            <div class="status-item"><b>Fast Replies</b>Call or text, no forms</div>
-        </div>
-
-        <!-- WHAT YOU GET -->
-        <section>
-            <h2>The Details: Girls Weekend Idea</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h3 class="h5" style="color:var(--white)">Only Your Party Matters</h3>
-                    <p>A high-energy show built for the birthday girl and her crew only. Skip the unpredictable ticketed shows.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="h5" style="color:var(--white)">Custom to Your Group</h3>
-                    <p>Elegant, low-key, or fully interactive. The show is tailored to your group's vibe and comfort level.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="h5" style="color:var(--white)">Consent &amp; Respect</h3>
-                    <p>Clear communication before the show, so there are no surprises for anyone who doesn't want one.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- HOW BOOKING WORKS -->
-        <section>
-            <h2>First-Time Bookings Welcome</h2>
-            <div class="step">
-                <div class="step-num">STEP 01</div>
-                <h3>Call or Text</h3>
-                <p>Call or text 843-360-9438 with your date, time, and location. Last-minute dates are welcome.</p>
-            </div>
-            <div class="step">
-                <div class="step-num">STEP 02</div>
-                <h3>Plan the Surprise</h3>
-                <p>Talk through how the surprise will work, who the guest of honor is, and the vibe you want.</p>
-            </div>
-            <div class="step">
-                <div class="step-num">STEP 03</div>
-                <h3>The Show</h3>
-                <p>Michael arrives, you pay on arrival, and your group becomes the center of up to 90 minutes of entertainment.</p>
-            </div>
-            <div class="text-center mt-4">
-                <a href="sms:+18433609438" class="btn cta-button">Text to Book →</a>
-            </div>
-        </section>
-
-        <!-- FINAL CTA -->
-        <div class="final-cta">
-            <div class="eyebrow">Midday Shows: Perfect Timing</div>
-            <h2><span style="color:var(--gold)">Who Is This Good For?</span></h2>
-            <p style="max-width:560px;margin:0 auto 26px">Folly Beach girls weekends, <a href="../parties/girls-night-out.html">Charleston girls night out</a>, Isle of Palms girls weeks, Mount Pleasant girls weekends, and birthday trips anywhere in Charleston.</p>
-            <a href="tel:+18433609438" class="btn cta-button">Call 843-360-9438</a>
-        </div>
-
-        <!-- FOOTER -->
-        <footer class="site-footer">
-            &copy; 2026 Party Charleston SC · Serving Downtown Charleston, North Charleston, Folly Beach, Mount Pleasant, and Isle of Palms
-        </footer>
-
+    <div class="status-strip">
+        <div class="status-item"><b>$200</b>Up to 90 minutes, paid on arrival</div>
+        <div class="status-item"><b>Locations</b>Downtown Charleston · Folly Beach · Isle of Palms · Mount Pleasant</div>
+        <div class="status-item"><b>Fast Replies</b>Call or text, no forms</div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- WEEKEND PLAN -->
+    <section id="weekend" class="block">
+        <div class="eyebrow">Plan the Whole Trip</div>
+        <h2>Fun Things To Do in Charleston SC on a Girls Weekend</h2>
+        <p class="lede">A Friday-to-Sunday plan you can mix and match. Pick one or two from each block and you have a full Charleston girls weekend.</p>
+
+        <!-- FRIDAY -->
+        <div class="day">
+            <span class="day-label">Friday Night</span>
+            <h3>Arrive, Settle In, Start the Party</h3>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🧺</div><h4>Have the Rental Ready</h4><p>Have <a href="/bach-party/experiences/bienvenue-charleston-airbnb-concierge.html">Bienvenue Charleston</a> stock the fridge and decorate before you land. Bringing your own decor? Pack <a href="/bach-party/experiences/giant-bride-balloons.html">giant letter balloons</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🍸</div><h4>Cocktail Class at Home</h4><p>A bartender from <a href="/bach-party/experiences/nightcap-social-co-cocktail-masterclass.html">Nightcap Social Co.</a> teaches the group three cocktails at your rental.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🃏</div><h4>Game Night</h4><p>Low-key first night? Split into teams for <a href="/bach-party/experiences/midnight-taboo-bachelorette-party-game.html">Midnight Taboo</a> and order in.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea feature"><div class="ico">⭐</div><h4>The Surprise Show</h4><p>End night one with <a href="#show">Michael's private show</a> at the rental. $200 for up to 90 minutes.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SATURDAY MORNING -->
+        <div class="day">
+            <span class="day-label">Saturday Morning</span>
+            <h3>Brunch &amp; King Street Shopping</h3>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">⛪</div><h4>Brunch in a Church</h4><p>60-foot ceilings and stained glass at <a href="/bach-party/experiences/church-and-union-bachelorette-brunch-dinner.html">Church and Union</a>, a block from the City Market.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🥞</div><h4>Classic Southern Brunch</h4><p>Shrimp and grits at <a href="https://poogansporch.com/" target="_blank" rel="noopener">Poogan's Porch</a>, diner vibes at Miller's All Day, or a biscuit run to Callie's Hot Little Biscuit.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🎤</div><h4>A Brunch Show</h4><p>Make brunch the event with the <a href="/bach-party/bachelorette-brunch-show-charleston-sc.html">Charleston brunch show</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🛍️</div><h4>Shop Upper King</h4><p>Matching outfits at <a href="/bach-party/experiences/two-cumberland-bride-outfit-shopping.html">Two Cumberland</a>, or book the <a href="/bach-party/experiences/tiny-tassel-private-shopping.html">Tiny Tassel</a> after hours for the group.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SATURDAY AFTERNOON -->
+        <div class="day">
+            <span class="day-label">Saturday Afternoon</span>
+            <h3>Boats, Beaches &amp; Picnics</h3>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🛥️</div><h4>BYOB Party Boat</h4><p>Karaoke and beer pong on the harbor with <a href="/bach-party/experiences/charleston-party-cat-byob-bachelorette-boat.html">Charleston Party Cat</a> (<a href="https://charlestonpartycat.com/" target="_blank" rel="noopener">site</a>).</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">⛵</div><h4>Sunset Sail</h4><p>A classier harbor cruise on the tall ship <a href="https://charleston.com/schooner-pride" target="_blank" rel="noopener">Schooner Pride</a>, or see all <a href="https://www.charleston.com/charleston-harbor-tours" target="_blank" rel="noopener">Charleston Harbor Tours</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🐬</div><h4>Kayak With Dolphins</h4><p>A guided <a href="/bach-party/experiences/shem-creek-kayak-tour.html">Shem Creek kayak tour</a> with <a href="https://coastalexpeditions.com/shem-creek/" target="_blank" rel="noopener">Coastal Expeditions</a>. No experience needed.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🧺</div><h4>Luxury Picnic</h4><p>A styled setup on the beach or at the rental from <a href="/bach-party/experiences/holy-city-picnic-luxury-bachelorette-picnic.html">Holy City Picnic</a> (<a href="https://www.holycitypicnic.com/" target="_blank" rel="noopener">site</a>).</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CLASSES & SHOWS -->
+        <div class="day">
+            <span class="day-label">Any Afternoon</span>
+            <h3>Classes, Workshops &amp; Shows</h3>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🥂</div><h4>Crafting &amp; Mimosas</h4><p>Pick from 20+ crafts with bottomless drinks at <a href="/bach-party/experiences/craft-diy-crafting-mimosas-workshop.html">Craft-DIY</a> on King Street (<a href="https://www.craftdiy.net/" target="_blank" rel="noopener">site</a>).</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🤠</div><h4>Custom Hat Bar</h4><p>Matching felt hats at <a href="/bach-party/experiences/southern-ruetz-custom-hat-bar.html">Southern Ruetz</a> (<a href="https://www.southernruetz.com/" target="_blank" rel="noopener">site</a>), drink included.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🎨</div><h4>Sip &amp; Paint or Candles</h4><p><a href="https://charlestonpaintparty.com/" target="_blank" rel="noopener">Charleston Paint Party</a> for sip and paint, or a candle-making class at Candlefish.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🔐</div><h4>Escape Room</h4><p>A private 60-minute game at <a href="/bach-party/experiences/break-out-charleston-escape-room.html">Break Out Charleston</a> (<a href="https://www.charlestonescapegames.com/" target="_blank" rel="noopener">site</a>).</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">😂</div><h4>Improv Comedy</h4><p>Cheap, fast and hilarious at <a href="https://theatre99.com/" target="_blank" rel="noopener">Theatre 99</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🔎</div><h4>Murder Mystery Dinner</h4><p>Solve a case over dinner with <a href="https://www.thedinnerdetective.com/charleston/murder-mystery-tickets-showtimes/" target="_blank" rel="noopener">The Dinner Detective</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🎮</div><h4>Live Game Show</h4><p>Compete on stage at <a href="https://charlestongameshow.com/" target="_blank" rel="noopener">The Epic Game Show Experience</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🪓</div><h4>Axe Throwing &amp; Games</h4><p>Competitive fun with <a href="https://chucktownactivities.com/" target="_blank" rel="noopener">Charleston Activities</a>.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SATURDAY NIGHT -->
+        <div class="day">
+            <span class="day-label">Saturday Night</span>
+            <h3>Dinner, Rooftops &amp; a Night Out</h3>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🌇</div><h4>Rooftop Drinks</h4><p>Sunset at The Vendue, Stars or Citrus Club. See our <a href="/king-street-bar-crawl/rooftop-bars.html">7 best rooftop bars near King Street</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🍻</div><h4>Guided Pub Crawl</h4><p>The <a href="https://pubtourcharleston.com/bachelorette-party-group-tours-charleston-sc/" target="_blank" rel="noopener">bachelorette pub crawl</a>, a themed crawl with <a href="https://revelry.tours/charleston/" target="_blank" rel="noopener">Revelry Tours</a>, or the <a href="https://nightlyspirits.com/charleston-haunted-pub-crawl/" target="_blank" rel="noopener">haunted pub crawl</a>. All 21+.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🪩</div><h4>Live Music &amp; Dancing</h4><p>Funk at <a href="/bach-party/experiences/the-commodore-live-funk-dance-night.html">The Commodore</a>, shows at <a href="https://www.musicfarm.com/" target="_blank" rel="noopener">Music Farm</a>, drag at <a href="https://www.dudleys42ann.com" target="_blank" rel="noopener">Dudley's</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🍾</div><h4>VIP Table</h4><p>Bottle service at <a href="/bach-party/experiences/republic-garden-lounge-vip-table.html">Republic Garden &amp; Lounge</a>, or the party at <a href="https://www.uptownsocialchs.com/" target="_blank" rel="noopener">Uptown Social</a>. Then <a href="/king-street-bar-crawl/late-night-food.html">late-night food</a>.</p></div>
+                </div>
+            </div>
+            <p class="mt-3 mb-0">Planning a whole night out? Read the <a href="/parties/girls-night-out.html">Charleston girls night out guide</a> and the <a href="/king-street-bar-crawl/index.html">King Street bar crawl guide</a>.</p>
+        </div>
+
+        <!-- SUNDAY -->
+        <div class="day">
+            <span class="day-label">Sunday</span>
+            <h3>Slow Morning, Last Bites</h3>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">💆</div><h4>Spa Morning</h4><p>Group treatments at <a href="https://charlestoncvb.com/plan-your-trip/beauty-spas-wellness~224/spas-salons-wellness~1335/the-spa-at-charleston-place~6125.html" target="_blank" rel="noopener">The Spa at Charleston Place</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🍤</div><h4>Walking Food Tour</h4><p>Lunch and sightseeing in one with <a href="/bach-party/experiences/charleston-culinary-tours-bachelorette-food-tour.html">Charleston Culinary Tours</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🥃</div><h4>Distillery Tour</h4><p>A $10 tour and whiskey flight at <a href="/bach-party/experiences/high-wire-distilling-tour-whiskey-flight.html">High Wire Distilling</a>.</p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="idea"><div class="ico">🎸</div><h4>Free Music Before the Drive</h4><p>Catch a free deck show at the <a href="/bach-party/experiences/charleston-pour-house-live-music-night.html">Pour House</a> on James Island.</p></div>
+                </div>
+            </div>
+            <p class="mt-3 mb-0">More to book in <a href="/bach-party/experiences/index.html">all 20 Charleston experiences</a>.</p>
+        </div>
+    </section>
+
+    <!-- BY AREA -->
+    <section id="areas" class="block">
+        <div class="eyebrow">Where You're Staying</div>
+        <h2>Girls Weekend Ideas by Area</h2>
+        <div class="row g-3 mt-2">
+            <div class="col-md-6 col-lg-3">
+                <div class="area"><h4>Downtown Charleston</h4><p>Walk to King Street shopping, <a href="/king-street-bar-crawl/rooftop-bars.html">rooftops</a> and <a href="/charleston-party-scene/index.html">the nightlife</a>.</p></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="area"><h4>Folly Beach</h4><p>Beach days at <a href="https://visitfolly.com/" target="_blank" rel="noopener">Folly</a>, seafood at <a href="https://bowensisland.com/" target="_blank" rel="noopener">Bowens Island</a> on the way back.</p></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="area"><h4>Isle of Palms</h4><p>Big beach rentals and music on the sand at <a href="https://the-windjammer.com/" target="_blank" rel="noopener">The Windjammer</a>.</p></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="area"><h4>Mount Pleasant</h4><p>Sunset on Shem Creek at <a href="https://www.redsicehouse.com/" target="_blank" rel="noopener">Red's Ice House</a>. See the <a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant guide</a>.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE SHOW -->
+    <section id="show" class="block">
+        <div class="eyebrow">The Surprise</div>
+        <h2>The Details: Girls Weekend Idea</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h3 class="h5">Only Your Party Matters</h3>
+                <p>A high-energy show built for the birthday girl and her crew only. Skip the unpredictable ticketed shows.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="h5">Custom to Your Group</h3>
+                <p>Elegant, low-key or fully interactive. The show is tailored to your group's vibe and comfort level.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="h5">Consent &amp; Respect</h3>
+                <p>Clear communication before the show, so there are no surprises for anyone who doesn't want one.</p>
+            </div>
+        </div>
+        <p class="mt-3 mb-0">Full details on the <a href="/bach-party/experiences/hire-male-stripper-charleston.html">private show page</a> and the <a href="/parties/girls-night-out.html">girls night out page</a>.</p>
+    </section>
+
+    <!-- HOW BOOKING WORKS -->
+    <section id="book" class="block">
+        <h2>First-Time Bookings Welcome</h2>
+        <div class="step">
+            <div class="step-num">STEP 01</div>
+            <h3>Call or Text</h3>
+            <p>Call or text 843-360-9438 with your date, time and location. Last-minute dates are welcome.</p>
+        </div>
+        <div class="step">
+            <div class="step-num">STEP 02</div>
+            <h3>Plan the Surprise</h3>
+            <p>Talk through how the surprise will work, who the guest of honor is, and the vibe you want.</p>
+        </div>
+        <div class="step">
+            <div class="step-num">STEP 03</div>
+            <h3>The Show</h3>
+            <p>Michael arrives, you pay on arrival, and your group becomes the center of up to 90 minutes of entertainment.</p>
+        </div>
+        <div class="text-center mt-4">
+            <a href="sms:+18433609438" class="cta-button">Text to Book →</a>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <div class="final-cta">
+        <div class="eyebrow">Midday Shows: Perfect Timing</div>
+        <h2><span style="color:var(--gold)">Who Is This Good For?</span></h2>
+        <p style="max-width:600px;margin:0 auto 26px">Folly Beach girls weekends, <a href="/parties/girls-night-out.html">Charleston girls night out</a>, Isle of Palms girls weeks, <a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant girls weekends</a>, <a href="/bach-party/index.html">bachelorettes</a>, <a href="/parties/college.html">college birthdays</a> and birthday trips anywhere in Charleston.</p>
+        <a href="tel:+18433609438" class="cta-button">Call 843-360-9438</a>
+    </div>
+
+    <!-- MORE -->
+    <div class="row g-3 more mb-5">
+        <div class="col-sm-6 col-lg-3"><a href="/bach-party/index.html"><strong>Bachelorette Guide</strong><span>The full Charleston weekend</span></a></div>
+        <div class="col-sm-6 col-lg-3"><a href="/bach-party/experiences/index.html"><strong>20 Experiences</strong><span>Things to book in Charleston</span></a></div>
+        <div class="col-sm-6 col-lg-3"><a href="/charleston-party-scene/charleston-nightlife-under-21.html"><strong>Under 21</strong><span>18+ clubs and shows</span></a></div>
+        <div class="col-sm-6 col-lg-3"><a href="/parties/index.html"><strong>All Party Guides</strong><span>Every kind of celebration</span></a></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="row g-4 mb-4">
+            <div class="col-6 col-lg-3">
+                <h4>Bachelorette Parties</h4>
+                <ul>
+                    <li><a href="/bach-party/index.html">Bachelorette Guide</a></li>
+                    <li><a href="/bach-party/experiences/index.html">Experiences</a></li>
+                    <li><a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4>Charleston Party Scene</h4>
+                <ul>
+                    <li><a href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+                    <li><a href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4>King Street Bar Crawl</h4>
+                <ul>
+                    <li><a href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+                    <li><a href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+                    <li><a href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4>Parties</h4>
+                <ul>
+                    <li><a href="/parties/index.html">All Party Guides</a></li>
+                    <li><a href="/parties/college.html">College Scene</a></li>
+                    <li><a href="/parties/girls-night-out.html">Girls Night Out</a></li>
+                    <li><a href="/about.html">About</a> · <a href="/privacy-policy.html">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center mb-0">&copy; 2026 Party Charleston SC · Serving Downtown Charleston, North Charleston, Folly Beach, Mount Pleasant and Isle of Palms</p>
+    </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

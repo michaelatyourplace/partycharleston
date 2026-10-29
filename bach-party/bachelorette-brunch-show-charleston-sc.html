@@ -19,7 +19,8 @@
     "name": "Charleston Bachelorette Brunch Show",
     "serviceType": "Bachelorette Brunch Entertainment",
     "description": "A private, playful brunch show for bachelorette parties at your rental in the Charleston area. $200 for up to 90 minutes, paid on arrival.",
-    "image": "https://www.partycharleston.com/bach-party/your-place-live-shows-michael-90-1.png",
+    "image": "https://www.partycharleston.com/bach-party/images/charlestonbacheloretteentertainment.png",
+    "url": "https://www.partycharleston.com/bach-party/bachelorette-brunch-show-charleston-sc.html",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Michael At Your Place",
@@ -44,13 +45,13 @@
 
   <style>
     body { background: #0b0b0c; color: #f5f5f7; }
-    .card, .accordion-item { background: #141416; border: 1px solid rgba(255,255,255,.08); }
+    .card { background: #141416; border: 1px solid rgba(255,255,255,.08); color: #f5f5f7; }
     .muted { color: rgba(245,245,247,.75); }
     .hero {
       background: radial-gradient(1200px 600px at 10% 10%, rgba(220,53,69,.25), transparent 60%),
                   radial-gradient(900px 500px at 90% 20%, rgba(13,110,253,.18), transparent 55%),
                   linear-gradient(180deg, #0b0b0c 0%, #0b0b0c 45%, #0e0e10 100%);
-      padding: 5rem 0 3.25rem;
+      padding: 4.5rem 0 3.25rem;
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
     .badge-soft { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); }
@@ -62,11 +63,23 @@
       padding: 1.5rem;
       text-align: center;
     }
+    .photo-frame img { width: 100%; aspect-ratio: 4/3; object-fit: cover; background: #141416; }
     .fact-list li { padding: .3rem 0; border-bottom: 1px solid rgba(255,255,255,.08); }
     .fact-list li:last-child { border-bottom: none; }
     .section { padding: 3.5rem 0; }
     a { color: #9ec5fe; }
     a:hover { color: #cfe2ff; }
+
+    /* Site nav (scrolls away; the booking bar below stays pinned) */
+    .site-nav { background: #070708 !important; border-bottom: 1px solid rgba(255,255,255,.08); padding: .7rem 0; }
+    .site-nav .navbar-brand { font-weight: 800; color: #fff !important; }
+    .site-nav .navbar-brand span { color: #ff6b7a; }
+    .site-nav .nav-link { color: rgba(245,245,247,.85) !important; font-weight: 600; font-size: .93rem; }
+    .site-nav .nav-link:hover, .site-nav .nav-link.active { color: #fff !important; }
+    .site-nav .dropdown-menu { background: #141416; border: 1px solid rgba(255,255,255,.1); }
+    .site-nav .dropdown-item { color: rgba(245,245,247,.8); }
+    .site-nav .dropdown-item:hover, .site-nav .dropdown-item.active { background: rgba(220,53,69,.25); color: #fff; }
+
     .sticky-cta {
       position: sticky;
       top: 0;
@@ -75,22 +88,86 @@
       backdrop-filter: blur(8px);
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
-    .accordion-button { background: #141416; color: #f5f5f7; }
-    .accordion-button:not(.collapsed) { background: #1c1c1f; color: #fff; }
+
+    .detail { border-left: 3px solid #dc3545; padding: .2rem 0 .2rem 1rem; height: 100%; }
+    .detail h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .4rem; }
+    .detail p { margin: 0; }
+
+    .plan-card { display: block; text-decoration: none; height: 100%; padding: 1.2rem 1.3rem; border-radius: .9rem; background: #141416; border: 1px solid rgba(255,255,255,.08); color: #f5f5f7; transition: border-color .2s ease, transform .2s ease; }
+    .plan-card:hover { border-color: rgba(220,53,69,.6); transform: translateY(-3px); color: #fff; }
+    .plan-card .ico { font-size: 1.5rem; }
+    .plan-card strong { display: block; margin: .4rem 0 .3rem; font-size: 1.05rem; }
+    .plan-card span { color: rgba(245,245,247,.7); font-size: .92rem; }
+
+    footer { border-top: 1px solid rgba(255,255,255,.08); }
+    footer h4 { font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: #ff6b7a; font-weight: 700; margin-bottom: .7rem; }
+    footer ul { list-style: none; padding: 0; margin: 0; }
+    footer li { margin-bottom: .35rem; }
+    footer a { color: rgba(245,245,247,.8); text-decoration: none; }
+    footer a:hover { color: #fff; }
   </style>
 </head>
 
 <body>
 
+  <!-- Site nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">Party<span>Charleston</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bachelorette</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/bach-party/index.html">Bachelorette Guide</a></li>
+              <li><a class="dropdown-item" href="/bach-party/experiences/index.html">Experiences</a></li>
+              <li><a class="dropdown-item" href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+              <li><a class="dropdown-item" href="/bach-party/fun-things-to-do-in-charleston-sc-girls-weekend.html">Girls Weekend Ideas</a></li>
+              <li><a class="dropdown-item active" aria-current="page" href="/bach-party/bachelorette-brunch-show-charleston-sc.html">Brunch Show</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Scene</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+              <li><a class="dropdown-item" href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">King Street</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+              <li><a class="dropdown-item" href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+              <li><a class="dropdown-item" href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parties</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/parties/index.html">All Party Guides</a></li>
+              <li><a class="dropdown-item" href="/parties/college.html">College Scene</a></li>
+              <li><a class="dropdown-item" href="/parties/girls-night-out.html">Girls Night Out</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- Sticky micro-CTA -->
   <div class="sticky-cta py-2">
     <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2">
       <div class="small muted">
-        Brunch shows: <strong class="text-white">$200 for up to 90 minutes</strong>
+        Brunch shows: <strong class="text-white">$200 for up to 90 minutes</strong> · paid on arrival
       </div>
       <div class="d-flex gap-2">
         <a class="btn btn-danger btn-sm btn-call" href="tel:+18433609438">Call Now</a>
-        <a class="btn btn-outline-light btn-sm" href="sms:+18433609438">Text to Book</a>
+        <a class="btn btn-outline-light btn-sm" href="sms:+18433609438?&amp;body=Hi%20Michael%2C%20I'd%20like%20to%20book%20a%20bachelorette%20brunch%20show%20in%20Charleston.">Text to Book</a>
       </div>
     </div>
   </div>
@@ -110,25 +187,25 @@
           </h1>
 
           <p class="lead muted mb-4">
-            Turn brunch into the highlight of the weekend with <strong class="text-white">Charleston bachelorette entertainment at brunch</strong>. After you eat out, <a href="https://michaelatyourplace.com/">Michael At Your Place</a> brings a high-energy private show to your rental: <strong class="text-white">$200 for up to 90 minutes</strong>, paid on arrival by cash, Venmo, or Cash App.
+            Turn brunch into the highlight of the weekend with <strong class="text-white">Charleston bachelorette entertainment at brunch</strong>. After you eat out, <a href="https://michaelatyourplace.com/" target="_blank" rel="noopener">Michael At Your Place</a> brings a high-energy private show to your rental: <strong class="text-white">$200 for up to 90 minutes</strong>, paid on arrival by cash, Venmo or Cash App.
           </p>
 
           <ul class="fact-list list-unstyled muted mb-4">
-            <li><strong class="text-white">Price:</strong> $200 for up to 90 minutes</li>
+            <li><strong class="text-white">Price:</strong> $200 for up to 90 minutes, about $20 each for a group of 10</li>
             <li><strong class="text-white">Where:</strong> Downtown Charleston, Mount Pleasant, North Charleston, Isle of Palms, Folly Beach</li>
-            <li><strong class="text-white">When:</strong> brunch or late night, last-minute dates welcome</li>
+            <li><strong class="text-white">When:</strong> Brunch, afternoon or late night. Last-minute dates welcome</li>
           </ul>
 
           <!-- Top CTA -->
           <div class="d-flex flex-column flex-sm-row gap-2 mb-3">
             <a class="btn btn-danger btn-lg btn-call" href="tel:+18433609438">Call 843-360-9438</a>
-            <a class="btn btn-outline-light btn-lg" href="sms:+18433609438">Text to Check Availability</a>
+            <a class="btn btn-outline-light btn-lg" href="sms:+18433609438?&amp;body=Hi%20Michael%2C%20is%20my%20date%20open%20for%20a%20bachelorette%20brunch%20show%3F">Text to Check Availability</a>
           </div>
 
           <h2 class="h5 fw-bold mt-4">Brunch Bachelorette Party Activities</h2>
 
           <p class="small muted mb-0">
-            Quick booking: text your brunch location, day and time, group size, and vibe (playful, classy, or high-energy).
+            Quick booking: text your brunch location, day and time, group size, and vibe (playful, classy or high-energy).
           </p>
         </div>
 
@@ -159,7 +236,7 @@
         <div class="col-lg-8">
           <h2 class="fw-bold mb-3">Charleston Brunch Show: Bachelorette Entertainment</h2>
           <p class="muted">
-            Building a weekend schedule? This fits naturally between coffee, reservations, and photos. It's <strong class="text-white">bachelorette brunch entertainment</strong> Charleston visitors can actually plan around: playful energy, crowd interaction, and a show-style moment that stays fun and tasteful, all in up to 90 minutes.
+            Building a weekend schedule? This fits naturally between coffee, reservations and photos. It's <strong class="text-white">bachelorette brunch entertainment</strong> Charleston visitors can actually plan around: playful energy, crowd interaction, and a show-style moment that stays fun and tasteful, all in up to 90 minutes.
           </p>
 
           <h3 class="h5 fw-bold mt-4">Designed for a bride-to-be brunch celebration</h3>
@@ -167,6 +244,10 @@
             A great add-on when the group wants a <strong class="text-white">bride-to-be brunch celebration</strong> that feels like an event, not just a meal. It's also popular as <strong class="text-white">bridal party entertainment</strong> when you want one memorable moment without changing the whole day's itinerary. One flat $200 rate, split however the group likes.
           </p>
 
+          <h3 class="h5 fw-bold mt-4">Pair it with a Charleston bachelorette brunch</h3>
+          <p class="muted mb-0">
+            Eat out first, then head back for the show. Brunch inside a converted church at <a href="/bach-party/experiences/church-and-union-bachelorette-brunch-dinner.html">Church and Union</a>, shrimp and grits at <a href="https://poogansporch.com/" target="_blank" rel="noopener">Poogan's Porch</a>, or skip the wait and have <a href="/bach-party/experiences/bienvenue-charleston-airbnb-concierge.html">a concierge set up a mimosa bar</a> at your rental. Planning the rest of the weekend? Start with the <a href="/bach-party/index.html">Charleston bachelorette party guide</a>.
+          </p>
         </div>
 
         <div class="col-lg-4">
@@ -181,7 +262,7 @@
               </ul>
               <hr class="border-light opacity-10">
               <div class="d-grid gap-2">
-                <a class="btn btn-outline-light" href="sms:+18433609438">Text 843-360-9438</a>
+                <a class="btn btn-outline-light" href="sms:+18433609438?&amp;body=Hi%20Michael%2C%20bachelorette%20brunch%20show%20request%3A%20date%2C%20time%2C%20location%2C%20group%20size%3A">Text 843-360-9438</a>
                 <a class="btn btn-danger btn-call" href="tel:+18433609438">Call to Book</a>
               </div>
               <p class="small muted mt-3 mb-0">
@@ -195,89 +276,122 @@
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- DETAILS (was FAQ) -->
   <section class="section" style="border-top:1px solid rgba(255,255,255,.08);">
     <div class="container">
-      <h2 class="fw-bold mb-4">FAQ: Brunch Entertainment Planning</h2>
-
-      <div class="accordion" id="faq">
-        <div class="accordion-item">
-          <h3 class="accordion-header" id="q1">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="a1">
-              How much does the brunch show cost?
-            </button>
-          </h3>
-          <div id="a1" class="accordion-collapse collapse" aria-labelledby="q1" data-bs-parent="#faq">
-            <div class="accordion-body muted">
-              $200 for up to 90 minutes. You pay when Michael arrives, by cash, Venmo, or Cash App.
-            </div>
+      <h2 class="fw-bold mb-4">Brunch Entertainment Planning Details</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="detail">
+            <h3>Cost of the Brunch Show</h3>
+            <p class="muted">$200 for up to 90 minutes. You pay when Michael arrives, by cash, Venmo or Cash App.</p>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h3 class="accordion-header" id="q2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
-              How do we book?
-            </button>
-          </h3>
-          <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faq">
-            <div class="accordion-body muted">
-              Call or text <strong class="text-white">843-360-9438</strong> with your date, time, location, and group size. No forms, and last-minute dates are welcome.
-            </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="detail">
+            <h3>How Booking Works</h3>
+            <p class="muted">Call or text <strong class="text-white">843-360-9438</strong> with your date, time, location and group size. No forms, and last-minute dates are welcome.</p>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h3 class="accordion-header" id="q3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
-              Where in Charleston can this happen?
-            </button>
-          </h3>
-          <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faq">
-            <div class="accordion-body muted">
-              At your home or rental anywhere in the Charleston area, including downtown, Mount Pleasant, North Charleston, Isle of Palms, and Folly Beach.
-            </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="detail">
+            <h3>Where in Charleston</h3>
+            <p class="muted">At your home or rental anywhere in the Charleston area, including downtown, <a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a>, North Charleston, Isle of Palms and Folly Beach.</p>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h3 class="accordion-header" id="q4">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
-              Can we keep it classy and brunch-friendly?
-            </button>
-          </h3>
-          <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faq">
-            <div class="accordion-body muted">
-              Absolutely. Tell Michael the tone you want when you book, and he'll tailor the show to your group.
-            </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="detail">
+            <h3>Classy and Brunch-Friendly</h3>
+            <p class="muted">Tell Michael the tone you want when you book, and he'll tailor the show to your group.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="py-4">
+  <!-- PLAN THE DAY -->
+  <section class="section" style="border-top:1px solid rgba(255,255,255,.08);">
     <div class="container">
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
-        <div class="small muted">
-          © <span id="year"></span> Party Charleston • <a href="tel:+18433609438" class="text-white fw-bold text-decoration-none">843-360-9438</a>
+      <h2 class="fw-bold mb-2">Build the Rest of the Bachelorette Day</h2>
+      <p class="muted mb-4">More Charleston bachelorette ideas that work before or after brunch.</p>
+      <div class="row g-3">
+        <div class="col-sm-6 col-lg-3">
+          <a class="plan-card" href="/bach-party/experiences/charleston-party-cat-byob-bachelorette-boat.html"><div class="ico">🛥️</div><strong>BYOB Party Boat</strong><span>An afternoon on the harbor</span></a>
         </div>
-        <div class="small muted">
-          Playful • Fun • Brunch-friendly entertainment
+        <div class="col-sm-6 col-lg-3">
+          <a class="plan-card" href="/bach-party/experiences/holy-city-picnic-luxury-bachelorette-picnic.html"><div class="ico">🧺</div><strong>Luxury Picnic</strong><span>Styled and set up for you</span></a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <a class="plan-card" href="/king-street-bar-crawl/rooftop-bars.html"><div class="ico">🌇</div><strong>Rooftop Bars</strong><span>Sunset drinks after the show</span></a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <a class="plan-card" href="/bach-party/fun-things-to-do-in-charleston-sc-girls-weekend.html"><div class="ico">🗓️</div><strong>Girls Weekend Plan</strong><span>Friday to Sunday ideas</span></a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <a class="plan-card" href="/bach-party/experiences/craft-diy-crafting-mimosas-workshop.html"><div class="ico">🥂</div><strong>Crafting &amp; Mimosas</strong><span>Bottomless brunch-style class</span></a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <a class="plan-card" href="/parties/girls-night-out.html"><div class="ico">💅</div><strong>Girls Night Out</strong><span>Prefer the show at night?</span></a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <a class="plan-card" href="/bach-party/experiences/hire-male-stripper-charleston.html"><div class="ico">⭐</div><strong>Private Show Details</strong><span>Everything about the show</span></a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <a class="plan-card" href="/bach-party/experiences/index.html"><div class="ico">🎟️</div><strong>20 Experiences</strong><span>More to book in Charleston</span></a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="mt-3 small muted text-center">
-        Serving: Downtown Charleston • Mount Pleasant • North Charleston • Isle of Palms • Folly Beach
+  <!-- FOOTER -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-lg-3">
+          <h4>Bachelorette Parties</h4>
+          <ul>
+            <li><a href="/bach-party/index.html">Bachelorette Guide</a></li>
+            <li><a href="/bach-party/experiences/index.html">Experiences</a></li>
+            <li><a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4>Charleston Party Scene</h4>
+          <ul>
+            <li><a href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+            <li><a href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4>King Street Bar Crawl</h4>
+          <ul>
+            <li><a href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+            <li><a href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+            <li><a href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4>Parties</h4>
+          <ul>
+            <li><a href="/parties/index.html">All Party Guides</a></li>
+            <li><a href="/parties/college.html">College Scene</a></li>
+            <li><a href="/parties/girls-night-out.html">Girls Night Out</a></li>
+            <li><a href="/about.html">About</a> · <a href="/privacy-policy.html">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 pt-3" style="border-top:1px solid rgba(255,255,255,.08);">
+        <div class="small muted">
+          © 2026 Party Charleston • <a href="tel:+18433609438" class="text-white fw-bold">843-360-9438</a>
+        </div>
+        <div class="small muted">
+          Serving: Downtown Charleston • Mount Pleasant • North Charleston • Isle of Palms • Folly Beach
+        </div>
       </div>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
