@@ -2,127 +2,276 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-w, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Best Late-Night Food on King Street</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Where to eat on King Street after 1 AM: Benny Ravello's giant slices, Paolo's, The Royal American and the Cook Out run, plus a simple late-night food plan.">
+    <link rel="canonical" href="https://www.partycharleston.com/king-street-bar-crawl/late-night-food.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.7;
+        :root{
+            --night:#14171f; --night-2:#1e222d; --brick:#c8553d; --brick-dark:#a8432e;
+            --butter:#f6d365; --cream:#fbf7f0; --ink:#1d1f24; --muted:#5d636e; --line:#e7e0d4;
         }
-        .prose h2 {
-            font-size: 1.875rem; /* 2.25rem */
-            font-weight: 700;
-            margin-top: 2em;
-            margin-bottom: 0.75em;
+        *{box-sizing:border-box;}
+        html{scroll-behavior:smooth;}
+        body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;}
+        h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--night);}
+        a{color:var(--brick);font-weight:600;}
+        a:hover{color:var(--brick-dark);}
+        section{scroll-margin-top:84px;}
+
+        .navbar{background:var(--night)!important;padding:.85rem 0;border-bottom:3px solid var(--butter);}
+        .navbar-brand{font-family:'DM Serif Display',serif;font-size:1.4rem;color:#fff!important;}
+        .navbar-brand span{color:var(--butter);}
+        .nav-link{color:#e9e6df!important;font-weight:600;font-size:.94rem;}
+        .nav-link:hover,.nav-link.active{color:var(--butter)!important;}
+        .dropdown-menu{background:var(--night-2);border:0;}
+        .dropdown-item{color:#e9e6df;}
+        .dropdown-item:hover,.dropdown-item.active{background:var(--brick);color:#fff;}
+
+        .hero{background:radial-gradient(circle at 85% 15%,rgba(246,211,101,.22),transparent 40%),radial-gradient(circle at 10% 90%,rgba(200,85,61,.35),transparent 45%),var(--night);color:#fff;padding:4rem 0 3.5rem;}
+        .back{display:inline-block;color:var(--butter);font-weight:600;text-decoration:none;font-size:.95rem;margin-bottom:1rem;}
+        .back:hover{color:#fff;}
+        .kicker{display:inline-block;background:var(--butter);color:var(--night);font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .8rem;border-radius:999px;}
+        .hero h1{color:#fff;font-size:clamp(2.3rem,5.5vw,3.8rem);line-height:1.05;margin:1rem 0 1.1rem;}
+        .hero h1 em{color:var(--butter);}
+        .hero p{color:rgba(255,255,255,.86);font-size:1.1rem;max-width:640px;}
+        .hero-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;border:4px solid var(--butter);box-shadow:0 24px 50px rgba(0,0,0,.45);background:var(--night-2);display:block;transform:rotate(1.5deg);}
+        .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.5rem;}
+        .chips a{color:#fff;text-decoration:none;border:1.5px solid rgba(255,255,255,.5);border-radius:999px;padding:.32rem .9rem;font-size:.88rem;font-weight:600;}
+        .chips a:hover{background:var(--butter);color:var(--night);border-color:var(--butter);}
+
+        .wrap{max-width:900px;margin:0 auto;}
+        .lede{font-size:1.15rem;color:var(--muted);}
+        .sec-title{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:.4rem;}
+        .sec-kicker{color:var(--brick);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;}
+        .wide-img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:18px;background:#e7e0d4;display:block;}
+
+        .card-x{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.6rem 1.7rem;box-shadow:0 10px 26px rgba(20,23,31,.06);height:100%;position:relative;}
+        .card-x h3{font-size:1.5rem;margin:.2rem 0 .5rem;}
+        .card-x p{margin-bottom:.8rem;}
+        .num{font-family:'DM Serif Display',serif;font-size:2.6rem;line-height:1;color:var(--brick);}
+        .tag{display:inline-block;background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem;font-size:.8rem;font-weight:600;color:var(--muted);margin:0 .3rem .3rem 0;}
+        .tag.hot{background:var(--butter);border-color:var(--butter);color:var(--night);}
+        .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:1rem;}
+        .fact{background:var(--cream);border-radius:12px;padding:.75rem .9rem;font-size:.9rem;}
+        .fact b{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brick);margin-bottom:.15rem;}
+
+        .time{display:inline-block;background:var(--night);color:var(--butter);font-weight:700;font-size:.8rem;border-radius:8px;padding:.2rem .6rem;margin-bottom:.6rem;}
+
+        .band{background:var(--night);color:#fff;border-radius:22px;padding:2.4rem;}
+        .band h2,.band h3{color:#fff;}
+        .band p{color:rgba(255,255,255,.85);}
+        .band a{color:var(--butter);}
+        .plan{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.2rem 1.3rem;height:100%;}
+        .plan h3{font-size:1.35rem;margin-bottom:.4rem;}
+        .plan p{margin:0;}
+
+        .more a{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem;color:var(--ink);height:100%;transition:transform .15s ease,border-color .15s ease;}
+        .more a:hover{transform:translateY(-3px);border-color:var(--brick);color:var(--ink);}
+        .more strong{display:block;font-family:'DM Serif Display',serif;font-weight:400;font-size:1.2rem;color:var(--night);}
+        .more span{font-size:.9rem;color:var(--muted);font-weight:400;}
+
+        footer{background:var(--night);color:rgba(255,255,255,.75);padding:2.6rem 0 2rem;font-size:.92rem;border-top:3px solid var(--butter);margin-top:4rem;}
+        footer h4{font-family:'Inter',sans-serif;font-weight:700;color:var(--butter);font-size:.95rem;margin-bottom:.7rem;}
+        footer ul{list-style:none;padding:0;margin:0;}
+        footer li{margin-bottom:.35rem;}
+        footer a{color:rgba(255,255,255,.85);font-weight:500;text-decoration:none;}
+        footer a:hover{color:var(--butter);}
+
+        @media (max-width:767px){
+            .facts{grid-template-columns:1fr;}
+            .band{padding:1.6rem;}
+            .hero{padding:3rem 0 2.6rem;}
+            .hero-img{transform:none;}
         }
-        .prose h3 {
-            font-size: 1.25rem; /* 1.5rem */
-            font-weight: 600;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-        }
-        .prose p {
-            font-size: 1.125rem; /* lg */
-            margin-bottom: 1.25em;
-        }
-        .prose ul {
-            list-style-type: disc;
-            margin-left: 1.5em;
-            margin-bottom: 1.25em;
-            font-size: 1.125rem; /* lg */
-        }
-        .prose li {
-            margin-bottom: 0.5em;
-        }
-        .prose a {
-            color: #d32f2f; /* Red-700 */
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .prose a:hover {
-            text-decoration: underline;
-        }
+        @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="text-3xl font-bold text-gray-900">
-                <a href="https://www.partycharleston.com">Party<span class="text-indigo-600">Charleston</span></a>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html">Party<span>Charleston</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="siteNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bachelorette</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/bach-party/index.html">Bachelorette Guide</a></li>
+            <li><a class="dropdown-item" href="/bach-party/experiences/index.html">Experiences</a></li>
+            <li><a class="dropdown-item" href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Scene</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+            <li><a class="dropdown-item" href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">King Street</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parties</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/parties/index.html">All Party Guides</a></li>
+            <li><a class="dropdown-item" href="/parties/college.html">College Scene</a></li>
+            <li><a class="dropdown-item" href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="row g-4 g-lg-5 align-items-center">
+      <div class="col-lg-7">
+        <a class="back" href="/king-street-bar-crawl/index.html">&larr; Back to the King Street Guide</a><br>
+        <span class="kicker">After last call</span>
+        <h1>The Late-Night Food Guide: Best Eats on King Street <em>After 1 AM</em></h1>
+        <p>It's 1:45 AM. The lights just came on at Uptown and thousands of people are pouring onto King Street. Your feet hurt and you are starving. This is the most critical moment of your night.</p>
+        <nav class="chips" aria-label="Jump to a section">
+          <a href="#pizza">🍕 Pizza</a>
+          <a href="#royal">🍔 Bar food</a>
+          <a href="#cookout">🥤 Cook Out run</a>
+          <a href="#plan">✅ The plan</a>
         </nav>
-    </header>
+      </div>
+      <div class="col-lg-5">
+        <img src="images/king3.png" class="hero-img" alt="A slice of pizza on King Street at night">
+      </div>
+    </div>
+  </div>
+</header>
 
-    <!-- Article Main Content -->
-    <main class="container mx-auto px-6 py-16">
-        <article class="max-w-4xl mx-auto prose">
-            
-            <!-- Article Header -->
-            <div class="text-center mb-12">
-                <a href="https://www.partycharleston.com/king-street-bar-crawl/index.html" class="text-indigo-600 font-semibold text-lg">&larr; Back to the King Street Guide</a>
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-4">The Late-Night Food Guide: Best Eats on King Street After 1 AM</h1>
-                <p class="text-xl text-gray-600">It's 1:45 AM. The lights just came on at Uptown, the DJ cut the music at Share House, and thousands of people are pouring onto King Street. Your ears are ringing, your feet hurt, and you are *starving*. This is the most critical moment of your night.</p>
-                <p class="text-xl text-gray-600">Where do you go? Making the wrong choice means a 45-minute wait for a mediocre slice. Making the right choice is the perfect end to an epic night. We've done the "research" so you don't have to. This is the definitive guide to late-night food on King Street.</p>
-            </div>
+<main class="container my-5">
+  <div class="wrap">
+    <p class="lede">The wrong choice means a 45-minute wait for a mediocre slice. The right one is the perfect end to an epic night. Charleston bars close at 2 AM, so plan the food stop before the rush. When it's that late you need one of three things: pizza, a real meal, or something greasy.</p>
+  </div>
 
-            <img src="images/king3.png" alt="A person holding a perfect slice of pizza on a street at night" class="rounded-lg shadow-lg mb-12 w-full">
-
-            <h2>The Late-Night Champions</h2>
-            <p>When it's that late, you have three primary needs: pizza, tacos, or something greasy. Here are the champions of each category.</p>
-
-            <h3>The Pizza Gods: Benny's & Paolo's</h3>
-            
-            <h3>1. Benny's (Benny Palmetto's)</h3>
-            <p>This is the undisputed king of the 2 AM "mass exodus" from Upper King. Located right on King Street near the action, Benny's serves one thing: gigantic, New York-style pizza slices. The line will look terrifying—it will stretch down the block. But don't be fooled. They are built for volume. The line moves incredibly fast. You can be in and out with your massive, foldable, perfect slice in under 10 minutes. It's a well-oiled machine and a Charleston rite of passage.</p>
-
-            <h3>2. Paolo's Gelato & Pizza</h3>
-            <p>Located on Market Street, this is the go-to for the Mid-King and Lower King crowd. It's a classic, no-frills pizza-by-the-slice joint that has been serving the late-night crowd for years. The pizza is fantastic, and they also have gelato if you're in the mood for a different kind of late-night snack. It's a slightly more "old-school Charleston" feel than Benny's.</p>
-
-            <h3>The Taco Hero: Fuel Cantina</h3>
-            <p>Tucked away on Rutledge Ave (one block over from King), Fuel is a Caribbean-inspired cantina in a converted, retro gas station. While it's a great bar in its own right, its late-night window is a lifesaver. You can walk up and grab amazing tacos, street corn, and other quick bites. It's the perfect way to dodge the pizza-fueled chaos on King Street and get something with a little more flavor. A true local's secret.</p>
-
-            <h3>The Greasy Spoon Legend: The Royal American</h3>
-            <p>This is a "pro-move." While the college crowd swarms Benny's, the local industry crowd and <a href="https://www.partycharleston.com/parties/college.html" class="text-indigo-600 hover:underline font-semibold">CofC students in-the-know</a> head to The Royal American (on Morrison Drive, a short walk from Upper King). Their kitchen stays open late, and their bar food is *unbelievably* good. We're talking loaded tater tots, amazing burgers, and fried chicken sandwiches. It's a bar, so you have to be 21+, but it's the perfect spot to wind down *with* amazing food instead of just grabbing it on the go.</p>
-
-            <h3>The "You Need a Real Meal" Option: Cook Out</h3>
-            <p>Let's be honest. Sometimes you don't want a $5 slice. You want a 1,000-calorie tray of a burger, fries, and a milkshake for $8. The Cook Out on Savannah Highway (a short Uber ride from downtown) is the 24/7 mecca for this. Piling into an Uber with your friends and making a "Cook Out run" is a sacred post-party ritual. If you need to sober up with a massive, cheap meal, this is your destination.</p>
-
-            <!-- Conclusion -->
-            <h2>The Verdict: Your Late-Night Food Plan</h2>
-            <p>Your choice of late-night food says a lot about your <a href="https://www.partycharleston.com/king-street-bar-crawl/index.html" class="text-indigo-600 hover:underline font-semibold">King Street bar crawl</a> strategy.
-            <br><br>
-            <ul>
-                <li><strong>The Classic Move:</strong> Join the crowd at <strong>Benny's</strong>. It's part of the experience.</li>
-                <li><strong>The Local's Move:</strong> Skip the line and get tacos at <strong>Fuel</strong>.</li>
-                <li><strong>The 21+ Wind-Down:</strong> Grab a final drink and real food at <strong>The Royal American</strong>.</li>
-                <li><strong>The "Mission" Move:</strong> Commit to the Uber ride for a glorious <strong>Cook Out</strong> tray.</li>
-            </ul>
-            <p>Whatever you pick, just make sure you pick *something*. Your head will thank you in the morning.</p>
-        </article>
-    </main>
-
-    <!-- Footer with Required Links -->
-    <footer class="bg-gray-900 text-white mt-16">
-        <div class="container mx-auto px-6 py-12">
-            <div class="text-center">
-                <h4 class="text-lg font-semibold mb-3">Explore More</h4>
-                <ul class="space-y-2">
-                    <li>
-                        <!-- Link 1: To pillar page -->
-                        <a href="https://www.partycharleston.com/king-street-bar-crawl/index.html" class="text-gray-300 hover:text-white">Back to the King Street Guide</a>
-                    </li>
-                    
-                </ul>
-                <div class="mt-8 border-t border-gray-700 pt-6 text-gray-500">
-                    &copy; 2025 PartyCharleston. All rights reserved.
-                </div>
-            </div>
+  <section id="pizza" class="wrap mt-5">
+    <div class="sec-kicker">The Pizza Gods</div>
+    <h2 class="sec-title">Benny's &amp; Paolo's</h2>
+    <div class="row g-4 mt-1">
+      <div class="col-md-6">
+        <div class="card-x">
+          <span class="tag hot">Upper King</span>
+          <h3>Benny Ravello's</h3>
+          <p>The king of the 2 AM exodus from Upper King. Benny's serves gigantic, New York-style slices, and the line stretches down the block. Don't be fooled: it's built for volume and moves fast. Be in and out in about 10 minutes with a massive, foldable slice. A Charleston rite of passage.</p>
+          <div class="facts"><div class="fact"><b>Order</b>One giant slice</div><div class="fact"><b>Wait</b>Long line, fast</div><div class="fact"><b>Vibe</b>Post-bar chaos</div></div>
         </div>
-    </footer>
+      </div>
+      <div class="col-md-6">
+        <div class="card-x">
+          <span class="tag">Market Street</span>
+          <h3>Paolo's Gelato &amp; Pizza</h3>
+          <p>The go-to for the Mid and Lower King crowd. A classic, no-frills slice joint that's served the late-night crowd for years, with gelato if you'd rather go sweet. A more old-school Charleston feel than Benny's.</p>
+          <div class="facts"><div class="fact"><b>Order</b>Slice + gelato</div><div class="fact"><b>Wait</b>Shorter</div><div class="fact"><b>Vibe</b>Old-school</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="royal" class="wrap mt-5">
+    <div class="card-x">
+      <span class="tag hot">The Pro Move · 21+</span>
+      <h3><a href="https://www.theroyalamerican.com/" target="_blank" rel="noopener">The Royal American</a></h3>
+      <p>While the college crowd swarms Benny's, the local industry crowd and <a href="/parties/college.html">CofC students in the know</a> head to The Royal American on Morrison Drive, a short ride from Upper King. The kitchen stays open late, and the bar food is unbelievably good: loaded tater tots, burgers and fried chicken sandwiches. It's a bar, so you have to be 21+, but it's the perfect place to wind down with real food instead of grabbing it on the go.</p>
+      <div class="facts"><div class="fact"><b>Order</b>Tots + a burger</div><div class="fact"><b>Ages</b>21+</div><div class="fact"><b>Vibe</b>Local dive</div></div>
+    </div>
+  </section>
+
+  <section id="cookout" class="wrap mt-4">
+    <div class="card-x">
+      <span class="tag">The Real-Meal Mission</span>
+      <h3>Cook Out</h3>
+      <p>Sometimes you don't want a slice. You want a burger, fries and a milkshake tray for under $10. The Cook Out on Savannah Highway, a short Uber from downtown, is the mecca for this. Piling into an Uber for a Cook Out run is a sacred post-party ritual.</p>
+      <div class="facts"><div class="fact"><b>Order</b>The tray</div><div class="fact"><b>Getting there</b>Short Uber</div><div class="fact"><b>Vibe</b>Drive-thru glory</div></div>
+    </div>
+  </section>
+
+  <section id="plan" class="wrap mt-5">
+    <div class="band">
+      <h2 class="mb-4">The Verdict: Your Late-Night Food Plan</h2>
+      <div class="row g-3">
+        <div class="col-md-4"><div class="plan"><h3>The Classic Move</h3><p>Join the crowd at Benny Ravello's. It's part of the experience.</p></div></div>
+        <div class="col-md-4"><div class="plan"><h3>The 21+ Wind-Down</h3><p>A final drink and real food at The Royal American.</p></div></div>
+        <div class="col-md-4"><div class="plan"><h3>The Mission Move</h3><p>Commit to the Uber for a glorious Cook Out tray.</p></div></div>
+      </div>
+      <p class="mt-4 mb-0">Your food choice says a lot about your <a href="/king-street-bar-crawl/index.html">King Street bar crawl</a> strategy. Whatever you pick, pick something. Your head will thank you in the morning. Under 21? Try the <a href="/king-street-bar-crawl/index.html#desserts">dessert crawl</a> instead.</p>
+    </div>
+  </section>
+</main>
+
+<section class="container mt-5">
+    <div class="wrap" style="max-width:1100px;">
+      <div class="sec-kicker mb-2">Keep Exploring</div>
+      <div class="row g-3 more">
+        <div class="col-sm-6 col-lg-3"><a href="/king-street-bar-crawl/rooftop-bars.html"><strong>Rooftop Bars</strong><span>Start the night up top</span></a></div>
+        <div class="col-sm-6 col-lg-3"><a href="/king-street-bar-crawl/index.html"><strong>King Street Guide</strong><span>The full crawl</span></a></div>
+        <div class="col-sm-6 col-lg-3"><a href="/parties/girls-night-out.html"><strong>Girls Night Out</strong><span>Dinner, dancing, a show</span></a></div>
+        <div class="col-sm-6 col-lg-3"><a href="/charleston-party-scene/index.html"><strong>Party Scene</strong><span>Where Charleston goes out</span></a></div>
+      </div>
+    </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-6 col-lg-3">
+        <h4>Bachelorette Parties</h4>
+        <ul>
+          <li><a href="/bach-party/index.html">Bachelorette Guide</a></li>
+          <li><a href="/bach-party/experiences/index.html">Experiences</a></li>
+          <li><a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Charleston Party Scene</h4>
+        <ul>
+          <li><a href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+          <li><a href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>King Street Bar Crawl</h4>
+        <ul>
+          <li><a href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+          <li><a href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+          <li><a href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Parties</h4>
+        <ul>
+          <li><a href="/parties/index.html">All Party Guides</a></li>
+          <li><a href="/parties/college.html">College Scene</a></li>
+          <li><a href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          <li><a href="/about.html">About</a> · <a href="/privacy-policy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center mb-0 pt-3" style="border-top:1px solid rgba(255,255,255,.2);">&copy; 2026 Charleston Party Hub. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

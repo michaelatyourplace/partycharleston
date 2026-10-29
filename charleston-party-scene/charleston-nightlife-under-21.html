@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Charleston Nightlife 18+: 18-20 Fun | Night Clubs In Charleston, SC 18 &amp; Over</title>
   <link rel="canonical" href="https://www.partycharleston.com/charleston-party-scene/charleston-nightlife-under-21.html">
-  <meta name="description" content="Charleston nightlife for ages 18 to 20: 18+ clubs and shows, live music calendars, late-night eats, and private entertainment for girls night.">
+  <meta name="description" content="Under 21 in Charleston? The 18+ clubs and shows (Music Farm, Dudley's, Honky Tonk), event calendars, late-night eats and 18+ things to do, all in one list.">
+  <meta property="og:title" content="Charleston Nightlife Under 21: 18+ Clubs, Shows & Things To Do">
+  <meta property="og:description" content="The short list of 18+ clubs and shows in Charleston, SC, plus event calendars and late-night eats for the 18 to 20 crowd.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.partycharleston.com/charleston-party-scene/charleston-nightlife-under-21.html">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -18,17 +22,20 @@
     "@type": "WebPage",
     "name": "Charleston Nightlife 18 and Over",
     "url": "https://www.partycharleston.com/charleston-party-scene/charleston-nightlife-under-21.html",
-    "description": "Guide to Charleston nightlife for ages 18 to 20, including 18+ shows, live music calendars, and late-night dining.",
+    "description": "Guide to Charleston nightlife for ages 18 to 20, including 18+ clubs and shows, live music calendars, and late-night dining.",
+    "dateModified": "2026-10-29",
     "about": {
       "@type": "Place",
       "name": "Charleston, SC",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Charleston",
-        "addressRegion": "SC",
-        "addressCountry": "US"
-      }
-    }
+      "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC", "addressCountry": "US" }
+    },
+    "mentions": [
+      { "@type": "MusicVenue", "name": "Music Farm", "url": "https://www.musicfarm.com/", "address": { "@type": "PostalAddress", "streetAddress": "32 Ann Street", "addressLocality": "Charleston", "addressRegion": "SC" } },
+      { "@type": "NightClub", "name": "Dudley's", "url": "https://www.dudleys42ann.com", "address": { "@type": "PostalAddress", "streetAddress": "42 Ann Street", "addressLocality": "Charleston", "addressRegion": "SC" } },
+      { "@type": "NightClub", "name": "Honky Tonk Saloon", "url": "https://honkytonksaloon.com/", "address": { "@type": "PostalAddress", "streetAddress": "192 College Park Road", "addressLocality": "Ladson", "addressRegion": "SC" } },
+      { "@type": "MusicVenue", "name": "Charleston Pour House", "url": "https://charlestonpourhouse.com/", "address": { "@type": "PostalAddress", "streetAddress": "1977 Maybank Highway", "addressLocality": "Charleston", "addressRegion": "SC" } },
+      { "@type": "EventVenue", "name": "Building 64", "url": "https://www.building64.com/" }
+    ]
   }
   </script>
 
@@ -38,162 +45,180 @@
       --teal-mid:#2d6a6a;
       --coral:#e8734a;
       --coral-light:#f4a482;
+      --lime:#d7f25c;
+      --lilac:#cbb8ff;
       --cream:#faf6ef;
       --navy:#24303d;
-      --ink:#22282c;
+      --ink:#1b2024;
+      --muted:#55605a;
       --line:rgba(31,78,78,0.14);
     }
-
     *{box-sizing:border-box;}
-
-    body{
-      font-family:'Inter', sans-serif;
-      color:var(--ink);
-      background:var(--cream);
-      line-height:1.7;
-    }
-
-    h1,h2,h3,h4{
-      font-family:'Poppins', sans-serif;
-      font-weight:600;
-      color:var(--teal-deep);
-    }
-
-    a{color:var(--teal-mid);}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;}
+    h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;font-weight:700;color:var(--teal-deep);}
+    a{color:var(--teal-mid);font-weight:600;}
     a:hover{color:var(--coral);}
+    section{scroll-margin-top:84px;}
 
-    .navbar{
-      background:var(--navy) !important;
-      padding:0.9rem 0;
-    }
-    .navbar-brand{
-      font-family:'Poppins', sans-serif;
-      font-weight:700;
-      color:var(--coral-light) !important;
-      letter-spacing:0.01em;
-    }
-    .nav-link{
-      color:#eef2f0 !important;
-      font-weight:500;
-      font-size:0.95rem;
-      padding:0.5rem 1rem !important;
-    }
-    .nav-link:hover, .nav-link.active{color:var(--coral-light) !important;}
+    /* NAV */
+    .navbar{background:var(--navy)!important;padding:.85rem 0;border-bottom:4px solid var(--coral);}
+    .navbar-brand{font-family:'Poppins',sans-serif;font-weight:800;color:var(--coral-light)!important;}
+    .nav-link{color:#eef2f0!important;font-weight:600;font-size:.95rem;}
+    .nav-link:hover,.nav-link.active{color:var(--coral-light)!important;}
+    .dropdown-menu{background:var(--navy);border:0;}
+    .dropdown-item{color:#eef2f0;font-weight:500;}
+    .dropdown-item:hover,.dropdown-item.active{background:var(--teal-deep);color:var(--coral-light);}
 
+    /* HERO */
     .hero{
-      position:relative;
+      position:relative;color:#fff;padding:4.5rem 0 4rem;overflow:hidden;
       background:
-        linear-gradient(180deg, rgba(31,78,78,0.55), rgba(36,48,61,0.85)),
-        url('/images/charleston-under21.jpg');
-      background-size:cover;
-      background-position:center;
-      color:#fff;
-      padding:5rem 0 4rem;
-      text-align:center;
+        radial-gradient(circle at 12% 20%,rgba(232,115,74,.45),transparent 42%),
+        radial-gradient(circle at 90% 85%,rgba(203,184,255,.35),transparent 45%),
+        linear-gradient(160deg,var(--teal-deep),var(--navy));
     }
-    .hero .eyebrow{
-      font-size:0.8rem;
-      letter-spacing:0.14em;
-      text-transform:uppercase;
-      color:var(--coral-light);
-      font-weight:600;
-    }
-    .hero h1{color:#fff; font-size:clamp(2.2rem, 5vw, 3.2rem); margin:0.6rem 0 1rem;}
-    .hero .lead{color:rgba(255,255,255,0.9); max-width:620px; margin:0 auto 2rem; font-size:1.15rem;}
-    .hero-photo{
-      max-width:640px;
-      margin:0 auto;
-      border-radius:10px;
-      overflow:hidden;
-      box-shadow:0 20px 45px rgba(0,0,0,0.35);
-      border:3px solid rgba(255,255,255,0.25);
-    }
-    .hero-photo img{width:100%; display:block;}
+    .sticker{display:inline-block;background:var(--lime);color:var(--ink);font-weight:800;font-family:'Poppins',sans-serif;font-size:.82rem;padding:.38rem 1rem;border-radius:999px;transform:rotate(-3deg);box-shadow:3px 3px 0 var(--ink);letter-spacing:.02em;}
+    .hero .eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-light);font-weight:700;margin:1.1rem 0 0;}
+    .hero h1{color:#fff;font-size:clamp(2.4rem,6vw,4rem);line-height:1.02;margin:.6rem 0 1.1rem;font-weight:800;}
+    .hero h1 .u21{background:var(--coral);color:#fff;padding:0 .25em;border-radius:.25em;box-shadow:4px 4px 0 var(--ink);display:inline-block;transform:rotate(-1.5deg);}
+    .hero .lead{color:rgba(255,255,255,.92);max-width:620px;font-size:1.08rem;margin-bottom:1rem;}
+    .hero-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.4rem;}
+    .hero-chips a{background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.55);color:#fff;text-decoration:none;border-radius:999px;padding:.35rem .9rem;font-size:.88rem;}
+    .hero-chips a:hover{background:#fff;color:var(--teal-deep);}
+    .posh-card{background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:18px;padding:14px;box-shadow:8px 8px 0 var(--coral);transform:rotate(1.5deg);max-width:440px;margin:0 auto;}
+    .posh-card img{width:100%;border-radius:10px;aspect-ratio:4/3;object-fit:cover;background:#eee;display:block;}
+    .posh-card p{margin:.8rem .2rem .2rem;font-size:.95rem;}
+    .posh-card .tag{display:inline-block;background:var(--lilac);border:2px solid var(--ink);border-radius:8px;padding:.05rem .5rem;font-weight:700;font-size:.78rem;margin-right:.3rem;}
+
+    /* TICKER */
+    .ticker{background:var(--lime);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);overflow:hidden;white-space:nowrap;}
+    .ticker-track{display:inline-block;padding:.5rem 0;font-family:'Poppins',sans-serif;font-weight:700;animation:tick 36s linear infinite;color:var(--ink);}
+    .ticker-track span{margin:0 1.1rem;}
+    @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @media (prefers-reduced-motion:reduce){.ticker-track{animation:none}html{scroll-behavior:auto}}
 
     main{padding-top:1rem;}
 
-    .intro-box{
-      max-width:760px;
-      margin:0 auto 3.5rem;
-      text-align:center;
-    }
+    .section-head{max-width:760px;margin:0 auto 1.8rem;text-align:center;}
+    .section-head h2{font-size:clamp(1.6rem,3.6vw,2.2rem);}
+    .section-head p{color:var(--muted);margin:0;}
 
-    .section-block{
-      background:#fff;
-      border-radius:14px;
-      padding:2.5rem;
-      margin-bottom:2.5rem;
-      box-shadow:0 10px 30px rgba(31,78,78,0.07);
-      border-top:4px solid var(--coral);
-    }
-    .section-block h2{
-      display:flex;
-      align-items:center;
-      gap:0.7rem;
-      font-size:1.6rem;
-      margin-bottom:1.1rem;
-    }
-    .section-block h2 i{color:var(--coral); font-size:1.3rem;}
-    .section-block p{color:#3d453f; font-size:1.02rem;}
-    .section-photo{
-      border-radius:10px;
-      overflow:hidden;
-      margin-bottom:1.5rem;
-    }
-    .section-photo img{width:100%; display:block;}
+    /* QUICK LIST */
+    .quick-list{display:grid;gap:12px;}
+    .q-row{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.6fr;gap:14px;align-items:center;background:#fff;border:2px solid var(--ink);border-radius:14px;padding:14px 18px;box-shadow:4px 4px 0 var(--ink);}
+    .q-row.head{background:transparent;border:0;box-shadow:none;padding:0 18px;font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:700;}
+    .q-name{font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;}
+    .q-name a{color:var(--teal-deep);}
+    .q-area{color:var(--muted);font-size:.9rem;}
+    .age{display:inline-block;font-weight:800;font-size:.75rem;border:2px solid var(--ink);border-radius:999px;padding:.12rem .6rem;white-space:nowrap;}
+    .age.a18{background:var(--lime);}
+    .age.check{background:var(--lilac);}
+    .age.a21{background:var(--coral-light);}
+    .q-note{font-size:.92rem;color:#3d453f;}
 
-    .events-list{list-style:none; padding:0; margin:0;}
-    .events-list li{
-      display:flex; gap:0.7rem; align-items:flex-start;
-      padding:0.6rem 0;
-      border-bottom:1px solid var(--line);
-      font-size:0.98rem;
-      color:#3d453f;
-    }
+    /* BLOCKS */
+    .section-block{background:#fff;border-radius:18px;padding:2.3rem;margin-bottom:2.5rem;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--teal-deep);}
+    .section-block h2{display:flex;align-items:center;gap:.7rem;font-size:1.6rem;margin-bottom:1rem;}
+    .section-block h2 i{color:var(--coral);font-size:1.3rem;}
+    .section-block p{color:#3d453f;font-size:1.02rem;}
+    .section-photo{border-radius:12px;overflow:hidden;margin-bottom:1.5rem;border:2px solid var(--ink);}
+    .section-photo img{width:100%;display:block;aspect-ratio:16/7;object-fit:cover;background:#e9e3d8;}
+
+    .events-list{list-style:none;padding:0;margin:0;}
+    .events-list li{display:flex;gap:.8rem;align-items:flex-start;padding:.7rem 0;border-bottom:1px dashed var(--line);font-size:.98rem;color:#3d453f;}
     .events-list li:last-child{border-bottom:none;}
-    .events-list i{color:var(--coral); margin-top:0.25rem;}
+    .events-list i{color:var(--coral);margin-top:.3rem;width:18px;text-align:center;}
 
-    .topic-card{
-      background:#fff;
-      border-radius:10px;
-      padding:1.5rem 1.6rem;
-      height:100%;
-      border:1px solid var(--line);
-      transition:all 0.2s ease;
-      text-decoration:none;
-      display:block;
-    }
-    .topic-card:hover{
-      border-color:var(--coral);
-      transform:translateY(-3px);
-      box-shadow:0 12px 24px rgba(31,78,78,0.1);
-    }
-    .topic-card h5{color:var(--teal-deep); font-family:'Poppins', sans-serif; font-weight:600; margin-bottom:0.4rem;}
-    .topic-card p{color:#5c655f; font-size:0.92rem; margin:0;}
-    .topic-card img{margin-bottom:0.75rem; border-radius:6px;}
+    /* CARDS */
+    .topic-card{background:#fff;border-radius:16px;padding:1.2rem 1.3rem 1.4rem;height:100%;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .15s ease,box-shadow .15s ease;text-decoration:none;display:block;color:var(--ink);}
+    .topic-card:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--coral);color:var(--ink);}
+    .topic-card h3{font-size:1.15rem;margin-bottom:.4rem;}
+    .topic-card p{color:var(--muted);font-size:.93rem;margin:0;font-weight:400;}
+    .topic-card img{width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:.85rem;border-radius:10px;background:#e9e3d8;}
+    .topic-card .age{margin-bottom:.5rem;}
 
-    footer{
-      background:var(--navy);
-      color:rgba(255,255,255,0.7);
-      text-align:center;
-      padding:2.5rem 0;
-      font-size:0.9rem;
-      margin-top:2rem;
+    /* BENTO */
+    .bento{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
+    .tile{background:#fff;border:2px solid var(--ink);border-radius:16px;padding:1.1rem 1.2rem;box-shadow:4px 4px 0 var(--ink);}
+    .tile .emoji{font-size:1.6rem;line-height:1;}
+    .tile h3{font-size:1.05rem;margin:.5rem 0 .3rem;}
+    .tile p{font-size:.93rem;margin:0;color:#3d453f;}
+    .tile.coral{background:var(--coral);color:#fff;}
+    .tile.coral h3,.tile.coral p,.tile.coral a{color:#fff;}
+    .tile.lilac{background:var(--lilac);}
+
+    .callout{background:var(--lime);border:2px solid var(--ink);border-radius:16px;padding:1.3rem 1.5rem;box-shadow:5px 5px 0 var(--ink);}
+    .callout h2{font-size:1.3rem;margin-bottom:.4rem;color:var(--ink);}
+    .callout p{margin:0;}
+    .callout a{color:var(--ink);text-decoration:underline;}
+
+    footer{background:var(--navy);color:rgba(255,255,255,.75);padding:2.6rem 0 2rem;font-size:.92rem;margin-top:2.5rem;border-top:4px solid var(--coral);}
+    footer h4{color:var(--coral-light);font-size:1rem;margin-bottom:.7rem;}
+    footer ul{list-style:none;padding:0;margin:0;}
+    footer li{margin-bottom:.35rem;}
+    footer a{color:rgba(255,255,255,.85);font-weight:500;text-decoration:none;}
+    footer a:hover{color:var(--coral-light);}
+
+    @media (max-width:991px){
+      .bento{grid-template-columns:repeat(2,minmax(0,1fr));}
+    }
+    @media (max-width:767px){
+      .q-row{grid-template-columns:1fr auto;gap:4px 12px;}
+      .q-row.head{display:none;}
+      .q-row .q-area{grid-column:1;grid-row:2;}
+      .q-row .q-age{grid-column:2;grid-row:1;}
+      .q-row .q-note{grid-column:1 / -1;}
+      .section-block{padding:1.5rem;}
+      .bento{grid-template-columns:1fr;}
+      .hero{padding:3rem 0 3rem;}
+      .posh-card{transform:none;}
     }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark">
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="/">PartyCharleston</a>
+    <a class="navbar-brand" href="/index.html">PartyCharleston</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="/charleston-party-scene/index.html">Party Clubs 18+</a></li>
-        <li class="nav-item"><a class="nav-link" href="/parties/college.html">College</a></li>
-        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bachelorette</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/bach-party/index.html">Bachelorette Guide</a></li>
+            <li><a class="dropdown-item" href="/bach-party/experiences/index.html">Experiences</a></li>
+            <li><a class="dropdown-item" href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Scene</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">King Street</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parties</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/parties/index.html">All Party Guides</a></li>
+            <li><a class="dropdown-item" href="/parties/college.html">College Scene</a></li>
+            <li><a class="dropdown-item" href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
       </ul>
     </div>
   </div>
@@ -201,84 +226,221 @@
 
 <header class="hero">
   <div class="container">
-    <div class="eyebrow">18+ clubs in Charleston and night guide</div>
-    <h1>Charleston Nightlife Under 21</h1>
-    <p class="lead">The best of Charleston after dark for ages 18 to 20: live music, 18+ shows, late-night eats, and social spots across the Holy City. The list of 18+ clubs in Charleston is short, so it pays to know where to look.</p>
-    <p class="lead">Night clubs in Charleston, SC for 18 and over are mostly event nights and late-night spots that let in a younger crowd. Plan the night around shows, local hangouts, and outdoor events instead of bars.</p>
-    <div class="hero-photo">
-      <img src="images/poshvip.png" alt="Posh VIP event listings for Charleston">
-      <p class="mt-3 mb-3"><i class="fas fa-ticket"></i> <a style="color: orange;" href="https://posh.vip">Posh VIP</a>: the go-to for CofC students and young adults</p>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-7">
+        <span class="sticker">18+ approved ✌️</span>
+        <div class="eyebrow">18+ clubs in Charleston and night guide</div>
+        <h1>Charleston Nightlife <span class="u21">Under 21</span></h1>
+        <p class="lead">The best of Charleston after dark for ages 18 to 20: live music, 18+ shows, late-night eats, and social spots across the Holy City. The list of 18+ clubs in Charleston is short, so it pays to know where to look.</p>
+        <p class="lead">Night clubs in Charleston, SC for 18 and over are mostly event nights and late-night spots that let in a younger crowd. Plan the night around shows, local hangouts, and outdoor events instead of bars.</p>
+        <nav class="hero-chips" aria-label="Jump to a section">
+          <a href="#clubs">🎤 18+ clubs</a>
+          <a href="#events">📅 Events</a>
+          <a href="#risque">🔥 A little risqué</a>
+          <a href="#eats">🌮 Late-night eats</a>
+          <a href="#daytime">🏖️ Daytime</a>
+        </nav>
+      </div>
+      <div class="col-lg-5">
+        <div class="posh-card">
+          <img src="images/poshvip.png" alt="Posh VIP event listings for Charleston">
+          <p><span class="tag">🎟️ Hot tip</span> <a href="https://posh.vip" target="_blank" rel="noopener">Posh VIP</a>: the go-to for CofC students and young adults. Promoters post 18+ parties here first.</p>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Music Farm ✦</span><span>Dudley's ✦</span><span>Honky Tonk Saloon ✦</span><span>Posh VIP ✦</span><span>Building 64 ✦</span><span>Pour House ✦</span><span>Sweatman's Garden ✦</span><span>Kickin' Chicken ✦</span><span>Carmella's ✦</span><span>Folly Beach ✦</span>
+    <span>Music Farm ✦</span><span>Dudley's ✦</span><span>Honky Tonk Saloon ✦</span><span>Posh VIP ✦</span><span>Building 64 ✦</span><span>Pour House ✦</span><span>Sweatman's Garden ✦</span><span>Kickin' Chicken ✦</span><span>Carmella's ✦</span><span>Folly Beach ✦</span>
+  </div>
+</div>
+
 <main class="container my-5">
   <article>
 
-    <div class="intro-box">
-      <h2 class="mb-3" style="font-size:1.5rem;">18 and Up Clubs Near Charleston SC</h2>
-    </div>
+    <!-- QUICK LIST -->
+    <section id="clubs" class="mb-5">
+      <div class="section-head">
+        <h2>18 and Up Clubs Near Charleston SC</h2>
+        <p>The short list of night clubs in Charleston, SC for 18 and over, and the rule at each door.</p>
+      </div>
+      <div class="quick-list">
+        <div class="q-row head" aria-hidden="true"><span>Spot</span><span>Area</span><span>Age rule</span><span>Why go</span></div>
+        <div class="q-row">
+          <div class="q-name"><a href="https://www.musicfarm.com/" target="_blank" rel="noopener">Music Farm</a></div>
+          <div class="q-area">32 Ann St, downtown</div>
+          <div class="q-age"><span class="age a18">18+ shows</span></div>
+          <div class="q-note">Charleston's main concert venue. Touring DJs, hip-hop, rock and EDM, with many shows open to 18+.</div>
+        </div>
+        <div class="q-row">
+          <div class="q-name"><a href="https://www.dudleys42ann.com" target="_blank" rel="noopener">Dudley's</a></div>
+          <div class="q-area">42 Ann St, downtown</div>
+          <div class="q-age"><span class="age a18">18 to enter</span></div>
+          <div class="q-note">LGBTQ+ dance club with drag and themed nights. 18 to enter, 21 to drink.</div>
+        </div>
+        <div class="q-row">
+          <div class="q-name"><a href="https://honkytonksaloon.com/" target="_blank" rel="noopener">Honky Tonk Saloon</a></div>
+          <div class="q-area">Ladson, ~25 min</div>
+          <div class="q-age"><span class="age a18">18+ shows</span></div>
+          <div class="q-note">Line dancing and DJ nights. Worth the drive for a dance night; plan a sober driver.</div>
+        </div>
+        <div class="q-row">
+          <div class="q-name"><a href="https://posh.vip" target="_blank" rel="noopener">Posh VIP events</a></div>
+          <div class="q-area">Varies</div>
+          <div class="q-age"><span class="age check">Check each event</span></div>
+          <div class="q-note">Promoter-run parties, often at downtown venues. Filter for 18+ before you buy.</div>
+        </div>
+        <div class="q-row">
+          <div class="q-name"><a href="https://www.building64.com/" target="_blank" rel="noopener">Building 64</a></div>
+          <div class="q-area">Navy Yard, N. Charleston</div>
+          <div class="q-age"><span class="age check">Check each event</span></div>
+          <div class="q-note">Big festival-style parties and after-parties. Ages change by event.</div>
+        </div>
+        <div class="q-row">
+          <div class="q-name"><a href="https://charlestonpourhouse.com/" target="_blank" rel="noopener">Charleston Pour House</a></div>
+          <div class="q-area">James Island</div>
+          <div class="q-age"><span class="age check">Check each show</span></div>
+          <div class="q-note">Free outdoor deck shows at sunset and ticketed headliners inside.</div>
+        </div>
+      </div>
+    </section>
 
-    <section class="section-block">
+    <!-- EVENTS -->
+    <section id="events" class="section-block">
       <h2><i class="fas fa-calendar-days"></i> Find Events</h2>
       <p>Looking for what's happening this week? Each link below goes to an event calendar with listings that <strong>may be open to under-21 guests.</strong> Check the age policy on each event before you go.</p>
       <ul class="events-list">
-        <li><i class="fas fa-ticket"></i><span><a href="https://www.musicfarm.com/">Music Farm's show calendar</a>: touring acts and local bills, many marked all-ages</span></li>
-        <li><i class="fas fa-ticket"></i><span><a href="https://charlestonpourhouse.com/">Pour House's events page</a>: live music and community events</span></li>
-        <li><i class="fas fa-graduation-cap"></i><span>The <a href="https://cofc.edu/">College of Charleston</a> campus events calendar for student-run shows and activities</span></li>
-        <li><i class="fas fa-tree-city"></i><span>The City of Charleston's <a href="https://www.charleston-sc.gov/calendar.aspx">events calendar</a> for Waterfront Park and City Market pop-ups</span></li>
+        <li><i class="fas fa-ticket"></i><span><a href="https://www.musicfarm.com/" target="_blank" rel="noopener">Music Farm's show calendar</a>: touring acts and local bills, many marked all-ages</span></li>
+        <li><i class="fas fa-ticket"></i><span><a href="https://charlestonpourhouse.com/" target="_blank" rel="noopener">Pour House's events page</a>: live music and community events</span></li>
+        <li><i class="fas fa-champagne-glasses"></i><span><a href="https://posh.vip" target="_blank" rel="noopener">Posh VIP</a>: promoter parties around Charleston, with 18+ nights listed</span></li>
+        <li><i class="fas fa-warehouse"></i><span><a href="https://www.building64.com/" target="_blank" rel="noopener">Building 64</a> at the Navy Yard: festival-style events and after-parties</span></li>
+        <li><i class="fas fa-graduation-cap"></i><span>The <a href="https://cofc.edu/" target="_blank" rel="noopener">College of Charleston</a> campus events calendar for student-run shows and activities</span></li>
+        <li><i class="fas fa-tree-city"></i><span>The City of Charleston's <a href="https://www.charleston-sc.gov/calendar.aspx" target="_blank" rel="noopener">events calendar</a> for Waterfront Park and City Market pop-ups</span></li>
       </ul>
     </section>
 
-    <section class="mt-4 mb-5">
-      <h2 class="mb-4" style="font-size:1.5rem;">A Little Risqué (18+)</h2>
-      <div class="row g-3">
+    <!-- RISQUE -->
+    <section id="risque" class="mt-4 mb-5">
+      <div class="section-head">
+        <h2>A Little Risqué (18+)</h2>
+        <p>Grown-up nights out that don't need a 21+ wristband.</p>
+      </div>
+      <div class="row g-4">
         <div class="col-md-4">
-          <a class="topic-card" href="https://www.dudleys42ann.com">
-            <img src="images/dudley.png" class="img-fluid" alt="Dudley's on Ann Street live show night in Charleston">
-            <h5>Dudley's Live Show</h5>
+          <a class="topic-card" href="https://www.dudleys42ann.com" target="_blank" rel="noopener">
+            <img src="images/dudley.png" alt="Dudley's on Ann Street live show night in Charleston" loading="lazy">
+            <span class="age a18">18 to enter</span>
+            <h3>Dudley's Live Show</h3>
             <p>18 to enter, 21 to drink. Always running entertaining event nights. Visit the official site for the schedule.</p>
           </a>
         </div>
         <div class="col-md-4">
-          <a class="topic-card" href="https://www.instagram.com/sweatmansgarden/">
-            <img src="images/cherries.png" class="img-fluid" alt="Sweatman's Garden burlesque show">
-            <h5>Sweatman's Garden</h5>
+          <a class="topic-card" href="https://www.instagram.com/sweatmansgarden/" target="_blank" rel="noopener">
+            <img src="images/cherries.png" alt="Sweatman's Garden burlesque show" loading="lazy">
+            <span class="age check">Check ages</span>
+            <h3>Sweatman's Garden</h3>
             <p>Burlesque shows a short drive from downtown. Check their page for the next show date and age policy.</p>
           </a>
         </div>
         <div class="col-md-4">
-          <a class="topic-card" href="https://michaelatyourplace.com">
-            <img src="images/m-vcard2.png" class="img-fluid" alt="Michael At Your Place private girls night show in Charleston">
-            <h5>Michael At Your Place</h5>
+          <a class="topic-card" href="https://michaelatyourplace.com" target="_blank" rel="noopener">
+            <img src="images/m-vcard2.png" alt="Michael At Your Place private girls night show in Charleston" loading="lazy">
+            <span class="age a18">18+ to book</span>
+            <h3>Michael At Your Place</h3>
             <p>For girls night, bring a live show to your house party. Interactive and acrobatic, with flips and headstands. $200 for up to 90 minutes, paid on arrival. 18+ to book.</p>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="section-block">
+    <!-- EATS -->
+    <section id="eats" class="section-block">
       <h2><i class="fas fa-utensils"></i> Late-Night Dining Spots To Hang</h2>
       <div class="section-photo">
-        <img src="/parties/rooftopbar.png" class="img-fluid" alt="Charleston late-night dining spot">
+        <img src="/parties/images/rooftopbar.png" alt="Charleston late-night dining spot" loading="lazy">
       </div>
       <h3 class="fs-4">Charleston Bars 18+</h3>
-      <p>Spots that stay open late can work as hangouts the same way 18+ clubs do. Many Charleston restaurants keep their kitchens open late, which makes for a relaxed setting for groups 18 and over. <a href="http://fuelcharleston.com/">Fuel</a>, <a href="https://kickinchicken.com/">Kickin' Chicken</a>, and <a href="http://carmellasdessertbar.com/">Carmella's Café</a> offer sweet and savory menus that work well after a show.</p>
+      <p>Most bars on King Street card for 21+ at the door at night, so the move for the 18 to 20 crowd is restaurants with late kitchens. Spots that stay open late work as hangouts the same way 18+ clubs do, and they're a relaxed setting for groups 18 and over. <a href="https://kickinchicken.com/" target="_blank" rel="noopener">Kickin' Chicken</a> and <a href="http://carmellasdessertbar.com/" target="_blank" rel="noopener">Carmella's Café</a> offer sweet and savory menus that work well after a show.</p>
+      <p class="mb-0">See every downtown option in our <a href="/king-street-bar-crawl/late-night-food.html">Charleston late-night food guide</a>.</p>
     </section>
 
+    <!-- DAYTIME -->
+    <section id="daytime" class="mb-5">
+      <div class="section-head">
+        <h2>18 and Up Things To Do Before Dark</h2>
+        <p>Half the fun in Charleston happens in daylight, and none of it needs a bar.</p>
+      </div>
+      <div class="bento">
+        <div class="tile coral">
+          <div class="emoji">🌊</div>
+          <h3>Folly Beach Day</h3>
+          <p>The classic student beach, about 20 minutes from downtown. Go early on weekends before parking fills. More in our <a href="/parties/college.html">college guide</a>.</p>
+        </div>
+        <div class="tile">
+          <div class="emoji">🔐</div>
+          <h3>Escape Room</h3>
+          <p>A private 60-minute game for your group at <a href="/bach-party/experiences/break-out-charleston-escape-room.html">Break Out Charleston</a> in West Ashley.</p>
+        </div>
+        <div class="tile lilac">
+          <div class="emoji">🐬</div>
+          <h3>Kayak With Dolphins</h3>
+          <p>A guided <a href="/bach-party/experiences/shem-creek-kayak-tour.html">Shem Creek kayak tour</a> in Mount Pleasant. No experience needed.</p>
+        </div>
+        <div class="tile">
+          <div class="emoji">🧺</div>
+          <h3>Picnic Pop-Up</h3>
+          <p>A styled <a href="/bach-party/experiences/holy-city-picnic-luxury-bachelorette-picnic.html">luxury picnic</a>, set up and cleared away for you. Great for birthdays.</p>
+        </div>
+        <div class="tile">
+          <div class="emoji">🍤</div>
+          <h3>Food Tour</h3>
+          <p>A <a href="/bach-party/experiences/charleston-culinary-tours-bachelorette-food-tour.html">walking food tour</a> through the French Quarter that doubles as lunch.</p>
+        </div>
+        <div class="tile">
+          <div class="emoji">🛍️</div>
+          <h3>Shop King Street</h3>
+          <p>Boutiques all along King Street, like <a href="/bach-party/experiences/two-cumberland-bride-outfit-shopping.html">Two Cumberland</a> for a going-out fit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TURNING 21 -->
+    <section class="callout mb-5">
+      <h2>🎂 Turning 21 Soon?</h2>
+      <p>Celebrate on the <a href="/king-street-bar-crawl/index.html">King Street bar crawl</a>, catch sunset at the <a href="/king-street-bar-crawl/rooftop-bars.html">rooftop bars</a>, and see where everyone goes out in our <a href="/charleston-party-scene/index.html">Charleston party scene guide</a>. Bring a real ID: bars card at the door, and the 2 am last call comes fast.</p>
+    </section>
+
+    <!-- CONNECTED -->
     <section class="mt-4">
-      <h2 class="mb-4" style="font-size:1.5rem;">Connected Charleston Nightlife Topics</h2>
+      <div class="section-head">
+        <h2>Connected Charleston Nightlife Topics</h2>
+      </div>
       <div class="row g-3">
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-3">
           <a class="topic-card" href="/parties/college.html">
-            <h5>Charleston College Party School Guide</h5>
+            <h3>Charleston College Party School Guide</h3>
             <p>Social events, Greek life, and campus nightlife.</p>
           </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-3">
           <a class="topic-card" href="/charleston-party-scene/index.html">
-            <h5>Nightlife Activities</h5>
+            <h3>Nightlife Activities</h3>
             <p>Ideas for a night out when you want to spend a little for fun.</p>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a class="topic-card" href="/parties/girls-night-out.html">
+            <h3>Charleston Girls Night Out</h3>
+            <p>Dinner, dancing and a private show at your rental.</p>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a class="topic-card" href="/bach-party/experiences/index.html">
+            <h3>Things To Book</h3>
+            <p>20 Charleston experiences, from boat parties to classes.</p>
           </a>
         </div>
       </div>
@@ -289,7 +451,41 @@
 
 <footer>
   <div class="container">
-    <p class="mb-0">PartyCharleston — Charleston's guide to social life.</p>
+    <div class="row g-4 mb-4">
+      <div class="col-6 col-lg-3">
+        <h4>Bachelorette Parties</h4>
+        <ul>
+          <li><a href="/bach-party/index.html">Bachelorette Guide</a></li>
+          <li><a href="/bach-party/experiences/index.html">Experiences</a></li>
+          <li><a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Charleston Party Scene</h4>
+        <ul>
+          <li><a href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+          <li><a href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>King Street Bar Crawl</h4>
+        <ul>
+          <li><a href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+          <li><a href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+          <li><a href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Parties</h4>
+        <ul>
+          <li><a href="/parties/index.html">All Party Guides</a></li>
+          <li><a href="/parties/college.html">College Scene</a></li>
+          <li><a href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          <li><a href="/about.html">About</a> · <a href="/privacy-policy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center mb-0 pt-3" style="border-top:1px solid rgba(255,255,255,.2);">PartyCharleston — Charleston's guide to social life. &copy; 2026 Charleston Party Hub.</p>
   </div>
 </footer>
 

@@ -3,8 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Charleston parties for college and young adults parties">
 <title>College Charleston Nightlife & Parties | Party Charleston | College Nightlife Ideas In Charleston SC</title>
+<meta name="description" content="College nightlife in Charleston, SC for the 18-20 crowd and 21+: 18+ shows, house parties, beach days and the King Street bars near College of Charleston.">
+<link rel="canonical" href="https://www.partycharleston.com/parties/college.html">
+<meta property="og:title" content="College Charleston Nightlife & Parties | Party Charleston">
+<meta property="og:description" content="18+ shows, house parties, beach days and 21+ King Street bars for CofC, MUSC, Citadel and Trident Tech students.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.partycharleston.com/parties/college.html">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,19 +25,21 @@
   "author": { "@type": "Organization", "name": "Charleston Party Hub" },
   "publisher": { "@type": "Organization", "name": "Charleston Party Hub", "url": "https://www.partycharleston.com" },
   "datePublished": "2025-12-07",
+  "dateModified": "2026-10-29",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.partycharleston.com/parties/college.html" },
   "mentions": [
     { "@type": "NightClub", "name": "Music Farm", "description": "Charleston's premier live music venue. 18+ shows available featuring touring DJs, rock bands, hip-hop artists, and EDM acts.", "address": { "@type": "PostalAddress", "streetAddress": "32 Ann Street", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "https://musicfarm.com/" },
     { "@type": "NightClub", "name": "Honky Tonk Saloon", "description": "Line dancing venue in Ladson featuring 18+ shows with touring DJs and line dancing fun.", "address": { "@type": "PostalAddress", "streetAddress": "192 College Park Road", "addressLocality": "Ladson", "addressRegion": "SC" }, "url": "https://honkytonksaloon.com/" },
+    { "@type": "NightClub", "name": "Dudley's", "description": "LGBTQ+ dance club with drag and themed party nights. 18 to enter, 21 to drink.", "address": { "@type": "PostalAddress", "streetAddress": "42 Ann Street", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "https://www.dudleys42ann.com/" },
     { "@type": "NightClub", "name": "Uptown Social", "description": "Sprawling multi-level venue with massive rooftop, dance floor, and multiple bars.", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "https://www.uptownsocialchs.com/" },
     { "@type": "NightClub", "name": "Republic Garden & Lounge", "description": "Club-like atmosphere with DJs, cocktails, and sophisticated vibe on King Street.", "address": { "@type": "PostalAddress", "streetAddress": "King Street", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "http://republicreign.com/" },
     { "@type": "NightClub", "name": "Trio Nightclub", "description": "Charleston's premier electronic music destination with world-class sound system and lighting.", "url": "https://www.triocharleston.com/" },
     { "@type": "BarOrPub", "name": "Prohibition", "description": "Craft cocktail bar with speakeasy vibe.", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "http://prohibitioncharleston.com/" },
-    { "@type": "BarOrPub", "name": "The Commodore", "description": "Dive bar meets dance club with affordable drinks, pool tables, and unpretentious atmosphere.", "url": "http://thecommodorechs.com/" },
     { "@type": "BarOrPub", "name": "Ritual Rooftop Lounge", "description": "Upscale rooftop venue with bottle service, VIP tables, and dress code.", "url": "http://www.ritualchs.com/" },
+    { "@type": "BarOrPub", "name": "Live OnAir Club", "description": "Multi-story honky tonk bar in Charleston.", "url": "https://onairchs.club/" },
     { "@type": "BarOrPub", "name": "Burns Alley", "description": "Sports bar near College of Charleston with affordable drinks, live music, and no cover charge.", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "https://burnsalley.com/" },
     { "@type": "BarOrPub", "name": "The Royal American", "description": "Live music venue and dive bar with cheap beers, outdoor deck, and regular concerts.", "url": "http://theroyalamerican.com/" },
-    { "@type": "BarOrPub", "name": "Bay Street Biergarten", "description": "Outdoor beer garden with games like cornhole and giant Jenga.", "url": "http://www.baystreetbiergarten.com/" },
+    { "@type": "EventVenue", "name": "Building 64", "description": "Navy Yard event venue in North Charleston.", "url": "https://www.building64.com/" },
     { "@type": "TouristAttraction", "name": "Folly Beach", "description": "Beach hangouts and pier location for outdoor activities.", "address": { "@type": "PostalAddress", "addressLocality": "Folly Beach", "addressRegion": "SC" }, "url": "https://visitfolly.com/" },
     { "@type": "TouristAttraction", "name": "Sullivan's Island", "description": "Beach and Fort Moultrie historical site.", "address": { "@type": "PostalAddress", "addressLocality": "Sullivan's Island", "addressRegion": "SC" } },
     { "@type": "Restaurant", "name": "Red's Ice House", "description": "Waterfront dining in Mount Pleasant.", "address": { "@type": "PostalAddress", "addressLocality": "Mount Pleasant", "addressRegion": "SC" }, "url": "https://www.redsicehouse.com/" },
@@ -52,223 +59,206 @@
     --gold:#f4b942;
     --teal:#2a9d8f;
     --coral:#ef6a5a;
+    --lilac:#c9b6ff;
     --cream:#fff8ec;
     --ink:#211a1f;
     --paper:#fffdf8;
+    --muted:#6b5a5f;
   }
   *{box-sizing:border-box;}
-  body{
-    font-family:'Inter', sans-serif;
-    background:var(--cream);
-    color:var(--ink);
-    line-height:1.65;
-  }
-  h1,h2,h3,h4,.navbar-brand{
-    font-family:'Fredoka', sans-serif;
-    font-weight:600;
-  }
-  a{color:var(--maroon); font-weight:600;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;}
+  h1,h2,h3,h4,h5,.navbar-brand{font-family:'Fredoka',sans-serif;font-weight:600;}
+  a{color:var(--maroon);font-weight:600;}
   a:hover{color:var(--coral);}
+  section{padding:3.5rem 0;scroll-margin-top:80px;}
+  img{max-width:100%;}
 
   /* NAVBAR */
-  .navbar{background:var(--maroon-dark) !important; padding:0.85rem 0;}
-  .navbar-brand{color:var(--gold) !important; font-size:1.35rem;}
-  .nav-link{color:#fff !important; font-weight:600;}
-  .nav-link:hover, .nav-link.active{color:var(--gold) !important;}
-  .dropdown-menu-dark{background:var(--maroon);}
+  .navbar{background:var(--maroon-dark)!important;padding:.85rem 0;border-bottom:4px solid var(--gold);}
+  .navbar-brand{color:var(--gold)!important;font-size:1.35rem;}
+  .nav-link{color:#fff!important;font-weight:600;}
+  .nav-link:hover,.nav-link.active{color:var(--gold)!important;}
+  .dropdown-menu-dark{background:var(--maroon);border:0;}
   .dropdown-item{font-weight:600;}
-  .dropdown-item:hover{background:var(--maroon-dark); color:var(--gold);}
+  .dropdown-item:hover,.dropdown-item.active{background:var(--maroon-dark);color:var(--gold);}
 
   /* HERO */
   .hero{
     background:
-      radial-gradient(circle at 15% 20%, rgba(244,185,66,0.35), transparent 40%),
-      radial-gradient(circle at 85% 75%, rgba(42,157,143,0.35), transparent 45%),
-      linear-gradient(135deg, var(--maroon), var(--maroon-dark));
-    color:#fff;
-    padding:4rem 0 3.5rem;
-    text-align:center;
-    position:relative;
-    overflow:hidden;
+      radial-gradient(circle at 12% 18%,rgba(244,185,66,.35),transparent 40%),
+      radial-gradient(circle at 88% 80%,rgba(42,157,143,.35),transparent 45%),
+      linear-gradient(135deg,var(--maroon),var(--maroon-dark));
+    color:#fff;padding:3.5rem 0 3rem;overflow:hidden;
   }
-  .hero-badge{
-    display:inline-block;
-    background:var(--gold);
-    color:var(--maroon-dark);
-    font-weight:700;
-    font-size:0.85rem;
-    padding:0.4rem 1.1rem;
-    border-radius:30px;
-    transform:rotate(-3deg);
-    margin-bottom:1.2rem;
+  .sticker{
+    display:inline-block;background:var(--gold);color:var(--maroon-dark);font-weight:700;font-size:.85rem;
+    padding:.4rem 1.1rem;border-radius:30px;transform:rotate(-3deg);box-shadow:3px 3px 0 var(--ink);
   }
-  .hero h1{font-size:clamp(2.2rem,5vw,3.4rem); margin-bottom:1rem;}
-  .hero img.hero-photo{
-    max-width:70%;
-    border-radius:16px;
-    border:5px solid var(--gold);
-    box-shadow:0 20px 40px rgba(0,0,0,0.35);
-    transform:rotate(-1.5deg);
-    margin-top:1rem;
-  }
+  .hero h1{font-size:clamp(2.3rem,5.4vw,3.8rem);line-height:1.05;margin:1.1rem 0 1rem;}
+  .hero h1 .hl{background:linear-gradient(transparent 62%,rgba(244,185,66,.55) 62%);padding:0 .1em;}
+  .hero .lead{max-width:560px;color:#f7e9ee;}
+  .schools{display:flex;flex-wrap:wrap;gap:8px;margin:1.2rem 0 1.6rem;}
+  .schools span{border:2px solid rgba(255,255,255,.55);border-radius:999px;padding:.2rem .8rem;font-size:.82rem;font-weight:700;letter-spacing:.03em;}
+  .hero-photo-wrap{position:relative;max-width:460px;margin:0 auto;}
+  .hero-photo{width:100%;border-radius:18px;border:5px solid var(--gold);box-shadow:0 20px 40px rgba(0,0,0,.35);transform:rotate(2deg);background:var(--maroon);aspect-ratio:4/3;object-fit:cover;}
+  .hero-photo-wrap .float-tag{position:absolute;left:-10px;bottom:18px;background:var(--teal);color:#fff;font-weight:700;font-size:.85rem;padding:.4rem .9rem;border-radius:10px;transform:rotate(-4deg);box-shadow:3px 3px 0 var(--ink);}
 
-  /* GENERAL SECTION */
-  section{padding:3.5rem 0;}
-  .squiggle{
-    width:70px; height:10px;
-    background:none;
-    border-bottom:5px dotted var(--coral);
-    margin:0.5rem auto 1.5rem;
-  }
-  .section-heading{text-align:center; margin-bottom:2rem;}
-  .section-heading h2{color:var(--maroon); font-size:2rem;}
-  .section-heading p{color:#6b5a5f;}
+  /* AGE TOGGLE */
+  .age-toggle{display:inline-flex;flex-wrap:wrap;gap:6px;background:rgba(0,0,0,.25);padding:6px;border-radius:999px;}
+  .age-toggle button{border:0;background:transparent;color:#fff;font-weight:700;border-radius:999px;padding:.5rem 1.05rem;font-size:.92rem;}
+  .age-toggle button[aria-pressed="true"]{background:var(--gold);color:var(--maroon-dark);}
+  .age-note{font-size:.82rem;color:#f2dbe3;margin-top:.6rem;min-height:1.3em;}
+  [data-age].dimmed{opacity:.35;filter:grayscale(.7);}
+  [data-age]{transition:opacity .2s ease,filter .2s ease;}
 
-  /* FLYER CARD (signature element) */
-  .flyer{
-    background:var(--paper);
-    border-radius:10px;
-    padding:1.8rem;
-    box-shadow:0 12px 26px rgba(111,29,61,0.12);
-    position:relative;
-    border:2px dashed rgba(111,29,61,0.25);
-    margin-bottom:1.5rem;
-    transition:transform .2s ease;
-  }
-  .flyer:hover{transform:translateY(-4px) rotate(-0.5deg);}
-  .flyer::before{
-    content:"📌";
-    position:absolute;
-    top:-14px; left:50%;
-    transform:translateX(-50%);
-    font-size:1.6rem;
-  }
-  .flyer h4{color:var(--maroon); font-size:1.3rem; margin-bottom:0.5rem;}
-  .flyer img{border-radius:8px; margin-bottom:1rem;}
-  .flyer .addr{color:#8a7a80; font-size:0.85rem; margin-bottom:0.5rem; font-weight:600;}
-  .flyer p{color:#4a3d41; font-size:0.97rem;}
-  .pill{
-    display:inline-block;
-    background:var(--teal);
-    color:#fff;
-    font-size:0.72rem;
-    font-weight:700;
-    letter-spacing:0.03em;
-    text-transform:uppercase;
-    padding:0.3rem 0.85rem;
-    border-radius:20px;
-    margin-top:0.5rem;
-  }
+  /* TICKER */
+  .ticker{background:var(--gold);color:var(--maroon-dark);overflow:hidden;white-space:nowrap;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);}
+  .ticker-track{display:inline-block;padding:.55rem 0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.05rem;animation:ticker 38s linear infinite;}
+  .ticker-track span{margin:0 1.1rem;}
+  @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.ticker-track{animation:none}html{scroll-behavior:auto}}
 
-  /* TICKET STUB LIST (21+ bars) */
-  .ticket-list{list-style:none; padding:0; margin:0;}
-  .ticket{
-    display:flex;
-    align-items:flex-start;
-    gap:1rem;
-    background:var(--paper);
-    border-radius:10px;
-    padding:1.2rem 1.4rem;
-    margin-bottom:1rem;
-    box-shadow:0 8px 18px rgba(111,29,61,0.08);
-    border-left:5px solid var(--gold);
-  }
+  /* JUMP CHIPS */
+  .jump{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:1.4rem 0 0;}
+  .jump a{text-decoration:none;background:var(--paper);border:2px solid var(--ink);color:var(--ink);border-radius:999px;padding:.4rem .95rem;font-size:.9rem;box-shadow:2px 2px 0 var(--ink);}
+  .jump a:hover{background:var(--lilac);color:var(--ink);}
+
+  /* SECTION HEADS */
+  .section-heading{text-align:center;margin-bottom:2rem;}
+  .section-heading h2{color:var(--maroon);font-size:clamp(1.7rem,3.5vw,2.2rem);}
+  .section-heading p{color:var(--muted);max-width:640px;margin:0 auto;}
+  .squiggle{width:70px;height:10px;border-bottom:5px dotted var(--coral);margin:.4rem auto 1.2rem;}
+
+  /* FLYER CARDS */
+  .flyer{background:var(--paper);border-radius:14px;padding:1.4rem;box-shadow:6px 6px 0 rgba(111,29,61,.18);border:2px solid var(--ink);position:relative;height:100%;transition:transform .2s ease;}
+  .flyer:hover{transform:translateY(-4px) rotate(-.5deg);}
+  .flyer::before{content:"📌";position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:1.6rem;}
+  .flyer img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin-bottom:1rem;background:#ead9df;}
+  .flyer h3{font-size:1.3rem;color:var(--maroon);margin-bottom:.3rem;}
+  .flyer .addr{color:#8a7a80;font-size:.85rem;margin-bottom:.5rem;font-weight:600;}
+  .flyer p{color:#4a3d41;font-size:.96rem;}
+  .pill{display:inline-block;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.28rem .8rem;border-radius:20px;}
+  .pill-18{background:var(--teal);}
+  .pill-21{background:var(--coral);}
+  .pill-all{background:var(--maroon);}
+
+  .posh{background:var(--lilac);border:2px solid var(--ink);border-radius:16px;padding:1.4rem;box-shadow:6px 6px 0 var(--ink);}
+  .posh img{border-radius:10px;background:#fff;width:100%;aspect-ratio:4/3;object-fit:cover;}
+
+  /* MAROON BAND */
+  .band-maroon{background:var(--maroon);color:#fff;}
+  .band-maroon h2{color:var(--gold);}
+  .band-maroon .section-heading p{color:#f2e6ea;}
+  .band-photo{border-radius:16px;border:4px solid var(--gold);width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--maroon-dark);}
+  .spot-card{background:#fff;color:var(--ink);border-radius:14px;padding:1.4rem;height:100%;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--gold);}
+  .spot-card h3{font-size:1.2rem;}
+  .spot-card .where{color:var(--muted);font-size:.88rem;font-weight:600;margin-bottom:.4rem;}
+
+  /* BENTO (daytime) */
+  .bento{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+  .bento .tile{background:var(--paper);border:2px solid var(--ink);border-radius:16px;padding:1.2rem 1.3rem;box-shadow:4px 4px 0 var(--ink);}
+  .bento .tile.big{grid-column:span 2;background:var(--teal);color:#fff;}
+  .bento .tile.big a{color:#fff;text-decoration:underline;}
+  .bento .tile .emoji{font-size:1.7rem;line-height:1;}
+  .bento .tile h3{font-size:1.15rem;margin:.5rem 0 .3rem;}
+  .bento .tile p{font-size:.94rem;margin:0;}
+  .bento .tile.coral{background:var(--coral);color:#fff;}
+  .bento .tile.coral a{color:#fff;text-decoration:underline;}
+
+  /* EVENT CARD */
+  .event-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:0;background:var(--paper);border:2px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:6px 6px 0 var(--maroon);}
+  .event-card img{width:100%;height:100%;object-fit:cover;min-height:220px;background:#ead9df;}
+  .event-card .body{padding:1.6rem;}
+
+  /* CAMPUS */
+  .rounded-photo{border-radius:16px;box-shadow:0 14px 28px rgba(0,0,0,.12);width:100%;aspect-ratio:4/3;object-fit:cover;background:#ead9df;}
+  .campus-card{background:var(--paper);border-radius:16px;padding:1.8rem;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--teal);height:100%;}
+  .campus-card h3{color:var(--maroon);}
+  .band-gold{background:var(--gold);color:var(--maroon-dark);}
+
+  /* 21+ TICKETS */
+  .ticket-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+  .ticket{display:flex;align-items:flex-start;gap:1rem;background:var(--paper);border-radius:12px;padding:1.1rem 1.3rem;border:2px solid var(--ink);border-left:8px solid var(--gold);}
   .ticket:nth-child(even){border-left-color:var(--teal);}
-  .ticket-num{
-    font-family:'Fredoka', sans-serif;
-    font-size:1.4rem;
-    font-weight:700;
-    color:var(--maroon);
-    min-width:34px;
+  .ticket-num{font-family:'Fredoka',sans-serif;font-size:1.5rem;font-weight:700;color:var(--maroon);min-width:30px;line-height:1.2;}
+  .ticket h3{margin:0 0 .25rem;color:var(--maroon-dark);font-size:1.12rem;}
+  .ticket p{margin:0;color:#4a3d41;font-size:.94rem;}
+
+  .alert-fun{background:#fff3cd;border-radius:12px;border:2px solid var(--ink);border-left:8px solid var(--gold);padding:1.1rem 1.3rem;color:#5c4a1e;}
+  .alert-warn{background:#fde3df;border-radius:12px;border:2px solid var(--ink);border-left:8px solid var(--coral);padding:1.1rem 1.3rem;color:#7a2e24;}
+
+  /* MORE GUIDES */
+  .more-card{display:block;text-decoration:none;background:var(--paper);border:2px solid var(--ink);border-radius:14px;padding:1.1rem 1.2rem;color:var(--ink);height:100%;box-shadow:4px 4px 0 var(--ink);transition:transform .15s ease;}
+  .more-card:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--coral);color:var(--ink);}
+  .more-card strong{font-family:'Fredoka',sans-serif;font-size:1.1rem;display:block;color:var(--maroon);}
+  .more-card span{font-size:.9rem;color:var(--muted);font-weight:500;}
+
+  /* FOOTER */
+  footer{background:var(--maroon-dark);color:#f2e6ea;padding:2.6rem 0 2rem;border-top:4px solid var(--gold);}
+  footer h4{color:var(--gold);font-size:1rem;margin-bottom:.7rem;}
+  footer ul{list-style:none;padding:0;margin:0;}
+  footer li{margin-bottom:.35rem;}
+  footer a{color:#f2e6ea;font-weight:500;text-decoration:none;}
+  footer a:hover{color:var(--gold);}
+
+  @media (max-width:991px){
+    .bento{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .ticket-list{grid-template-columns:1fr;}
   }
-  .ticket h5{margin:0 0 0.3rem; color:var(--maroon-dark); font-family:'Fredoka', sans-serif;}
-  .ticket p{margin:0; color:#4a3d41; font-size:0.94rem;}
-
-  /* ACTIVITY GRID */
-  .activity-tile{
-    background:var(--paper);
-    border-radius:10px;
-    padding:1.1rem 1.3rem;
-    margin-bottom:0.7rem;
-    border-left:4px solid var(--coral);
-    font-size:0.95rem;
-    color:#4a3d41;
+  @media (max-width:640px){
+    section{padding:2.6rem 0;}
+    .bento{grid-template-columns:1fr;}
+    .bento .tile.big{grid-column:auto;}
+    .event-card{grid-template-columns:1fr;}
+    .hero-photo{transform:none;}
+    .age-toggle button{padding:.45rem .8rem;font-size:.85rem;}
   }
-  .activity-tile a{color:var(--maroon);}
-
-  /* CALLOUT BANDS */
-  .band-maroon{background:var(--maroon); color:#fff;}
-  .band-maroon h3{color:var(--gold);}
-  .band-gold{background:var(--gold); color:var(--maroon-dark);}
-
-  .rounded-photo{border-radius:14px; box-shadow:0 14px 28px rgba(0,0,0,0.12);}
-
-  .campus-card{
-    background:var(--paper);
-    border-radius:14px;
-    padding:2rem;
-    box-shadow:0 12px 28px rgba(111,29,61,0.1);
-  }
-
-  .faq-card{
-    background:var(--paper);
-    border-radius:10px;
-    padding:1.4rem 1.6rem;
-    margin-bottom:1rem;
-    border-left:4px solid var(--teal);
-  }
-  .faq-card h3{font-size:1.1rem; color:var(--maroon); font-family:'Fredoka', sans-serif;}
-  .faq-card p{margin:0; color:#4a3d41; font-size:0.95rem;}
-
-  .alert-fun{
-    background:#fff3cd;
-    border-radius:10px;
-    border-left:5px solid var(--gold);
-    padding:1.2rem 1.4rem;
-    color:#5c4a1e;
-  }
-  .alert-warn{
-    background:#fde3df;
-    border-radius:10px;
-    border-left:5px solid var(--coral);
-    padding:1.2rem 1.4rem;
-    color:#7a2e24;
-  }
-
-  footer{background:var(--maroon-dark); color:#f2e6ea; text-align:center; padding:2.2rem 0;}
 </style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="../index.html"><i class="bi bi-cup-straw"></i> Charleston Party Hub</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+    <a class="navbar-brand" href="/index.html"><i class="bi bi-cup-straw"></i> Charleston Party Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="collapse navbar-collapse" id="siteNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Party Guides</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bachelorette</a>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="birthday-parties.html">Birthday Parties</a></li>
-            <li><a class="dropdown-item" href="bridal-showers.html">Bridal Showers</a></li>
-            <li><a class="dropdown-item" href="college.html">College Scene</a></li>
-            <li><a class="dropdown-item" href="passion-party.html">Passion Parties</a></li>
-            <li><a class="dropdown-item" href="work-parties.html">After Work Parties</a></li>
-            <li><a class="dropdown-item" href="just-because.html">Just Because Parties</a></li>
+            <li><a class="dropdown-item" href="/bach-party/index.html">Bachelorette Guide</a></li>
+            <li><a class="dropdown-item" href="/bach-party/experiences/index.html">Experiences</a></li>
+            <li><a class="dropdown-item" href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Bach Info</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Scene</a>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="../bach-party/charleston-bachelor-party.html">Bachelor</a></li>
-            <li><a class="dropdown-item" href="../bach-party/charleston-bachelorette-party.html">Bachelorette</a></li>
+            <li><a class="dropdown-item" href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+            <li><a class="dropdown-item" href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link active" href="../privacy-policy.html">Privacy Policy</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">King Street</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parties</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="/parties/index.html">All Party Guides</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="/parties/college.html">College Scene</a></li>
+            <li><a class="dropdown-item" href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
       </ul>
     </div>
   </div>
@@ -276,190 +266,1006 @@
 
 <header class="hero">
   <div class="container">
-    <span class="hero-badge">Est. Weekend Ready</span>
-    <h1>College Charleston Nightlife & Parties</h1>
-    <p class="lead" style="max-width:600px;margin:0 auto;">Your guide for students and young adults 18-20 crowd. College of Charleston party school resource. At the very bottom there is a 21+ bar list as well. Maybe we can answer is College of Charleston a party school.</p>
-    <img src="nightlife.png" class="hero-photo" alt="cofc girls night out">
-    <p class=" mt-3 small" style="max-width:600px;margin:0 auto;">College Nightlife CofC, MUSC, Citadel and TTC</p>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="sticker">Est. Weekend Ready</span>
+        <h1>College Charleston <span class="hl">Nightlife</span> &amp; Parties</h1>
+        <p class="lead">Where students and young adults actually go out in Charleston, from 18+ shows and house parties to beach days and the 21+ bars on King Street.</p>
+        <div class="schools" aria-label="Schools covered">
+          <span>CofC</span><span>MUSC</span><span>The Citadel</span><span>Trident Tech</span>
+        </div>
+        <div class="age-toggle" role="group" aria-label="Show spots for your age">
+          <button type="button" data-mode="all" aria-pressed="true">Show me everything</button>
+          <button type="button" data-mode="18" aria-pressed="false">I'm 18–20</button>
+          <button type="button" data-mode="21" aria-pressed="false">I'm 21+</button>
+        </div>
+        <p class="age-note" id="ageNote" aria-live="polite"></p>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-photo-wrap">
+          <img src="images/nightlife.png" class="hero-photo" alt="College of Charleston students on a girls night out downtown">
+          <span class="float-tag">📍 Downtown CHS</span>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
-<section>
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Music Farm ✦</span><span>Dudley's ✦</span><span>Honky Tonk Saloon ✦</span><span>House parties ✦</span><span>Folly Beach ✦</span><span>Building 64 ✦</span><span>Uptown Social ✦</span><span>Burns Alley ✦</span><span>Red's Ice House ✦</span><span>posh.vip ✦</span>
+    <span>Music Farm ✦</span><span>Dudley's ✦</span><span>Honky Tonk Saloon ✦</span><span>House parties ✦</span><span>Folly Beach ✦</span><span>Building 64 ✦</span><span>Uptown Social ✦</span><span>Burns Alley ✦</span><span>Red's Ice House ✦</span><span>posh.vip ✦</span>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="jump" aria-label="Jump to a section">
+    <a href="#under-21">🎤 18+ nights</a>
+    <a href="#grown-up">✨ 18–20 spots</a>
+    <a href="#daytime">🏖️ Daytime</a>
+    <a href="#cofc">🏫 CofC life</a>
+    <a href="#bars-21">🍸 21+ bars</a>
+  </nav>
+</div>
+
+<!-- 18+ NIGHTS -->
+<section id="under-21">
   <div class="container">
     <div class="section-heading">
       <h2>🍹 College Entertainment Weekends</h2>
       <div class="squiggle"></div>
-      <p>The college party scene culture, college bars Charleston SC and nightlife options!</p>
+      <p>Under 21 doesn't mean staying in. These College of Charleston-area venues let the 18+ crowd in for shows, dancing and party nights.</p>
     </div>
 
-    
-
-    <div class="row g-4">
-      <h3>College of Charleston Under 21 Bars</h3>
-      <div class="col-md-4">
-        <div class="flyer">
-          <h4><a href="https://musicfarm.com/">Music Farm</a></h4>
-          <img src="musicfarm.jpg" class="img-fluid" alt="Music Farm Charleston">
+    <div class="row g-4" data-age="18">
+      <div class="col-md-6 col-lg-4">
+        <article class="flyer">
+          <img src="images/musicfarm.jpg" alt="Music Farm concert venue on Ann Street in Charleston" loading="lazy">
+          <h3><a href="https://musicfarm.com/" target="_blank" rel="noopener">Music Farm</a></h3>
           <div class="addr">📍 32 Ann Street</div>
-          <p>Charleston's premier live music venue and the <strong>go-to</strong> option for the 18-20 crowd. Check the calendar for touring DJs, rock bands, hip-hop, and EDM acts. Tickets typically run $20-50.</p>
-          <span class="pill">18+ Shows Available</span>
-        </div>
+          <p>Charleston's main live music venue and the <strong>go-to</strong> for the 18-20 crowd. Check the calendar for touring DJs, rock bands, hip-hop and EDM acts. Tickets typically run $20-50.</p>
+          <span class="pill pill-18">18+ shows</span>
+        </article>
       </div>
-      <div class="col-md-4">
-        <div class="flyer">
-          <h4><a href="https://honkytonksaloon.com/">Honky Tonk Saloon</a></h4>
-          <img src="honkytonk.jpg" class="img-fluid" alt="Honky Tonk Saloon">
+      <div class="col-md-6 col-lg-4">
+        <article class="flyer">
+          <img src="images/honkytonk.jpg" alt="Line dancing at Honky Tonk Saloon in Ladson" loading="lazy">
+          <h3><a href="https://honkytonksaloon.com/" target="_blank" rel="noopener">Honky Tonk Saloon</a></h3>
           <div class="addr">📍 192 College Park Rd, Ladson</div>
-          <p>A line-dancing hangout just outside downtown — a great dance spot for the college crowd and young adults visiting Charleston. Check the calendar for DJs and line-dancing nights.</p>
-          <span class="pill">18+ Shows Available</span>
+          <p>A line-dancing hangout outside downtown, and a solid dance spot for the college crowd. Check the calendar for DJs and line-dancing nights, and plan a ride for the drive.</p>
+          <span class="pill pill-18">18+ shows</span>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="flyer">
+          <img src="images/dudley.png" alt="Dance floor at Dudley's on Ann Street in Charleston" loading="lazy">
+          <h3><a href="https://www.dudleys42ann.com/" target="_blank" rel="noopener">Dudley's</a></h3>
+          <div class="addr">📍 42 Ann Street</div>
+          <p>Join the LGBTQ+ community for dancing, drag or one of their party nights, a few doors down from Music Farm. 18 to enter, 21 to drink.</p>
+          <span class="pill pill-18">18+ to enter</span>
+        </article>
+      </div>
+    </div>
+
+    <div class="posh mt-5 mx-auto" style="max-width:720px;" data-age="18">
+      <div class="row g-3 align-items-center">
+        <div class="col-sm-5">
+          <img src="images/poshvip.png" class="img-fluid" alt="posh.vip event listings for Charleston" loading="lazy">
+        </div>
+        <div class="col-sm-7">
+          <h3 class="h4 mb-2">🎉 POSH VIP Under 21 Events</h3>
+          <p class="mb-0">Don't forget <a href="https://posh.vip" target="_blank" rel="noopener">posh.vip</a>. Local promoters list 18+ parties there, sometimes at the same venues as the 21+ list below.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="flyer">
-          <h4><a href="https://www.dudleys42ann.com/">Dudleys</a></h4>
-          <img src="dudley.png" class="img-fluid" alt="Dudley">
-          <div class="addr">📍 42 Ann Street Charleston SC</div>
-          <p>Join the LGBT community for dancing, drag or one of their party nights. 18 to enter but 21 to drink.</p>
-          <span class="pill">18+ Shows Available</span>
-        </div>
-      </div>
     </div>
-    <div class="text-center mb-5">
-      <div class="alert-fun mt-4 mx-auto" style="max-width:640px;">
-        <strong>🎉 POSH VIP - Under 21 Events</strong><br>
-        <img src="poshvip.png" class="img-fluid" alt="">
-      <p class="mt-5">Dont forget <a href="posh.vip"><strong>posh.vip</strong></a> has events perfect for under 21 crowds as well!</p>  
-    </div>
-      
-    </div>
+
+    <p class="text-center mt-4 mb-0">Want more? See the full guide to <a href="/charleston-party-scene/charleston-nightlife-under-21.html">Charleston nightlife under 21</a>.</p>
   </div>
 </section>
 
-<section class="band-maroon text-center">
-
-    <h4 class="mt-4 mb-3">Grown Up Places For 18-20 Crowd</h4>
-    <img src="dance.jpg" class="img-fluid mb-3">
-
-    <p>While you can't grab a beer at most bars, these venues welcome 18+ patrons.</p>
-
-    <div class="row">
-        <div class="col-md-6 mb-3">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title"><a href="http://www.kingstreetcabaret.com/">King Street Cabaret - (Boys)</a></h5>
-                    <p class="text-muted mb-2">1337 King Street</p>
-                    <p class="small">18+ to enter Daily 4pm-2am. Upscale atmosphere with VIP services and daily specials.</p>
-                </div>
+<!-- GROWN-UP 18-20 -->
+<section id="grown-up" class="band-maroon">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Grown Up Places for the 18–20 Crowd</h2>
+      <p>You can't grab a beer at most bars, but these spots welcome 18+ guests.</p>
+    </div>
+    <div class="row g-4 align-items-stretch" data-age="18">
+      <div class="col-lg-5">
+        <img src="images/dance.jpg" class="band-photo" alt="Group dancing on a night out in Charleston" loading="lazy">
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-4 h-100">
+          <div class="col-md-6">
+            <div class="spot-card">
+              <span class="pill pill-18 mb-2">18+ to enter</span>
+              <h3><a href="http://www.kingstreetcabaret.com/" target="_blank" rel="noopener">King Street Cabaret</a></h3>
+              <div class="where">1337 King Street · For the guys</div>
+              <p class="small mb-0">Open daily 4 pm–2 am. Upscale atmosphere with VIP services and daily specials.</p>
             </div>
-        </div>
-
-        <div class="col-md-6 mb-3">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><a href="https://michaelatyourplace.com">Michael At Your Place - For the Girls!</a></h5>
-              <p class="text-muted mb-2">Charleston, Mount Pleasant, Folly Beach &amp; Isle of Palms</p>
+          </div>
+          <div class="col-md-6">
+            <div class="spot-card">
+              <span class="pill pill-18 mb-2">18+ to book</span>
+              <h3><a href="https://michaelatyourplace.com" target="_blank" rel="noopener">Michael At Your Place</a></h3>
+              <div class="where">Charleston, Mt Pleasant, Folly &amp; IOP · For the girls</div>
               <p class="small mb-2">A private show for college birthday parties, brought to your apartment or rental. $200 for up to 90 minutes, and the group can split it.</p>
-              <p class="small mb-0"><strong>Good to know:</strong> 18+ to book. Pay on arrival by cash, Venmo, or Cash App. Call or text <a href="tel:+18433609438">843-360-9438</a>, last-minute dates welcome.</p>
+              <p class="small mb-0">Pay on arrival by cash, Venmo or Cash App. Call or text <a href="tel:+18433609438">843-360-9438</a>; last-minute dates welcome.</p>
             </div>
           </div>
         </div>
-    </div>
-</section>
-
-
-  <div class="container">
-    <center><img class="img-fluid rounded-photo mt-5 mb-3" style="max-width:420px;" src="building64.png" alt="Building 64 Charleston photo"></center>
-    <h3>Building 64 - <a href="https://www.building64.com/">Building 64 Link</a></h3>
-    <p class="mb-4" style="max-width:640px;margin:0 auto;color:#cf3a6c;">Navy Yard Charleston campus - home to killer events for the last decade including Kulture Klash, Wine and Food Party@the Powerhouse and Highwater After Party</p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <img src="cofc1.webp" class="img-fluid rounded-photo mb-4" alt="College of Charleston campus">
-      </div>
-      <div class="campus-card mt-4">
-        <h3 style="color:var(--maroon);">The Stats: College of Charleston (CofC)</h3>
-        <p>Check out <a href="https://www.collegevine.com/faq/47627/college-of-charleston-gender-ratio">the College of Charleston gender ratio</a>, and the official <a href="https://charleston.edu/higdon-center/fraternity-sorority-life/index.php">Fraternity and Sorority page</a>. See more stats on <a href="https://www.niche.com/colleges/college-of-charleston/campus-life/">College of Charleston campus life</a></p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="band-gold">
+<!-- DAYTIME -->
+<section id="daytime">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-9">
-        <img style="max-width:380px;" class="img-fluid rounded-photo d-block mx-auto mb-4" src="houseParty.jpg" alt="Charleston Student House Parties">
-        <div class="campus-card" style="background:#fff;">
-          <h3 style="color:var(--maroon);">The Real CofC Experience: House Parties</h3>
-          <p>Let's be honest — house parties are what <strong>most students actually do</strong> on any given weekend. These parties are where freshmen become friends, where upperclassmen hold court on front porches, and where the real social fabric of CofC gets woven together. College of Charleston nightlife is what makes cofc a party school. There are no College of Charleston bars, the school just happens to be in walking distance of them.</p>
+    <div class="section-heading">
+      <h2>🏖️ Daytime, Beach &amp; Big-Event Plans</h2>
+      <div class="squiggle"></div>
+      <p>The best college weekends start before dark. Grab a car, split gas and head for the water.</p>
+    </div>
+
+    <div class="bento" data-age="all">
+      <div class="tile big">
+        <div class="emoji">🌊</div>
+        <h3>Beach Day at Folly</h3>
+        <p><a href="https://visitfolly.com/" target="_blank" rel="noopener">Folly Beach</a> is the classic student beach: the pier, surf, and Center Street for food after. It's about 20 minutes from campus, so go early on weekends before parking fills.</p>
+      </div>
+      <div class="tile">
+        <div class="emoji">🏰</div>
+        <h3>Sullivan's Island</h3>
+        <p>A quieter beach day with Fort Moultrie on the same trip. Good for a smaller group.</p>
+      </div>
+      <div class="tile">
+        <div class="emoji">🦐</div>
+        <h3>Red's Ice House</h3>
+        <p>Waterfront food on Shem Creek in Mount Pleasant. Go for sunset. <a href="https://www.redsicehouse.com/" target="_blank" rel="noopener">Site</a></p>
+      </div>
+      <div class="tile">
+        <div class="emoji">🦪</div>
+        <h3>Bowens Island</h3>
+        <p>Casual, no-frills seafood on James Island, a local favorite on the way back from Folly. <a href="https://bowensisland.com/" target="_blank" rel="noopener">Site</a></p>
+      </div>
+      <div class="tile coral">
+        <div class="emoji">🎶</div>
+        <h3>The Windjammer</h3>
+        <p>The Isle of Palms beach bar, with music on the sand. Check ages for each show. <a href="https://the-windjammer.com/" target="_blank" rel="noopener">Site</a></p>
+      </div>
+    </div>
+
+    <article class="event-card mt-5" data-age="all">
+      <img src="images/building64.png" alt="Building 64 event venue at the Navy Yard in North Charleston" loading="lazy">
+      <div class="body">
+        <span class="pill pill-all mb-2">Big events</span>
+        <h3 style="color:var(--maroon);">Building 64</h3>
+        <p>The Navy Yard event campus in North Charleston has hosted big parties for the last decade, including Kulture Klash, Wine and Food Party@the Powerhouse and the High Water after party. Check ages on each event before you buy.</p>
+        <a href="https://www.building64.com/" target="_blank" rel="noopener">See upcoming events at Building 64 →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- COFC LIFE -->
+<section id="cofc" class="band-gold">
+  <div class="container">
+    <div class="section-heading">
+      <h2 style="color:var(--maroon-dark);">College of Charleston Is a Party School, Kind Of</h2>
+      <p style="color:var(--maroon-dark);">Here's what college nightlife looks like for CofC students.</p>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-6">
+        <img src="images/houseParty.jpg" class="rounded-photo" alt="Students at a Charleston house party" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <div class="campus-card">
+          <h3>The Real CofC Experience: House Parties</h3>
+          <p>Let's be honest: house parties are what <strong>most students actually do</strong> on any given weekend. They're where freshmen become friends, where upperclassmen hold court on front porches, and where the real social fabric of CofC gets woven together.</p>
+          <p class="mb-0">College of Charleston nightlife is what earns CofC its party school reputation. There are no College of Charleston bars. The campus just happens to sit a short walk from King Street, so the bar scene is right there once you turn 21.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/cofc1.webp" class="rounded-photo" alt="College of Charleston campus in downtown Charleston" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <div class="campus-card">
+          <h3>The Stats: College of Charleston (CofC)</h3>
+          <p class="mb-0">Check out <a href="https://www.collegevine.com/faq/47627/college-of-charleston-gender-ratio" target="_blank" rel="noopener">the College of Charleston gender ratio</a> and the official <a href="https://charleston.edu/higdon-center/fraternity-sorority-life/index.php" target="_blank" rel="noopener">Fraternity and Sorority Life page</a>. See more on <a href="https://www.niche.com/colleges/college-of-charleston/campus-life/" target="_blank" rel="noopener">College of Charleston campus life</a>. MUSC, The Citadel and Trident Tech students all end up on the same few blocks of King Street on the weekend.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<section class="band-maroon">
-  <div class="container text-center">
-    <img style="max-width:420px;" class="img-fluid rounded-photo mb-4" src="uptown.jpg" alt="Uptown Social Charleston">
-    <h3>6 Bars for Anyone 21+ in Charleston <br>College Of Charleston Bars</h3>
-    <p class="mb-0" style="max-width:620px;margin:0 auto;color:#f2e6ea;">You may find a <a style="color: yellowgreen;" href="https://posh.vip">posh.vip event</a> at any of these places for the under 21 crowd</p>
-  </div>
-</section>
-
-<section>
+<!-- 21+ BARS -->
+<section id="bars-21">
   <div class="container">
-    <ul class="ticket-list">
+    <div class="row g-4 align-items-center mb-4">
+      <div class="col-lg-5">
+        <img src="images/uptown.jpg" class="rounded-photo" alt="Uptown Social rooftop bar on King Street, Charleston" loading="lazy">
+      </div>
+      <div class="col-lg-7">
+        <span class="pill pill-21 mb-2">21+ only</span>
+        <h2 style="color:var(--maroon);">6 Bars for Anyone 21+ in Charleston</h2>
+        <p class="lead mb-1" style="color:var(--muted);">The College of Charleston bars everyone ends up at, most within walking distance of campus.</p>
+        <p class="mb-0">Under 21? You may find a <a href="https://posh.vip" target="_blank" rel="noopener">posh.vip event</a> at some of these places. Planning a whole night? Our <a href="/king-street-bar-crawl/index.html">King Street bar crawl route</a> strings them together.</p>
+      </div>
+    </div>
+
+    <ul class="ticket-list" data-age="21">
       <li class="ticket">
         <span class="ticket-num">1</span>
-        <div><h5><a href="https://www.uptownsocialchs.com/">Uptown Social</a></h5>
-        <p>Sprawling multi-level venue with a massive rooftop, dance floor, and multiple bars. The go-to for Thursday, Friday, and Saturday nights.</p></div>
+        <div><h3><a href="https://www.uptownsocialchs.com/" target="_blank" rel="noopener">Uptown Social</a></h3>
+        <p>Sprawling multi-level venue with a massive rooftop, dance floor and multiple bars. The go-to for Thursday, Friday and Saturday nights.</p></div>
       </li>
       <li class="ticket">
         <span class="ticket-num">2</span>
-        <div><h5><a href="http://republicreign.com/">Republic Garden & Lounge</a></h5>
-        <p>Club-like atmosphere with DJs, cocktails, and a sophisticated vibe on King Street.</p></div>
+        <div><h3><a href="http://republicreign.com/" target="_blank" rel="noopener">Republic Garden &amp; Lounge</a></h3>
+        <p>Club-like atmosphere with DJs, cocktails and a sophisticated vibe on King Street.</p></div>
       </li>
       <li class="ticket">
         <span class="ticket-num">3</span>
-        <div><h5><a href="https://www.triocharleston.com/">Trio Nightclub</a></h5>
-        <p>Charleston's premier electronic music destination with world-class sound and lighting — the closest thing to a Miami/Vegas-style club here.</p></div>
+        <div><h3><a href="https://www.triocharleston.com/" target="_blank" rel="noopener">Trio Nightclub</a></h3>
+        <p>Charleston's electronic music destination with big sound and lighting, the closest thing to a Miami or Vegas-style club here.</p></div>
       </li>
       <li class="ticket">
         <span class="ticket-num">4</span>
-        <div><h5><a href="http://prohibitioncharleston.com/">Prohibition</a></h5>
-        <p>Craft cocktail bar with a speakeasy vibe — more upscale than the typical college bar scene.</p></div>
+        <div><h3><a href="http://prohibitioncharleston.com/" target="_blank" rel="noopener">Prohibition</a></h3>
+        <p>Craft cocktail bar with a speakeasy vibe, a step up from the typical college bar.</p></div>
       </li>
-
       <li class="ticket">
         <span class="ticket-num">5</span>
-        <div><h5><a href="http://www.ritualchs.com/">Ritual Rooftop Lounge</a></h5>
-        <p>Upscale rooftop venue with bottle service, VIP tables, and a dress code.</p></div>
+        <div><h3><a href="http://www.ritualchs.com/" target="_blank" rel="noopener">Ritual Rooftop Lounge</a></h3>
+        <p>Upscale rooftop with bottle service, VIP tables and a dress code. More <a href="/king-street-bar-crawl/rooftop-bars.html">Charleston rooftop bars</a> here.</p></div>
       </li>
-      
       <li class="ticket">
         <span class="ticket-num">6</span>
-        <div><h5><a href="https://onairchs.club//">Live OnAir Club</a></h5>
-        <p>Mulitple story new honky tonk bar in Charleston SC.</p></div>
+        <div><h3><a href="https://onairchs.club/" target="_blank" rel="noopener">Live OnAir Club</a></h3>
+        <p>A multi-story honky tonk bar, newer to the Charleston scene.</p></div>
       </li>
     </ul>
 
-    <div class="alert-fun mt-3">
-      <strong>Pro Tip:</strong> Most of these bars are walking distance on King Street. Start early, bar hop, and always have a safe ride home planned! 
+    <div class="row g-4 mt-1" data-age="21">
+      <div class="col-md-6">
+        <div class="alert-fun h-100">
+          <strong>💸 On a student budget:</strong> <a href="https://burnsalley.com/" target="_blank" rel="noopener">Burns Alley</a> is a no-cover sports bar near campus with cheap drinks and live music. <a href="http://theroyalamerican.com/" target="_blank" rel="noopener">The Royal American</a> on Morrison Drive has cheap beers, an outdoor deck and regular shows.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="alert-warn h-100">
+          <strong>🚕 Play it safe:</strong> Most of these bars are walking distance on King Street. Start early, bar hop, and always have a safe ride home planned. Charleston bars close at 2 am, so line up your ride before last call, and grab <a href="/king-street-bar-crawl/late-night-food.html">late-night food</a> on the way home.
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<footer>
+<!-- MORE -->
+<section class="pt-2">
   <div class="container">
-    <p class="mb-0">&copy; 2025 Charleston Party Hub. All Rights Reserved.</p>
+    <div class="section-heading">
+      <h2>Keep Planning Your Weekend</h2>
+      <div class="squiggle"></div>
+    </div>
+    <div class="row g-3">
+      <div class="col-sm-6 col-lg-3">
+        <a class="more-card" href="/parties/girls-night-out.html"><strong>Girls Night Out 💅</strong><span>A Charleston girls night, start to finish</span></a>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <a class="more-card" href="/charleston-party-scene/index.html"><strong>Party Scene 🎧</strong><span>Where Charleston goes out</span></a>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <a class="more-card" href="/king-street-bar-crawl/rooftop-bars.html"><strong>Rooftop Bars 🌇</strong><span>Sunset drinks, 21+</span></a>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <a class="more-card" href="/parties/index.html"><strong>All Party Guides 🎈</strong><span>Every kind of celebration</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-4">
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-6 col-lg-3">
+        <h4>Bachelorette Parties</h4>
+        <ul>
+          <li><a href="/bach-party/index.html">Bachelorette Guide</a></li>
+          <li><a href="/bach-party/experiences/index.html">Experiences</a></li>
+          <li><a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Charleston Party Scene</h4>
+        <ul>
+          <li><a href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+          <li><a href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>King Street Bar Crawl</h4>
+        <ul>
+          <li><a href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+          <li><a href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+          <li><a href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Parties</h4>
+        <ul>
+          <li><a href="/parties/index.html">All Party Guides</a></li>
+          <li><a href="/parties/college.html">College Scene</a></li>
+          <li><a href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          <li><a href="/about.html">About</a> · <a href="/privacy-policy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center mb-0 pt-3" style="border-top:1px solid rgba(255,255,255,.2);">&copy; 2026 Charleston Party Hub. All Rights Reserved.</p>
   </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+  (function(){
+    var buttons=document.querySelectorAll('.age-toggle button');
+    var blocks=document.querySelectorAll('[data-age]');
+    var note=document.getElementById('ageNote');
+    var notes={all:'',
+      '18':'Showing 18+ spots. 21+ bars are faded out.',
+      '21':'Showing 21+ bars. 18+ only picks are faded out.'};
+    function setMode(mode){
+      buttons.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-mode')===mode?'true':'false');});
+      blocks.forEach(function(el){
+        var age=el.getAttribute('data-age');
+        el.classList.toggle('dimmed',mode!=='all'&&age!=='all'&&age!==mode);
+      });
+      note.textContent=notes[mode];
+      try{localStorage.setItem('chsAgeMode',mode);}catch(e){}
+    }
+    buttons.forEach(function(b){b.addEventListener('click',function(){
+      var mode=b.getAttribute('data-mode');
+      setMode(mode);
+      if(mode!=='all'){document.getElementById(mode==='18'?'under-21':'bars-21').scrollIntoView();}
+    });});
+    try{var saved=localStorage.getItem('chsAgeMode');if(saved&&notes.hasOwnProperty(saved))setMode(saved);}catch(e){}
+  })();
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Charleston Nightlife & Parties | Party Charleston | College Nightlife Ideas In Charleston SC</title>
+<meta name="description" content="College nightlife in Charleston, SC for the 18-20 crowd and 21+: 18+ shows, house parties, beach days and the King Street bars near College of Charleston.">
+<link rel="canonical" href="https://www.partycharleston.com/parties/college.html">
+<meta property="og:title" content="College Charleston Nightlife & Parties | Party Charleston">
+<meta property="og:description" content="18+ shows, house parties, beach days and 21+ King Street bars for CofC, MUSC, Citadel and Trident Tech students.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.partycharleston.com/parties/college.html">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Charleston College Party Scene: Guide for 18-20 and 21+",
+  "description": "Guide to Charleston's college weekend and party scene, covering live music, all-ages activities for the 18-20 crowd, and 21+ bars.",
+  "author": { "@type": "Organization", "name": "Charleston Party Hub" },
+  "publisher": { "@type": "Organization", "name": "Charleston Party Hub", "url": "https://www.partycharleston.com" },
+  "datePublished": "2025-12-07",
+  "dateModified": "2026-10-29",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.partycharleston.com/parties/college.html" },
+  "mentions": [
+    { "@type": "NightClub", "name": "Music Farm", "description": "Charleston's premier live music venue. 18+ shows available featuring touring DJs, rock bands, hip-hop artists, and EDM acts.", "address": { "@type": "PostalAddress", "streetAddress": "32 Ann Street", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "https://musicfarm.com/" },
+    { "@type": "NightClub", "name": "Honky Tonk Saloon", "description": "Line dancing venue in Ladson featuring 18+ shows with touring DJs and line dancing fun.", "address": { "@type": "PostalAddress", "streetAddress": "192 College Park Road", "addressLocality": "Ladson", "addressRegion": "SC" }, "url": "https://honkytonksaloon.com/" },
+    { "@type": "NightClub", "name": "Dudley's", "description": "LGBTQ+ dance club with drag and themed party nights. 18 to enter, 21 to drink.", "address": { "@type": "PostalAddress", "streetAddress": "42 Ann Street", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "https://www.dudleys42ann.com/" },
+    { "@type": "NightClub", "name": "Uptown Social", "description": "Sprawling multi-level venue with massive rooftop, dance floor, and multiple bars.", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "https://www.uptownsocialchs.com/" },
+    { "@type": "NightClub", "name": "Republic Garden & Lounge", "description": "Club-like atmosphere with DJs, cocktails, and sophisticated vibe on King Street.", "address": { "@type": "PostalAddress", "streetAddress": "King Street", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "http://republicreign.com/" },
+    { "@type": "NightClub", "name": "Trio Nightclub", "description": "Charleston's premier electronic music destination with world-class sound system and lighting.", "url": "https://www.triocharleston.com/" },
+    { "@type": "BarOrPub", "name": "Prohibition", "description": "Craft cocktail bar with speakeasy vibe.", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "http://prohibitioncharleston.com/" },
+    { "@type": "BarOrPub", "name": "Ritual Rooftop Lounge", "description": "Upscale rooftop venue with bottle service, VIP tables, and dress code.", "url": "http://www.ritualchs.com/" },
+    { "@type": "BarOrPub", "name": "Live OnAir Club", "description": "Multi-story honky tonk bar in Charleston.", "url": "https://onairchs.club/" },
+    { "@type": "BarOrPub", "name": "Burns Alley", "description": "Sports bar near College of Charleston with affordable drinks, live music, and no cover charge.", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC" }, "url": "https://burnsalley.com/" },
+    { "@type": "BarOrPub", "name": "The Royal American", "description": "Live music venue and dive bar with cheap beers, outdoor deck, and regular concerts.", "url": "http://theroyalamerican.com/" },
+    { "@type": "EventVenue", "name": "Building 64", "description": "Navy Yard event venue in North Charleston.", "url": "https://www.building64.com/" },
+    { "@type": "TouristAttraction", "name": "Folly Beach", "description": "Beach hangouts and pier location for outdoor activities.", "address": { "@type": "PostalAddress", "addressLocality": "Folly Beach", "addressRegion": "SC" }, "url": "https://visitfolly.com/" },
+    { "@type": "TouristAttraction", "name": "Sullivan's Island", "description": "Beach and Fort Moultrie historical site.", "address": { "@type": "PostalAddress", "addressLocality": "Sullivan's Island", "addressRegion": "SC" } },
+    { "@type": "Restaurant", "name": "Red's Ice House", "description": "Waterfront dining in Mount Pleasant.", "address": { "@type": "PostalAddress", "addressLocality": "Mount Pleasant", "addressRegion": "SC" }, "url": "https://www.redsicehouse.com/" },
+    { "@type": "BarOrPub", "name": "The Windjammer", "description": "Isle of Palms beach bar.", "address": { "@type": "PostalAddress", "addressLocality": "Isle of Palms", "addressRegion": "SC" }, "url": "https://the-windjammer.com/" },
+    { "@type": "Restaurant", "name": "Bowens Island Restaurant", "description": "James Island casual dining location.", "address": { "@type": "PostalAddress", "addressLocality": "James Island", "addressRegion": "SC" }, "url": "https://bowensisland.com/" },
+    { "@type": "CollegeOrUniversity", "name": "College of Charleston", "description": "Main college campus woven into downtown historic district, heart of student college scene.", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC" } },
+    { "@type": "CollegeOrUniversity", "name": "Medical University of South Carolina", "alternateName": "MUSC", "description": "Graduate medical school bringing mature students to Charleston's party scene.", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC" } },
+    { "@type": "CollegeOrUniversity", "name": "Trident Technical College", "alternateName": "TTC", "description": "Large community college with campuses across the Lowcountry contributing to Charleston's young adult population.", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC" } }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --maroon:#6f1d3d;
+    --maroon-dark:#4f1329;
+    --gold:#f4b942;
+    --teal:#2a9d8f;
+    --coral:#ef6a5a;
+    --lilac:#c9b6ff;
+    --cream:#fff8ec;
+    --ink:#211a1f;
+    --paper:#fffdf8;
+    --muted:#6b5a5f;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;}
+  h1,h2,h3,h4,h5,.navbar-brand{font-family:'Fredoka',sans-serif;font-weight:600;}
+  a{color:var(--maroon);font-weight:600;}
+  a:hover{color:var(--coral);}
+  section{padding:3.5rem 0;scroll-margin-top:80px;}
+  img{max-width:100%;}
+
+  /* NAVBAR */
+  .navbar{background:var(--maroon-dark)!important;padding:.85rem 0;border-bottom:4px solid var(--gold);}
+  .navbar-brand{color:var(--gold)!important;font-size:1.35rem;}
+  .nav-link{color:#fff!important;font-weight:600;}
+  .nav-link:hover,.nav-link.active{color:var(--gold)!important;}
+  .dropdown-menu-dark{background:var(--maroon);border:0;}
+  .dropdown-item{font-weight:600;}
+  .dropdown-item:hover,.dropdown-item.active{background:var(--maroon-dark);color:var(--gold);}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(circle at 12% 18%,rgba(244,185,66,.35),transparent 40%),
+      radial-gradient(circle at 88% 80%,rgba(42,157,143,.35),transparent 45%),
+      linear-gradient(135deg,var(--maroon),var(--maroon-dark));
+    color:#fff;padding:3.5rem 0 3rem;overflow:hidden;
+  }
+  .sticker{
+    display:inline-block;background:var(--gold);color:var(--maroon-dark);font-weight:700;font-size:.85rem;
+    padding:.4rem 1.1rem;border-radius:30px;transform:rotate(-3deg);box-shadow:3px 3px 0 var(--ink);
+  }
+  .hero h1{font-size:clamp(2.3rem,5.4vw,3.8rem);line-height:1.05;margin:1.1rem 0 1rem;}
+  .hero h1 .hl{background:linear-gradient(transparent 62%,rgba(244,185,66,.55) 62%);padding:0 .1em;}
+  .hero .lead{max-width:560px;color:#f7e9ee;}
+  .schools{display:flex;flex-wrap:wrap;gap:8px;margin:1.2rem 0 1.6rem;}
+  .schools span{border:2px solid rgba(255,255,255,.55);border-radius:999px;padding:.2rem .8rem;font-size:.82rem;font-weight:700;letter-spacing:.03em;}
+  .hero-photo-wrap{position:relative;max-width:460px;margin:0 auto;}
+  .hero-photo{width:100%;border-radius:18px;border:5px solid var(--gold);box-shadow:0 20px 40px rgba(0,0,0,.35);transform:rotate(2deg);background:var(--maroon);aspect-ratio:4/3;object-fit:cover;}
+  .hero-photo-wrap .float-tag{position:absolute;left:-10px;bottom:18px;background:var(--teal);color:#fff;font-weight:700;font-size:.85rem;padding:.4rem .9rem;border-radius:10px;transform:rotate(-4deg);box-shadow:3px 3px 0 var(--ink);}
+
+  /* AGE TOGGLE */
+  .age-toggle{display:inline-flex;flex-wrap:wrap;gap:6px;background:rgba(0,0,0,.25);padding:6px;border-radius:999px;}
+  .age-toggle button{border:0;background:transparent;color:#fff;font-weight:700;border-radius:999px;padding:.5rem 1.05rem;font-size:.92rem;}
+  .age-toggle button[aria-pressed="true"]{background:var(--gold);color:var(--maroon-dark);}
+  .age-note{font-size:.82rem;color:#f2dbe3;margin-top:.6rem;min-height:1.3em;}
+  [data-age].dimmed{opacity:.35;filter:grayscale(.7);}
+  [data-age]{transition:opacity .2s ease,filter .2s ease;}
+
+  /* TICKER */
+  .ticker{background:var(--gold);color:var(--maroon-dark);overflow:hidden;white-space:nowrap;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);}
+  .ticker-track{display:inline-block;padding:.55rem 0;font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.05rem;animation:ticker 38s linear infinite;}
+  .ticker-track span{margin:0 1.1rem;}
+  @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.ticker-track{animation:none}html{scroll-behavior:auto}}
+
+  /* JUMP CHIPS */
+  .jump{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:1.4rem 0 0;}
+  .jump a{text-decoration:none;background:var(--paper);border:2px solid var(--ink);color:var(--ink);border-radius:999px;padding:.4rem .95rem;font-size:.9rem;box-shadow:2px 2px 0 var(--ink);}
+  .jump a:hover{background:var(--lilac);color:var(--ink);}
+
+  /* SECTION HEADS */
+  .section-heading{text-align:center;margin-bottom:2rem;}
+  .section-heading h2{color:var(--maroon);font-size:clamp(1.7rem,3.5vw,2.2rem);}
+  .section-heading p{color:var(--muted);max-width:640px;margin:0 auto;}
+  .squiggle{width:70px;height:10px;border-bottom:5px dotted var(--coral);margin:.4rem auto 1.2rem;}
+
+  /* FLYER CARDS */
+  .flyer{background:var(--paper);border-radius:14px;padding:1.4rem;box-shadow:6px 6px 0 rgba(111,29,61,.18);border:2px solid var(--ink);position:relative;height:100%;transition:transform .2s ease;}
+  .flyer:hover{transform:translateY(-4px) rotate(-.5deg);}
+  .flyer::before{content:"📌";position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:1.6rem;}
+  .flyer img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin-bottom:1rem;background:#ead9df;}
+  .flyer h3{font-size:1.3rem;color:var(--maroon);margin-bottom:.3rem;}
+  .flyer .addr{color:#8a7a80;font-size:.85rem;margin-bottom:.5rem;font-weight:600;}
+  .flyer p{color:#4a3d41;font-size:.96rem;}
+  .pill{display:inline-block;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.28rem .8rem;border-radius:20px;}
+  .pill-18{background:var(--teal);}
+  .pill-21{background:var(--coral);}
+  .pill-all{background:var(--maroon);}
+
+  .posh{background:var(--lilac);border:2px solid var(--ink);border-radius:16px;padding:1.4rem;box-shadow:6px 6px 0 var(--ink);}
+  .posh img{border-radius:10px;background:#fff;width:100%;aspect-ratio:4/3;object-fit:cover;}
+
+  /* MAROON BAND */
+  .band-maroon{background:var(--maroon);color:#fff;}
+  .band-maroon h2{color:var(--gold);}
+  .band-maroon .section-heading p{color:#f2e6ea;}
+  .band-photo{border-radius:16px;border:4px solid var(--gold);width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--maroon-dark);}
+  .spot-card{background:#fff;color:var(--ink);border-radius:14px;padding:1.4rem;height:100%;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--gold);}
+  .spot-card h3{font-size:1.2rem;}
+  .spot-card .where{color:var(--muted);font-size:.88rem;font-weight:600;margin-bottom:.4rem;}
+
+  /* BENTO (daytime) */
+  .bento{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+  .bento .tile{background:var(--paper);border:2px solid var(--ink);border-radius:16px;padding:1.2rem 1.3rem;box-shadow:4px 4px 0 var(--ink);}
+  .bento .tile.big{grid-column:span 2;background:var(--teal);color:#fff;}
+  .bento .tile.big a{color:#fff;text-decoration:underline;}
+  .bento .tile .emoji{font-size:1.7rem;line-height:1;}
+  .bento .tile h3{font-size:1.15rem;margin:.5rem 0 .3rem;}
+  .bento .tile p{font-size:.94rem;margin:0;}
+  .bento .tile.coral{background:var(--coral);color:#fff;}
+  .bento .tile.coral a{color:#fff;text-decoration:underline;}
+
+  /* EVENT CARD */
+  .event-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:0;background:var(--paper);border:2px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:6px 6px 0 var(--maroon);}
+  .event-card img{width:100%;height:100%;object-fit:cover;min-height:220px;background:#ead9df;}
+  .event-card .body{padding:1.6rem;}
+
+  /* CAMPUS */
+  .rounded-photo{border-radius:16px;box-shadow:0 14px 28px rgba(0,0,0,.12);width:100%;aspect-ratio:4/3;object-fit:cover;background:#ead9df;}
+  .campus-card{background:var(--paper);border-radius:16px;padding:1.8rem;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--teal);height:100%;}
+  .campus-card h3{color:var(--maroon);}
+  .band-gold{background:var(--gold);color:var(--maroon-dark);}
+
+  /* 21+ TICKETS */
+  .ticket-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+  .ticket{display:flex;align-items:flex-start;gap:1rem;background:var(--paper);border-radius:12px;padding:1.1rem 1.3rem;border:2px solid var(--ink);border-left:8px solid var(--gold);}
+  .ticket:nth-child(even){border-left-color:var(--teal);}
+  .ticket-num{font-family:'Fredoka',sans-serif;font-size:1.5rem;font-weight:700;color:var(--maroon);min-width:30px;line-height:1.2;}
+  .ticket h3{margin:0 0 .25rem;color:var(--maroon-dark);font-size:1.12rem;}
+  .ticket p{margin:0;color:#4a3d41;font-size:.94rem;}
+
+  .alert-fun{background:#fff3cd;border-radius:12px;border:2px solid var(--ink);border-left:8px solid var(--gold);padding:1.1rem 1.3rem;color:#5c4a1e;}
+  .alert-warn{background:#fde3df;border-radius:12px;border:2px solid var(--ink);border-left:8px solid var(--coral);padding:1.1rem 1.3rem;color:#7a2e24;}
+
+  /* MORE GUIDES */
+  .more-card{display:block;text-decoration:none;background:var(--paper);border:2px solid var(--ink);border-radius:14px;padding:1.1rem 1.2rem;color:var(--ink);height:100%;box-shadow:4px 4px 0 var(--ink);transition:transform .15s ease;}
+  .more-card:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--coral);color:var(--ink);}
+  .more-card strong{font-family:'Fredoka',sans-serif;font-size:1.1rem;display:block;color:var(--maroon);}
+  .more-card span{font-size:.9rem;color:var(--muted);font-weight:500;}
+
+  /* FOOTER */
+  footer{background:var(--maroon-dark);color:#f2e6ea;padding:2.6rem 0 2rem;border-top:4px solid var(--gold);}
+  footer h4{color:var(--gold);font-size:1rem;margin-bottom:.7rem;}
+  footer ul{list-style:none;padding:0;margin:0;}
+  footer li{margin-bottom:.35rem;}
+  footer a{color:#f2e6ea;font-weight:500;text-decoration:none;}
+  footer a:hover{color:var(--gold);}
+
+  @media (max-width:991px){
+    .bento{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .ticket-list{grid-template-columns:1fr;}
+  }
+  @media (max-width:640px){
+    section{padding:2.6rem 0;}
+    .bento{grid-template-columns:1fr;}
+    .bento .tile.big{grid-column:auto;}
+    .event-card{grid-template-columns:1fr;}
+    .hero-photo{transform:none;}
+    .age-toggle button{padding:.45rem .8rem;font-size:.85rem;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html"><i class="bi bi-cup-straw"></i> Charleston Party Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="siteNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bachelorette</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="/bach-party/index.html">Bachelorette Guide</a></li>
+            <li><a class="dropdown-item" href="/bach-party/experiences/index.html">Experiences</a></li>
+            <li><a class="dropdown-item" href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Scene</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+            <li><a class="dropdown-item" href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">King Street</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parties</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="/parties/index.html">All Party Guides</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="/parties/college.html">College Scene</a></li>
+            <li><a class="dropdown-item" href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="sticker">Est. Weekend Ready</span>
+        <h1>College Charleston <span class="hl">Nightlife</span> &amp; Parties</h1>
+        <p class="lead">Where students and young adults actually go out in Charleston, from 18+ shows and house parties to beach days and the 21+ bars on King Street.</p>
+        <div class="schools" aria-label="Schools covered">
+          <span>CofC</span><span>MUSC</span><span>The Citadel</span><span>Trident Tech</span>
+        </div>
+        <div class="age-toggle" role="group" aria-label="Show spots for your age">
+          <button type="button" data-mode="all" aria-pressed="true">Show me everything</button>
+          <button type="button" data-mode="18" aria-pressed="false">I'm 18–20</button>
+          <button type="button" data-mode="21" aria-pressed="false">I'm 21+</button>
+        </div>
+        <p class="age-note" id="ageNote" aria-live="polite"></p>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-photo-wrap">
+          <img src="images/nightlife.png" class="hero-photo" alt="College of Charleston students on a girls night out downtown">
+          <span class="float-tag">📍 Downtown CHS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Music Farm ✦</span><span>Dudley's ✦</span><span>Honky Tonk Saloon ✦</span><span>House parties ✦</span><span>Folly Beach ✦</span><span>Building 64 ✦</span><span>Uptown Social ✦</span><span>Burns Alley ✦</span><span>Red's Ice House ✦</span><span>posh.vip ✦</span>
+    <span>Music Farm ✦</span><span>Dudley's ✦</span><span>Honky Tonk Saloon ✦</span><span>House parties ✦</span><span>Folly Beach ✦</span><span>Building 64 ✦</span><span>Uptown Social ✦</span><span>Burns Alley ✦</span><span>Red's Ice House ✦</span><span>posh.vip ✦</span>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="jump" aria-label="Jump to a section">
+    <a href="#under-21">🎤 18+ nights</a>
+    <a href="#grown-up">✨ 18–20 spots</a>
+    <a href="#daytime">🏖️ Daytime</a>
+    <a href="#cofc">🏫 CofC life</a>
+    <a href="#bars-21">🍸 21+ bars</a>
+  </nav>
+</div>
+
+<!-- 18+ NIGHTS -->
+<section id="under-21">
+  <div class="container">
+    <div class="section-heading">
+      <h2>🍹 College Entertainment Weekends</h2>
+      <div class="squiggle"></div>
+      <p>Under 21 doesn't mean staying in. These College of Charleston-area venues let the 18+ crowd in for shows, dancing and party nights.</p>
+    </div>
+
+    <div class="row g-4" data-age="18">
+      <div class="col-md-6 col-lg-4">
+        <article class="flyer">
+          <img src="images/musicfarm.jpg" alt="Music Farm concert venue on Ann Street in Charleston" loading="lazy">
+          <h3><a href="https://musicfarm.com/" target="_blank" rel="noopener">Music Farm</a></h3>
+          <div class="addr">📍 32 Ann Street</div>
+          <p>Charleston's main live music venue and the <strong>go-to</strong> for the 18-20 crowd. Check the calendar for touring DJs, rock bands, hip-hop and EDM acts. Tickets typically run $20-50.</p>
+          <span class="pill pill-18">18+ shows</span>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="flyer">
+          <img src="images/honkytonk.jpg" alt="Line dancing at Honky Tonk Saloon in Ladson" loading="lazy">
+          <h3><a href="https://honkytonksaloon.com/" target="_blank" rel="noopener">Honky Tonk Saloon</a></h3>
+          <div class="addr">📍 192 College Park Rd, Ladson</div>
+          <p>A line-dancing hangout outside downtown, and a solid dance spot for the college crowd. Check the calendar for DJs and line-dancing nights, and plan a ride for the drive.</p>
+          <span class="pill pill-18">18+ shows</span>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="flyer">
+          <img src="images/dudley.png" alt="Dance floor at Dudley's on Ann Street in Charleston" loading="lazy">
+          <h3><a href="https://www.dudleys42ann.com/" target="_blank" rel="noopener">Dudley's</a></h3>
+          <div class="addr">📍 42 Ann Street</div>
+          <p>Join the LGBTQ+ community for dancing, drag or one of their party nights, a few doors down from Music Farm. 18 to enter, 21 to drink.</p>
+          <span class="pill pill-18">18+ to enter</span>
+        </article>
+      </div>
+    </div>
+
+    <div class="posh mt-5 mx-auto" style="max-width:720px;" data-age="18">
+      <div class="row g-3 align-items-center">
+        <div class="col-sm-5">
+          <img src="images/poshvip.png" class="img-fluid" alt="posh.vip event listings for Charleston" loading="lazy">
+        </div>
+        <div class="col-sm-7">
+          <h3 class="h4 mb-2">🎉 POSH VIP Under 21 Events</h3>
+          <p class="mb-0">Don't forget <a href="https://posh.vip" target="_blank" rel="noopener">posh.vip</a>. Local promoters list 18+ parties there, sometimes at the same venues as the 21+ list below.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center mt-4 mb-0">Want more? See the full guide to <a href="/charleston-party-scene/charleston-nightlife-under-21.html">Charleston nightlife under 21</a>.</p>
+  </div>
+</section>
+
+<!-- GROWN-UP 18-20 -->
+<section id="grown-up" class="band-maroon">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Grown Up Places for the 18–20 Crowd</h2>
+      <p>You can't grab a beer at most bars, but these spots welcome 18+ guests.</p>
+    </div>
+    <div class="row g-4 align-items-stretch" data-age="18">
+      <div class="col-lg-5">
+        <img src="images/dance.jpg" class="band-photo" alt="Group dancing on a night out in Charleston" loading="lazy">
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-4 h-100">
+          <div class="col-md-6">
+            <div class="spot-card">
+              <span class="pill pill-18 mb-2">18+ to enter</span>
+              <h3><a href="http://www.kingstreetcabaret.com/" target="_blank" rel="noopener">King Street Cabaret</a></h3>
+              <div class="where">1337 King Street · For the guys</div>
+              <p class="small mb-0">Open daily 4 pm–2 am. Upscale atmosphere with VIP services and daily specials.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="spot-card">
+              <span class="pill pill-18 mb-2">18+ to book</span>
+              <h3><a href="https://michaelatyourplace.com" target="_blank" rel="noopener">Michael At Your Place</a></h3>
+              <div class="where">Charleston, Mt Pleasant, Folly &amp; IOP · For the girls</div>
+              <p class="small mb-2">A private show for college birthday parties, brought to your apartment or rental. $200 for up to 90 minutes, and the group can split it.</p>
+              <p class="small mb-0">Pay on arrival by cash, Venmo or Cash App. Call or text <a href="tel:+18433609438">843-360-9438</a>; last-minute dates welcome.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DAYTIME -->
+<section id="daytime">
+  <div class="container">
+    <div class="section-heading">
+      <h2>🏖️ Daytime, Beach &amp; Big-Event Plans</h2>
+      <div class="squiggle"></div>
+      <p>The best college weekends start before dark. Grab a car, split gas and head for the water.</p>
+    </div>
+
+    <div class="bento" data-age="all">
+      <div class="tile big">
+        <div class="emoji">🌊</div>
+        <h3>Beach Day at Folly</h3>
+        <p><a href="https://visitfolly.com/" target="_blank" rel="noopener">Folly Beach</a> is the classic student beach: the pier, surf, and Center Street for food after. It's about 20 minutes from campus, so go early on weekends before parking fills.</p>
+      </div>
+      <div class="tile">
+        <div class="emoji">🏰</div>
+        <h3>Sullivan's Island</h3>
+        <p>A quieter beach day with Fort Moultrie on the same trip. Good for a smaller group.</p>
+      </div>
+      <div class="tile">
+        <div class="emoji">🦐</div>
+        <h3>Red's Ice House</h3>
+        <p>Waterfront food on Shem Creek in Mount Pleasant. Go for sunset. <a href="https://www.redsicehouse.com/" target="_blank" rel="noopener">Site</a></p>
+      </div>
+      <div class="tile">
+        <div class="emoji">🦪</div>
+        <h3>Bowens Island</h3>
+        <p>Casual, no-frills seafood on James Island, a local favorite on the way back from Folly. <a href="https://bowensisland.com/" target="_blank" rel="noopener">Site</a></p>
+      </div>
+      <div class="tile coral">
+        <div class="emoji">🎶</div>
+        <h3>The Windjammer</h3>
+        <p>The Isle of Palms beach bar, with music on the sand. Check ages for each show. <a href="https://the-windjammer.com/" target="_blank" rel="noopener">Site</a></p>
+      </div>
+    </div>
+
+    <article class="event-card mt-5" data-age="all">
+      <img src="images/building64.png" alt="Building 64 event venue at the Navy Yard in North Charleston" loading="lazy">
+      <div class="body">
+        <span class="pill pill-all mb-2">Big events</span>
+        <h3 style="color:var(--maroon);">Building 64</h3>
+        <p>The Navy Yard event campus in North Charleston has hosted big parties for the last decade, including Kulture Klash, Wine and Food Party@the Powerhouse and the High Water after party. Check ages on each event before you buy.</p>
+        <a href="https://www.building64.com/" target="_blank" rel="noopener">See upcoming events at Building 64 →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- COFC LIFE -->
+<section id="cofc" class="band-gold">
+  <div class="container">
+    <div class="section-heading">
+      <h2 style="color:var(--maroon-dark);">College of Charleston Is a Party School, Kind Of</h2>
+      <p style="color:var(--maroon-dark);">Here's what college nightlife looks like for CofC students.</p>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-6">
+        <img src="images/houseParty.jpg" class="rounded-photo" alt="Students at a Charleston house party" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <div class="campus-card">
+          <h3>The Real CofC Experience: House Parties</h3>
+          <p>Let's be honest: house parties are what <strong>most students actually do</strong> on any given weekend. They're where freshmen become friends, where upperclassmen hold court on front porches, and where the real social fabric of CofC gets woven together.</p>
+          <p class="mb-0">College of Charleston nightlife is what earns CofC its party school reputation. There are no College of Charleston bars. The campus just happens to sit a short walk from King Street, so the bar scene is right there once you turn 21.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/cofc1.webp" class="rounded-photo" alt="College of Charleston campus in downtown Charleston" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <div class="campus-card">
+          <h3>The Stats: College of Charleston (CofC)</h3>
+          <p class="mb-0">Check out <a href="https://www.collegevine.com/faq/47627/college-of-charleston-gender-ratio" target="_blank" rel="noopener">the College of Charleston gender ratio</a> and the official <a href="https://charleston.edu/higdon-center/fraternity-sorority-life/index.php" target="_blank" rel="noopener">Fraternity and Sorority Life page</a>. See more on <a href="https://www.niche.com/colleges/college-of-charleston/campus-life/" target="_blank" rel="noopener">College of Charleston campus life</a>. MUSC, The Citadel and Trident Tech students all end up on the same few blocks of King Street on the weekend.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 21+ BARS -->
+<section id="bars-21">
+  <div class="container">
+    <div class="row g-4 align-items-center mb-4">
+      <div class="col-lg-5">
+        <img src="images/uptown.jpg" class="rounded-photo" alt="Uptown Social rooftop bar on King Street, Charleston" loading="lazy">
+      </div>
+      <div class="col-lg-7">
+        <span class="pill pill-21 mb-2">21+ only</span>
+        <h2 style="color:var(--maroon);">6 Bars for Anyone 21+ in Charleston</h2>
+        <p class="lead mb-1" style="color:var(--muted);">The College of Charleston bars everyone ends up at, most within walking distance of campus.</p>
+        <p class="mb-0">Under 21? You may find a <a href="https://posh.vip" target="_blank" rel="noopener">posh.vip event</a> at some of these places. Planning a whole night? Our <a href="/king-street-bar-crawl/index.html">King Street bar crawl route</a> strings them together.</p>
+      </div>
+    </div>
+
+    <ul class="ticket-list" data-age="21">
+      <li class="ticket">
+        <span class="ticket-num">1</span>
+        <div><h3><a href="https://www.uptownsocialchs.com/" target="_blank" rel="noopener">Uptown Social</a></h3>
+        <p>Sprawling multi-level venue with a massive rooftop, dance floor and multiple bars. The go-to for Thursday, Friday and Saturday nights.</p></div>
+      </li>
+      <li class="ticket">
+        <span class="ticket-num">2</span>
+        <div><h3><a href="http://republicreign.com/" target="_blank" rel="noopener">Republic Garden &amp; Lounge</a></h3>
+        <p>Club-like atmosphere with DJs, cocktails and a sophisticated vibe on King Street.</p></div>
+      </li>
+      <li class="ticket">
+        <span class="ticket-num">3</span>
+        <div><h3><a href="https://www.triocharleston.com/" target="_blank" rel="noopener">Trio Nightclub</a></h3>
+        <p>Charleston's electronic music destination with big sound and lighting, the closest thing to a Miami or Vegas-style club here.</p></div>
+      </li>
+      <li class="ticket">
+        <span class="ticket-num">4</span>
+        <div><h3><a href="http://prohibitioncharleston.com/" target="_blank" rel="noopener">Prohibition</a></h3>
+        <p>Craft cocktail bar with a speakeasy vibe, a step up from the typical college bar.</p></div>
+      </li>
+      <li class="ticket">
+        <span class="ticket-num">5</span>
+        <div><h3><a href="http://www.ritualchs.com/" target="_blank" rel="noopener">Ritual Rooftop Lounge</a></h3>
+        <p>Upscale rooftop with bottle service, VIP tables and a dress code. More <a href="/king-street-bar-crawl/rooftop-bars.html">Charleston rooftop bars</a> here.</p></div>
+      </li>
+      <li class="ticket">
+        <span class="ticket-num">6</span>
+        <div><h3><a href="https://onairchs.club/" target="_blank" rel="noopener">Live OnAir Club</a></h3>
+        <p>A multi-story honky tonk bar, newer to the Charleston scene.</p></div>
+      </li>
+    </ul>
+
+    <div class="row g-4 mt-1" data-age="21">
+      <div class="col-md-6">
+        <div class="alert-fun h-100">
+          <strong>💸 On a student budget:</strong> <a href="https://burnsalley.com/" target="_blank" rel="noopener">Burns Alley</a> is a no-cover sports bar near campus with cheap drinks and live music. <a href="http://theroyalamerican.com/" target="_blank" rel="noopener">The Royal American</a> on Morrison Drive has cheap beers, an outdoor deck and regular shows.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="alert-warn h-100">
+          <strong>🚕 Play it safe:</strong> Most of these bars are walking distance on King Street. Start early, bar hop, and always have a safe ride home planned. Charleston bars close at 2 am, so line up your ride before last call, and grab <a href="/king-street-bar-crawl/late-night-food.html">late-night food</a> on the way home.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE -->
+<section class="pt-2">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Keep Planning Your Weekend</h2>
+      <div class="squiggle"></div>
+    </div>
+    <div class="row g-3">
+      <div class="col-sm-6 col-lg-3">
+        <a class="more-card" href="/parties/girls-night-out.html"><strong>Girls Night Out 💅</strong><span>A Charleston girls night, start to finish</span></a>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <a class="more-card" href="/charleston-party-scene/index.html"><strong>Party Scene 🎧</strong><span>Where Charleston goes out</span></a>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <a class="more-card" href="/king-street-bar-crawl/rooftop-bars.html"><strong>Rooftop Bars 🌇</strong><span>Sunset drinks, 21+</span></a>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <a class="more-card" href="/parties/index.html"><strong>All Party Guides 🎈</strong><span>Every kind of celebration</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-4">
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-6 col-lg-3">
+        <h4>Bachelorette Parties</h4>
+        <ul>
+          <li><a href="/bach-party/index.html">Bachelorette Guide</a></li>
+          <li><a href="/bach-party/experiences/index.html">Experiences</a></li>
+          <li><a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Charleston Party Scene</h4>
+        <ul>
+          <li><a href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+          <li><a href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>King Street Bar Crawl</h4>
+        <ul>
+          <li><a href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+          <li><a href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+          <li><a href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Parties</h4>
+        <ul>
+          <li><a href="/parties/index.html">All Party Guides</a></li>
+          <li><a href="/parties/college.html">College Scene</a></li>
+          <li><a href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          <li><a href="/about.html">About</a> · <a href="/privacy-policy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center mb-0 pt-3" style="border-top:1px solid rgba(255,255,255,.2);">&copy; 2026 Charleston Party Hub. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+  (function(){
+    var buttons=document.querySelectorAll('.age-toggle button');
+    var blocks=document.querySelectorAll('[data-age]');
+    var note=document.getElementById('ageNote');
+    var notes={all:'',
+      '18':'Showing 18+ spots. 21+ bars are faded out.',
+      '21':'Showing 21+ bars. 18+ only picks are faded out.'};
+    function setMode(mode){
+      buttons.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-mode')===mode?'true':'false');});
+      blocks.forEach(function(el){
+        var age=el.getAttribute('data-age');
+        el.classList.toggle('dimmed',mode!=='all'&&age!=='all'&&age!==mode);
+      });
+      note.textContent=notes[mode];
+      try{localStorage.setItem('chsAgeMode',mode);}catch(e){}
+    }
+    buttons.forEach(function(b){b.addEventListener('click',function(){
+      var mode=b.getAttribute('data-mode');
+      setMode(mode);
+      if(mode!=='all'){document.getElementById(mode==='18'?'under-21':'bars-21').scrollIntoView();}
+    });});
+    try{var saved=localStorage.getItem('chsAgeMode');if(saved&&notes.hasOwnProperty(saved))setMode(saved);}catch(e){}
+  })();
+</script>
 </body>
 </html>

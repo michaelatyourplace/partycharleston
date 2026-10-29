@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girls Night Out Charleston SC</title>
-    <meta name="description" content="Girls Night Out Charleston: a private live show by Michael at your rental, $200 for up to 90 minutes, paid on arrival. Interactive entertainment, comedy, and dancing for your crew.">
+    <title>Girls Night Out Charleston SC | Ideas, Itineraries &amp; a Private Show</title>
+    <meta name="description" content="Charleston girls night out ideas: dinner, rooftops, cocktail classes and live music, plus a private show at your rental. $200 for up to 90 min, about $20 each for 10. Pay on arrival.">
     <meta name="keywords" content="girls night out charleston, girls night out charleston sc, charleston girls night out, girls night out show charleston, girls night out the show">
     <link rel="canonical" href="https://partycharleston.com/parties/girls-night-out.html">
+    <meta property="og:title" content="Charleston Girls Night Out: Ideas, Itineraries & a Private Show">
+    <meta property="og:description" content="Plan a Charleston girls night out, then end it with a private show at your rental. $200 flat, paid on arrival.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://partycharleston.com/parties/girls-night-out.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Girls Night Out Charleston: Private Show at Your Rental",
+      "serviceType": "Private entertainment for girls nights, birthdays and bachelorette parties",
+      "url": "https://partycharleston.com/parties/girls-night-out.html",
+      "areaServed": ["Charleston, SC", "Mount Pleasant, SC", "Isle of Palms, SC", "Folly Beach, SC", "Sullivan's Island, SC"],
+      "provider": { "@type": "LocalBusiness", "name": "Michael At Your Place", "url": "https://michaelatyourplace.com/", "telephone": "+1-843-360-9438" },
+      "offers": { "@type": "Offer", "price": "200", "priceCurrency": "USD", "description": "Up to 90 minutes, paid on arrival by cash, Venmo or Cash App" }
+    }
+    </script>
 
     <style>
         :root {
@@ -21,12 +38,13 @@
             --charcoal: #141414;
             --dark-card: #1A1A1A;
             --mid-gray: #2A2A2A;
-            --text-muted: #999;
+            --text-muted: #A3A3A3;
             --text-body: #CCC;
             --white: #F5F0E8;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
 
         body {
             background-color: var(--black);
@@ -35,6 +53,9 @@
             font-weight: 300;
             overflow-x: hidden;
         }
+
+        a { color: var(--gold-light); }
+        a:hover { color: var(--gold); }
 
         /* ── NOISE TEXTURE OVERLAY ── */
         body::before {
@@ -47,939 +68,414 @@
             opacity: 0.4;
         }
 
-        /* ── GOLD RULE ── */
-        .gold-rule {
-            border: none;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold), transparent);
-            margin: 0 auto;
-        }
+        section { scroll-margin-top: 80px; }
 
-        /* ══════════════════════════════════
-           HERO
-        ══════════════════════════════════ */
+        /* ── NAV ── */
+        .site-nav { background: rgba(10,10,10,0.96) !important; border-bottom: 1px solid rgba(201,168,76,0.35); padding: 0.75rem 0; z-index: 1030; }
+        .site-nav .navbar-brand { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--gold) !important; }
+        .site-nav .nav-link { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.9rem; color: var(--white) !important; }
+        .site-nav .nav-link:hover, .site-nav .nav-link.active { color: var(--gold) !important; }
+        .site-nav .dropdown-menu { background: var(--dark-card); border: 1px solid rgba(201,168,76,0.25); border-radius: 2px; }
+        .site-nav .dropdown-item { color: var(--text-body); font-weight: 400; }
+        .site-nav .dropdown-item:hover, .site-nav .dropdown-item.active { background: rgba(201,168,76,0.12); color: var(--gold); }
+        .site-nav .btn-nav { background: var(--gold); color: var(--black) !important; border-radius: 2px; padding: 0.4rem 1rem !important; margin-left: 0.5rem; }
+        .site-nav .btn-nav:hover { background: var(--gold-light); }
+
+        /* ── GOLD RULE ── */
+        .gold-rule { border: none; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 0 auto; }
+
+        /* ══════════ HERO ══════════ */
         .hero {
             position: relative;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px 60px;
+            padding: 70px 0 70px;
             background:
                 radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%),
                 radial-gradient(ellipse 60% 80% at 80% 100%, rgba(201,168,76,0.06) 0%, transparent 60%),
                 var(--black);
             overflow: hidden;
         }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 0; right: 0;
-            height: 120px;
-            background: linear-gradient(to bottom, transparent, var(--black));
-        }
-
-        .hero-eyebrow {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 600;
-            font-size: 0.85rem;
-            letter-spacing: 0.35em;
-            color: var(--gold);
-            text-transform: uppercase;
-            margin-bottom: 28px;
-            animation: fadeUp 0.8s ease both;
-        }
-
-        .hero-title {
-            font-family: 'Playfair Display', serif;
-            font-weight: 900;
-            font-size: clamp(3.2rem, 9vw, 7.5rem);
-            line-height: 0.92;
-            color: var(--white);
-            margin-bottom: 12px;
-            animation: fadeUp 0.9s 0.1s ease both;
-        }
-
-        .hero-title em {
-            font-style: italic;
-            color: var(--gold);
-        }
-
-        .hero-subtitle-block {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 700;
-            font-size: clamp(1.2rem, 3.5vw, 2rem);
-            letter-spacing: 0.2em;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            margin-bottom: 40px;
-            animation: fadeUp 1s 0.2s ease both;
-        }
-
-        .hero-desc {
-            max-width: 620px;
-            margin: 0 auto 50px;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--text-body);
-            animation: fadeUp 1s 0.3s ease both;
-        }
-
+        .hero-eyebrow { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; margin-bottom: 18px; animation: fadeUp 0.8s ease both; }
+        .hero-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(3rem, 7vw, 6rem); line-height: 0.95; color: var(--white); margin-bottom: 22px; animation: fadeUp 0.9s 0.1s ease both; }
+        .hero-title em { font-style: italic; color: var(--gold); }
+        .hero-subtitle-block { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: clamp(1rem, 2.4vw, 1.4rem); letter-spacing: 0.2em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 18px; }
+        .hero-desc { max-width: 600px; margin: 0 0 30px; font-size: 1.12rem; line-height: 1.8; color: var(--text-body); animation: fadeUp 1s 0.3s ease both; }
         .hero-desc strong { color: var(--white); font-weight: 500; }
+        .hero-cta-group { display: flex; gap: 14px; flex-wrap: wrap; animation: fadeUp 1s 0.4s ease both; }
+        .trust-row { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 22px; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.85rem; color: var(--text-muted); }
+        .trust-row span::before { content: '✓ '; color: var(--gold); }
+        .hero-photo { position: relative; }
+        .hero-photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 1px solid rgba(201,168,76,0.35); background: var(--dark-card); display: block; }
+        .hero-photo .price-tag { position: absolute; left: -14px; bottom: 26px; background: var(--gold); color: var(--black); padding: 12px 18px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; box-shadow: 0 14px 40px rgba(0,0,0,.5); line-height: 1.2; }
+        .hero-photo .price-tag strong { font-family: 'Playfair Display', serif; font-size: 1.8rem; display: block; letter-spacing: 0; }
 
-        .hero-cta-group {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeUp 1s 0.4s ease both;
-        }
+        .btn-gold { background: linear-gradient(135deg, var(--gold-light), var(--gold)); color: var(--black); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 16px 36px; border: none; border-radius: 2px; cursor: pointer; text-decoration: none; transition: all 0.25s ease; display: inline-block; }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(201,168,76,0.35); color: var(--black); }
+        .btn-outline-gold { background: transparent; color: var(--gold); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.95rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 15px 36px; border: 1px solid var(--gold-dim); border-radius: 2px; cursor: pointer; text-decoration: none; transition: all 0.25s ease; display: inline-block; }
+        .btn-outline-gold:hover { border-color: var(--gold); background: rgba(201,168,76,0.08); color: var(--gold-light); }
 
-        .btn-gold {
-            background: linear-gradient(135deg, var(--gold-light), var(--gold));
-            color: var(--black);
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 700;
-            font-size: 0.95rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            padding: 16px 40px;
-            border: none;
-            border-radius: 2px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: all 0.25s ease;
-            display: inline-block;
-        }
-        .btn-gold:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(201,168,76,0.35);
-            color: var(--black);
-        }
+        /* ══════════ STATS STRIP ══════════ */
+        .stats-strip { background: var(--dark-card); border-top: 1px solid rgba(201,168,76,0.2); border-bottom: 1px solid rgba(201,168,76,0.2); padding: 32px 0; position: relative; }
+        .stat-item { text-align: center; padding: 0 20px; }
+        .stat-number { font-family: 'Playfair Display', serif; font-size: 2.6rem; font-weight: 900; color: var(--gold); line-height: 1; display: block; }
+        .stat-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-top: 6px; display: block; }
 
-        .btn-outline-gold {
-            background: transparent;
-            color: var(--gold);
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 600;
-            font-size: 0.95rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            padding: 15px 40px;
-            border: 1px solid var(--gold-dim);
-            border-radius: 2px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: all 0.25s ease;
-            display: inline-block;
-        }
-        .btn-outline-gold:hover {
-            border-color: var(--gold);
-            background: rgba(201,168,76,0.08);
-            color: var(--gold-light);
-        }
+        /* ══════════ SECTION HEADERS ══════════ */
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-eyebrow { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; letter-spacing: 0.35em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 16px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 900; color: var(--white); line-height: 1.05; }
+        .section-title em { font-style: italic; color: var(--gold); }
+        .section-lede { max-width: 640px; margin: 18px auto 0; font-size: 1.05rem; line-height: 1.8; }
 
-        /* ══════════════════════════════════
-           STATS STRIP
-        ══════════════════════════════════ */
-        .stats-strip {
-            background: var(--dark-card);
-            border-top: 1px solid rgba(201,168,76,0.2);
-            border-bottom: 1px solid rgba(201,168,76,0.2);
-            padding: 36px 0;
-        }
+        /* ══════════ IDEAS ══════════ */
+        .ideas-section { padding: 90px 0; position: relative; }
+        .ideas-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+        .idea-card { background: var(--dark-card); border: 1px solid rgba(201,168,76,0.14); padding: 26px 22px; display: flex; flex-direction: column; transition: all 0.25s ease; }
+        .idea-card:hover { border-color: rgba(201,168,76,0.45); transform: translateY(-3px); }
+        .idea-icon { font-size: 1.7rem; margin-bottom: 10px; }
+        .idea-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--white); margin-bottom: 10px; }
+        .idea-card p { font-size: 0.94rem; line-height: 1.7; margin-bottom: 14px; }
+        .idea-card .idea-link { margin-top: auto; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.82rem; text-decoration: none; }
+        .idea-card.finale { background: linear-gradient(160deg, rgba(201,168,76,0.22), var(--dark-card) 70%); border-color: var(--gold-dim); }
 
-        .stat-item {
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .stat-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.8rem;
-            font-weight: 900;
-            color: var(--gold);
-            line-height: 1;
-            display: block;
-        }
-
-        .stat-label {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.8rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-top: 6px;
-            display: block;
-        }
-
-        /* ══════════════════════════════════
-           SECTION HEADERS
-        ══════════════════════════════════ */
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-eyebrow {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.8rem;
-            letter-spacing: 0.35em;
-            color: var(--gold);
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 16px;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            font-weight: 900;
-            color: var(--white);
-            line-height: 1.05;
-        }
-
-        .section-title em {
-            font-style: italic;
-            color: var(--gold);
-        }
-
-        /* ══════════════════════════════════
-           SHOW INTRO — ABOUT THE SHOW
-        ══════════════════════════════════ */
-        .show-intro {
-            padding: 100px 0;
-            position: relative;
-        }
-
-        .show-intro-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        .show-intro-text h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 900;
-            color: var(--white);
-            line-height: 1.1;
-            margin-bottom: 24px;
-        }
-
+        /* ══════════ SHOW INTRO ══════════ */
+        .show-intro { padding: 90px 0; position: relative; background: var(--charcoal); border-top: 1px solid rgba(201,168,76,0.12); }
+        .show-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .show-intro-text h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 24px; }
         .show-intro-text h2 em { color: var(--gold); font-style: italic; }
-
-        .show-intro-text p {
-            font-size: 1.05rem;
-            line-height: 1.85;
-            color: var(--text-body);
-            margin-bottom: 20px;
-        }
-
-        .show-intro-image {
-            position: relative;
-        }
-
-        .show-image-frame {
-            width: 100%;
-            aspect-ratio: 3/4;
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.25);
-            overflow: hidden;
-            position: relative;
-        }
-
-        .show-image-frame img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            opacity: 0.85;
-        }
-
-        .show-image-frame::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(10,10,10,0.6) 0%, transparent 50%);
-        }
-
-        .image-caption {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
-            z-index: 2;
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.8rem;
-            letter-spacing: 0.2em;
-            color: var(--gold);
-            text-transform: uppercase;
-        }
-
-        .corner-accent {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            border-color: var(--gold);
-            border-style: solid;
-            opacity: 0.5;
-        }
+        .show-intro-text p { font-size: 1.05rem; line-height: 1.85; color: var(--text-body); margin-bottom: 20px; }
+        .show-intro-text strong { color: var(--white); font-weight: 500; }
+        .show-intro-image { position: relative; }
+        .show-image-frame { width: 100%; aspect-ratio: 3/4; background: var(--dark-card); border: 1px solid rgba(201,168,76,0.25); overflow: hidden; position: relative; }
+        .show-image-frame img { width: 100%; height: 100%; object-fit: cover; opacity: 0.88; position: relative; z-index: 1; }
+        .show-image-frame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.6) 0%, transparent 50%); z-index: 1; }
+        .image-caption { position: absolute; bottom: 20px; left: 20px; right: 20px; z-index: 2; font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase; }
+        .corner-accent { position: absolute; width: 40px; height: 40px; border-color: var(--gold); border-style: solid; opacity: 0.5; }
         .corner-tl { top: -10px; left: -10px; border-width: 2px 0 0 2px; }
         .corner-br { bottom: -10px; right: -10px; border-width: 0 2px 2px 0; }
 
-        /* ══════════════════════════════════
-           WHAT'S IN THE SHOW
-        ══════════════════════════════════ */
-        .show-features {
-            padding: 80px 0;
-            background: var(--charcoal);
-            border-top: 1px solid rgba(201,168,76,0.12);
-            border-bottom: 1px solid rgba(201,168,76,0.12);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2px;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
-            background: rgba(201,168,76,0.08);
-        }
-
-        .feature-item {
-            background: var(--charcoal);
-            padding: 48px 36px;
-            position: relative;
-            transition: background 0.3s ease;
-        }
+        /* ══════════ FEATURES ══════════ */
+        .show-features { padding: 80px 0; }
+        .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; max-width: 1100px; margin: 0 auto; padding: 0 24px; background: rgba(201,168,76,0.08); }
+        .feature-item { background: var(--black); padding: 44px 34px; position: relative; transition: background 0.3s ease; }
         .feature-item:hover { background: var(--dark-card); }
+        .feature-number { font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 900; color: rgba(201,168,76,0.15); line-height: 1; margin-bottom: 18px; }
+        .feature-icon { font-size: 2rem; margin-bottom: 14px; display: block; }
+        .feature-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.05em; color: var(--white); text-transform: uppercase; margin-bottom: 14px; }
+        .feature-desc { font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); }
+        .feature-accent { width: 30px; height: 2px; background: var(--gold); margin-top: 20px; }
 
-        .feature-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: rgba(201,168,76,0.15);
-            line-height: 1;
-            margin-bottom: 20px;
-        }
+        /* ══════════ BOOKING BUILDER ══════════ */
+        .builder-section { padding: 90px 0; background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(201,168,76,0.1) 0%, transparent 70%), var(--charcoal); border-top: 1px solid rgba(201,168,76,0.15); border-bottom: 1px solid rgba(201,168,76,0.15); }
+        .builder { max-width: 960px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: stretch; }
+        .builder-panel { background: var(--dark-card); border: 1px solid rgba(201,168,76,0.25); padding: 34px; }
+        .builder label { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin: 0 0 8px; }
+        .builder input[type="date"], .builder select { width: 100%; background: var(--black); color: var(--white); border: 1px solid var(--mid-gray); border-radius: 2px; padding: 12px 14px; font-family: 'Barlow', sans-serif; font-size: 1rem; margin-bottom: 22px; color-scheme: dark; }
+        .builder input[type="range"] { width: 100%; accent-color: var(--gold); margin: 6px 0 4px; }
+        .range-row { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px; }
+        .group-count { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--white); font-weight: 700; }
+        .split-box { text-align: center; display: flex; flex-direction: column; justify-content: center; }
+        .split-amount { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(3.4rem, 8vw, 5rem); color: var(--gold); line-height: 1; }
+        .split-label { font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); font-size: 0.85rem; margin: 8px 0 26px; }
+        .split-box .btn-gold { width: 100%; }
+        .split-box .small-note { font-size: 0.85rem; color: var(--text-muted); margin-top: 14px; }
 
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 16px;
-            display: block;
-        }
+        /* ══════════ TIMELINE ══════════ */
+        .night-timeline { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        .timeline-item { display: grid; grid-template-columns: 80px 1fr; gap: 28px; margin-bottom: 50px; position: relative; }
+        .timeline-item:not(:last-child)::before { content: ''; position: absolute; left: 39px; top: 60px; bottom: -30px; width: 1px; background: linear-gradient(to bottom, var(--gold-dim), transparent); }
+        .timeline-time { text-align: center; padding-top: 4px; }
+        .time-circle { width: 52px; height: 52px; border: 1px solid var(--gold-dim); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--gold); background: var(--charcoal); margin: 0 auto; }
+        .timeline-content { padding-top: 8px; }
+        .timeline-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 8px; }
+        .timeline-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+        .timeline-desc { font-size: 1rem; line-height: 1.75; color: var(--text-body); }
 
-        .feature-title {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            color: var(--white);
-            text-transform: uppercase;
-            margin-bottom: 14px;
-        }
+        /* ══════════ VENUES ══════════ */
+        .venue-section { padding: 80px 0; background: var(--charcoal); border-top: 1px solid rgba(201,168,76,0.1); }
+        .venue-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .venue-card { background: var(--dark-card); border: 1px solid rgba(201,168,76,0.12); padding: 34px 28px; position: relative; transition: all 0.3s ease; }
+        .venue-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+        .venue-tag { font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.2); padding: 4px 12px; display: inline-block; margin-bottom: 18px; border-radius: 1px; }
+        .venue-name { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+        .venue-address { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px; }
+        .venue-desc { font-size: 0.92rem; line-height: 1.7; color: var(--text-body); }
 
-        .feature-desc {
-            font-size: 0.95rem;
-            line-height: 1.7;
-            color: var(--text-muted);
-        }
-
-        .feature-accent {
-            width: 30px;
-            height: 2px;
-            background: var(--gold);
-            margin-top: 20px;
-        }
-
-        /* ══════════════════════════════════
-           HOW THE NIGHT WORKS — TIMELINE
-        ══════════════════════════════════ */
-        .night-timeline {
-            padding: 100px 0;
-            max-width: 800px;
-            margin: 0 auto;
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-
-        .timeline-item {
-            display: grid;
-            grid-template-columns: 80px 1fr;
-            gap: 32px;
-            margin-bottom: 60px;
-            position: relative;
-        }
-
-        .timeline-item:not(:last-child)::before {
-            content: '';
-            position: absolute;
-            left: 39px;
-            top: 60px;
-            bottom: -30px;
-            width: 1px;
-            background: linear-gradient(to bottom, var(--gold-dim), transparent);
-        }
-
-        .timeline-time {
-            text-align: center;
-            padding-top: 4px;
-        }
-
-        .time-circle {
-            width: 52px;
-            height: 52px;
-            border: 1px solid var(--gold-dim);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--gold);
-            background: var(--charcoal);
-            margin: 0 auto;
-        }
-
-        .timeline-content {
-            padding-top: 8px;
-        }
-
-        .timeline-label {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.75rem;
-            letter-spacing: 0.25em;
-            color: var(--gold);
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .timeline-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 12px;
-        }
-
-        .timeline-desc {
-            font-size: 1rem;
-            line-height: 1.75;
-            color: var(--text-body);
-        }
-
-        /* ══════════════════════════════════
-           VENUE CARDS — WHERE TO HOST
-        ══════════════════════════════════ */
-        .venue-section {
-            padding: 80px 0;
-            background: var(--charcoal);
-            border-top: 1px solid rgba(201,168,76,0.1);
-        }
-
-        .venue-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        .venue-card {
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.12);
-            padding: 36px 28px;
-            position: relative;
-            transition: all 0.3s ease;
-            cursor: default;
-        }
-        .venue-card:hover {
-            border-color: rgba(201,168,76,0.4);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-        }
-
-        .venue-tag {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.7rem;
-            letter-spacing: 0.25em;
-            color: var(--gold);
-            text-transform: uppercase;
-            background: rgba(201,168,76,0.1);
-            border: 1px solid rgba(201,168,76,0.2);
-            padding: 4px 12px;
-            display: inline-block;
-            margin-bottom: 20px;
-            border-radius: 1px;
-        }
-
-        .venue-name {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 8px;
-        }
-
-        .venue-address {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-bottom: 18px;
-        }
-
-        .venue-desc {
-            font-size: 0.92rem;
-            line-height: 1.7;
-            color: var(--text-body);
-        }
-
-        /* ══════════════════════════════════
-           GNO ITINERARIES
-        ══════════════════════════════════ */
-        .itinerary-section {
-            padding: 100px 0;
-        }
-
-        .itinerary-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 0;
-            margin-bottom: 60px;
-            border: 1px solid rgba(201,168,76,0.2);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 60px;
-        }
-
-        .itab {
-            flex: 1;
-            background: transparent;
-            border: none;
-            padding: 16px 20px;
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.85rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            cursor: pointer;
-            transition: all 0.25s ease;
-            border-right: 1px solid rgba(201,168,76,0.2);
-        }
+        /* ══════════ ITINERARIES ══════════ */
+        .itinerary-section { padding: 90px 0; }
+        .itinerary-tabs { display: flex; justify-content: center; max-width: 700px; margin: 0 auto 50px; border: 1px solid rgba(201,168,76,0.2); }
+        .itab { flex: 1; background: transparent; border: none; padding: 16px 20px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); cursor: pointer; transition: all 0.25s ease; border-right: 1px solid rgba(201,168,76,0.2); }
         .itab:last-child { border-right: none; }
-        .itab.active, .itab:hover {
-            background: rgba(201,168,76,0.12);
-            color: var(--gold);
-        }
-
-        .itinerary-panel {
-            display: none;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
+        .itab.active, .itab:hover { background: rgba(201,168,76,0.12); color: var(--gold); }
+        .itinerary-panel { display: none; max-width: 900px; margin: 0 auto; padding: 0 24px; }
         .itinerary-panel.active { display: block; }
-
-        .itin-card {
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.12);
-            padding: 48px;
-            margin-bottom: 24px;
-        }
-
-        .itin-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 24px;
-            margin-bottom: 32px;
-            padding-bottom: 28px;
-            border-bottom: 1px solid rgba(201,168,76,0.12);
-        }
-
-        .itin-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            font-weight: 900;
-            color: rgba(201,168,76,0.2);
-            line-height: 1;
-            flex-shrink: 0;
-            width: 70px;
-        }
-
-        .itin-info h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 8px;
-        }
-
-        .itin-info .itin-tag {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.75rem;
-            letter-spacing: 0.2em;
-            color: var(--gold);
-            text-transform: uppercase;
-        }
-
-        .itin-steps {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .itin-step {
-            display: grid;
-            grid-template-columns: 32px 1fr;
-            gap: 16px;
-            align-items: start;
-        }
-
-        .step-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--gold);
-            border-radius: 50%;
-            margin-top: 7px;
-            flex-shrink: 0;
-        }
-
-        .step-text {
-            font-size: 0.98rem;
-            line-height: 1.7;
-            color: var(--text-body);
-        }
+        .itin-card { background: var(--dark-card); border: 1px solid rgba(201,168,76,0.12); padding: 44px; margin-bottom: 24px; }
+        .itin-header { display: flex; align-items: flex-start; gap: 24px; margin-bottom: 30px; padding-bottom: 26px; border-bottom: 1px solid rgba(201,168,76,0.12); }
+        .itin-number { font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 900; color: rgba(201,168,76,0.2); line-height: 1; flex-shrink: 0; width: 70px; }
+        .itin-info h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+        .itin-info .itin-tag { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase; }
+        .itin-steps { display: flex; flex-direction: column; gap: 20px; }
+        .itin-step { display: grid; grid-template-columns: 32px 1fr; gap: 16px; align-items: start; }
+        .step-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+        .step-text { font-size: 0.98rem; line-height: 1.7; color: var(--text-body); }
         .step-text strong { color: var(--white); }
+        .itin-cta { margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(201,168,76,0.12); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 
-        /* ══════════════════════════════════
-           BOOKING / CTA SECTION
-        ══════════════════════════════════ */
-        .booking-section {
-            padding: 100px 0;
-            background:
-                radial-gradient(ellipse 70% 60% at 50% 50%, rgba(201,168,76,0.1) 0%, transparent 70%),
-                var(--charcoal);
-            text-align: center;
-            border-top: 1px solid rgba(201,168,76,0.15);
-        }
-
-        .booking-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.2rem, 5vw, 4rem);
-            font-weight: 900;
-            color: var(--white);
-            line-height: 1.05;
-            margin-bottom: 24px;
-        }
-
-        .booking-section h2 em { color: var(--gold); font-style: italic; }
-
-        .booking-section p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--text-body);
-            max-width: 560px;
-            margin: 0 auto 48px;
-        }
-
-        .booking-details {
-            display: flex;
-            justify-content: center;
-            gap: 60px;
-            flex-wrap: wrap;
-            margin-bottom: 48px;
-        }
-
-        .booking-detail {
-            text-align: center;
-        }
-
-        .detail-label {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.75rem;
-            letter-spacing: 0.25em;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        .detail-value {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--gold);
-        }
-
-        /* ══════════════════════════════════
-           FAQ SECTION
-        ══════════════════════════════════ */
-        .faq-section {
-            padding: 80px 0;
-            max-width: 760px;
-            margin: 0 auto;
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid rgba(201,168,76,0.12);
-            padding: 28px 0;
-        }
-
-        .faq-q {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            letter-spacing: 0.03em;
-            color: var(--white);
-            text-transform: uppercase;
-            margin-bottom: 14px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .faq-q::before {
-            content: 'Q';
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: var(--gold);
-            font-style: italic;
-            flex-shrink: 0;
-        }
-
-        .faq-a {
-            font-size: 0.98rem;
-            line-height: 1.78;
-            color: var(--text-body);
-            padding-left: 32px;
-        }
-
-        /* ══════════════════════════════════
-           COST BREAKDOWN
-        ══════════════════════════════════ */
-        .cost-section {
-            padding: 80px 0;
-            background: var(--charcoal);
-            border-top: 1px solid rgba(201,168,76,0.1);
-        }
-
-        .cost-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1px;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 24px;
-            background: rgba(201,168,76,0.06);
-        }
-
-        .cost-tier {
-            background: var(--charcoal);
-            padding: 40px 32px;
-            text-align: center;
-            transition: background 0.3s ease;
-        }
+        /* ══════════ COST ══════════ */
+        .cost-section { padding: 80px 0; background: var(--charcoal); border-top: 1px solid rgba(201,168,76,0.1); }
+        .cost-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; max-width: 1000px; margin: 0 auto; padding: 0 24px; background: rgba(201,168,76,0.06); }
+        .cost-tier { background: var(--charcoal); padding: 40px 32px; text-align: center; transition: background 0.3s ease; }
         .cost-tier:hover { background: var(--dark-card); }
-        .cost-tier.featured { background: var(--dark-card); }
+        .cost-tier.featured { background: var(--dark-card); outline: 1px solid var(--gold-dim); }
+        .tier-name { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; letter-spacing: 0.3em; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 12px; }
+        .tier-price { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; color: var(--gold); line-height: 1; display: block; margin-bottom: 4px; }
+        .tier-pp { font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 24px; }
+        .tier-includes { list-style: none; text-align: left; font-size: 0.88rem; line-height: 2; color: var(--text-body); }
+        .tier-includes li::before { content: '— '; color: var(--gold-dim); }
 
-        .tier-name {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.75rem;
-            letter-spacing: 0.3em;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 12px;
+        /* ══════════ GOOD TO KNOW ══════════ */
+        .know-section { padding: 80px 0; }
+        .know-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 50px; max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+        .know-item { border-bottom: 1px solid rgba(201,168,76,0.12); padding: 26px 0; }
+        .know-item h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.04em; color: var(--white); text-transform: uppercase; margin-bottom: 10px; }
+        .know-item p { font-size: 0.98rem; line-height: 1.78; margin: 0; }
+
+        /* ══════════ BOOKING CTA ══════════ */
+        .booking-section { padding: 90px 0; background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(201,168,76,0.1) 0%, transparent 70%), var(--charcoal); text-align: center; border-top: 1px solid rgba(201,168,76,0.15); }
+        .booking-section h2 { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 900; color: var(--white); line-height: 1.05; margin-bottom: 24px; }
+        .booking-section h2 em { color: var(--gold); font-style: italic; }
+        .booking-section > .container > p { font-size: 1.1rem; line-height: 1.8; color: var(--text-body); max-width: 560px; margin: 0 auto 44px; }
+        .booking-details { display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; margin-bottom: 44px; }
+        .booking-detail { text-align: center; }
+        .detail-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; letter-spacing: 0.25em; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 6px; }
+        .detail-value { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--gold); }
+
+        /* ══════════ MORE GUIDES ══════════ */
+        .more-section { padding: 70px 0 50px; }
+        .more-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .more-links a { display: block; text-decoration: none; background: var(--dark-card); border: 1px solid rgba(201,168,76,0.14); padding: 18px 20px; color: var(--white); transition: border-color .2s ease; }
+        .more-links a:hover { border-color: var(--gold); color: var(--white); }
+        .more-links strong { font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); display: block; font-size: 1rem; }
+        .more-links span { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* ══════════ FOOTER ══════════ */
+        .site-footer { background: var(--black); border-top: 1px solid rgba(201,168,76,0.15); padding: 56px 0 100px; }
+        .site-footer h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+        .site-footer ul { list-style: none; padding: 0; margin: 0; }
+        .site-footer li { margin-bottom: 6px; }
+        .site-footer a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; }
+        .site-footer a:hover { color: var(--gold); }
+        .footer-copy { font-size: 0.82rem; color: rgba(163,163,163,0.6); text-align: center; margin-top: 30px; }
+
+        /* ══════════ STICKY MOBILE BOOK BAR ══════════ */
+        .book-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1040; display: none; gap: 1px; background: rgba(201,168,76,0.3); box-shadow: 0 -10px 30px rgba(0,0,0,.6); transform: translateY(110%); transition: transform .3s ease; }
+        .book-bar.show { transform: translateY(0); }
+        .book-bar a { flex: 1; text-align: center; padding: 15px 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; font-size: 0.95rem; }
+        .book-bar .bb-text { background: var(--gold); color: var(--black); }
+        .book-bar .bb-call { background: var(--dark-card); color: var(--gold); }
+
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+        @media (prefers-reduced-motion: reduce) { * { animation: none !important; } html { scroll-behavior: auto; } }
+
+        /* ══════════ RESPONSIVE ══════════ */
+        @media (max-width: 991px) {
+            .ideas-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .more-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .book-bar { display: flex; }
         }
-
-        .tier-price {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            font-weight: 900;
-            color: var(--gold);
-            line-height: 1;
-            display: block;
-            margin-bottom: 4px;
-        }
-
-        .tier-pp {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            display: block;
-            margin-bottom: 24px;
-        }
-
-        .tier-includes {
-            list-style: none;
-            text-align: left;
-            font-size: 0.88rem;
-            line-height: 2;
-            color: var(--text-body);
-        }
-
-        .tier-includes li::before {
-            content: '— ';
-            color: var(--gold-dim);
-        }
-
-        /* ══════════════════════════════════
-           FOOTER
-        ══════════════════════════════════ */
-        .site-footer {
-            background: var(--black);
-            border-top: 1px solid rgba(201,168,76,0.15);
-            padding: 60px 24px 40px;
-            text-align: center;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-
-        .footer-links a {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 0.8rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-        .footer-links a:hover { color: var(--gold); }
-
-        .footer-copy {
-            font-size: 0.82rem;
-            color: rgba(153,153,153,0.4);
-        }
-
-        /* ══════════════════════════════════
-           ANIMATIONS
-        ══════════════════════════════════ */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        /* ══════════════════════════════════
-           RESPONSIVE
-        ══════════════════════════════════ */
         @media (max-width: 900px) {
-            .show-intro-grid { grid-template-columns: 1fr; gap: 40px; }
-            .features-grid { grid-template-columns: 1fr; }
-            .venue-grid { grid-template-columns: 1fr; }
-            .cost-grid { grid-template-columns: 1fr; }
+            .show-intro-grid, .builder { grid-template-columns: 1fr; gap: 40px; }
+            .features-grid, .venue-grid, .cost-grid, .know-grid { grid-template-columns: 1fr; }
             .show-image-frame { aspect-ratio: 4/3; max-width: 460px; }
             .itin-card { padding: 28px; }
+            .hero-photo { max-width: 420px; margin: 0 auto; }
+            .hero-photo img { aspect-ratio: 4/3; }
         }
-
         @media (max-width: 600px) {
+            .hero { padding: 44px 0 50px; }
+            .ideas-grid, .more-links { grid-template-columns: 1fr; }
             .itinerary-tabs { flex-direction: column; max-width: 300px; }
             .itab { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.2); }
             .itab:last-child { border-bottom: none; }
-            .booking-details { gap: 30px; }
+            .booking-details { gap: 28px; }
             .itin-header { flex-direction: column; gap: 12px; }
             .itin-number { font-size: 2.5rem; width: auto; }
+            .hero-cta-group a { flex: 1 1 100%; text-align: center; }
+            .builder-panel { padding: 24px; }
+            .hero-photo .price-tag { left: 8px; }
         }
     </style>
 </head>
 <body>
 
-<!-- ══════════════════════════════════
-     HERO
-══════════════════════════════════ -->
-<section class="hero">
-
-    <h1 class="hero-title">
-        Charleston Girls<br> Night Out
-    </h1>
-
-    <p class="hero-desc mt-5">
-        The <strong>Charleston girls night out</strong> just got an upgrade. Skip the bar crawl and bring live, high-energy entertainment straight to your rental. After dinner, a boat charter, or bar hopping, end the night with Michael's private show: <strong>$200 for up to 90 minutes</strong> of interactive fun, paid on arrival by cash, Venmo, or Cash App.
-    </p>
-
-    <div class="hero-cta-group">
-        <a href="sms:+18433609438" class="btn-gold">Text to Book</a>
-        <a href="tel:+18433609438" class="btn-outline-gold">Call 843-360-9438</a>
+<!-- ══════════ NAV ══════════ -->
+<nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html">Charleston Party Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="siteNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bachelorette</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/bach-party/index.html">Bachelorette Guide</a></li>
+            <li><a class="dropdown-item" href="/bach-party/experiences/index.html">Experiences</a></li>
+            <li><a class="dropdown-item" href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Scene</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+            <li><a class="dropdown-item" href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">King Street</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parties</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/parties/index.html">All Party Guides</a></li>
+            <li><a class="dropdown-item" href="/parties/college.html">College Scene</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link btn-nav" href="#book">Book the Show</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <p class="hero-eyebrow mt-4">Ladies Night · Live Entertainment · Private Performances</p>
-    <p class="hero-subtitle-block">Charleston Ladies Night Out</p>
-    <img src="michael%20at%20your%20place%20charleston%20sc.webp" class="img-fluid" alt="Michael performing a private girls night out show in Charleston, SC">
 
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+                <p class="hero-eyebrow">Ladies Night · Live Entertainment · Private Performances</p>
+                <h1 class="hero-title">Charleston Girls<br><em>Night Out</em></h1>
+                <p class="hero-subtitle-block">Charleston Ladies Night Out</p>
+                <p class="hero-desc">
+                    Plan the <strong>Charleston girls night out</strong>: dinner, rooftops and King Street, then end it at your rental with Michael's private, high-energy show. <strong>$200 for up to 90 minutes</strong>, split across the group and paid on arrival.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="sms:+18433609438?&amp;body=Hi%20Michael%2C%20I'd%20like%20to%20book%20a%20girls%20night%20out%20show%20in%20Charleston." class="btn-gold js-sms">Text to Book</a>
+                    <a href="tel:+18433609438" class="btn-outline-gold">Call 843-360-9438</a>
+                </div>
+                <div class="trust-row">
+                    <span>No deposit</span><span>Pay on arrival</span><span>Last-minute dates welcome</span><span>18+</span>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="hero-photo">
+                    <img src="images/michael%20at%20your%20place%20charleston%20sc.webp" alt="Michael performing a private girls night out show in Charleston, SC">
+                    <div class="price-tag"><strong>$20 each</strong>for a group of 10</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
-<!-- ══════════════════════════════════
-     STATS STRIP
-══════════════════════════════════ -->
+<!-- ══════════ STATS STRIP ══════════ -->
 <div class="stats-strip">
     <div class="container">
         <div class="row text-center justify-content-center g-4">
-            <div class="col-6 col-md-3">
-                <div class="stat-item">
-                    <span class="stat-number">$200</span>
-                    <span class="stat-label">Flat Rate</span>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stat-item">
-                    <span class="stat-number">90<span style="font-size:1.8rem">min</span></span>
-                    <span class="stat-label">Up to 90 Minutes</span>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stat-item">
-                    <span class="stat-number">4.9★</span>
-                    <span class="stat-label">Average Rating</span>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Shows Performed</span>
-                </div>
-            </div>
+            <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-number">$200</span><span class="stat-label">Flat Rate</span></div></div>
+            <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-number">90<span style="font-size:1.7rem">min</span></span><span class="stat-label">Up to 90 Minutes</span></div></div>
+            <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-number">4.9★</span><span class="stat-label">Average Rating</span></div></div>
+            <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-number">500+</span><span class="stat-label">Shows Performed</span></div></div>
         </div>
     </div>
 </div>
 
 
-<!-- ══════════════════════════════════
-     ABOUT THE SHOW
-══════════════════════════════════ -->
+<!-- ══════════ IDEAS ══════════ -->
+<section class="ideas-section" id="ideas">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-eyebrow">Plan Your Night</span>
+            <h2 class="section-title">Charleston Girls Night Out <em>Ideas</em></h2>
+            <p class="section-lede">Build the night from these, then make the show at your rental the finale.</p>
+        </div>
+    </div>
+    <div class="ideas-grid">
+        <div class="idea-card">
+            <div class="idea-icon">🍽️</div>
+            <h3>Dinner in a Church</h3>
+            <p>Group dinner under 60-foot ceilings and stained glass at Church and Union, a block from the City Market.</p>
+            <a class="idea-link" href="/bach-party/experiences/church-and-union-bachelorette-brunch-dinner.html">See Church and Union →</a>
+        </div>
+        <div class="idea-card">
+            <div class="idea-icon">🍸</div>
+            <h3>Cocktail Class at Home</h3>
+            <p>A bartender comes to your rental and teaches the group three craft cocktails. A pregame and an activity in one.</p>
+            <a class="idea-link" href="/bach-party/experiences/nightcap-social-co-cocktail-masterclass.html">See the cocktail class →</a>
+        </div>
+        <div class="idea-card">
+            <div class="idea-icon">🌇</div>
+            <h3>Rooftop Drinks</h3>
+            <p>Sunset cocktails with the skyline before dinner. Most rooftops close before the clubs, so go early.</p>
+            <a class="idea-link" href="/king-street-bar-crawl/rooftop-bars.html">Charleston rooftop bars →</a>
+        </div>
+        <div class="idea-card">
+            <div class="idea-icon">💃</div>
+            <h3>Live Funk &amp; Dancing</h3>
+            <p>Live bands and a checkered dance floor at The Commodore. It's 23+, so check the group's ages first.</p>
+            <a class="idea-link" href="/bach-party/experiences/the-commodore-live-funk-dance-night.html">See The Commodore →</a>
+        </div>
+        <div class="idea-card">
+            <div class="idea-icon">🥂</div>
+            <h3>Crafting &amp; Mimosas</h3>
+            <p>Pick from 20+ crafts with bottomless mimosas or sangria above King Street.</p>
+            <a class="idea-link" href="/bach-party/experiences/craft-diy-crafting-mimosas-workshop.html">See Craft-DIY →</a>
+        </div>
+        <div class="idea-card">
+            <div class="idea-icon">🤠</div>
+            <h3>Custom Hat Bar</h3>
+            <p>Design matching felt hats in the French Quarter, with a drink for every hat.</p>
+            <a class="idea-link" href="/bach-party/experiences/southern-ruetz-custom-hat-bar.html">See Southern Ruetz →</a>
+        </div>
+        <div class="idea-card">
+            <div class="idea-icon">🛍️</div>
+            <h3>After-Hours Shopping</h3>
+            <p>Have a boutique to yourselves, or grab going-out outfits on Upper King.</p>
+            <a class="idea-link" href="/bach-party/experiences/tiny-tassel-private-shopping.html">See private shopping →</a>
+        </div>
+        <div class="idea-card finale">
+            <div class="idea-icon">⭐</div>
+            <h3>The Finale: Michael's Show</h3>
+            <p>Back at the rental, up to 90 minutes of live entertainment built around your group. $200 flat.</p>
+            <a class="idea-link" href="#book">Price it for your group →</a>
+        </div>
+    </div>
+    <div class="container text-center mt-5">
+        <p class="mb-0">Doing a bar night instead? Follow the <a href="/king-street-bar-crawl/index.html">King Street bar crawl route</a> and finish with <a href="/king-street-bar-crawl/late-night-food.html">late-night food</a>. More ideas in the <a href="/bach-party/experiences/index.html">full list of Charleston experiences</a>.</p>
+    </div>
+</section>
+
+
+<!-- ══════════ ABOUT THE SHOW ══════════ -->
 <section class="show-intro">
     <div class="show-intro-grid">
         <div class="show-intro-text">
+            <span class="section-eyebrow">The Show</span>
             <h2>Charleston's Unleashed<br><em>Nightlife For Women</em></h2>
-            <p>
-                Girls Night Out Charleston isn't just a night out, it's a full production. Michael brings a high-energy, crowd-interactive live show built for ladies celebrating sorority parties, birthdays, Charleston girls trips, and milestone moments in the Holy City.
-            </p>
-            <p>
-                It combines live performance, comedy, and crowd interaction in a completely private setting: your Airbnb, rented venue, or event space. No cover charges, no lines, no competing with strangers for the vibe. Just your crew, your night, and a show built around you.
-            </p>
-            <p>
-                This is the <strong>Charleston girls night out</strong> experience locals recommend. After dinner, King Street, and the rooftop bars, bring the night home with Michael. One flat $200 rate covers up to 90 minutes, split across your group.
-            </p>
-            <div class="mt-4">
-                <h3 class="mt-4 fs-5">Post-Dinner Recommendation in Charleston</h3>
-                <a href="https://michaelatyourplace.com" class="btn-gold">Check Availability</a>
+            <p>Girls Night Out Charleston isn't just a night out, it's a full production. Michael brings a high-energy, crowd-interactive live show built for ladies celebrating sorority parties, birthdays, Charleston girls trips and milestone moments in the Holy City.</p>
+            <p>It's live performance, dancing, comedy and crowd interaction in a completely private setting: your Airbnb, rented venue or event space. No cover charges, no lines, no competing with strangers for the vibe. You set the spice level, and he keeps it fun.</p>
+            <p>This is the <strong>Charleston girls night out</strong> experience locals recommend. After dinner, King Street and the <a href="/king-street-bar-crawl/rooftop-bars.html">rooftop bars</a>, bring the night home with Michael. One flat $200 rate covers up to 90 minutes, split across your group.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="sms:+18433609438?&amp;body=Hi%20Michael%2C%20is%20my%20date%20available%20for%20a%20girls%20night%20out%20show%3F" class="btn-gold js-sms">Check Availability</a>
+                <a href="/bach-party/experiences/hire-male-stripper-charleston.html" class="btn-outline-gold">Show Details</a>
             </div>
         </div>
 
@@ -987,7 +483,7 @@
             <div class="corner-accent corner-tl"></div>
             <div class="corner-accent corner-br"></div>
             <div class="show-image-frame">
-                <img src="../bach-party/your-place-live-shows-michael-90-1.png" alt="Michael performing a live girls night out show in Charleston, SC" onerror="this.style.display='none'">
+                <img src="/bach-party/images/your-place-live-shows-michael-90-1.png" alt="Michael performing a live girls night out show in Charleston, SC" loading="lazy" onerror="this.style.display='none'">
                 <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:0;">
                     <span style="font-size:4rem;opacity:0.15">★</span>
                     <span style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--gold);opacity:0.4;letter-spacing:0.1em;">MICHAEL</span>
@@ -999,9 +495,7 @@
 </section>
 
 
-<!-- ══════════════════════════════════
-     WHAT'S IN THE SHOW
-══════════════════════════════════ -->
+<!-- ══════════ WHAT'S IN THE SHOW ══════════ -->
 <section class="show-features">
     <div class="container mb-5">
         <div class="section-header">
@@ -1009,131 +503,103 @@
             <h2 class="section-title">What <em>Girls Night Out</em><br>Includes</h2>
         </div>
     </div>
-
     <div class="features-grid">
-        <div class="feature-item">
-            <span class="feature-icon">🎭</span>
-            <div class="feature-number">01</div>
-            <div class="feature-title">Live Headline Performance</div>
-            <p class="feature-desc">Michael is the headliner for your private girls night out, with a full live set tailored to your group's energy and celebration.</p>
-            <div class="feature-accent"></div>
-        </div>
+        <div class="feature-item"><span class="feature-icon">🎭</span><div class="feature-number">01</div><div class="feature-title">Live Headline Performance</div><p class="feature-desc">Michael is the headliner for your private girls night out, with a full live set tailored to your group's energy and celebration.</p><div class="feature-accent"></div></div>
+        <div class="feature-item"><span class="feature-icon">🎤</span><div class="feature-number">02</div><div class="feature-title">Crowd Interaction &amp; Comedy</div><p class="feature-desc">Games, laughs, personalized moments and crowd participation that make every show one of a kind.</p><div class="feature-accent"></div></div>
+        <div class="feature-item"><span class="feature-icon">🥂</span><div class="feature-number">03</div><div class="feature-title">Private Venue Experience</div><p class="feature-desc">Comes to your Airbnb, vacation rental or private event space anywhere in the Charleston area. Your location, your playlist, your vibe.</p><div class="feature-accent"></div></div>
+        <div class="feature-item"><span class="feature-icon">📸</span><div class="feature-number">04</div><div class="feature-title">Photo-Worthy Moments</div><p class="feature-desc">Built for memories and shareable content, with sash-worthy, crown-worthy moments in every performance.</p><div class="feature-accent"></div></div>
+        <div class="feature-item"><span class="feature-icon">🎶</span><div class="feature-number">05</div><div class="feature-title">Custom Set &amp; Music</div><p class="feature-desc">Send song requests in advance, and Michael works your favorite songs and themes into the show.</p><div class="feature-accent"></div></div>
+        <div class="feature-item"><span class="feature-icon">🎉</span><div class="feature-number">06</div><div class="feature-title">Any Occasion, Any Size</div><p class="feature-desc">Bachelorette parties, milestone birthdays, girls trips, divorce parties and ladies' nights, for groups of 8 to 40. Guests must be 18+.</p><div class="feature-accent"></div></div>
+    </div>
+</section>
 
-        <div class="feature-item">
-            <span class="feature-icon">🎤</span>
-            <div class="feature-number">02</div>
-            <div class="feature-title">Crowd Interaction &amp; Comedy</div>
-            <p class="feature-desc">This isn't a passive show. Michael works directly with your crew, with games, laughs, personalized moments, and crowd participation that make every show one of a kind.</p>
-            <div class="feature-accent"></div>
-        </div>
 
-        <div class="feature-item">
-            <span class="feature-icon">🥂</span>
-            <div class="feature-number">03</div>
-            <div class="feature-title">Private Venue Experience</div>
-            <p class="feature-desc">Comes to your Airbnb, vacation rental, or private event space anywhere in the Charleston area. Your location, your playlist, your vibe.</p>
-            <div class="feature-accent"></div>
+<!-- ══════════ BOOKING BUILDER ══════════ -->
+<section class="builder-section" id="book">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-eyebrow">Price It &amp; Book It</span>
+            <h2 class="section-title">Your Girls Night Out,<br><em>Split Your Way</em></h2>
+            <p class="section-lede">Pick your date, area and group size. The button writes the text to Michael for you.</p>
         </div>
+    </div>
+    <div class="builder">
+        <div class="builder-panel">
+            <label for="gnoDate">Date</label>
+            <input type="date" id="gnoDate">
 
-        <div class="feature-item">
-            <span class="feature-icon">📸</span>
-            <div class="feature-number">04</div>
-            <div class="feature-title">Photo-Worthy Moments</div>
-            <p class="feature-desc">Built for memories and shareable content, with sash-worthy, crown-worthy moments in every performance.</p>
-            <div class="feature-accent"></div>
+            <label for="gnoArea">Where you're staying</label>
+            <select id="gnoArea">
+                <option>Downtown Charleston</option>
+                <option>Mount Pleasant</option>
+                <option>Folly Beach</option>
+                <option>Isle of Palms</option>
+                <option>Sullivan's Island</option>
+                <option>James Island / West Ashley</option>
+                <option>Somewhere else nearby</option>
+            </select>
+
+            <label for="gnoSize">Group size</label>
+            <div class="range-row"><span>8</span><span class="group-count"><span id="gnoSizeOut">10</span> guests</span><span>40</span></div>
+            <input type="range" id="gnoSize" min="8" max="40" value="10">
         </div>
-
-        <div class="feature-item">
-            <span class="feature-icon">🎶</span>
-            <div class="feature-number">05</div>
-            <div class="feature-title">Custom Set &amp; Music</div>
-            <p class="feature-desc">Send song requests in advance. Michael works your favorite songs and themes into the show so it feels personal, because it is.</p>
-            <div class="feature-accent"></div>
-        </div>
-
-        <div class="feature-item">
-            <span class="feature-icon">🎉</span>
-            <div class="feature-number">06</div>
-            <div class="feature-title">Any Occasion, Any Size</div>
-            <p class="feature-desc">Bachelorette parties, milestone birthdays, girls trips, divorce parties, and ladies' nights, for groups of 8 to 40. Guests must be 18+.</p>
-            <div class="feature-accent"></div>
+        <div class="builder-panel split-box">
+            <div class="split-amount" id="gnoEach">$20</div>
+            <div class="split-label">Per person · <span id="gnoTotal">$200 total</span></div>
+            <a href="sms:+18433609438?&amp;body=Hi%20Michael%2C%20I'd%20like%20to%20book%20a%20girls%20night%20out%20show%20in%20Charleston." class="btn-gold" id="gnoSend">Text Michael This Plan</a>
+            <a href="tel:+18433609438" class="btn-outline-gold mt-3">Or Call 843-360-9438</a>
+            <p class="small-note">No forms or deposit. Pay on arrival by cash, Venmo or Cash App.</p>
         </div>
     </div>
 </section>
 
 
-<!-- ══════════════════════════════════
-     HOW THE NIGHT WORKS
-══════════════════════════════════ -->
-<section id="how-it-works" style="padding:100px 0;">
+<!-- ══════════ HOW THE NIGHT WORKS ══════════ -->
+<section id="how-it-works" style="padding:90px 0;">
     <div class="container">
         <div class="section-header">
             <span class="section-eyebrow">Step by Step</span>
             <h2 class="section-title">How Your <em>Girls Night Out</em><br>Night Comes Together</h2>
         </div>
     </div>
-
-    <div class="night-timeline" style="max-width:800px;margin:0 auto;padding:0 24px;">
-
+    <div class="night-timeline">
         <div class="timeline-item">
-            <div class="timeline-time">
-                <div class="time-circle">1</div>
-            </div>
+            <div class="timeline-time"><div class="time-circle">1</div></div>
             <div class="timeline-content">
                 <span class="timeline-label">Step One</span>
                 <h3 class="timeline-title">Book the Show</h3>
-                <p class="timeline-desc">
-                    Call or text <a href="tel:+18433609438" style="color:var(--gold);">843-360-9438</a> with your date, address, and occasion. Last-minute dates are welcome, but weekends fill fast in peak season (March–October), so book ahead when you can.
-                </p>
+                <p class="timeline-desc">Call or text <a href="tel:+18433609438">843-360-9438</a> with your date, address and occasion. Last-minute dates are welcome, but weekends fill fast in peak season (March–October), so book ahead when you can.</p>
             </div>
         </div>
-
         <div class="timeline-item">
-            <div class="timeline-time">
-                <div class="time-circle">2</div>
-            </div>
+            <div class="timeline-time"><div class="time-circle">2</div></div>
             <div class="timeline-content">
                 <span class="timeline-label">Step Two</span>
                 <h3 class="timeline-title">Pre-Show Setup: Dinner &amp; Drinks</h3>
-                <p class="timeline-desc">
-                    While Michael is on the way, your crew gets dinner, pours drinks, and gets ready. Eat out on King Street or order in. Shows typically start around 9–10 PM, giving everyone time to arrive and settle in.
-                </p>
+                <p class="timeline-desc">Your crew gets dinner, pours drinks and gets ready. Eat out on King Street or order in. Shows typically start around 9–10 PM, giving everyone time to arrive and settle in.</p>
             </div>
         </div>
-
         <div class="timeline-item">
-            <div class="timeline-time">
-                <div class="time-circle">3</div>
-            </div>
+            <div class="timeline-time"><div class="time-circle">3</div></div>
             <div class="timeline-content">
                 <span class="timeline-label">Step Three</span>
                 <h3 class="timeline-title">Girls Night Out Begins</h3>
-                <p class="timeline-desc">
-                    Michael arrives, sets up in minutes, and the show kicks off: up to 90 minutes of live entertainment, crowd games, and personalized moments. The guest of honor gets the full VIP spotlight. Pay on arrival by cash, Venmo, or Cash App.
-                </p>
+                <p class="timeline-desc">Michael arrives, sets up in minutes and the show kicks off: up to 90 minutes of live entertainment, crowd games and personalized moments. The guest of honor gets the full VIP spotlight. Pay on arrival by cash, Venmo or Cash App.</p>
             </div>
         </div>
-
         <div class="timeline-item">
-            <div class="timeline-time">
-                <div class="time-circle">4</div>
-            </div>
+            <div class="timeline-time"><div class="time-circle">4</div></div>
             <div class="timeline-content">
                 <span class="timeline-label">Step Four</span>
                 <h3 class="timeline-title">After the Show: Hit Charleston</h3>
-                <p class="timeline-desc">
-                    Post-show, your crew is buzzing. Head out to King Street bars or keep the party going at the rental. Uptown Social, Prohibition, and The Commodore are all within easy reach.
-                </p>
+                <p class="timeline-desc">Post-show, your crew is buzzing. Head out on the <a href="/king-street-bar-crawl/index.html">King Street bar crawl</a> or keep the party going at the rental. <a href="https://www.uptownsocialchs.com/" target="_blank" rel="noopener">Uptown Social</a>, <a href="https://www.opentable.com/r/prohibition-charleston" target="_blank" rel="noopener">Prohibition</a> and <a href="/bach-party/experiences/the-commodore-live-funk-dance-night.html">The Commodore</a> are all within easy reach.</p>
             </div>
         </div>
-
     </div>
 </section>
 
 
-<!-- ══════════════════════════════════
-     WHERE TO HOST
-══════════════════════════════════ -->
+<!-- ══════════ WHERE TO HOST ══════════ -->
 <section class="venue-section">
     <div class="container mb-5">
         <div class="section-header">
@@ -1141,35 +607,30 @@
             <h2 class="section-title">Where to Host Your<br><em>Charleston Girls Night Out</em></h2>
         </div>
     </div>
-
     <div class="venue-grid">
         <div class="venue-card">
             <span class="venue-tag">Most Popular</span>
             <div class="venue-name">Your Airbnb or Vacation Rental</div>
             <div class="venue-address">Downtown Charleston · Any neighborhood</div>
-            <p class="venue-desc">The most common setup. Book a house or condo near King Street, Cannonborough, or the French Quarter, and Michael brings the show to your door. Full control of the space, the playlist, and the vibe.</p>
+            <p class="venue-desc">The most common setup. Book a house or condo near King Street, Cannonborough or the French Quarter, and Michael brings the show to your door. Want it stocked and decorated first? Use an <a href="/bach-party/experiences/bienvenue-charleston-airbnb-concierge.html">Airbnb concierge</a>.</p>
         </div>
-
         <div class="venue-card">
             <span class="venue-tag">Private Event</span>
             <div class="venue-name">Rented Event Space</div>
             <div class="venue-address">Downtown Charleston</div>
             <p class="venue-desc">For groups of 20 or more, book a private event space or suite. Several downtown venues rent by the hour for private parties. Michael coordinates arrival time with your venue.</p>
         </div>
-
         <div class="venue-card">
             <span class="venue-tag">Local Option</span>
             <div class="venue-name">Private Home or Beach Rental</div>
             <div class="venue-address">Charleston · Mount Pleasant · Isle of Palms</div>
-            <p class="venue-desc">Hosting at a local's home? Even better. Works anywhere in the Charleston metro area, including beach rentals on Folly Beach, Isle of Palms, and Sullivan's Island.</p>
+            <p class="venue-desc">Hosting at a local's home? Even better. Works anywhere in the Charleston metro area, including beach rentals on Folly Beach, Isle of Palms and Sullivan's Island. See the <a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant guide</a>.</p>
         </div>
     </div>
 </section>
 
 
-<!-- ══════════════════════════════════
-     ITINERARIES
-══════════════════════════════════ -->
+<!-- ══════════ ITINERARIES ══════════ -->
 <section class="itinerary-section">
     <div class="container">
         <div class="section-header">
@@ -1178,119 +639,68 @@
         </div>
     </div>
 
-    <div class="itinerary-tabs" style="max-width:700px;margin:0 auto 60px;display:flex;border:1px solid rgba(201,168,76,0.2);">
-        <button class="itab active" onclick="showTab(event, 'bachelorette')">Bachelorette</button>
-        <button class="itab" onclick="showTab(event, 'birthday')">Birthday Night</button>
-        <button class="itab" onclick="showTab(event, 'girlstrip')">Girls Trip</button>
+    <div class="itinerary-tabs" role="tablist">
+        <button class="itab active" role="tab" aria-selected="true" onclick="showTab(event, 'bachelorette')">Bachelorette</button>
+        <button class="itab" role="tab" aria-selected="false" onclick="showTab(event, 'birthday')">Birthday Night</button>
+        <button class="itab" role="tab" aria-selected="false" onclick="showTab(event, 'girlstrip')">Girls Trip</button>
     </div>
 
     <!-- BACHELORETTE -->
-    <div class="itinerary-panel active" id="tab-bachelorette">
+    <div class="itinerary-panel active" id="tab-bachelorette" role="tabpanel">
         <div class="itin-card">
             <div class="itin-header">
                 <div class="itin-number">A</div>
-                <div class="itin-info">
-                    <div class="itin-tag">Bachelorette Special</div>
-                    <h3>The Charleston Bachelorette Night Out</h3>
-                </div>
+                <div class="itin-info"><div class="itin-tag">Bachelorette Special</div><h3>The Charleston Bachelorette Night Out</h3></div>
             </div>
             <div class="itin-steps">
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>5:00 PM — Arrival &amp; Airbnb Setup</strong><br>Everyone checks into the rental, decorates for the bride, and gets the drinks flowing. Pace yourselves, the real show starts later.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>6:30 PM — Dinner Out</strong><br>Reservations at <strong>The Macintosh</strong> or another King Street favorite. Group dinner, toasts, and the obligatory sash-and-crown photos on King Street.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>8:00 PM — Back at the Rental</strong><br>Freshen up, pour champagne, put on the playlist, and wait for the star of the show.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>9:00 PM — The Show</strong><br><strong>Michael arrives.</strong> Up to 90 minutes of live entertainment, crowd games featuring the bride, and a performance your group will talk about for years. $200, paid on arrival.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>11:00 PM — Hit King Street</strong><br>Head to <strong>Republic Garden &amp; Lounge</strong>, <strong>Prohibition</strong>, or <strong>Trio</strong> for the after-party. Staying on the beach instead? The show works the same for an Isle of Palms or Folly Beach girls night out.</p>
-                </div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>5:00 PM — Arrival &amp; Airbnb Setup</strong><br>Everyone checks into the rental, decorates for the bride with <a href="/bach-party/experiences/giant-bride-balloons.html">giant BRIDE balloons</a>, and gets the drinks flowing. Pace yourselves, the real show starts later.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>6:30 PM — Dinner Out</strong><br>Reservations at <a href="/bach-party/experiences/church-and-union-bachelorette-brunch-dinner.html"><strong>Church and Union</strong></a> or another downtown favorite. Group dinner, toasts and the obligatory sash-and-crown photos.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>8:00 PM — Back at the Rental</strong><br>Freshen up, pour champagne, put on the playlist and wait for the star of the show.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>9:00 PM — The Show</strong><br><strong>Michael arrives.</strong> Up to 90 minutes of live entertainment, crowd games featuring the bride, and a performance your group will talk about for years. $200, paid on arrival.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>11:00 PM — Hit King Street</strong><br>Head to <a href="/bach-party/experiences/republic-garden-lounge-vip-table.html"><strong>Republic Garden &amp; Lounge</strong></a>, <strong>Prohibition</strong> or <strong>Trio</strong> for the after-party. Staying on the beach instead? The show works the same for an Isle of Palms or Folly Beach girls night out.</p></div>
             </div>
+            <div class="itin-cta"><a href="#book" class="btn-gold">Book This Night</a><a href="/bach-party/index.html">Full bachelorette guide →</a></div>
         </div>
     </div>
 
     <!-- BIRTHDAY -->
-    <div class="itinerary-panel" id="tab-birthday">
+    <div class="itinerary-panel" id="tab-birthday" role="tabpanel">
         <div class="itin-card">
             <div class="itin-header">
                 <div class="itin-number">B</div>
-                <div class="itin-info">
-                    <div class="itin-tag">Birthday Celebration</div>
-                    <h3>The Upscale Birthday Girls Night</h3>
-                </div>
+                <div class="itin-info"><div class="itin-tag">Birthday Celebration</div><h3>The Upscale Birthday Girls Night</h3></div>
             </div>
             <div class="itin-steps">
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>4:00 PM — Spa &amp; Pampering</strong><br>Start at <strong>The Spa at Charleston Place</strong> (205 Meeting St) for massages or facials. The birthday girl gets the full treatment.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>7:00 PM — Fine Dining</strong><br><strong>Peninsula Grill</strong> or <strong>FIG</strong> for a proper birthday dinner. Reserve weeks ahead. Champagne toast and the famous coconut cake.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>9:30 PM — Private Girls Night Out Show</strong><br>Back at the rental, <strong>Michael performs</strong> with the birthday girl as the VIP. Up to 90 minutes, personalized and high-energy.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>11:00 PM — Rooftop Nightcaps</strong><br>Close the night at <strong>The Rooftop at The Vendue</strong> or <strong>Citrus Club</strong> with cocktails and the Charleston skyline.</p>
-                </div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>4:00 PM — Spa &amp; Pampering</strong><br>Start at <strong>The Spa at Charleston Place</strong> (205 Meeting St) for massages or facials. The birthday girl gets the full treatment.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>7:00 PM — Fine Dining</strong><br><strong>Peninsula Grill</strong> or <strong>FIG</strong> for a proper birthday dinner. Reserve weeks ahead. Champagne toast and the famous coconut cake.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>9:30 PM — Private Girls Night Out Show</strong><br>Back at the rental, <strong>Michael performs</strong> with the birthday girl as the VIP. Up to 90 minutes, personalized and high-energy.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>11:00 PM — Rooftop Nightcaps</strong><br>Close the night at <strong>The Rooftop at The Vendue</strong> or <strong>Citrus Club</strong> with cocktails and the skyline. More options in our <a href="/king-street-bar-crawl/rooftop-bars.html">rooftop bars guide</a>.</p></div>
             </div>
+            <div class="itin-cta"><a href="#book" class="btn-gold">Book This Night</a><a href="/parties/index.html">More birthday ideas →</a></div>
         </div>
     </div>
 
     <!-- GIRLS TRIP -->
-    <div class="itinerary-panel" id="tab-girlstrip">
+    <div class="itinerary-panel" id="tab-girlstrip" role="tabpanel">
         <div class="itin-card">
             <div class="itin-header">
                 <div class="itin-number">C</div>
-                <div class="itin-info">
-                    <div class="itin-tag">Weekend Girls Trip</div>
-                    <h3>The Full Girls Trip Night Out Experience</h3>
-                </div>
+                <div class="itin-info"><div class="itin-tag">Weekend Girls Trip</div><h3>The Full Girls Trip Night Out Experience</h3></div>
             </div>
             <div class="itin-steps">
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>Afternoon — Charleston Exploring</strong><br>Rainbow Row photos, the City Market, waterfront strolls, and shopping on King Street. Get the tourist checklist done early so the evening is pure celebration.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>6:00 PM — Sunset Cocktails</strong><br>Drinks at <strong>The Spectator Hotel</strong> (67 State St) in the historic district. Craft cocktails and perfect crew photos.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>8:00 PM — Casual Group Dinner</strong><br><strong>Taco Boy</strong> or <strong>Basic Kitchen</strong>: relaxed, affordable, and great food before the main event.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>9:30 PM — Girls Night Out</strong><br>The headline event of the trip. <strong>Michael performs</strong> live at your rental for up to 90 minutes, the moment the whole trip is remembered by.</p>
-                </div>
-                <div class="itin-step">
-                    <div class="step-dot"></div>
-                    <p class="step-text"><strong>11:30 PM — Bar Crawl or Wind Down</strong><br>Choose your own adventure: a <strong>bar crawl on Upper King</strong> or keep the party going at the rental. Your night, your call.</p>
-                </div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>Afternoon — Charleston Exploring</strong><br>Rainbow Row photos, the City Market, waterfront strolls and <a href="/bach-party/experiences/two-cumberland-bride-outfit-shopping.html">shopping on King Street</a>. Get the tourist checklist done early so the evening is pure celebration.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>6:00 PM — Sunset Cocktails</strong><br>Drinks at <strong>The Spectator Hotel</strong> (67 State St) in the historic district. Craft cocktails and perfect crew photos.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>8:00 PM — Casual Group Dinner</strong><br><strong>Taco Boy</strong> or <strong>Basic Kitchen</strong>: relaxed, affordable and great food before the main event.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>9:30 PM — Girls Night Out</strong><br>The headline event of the trip. <strong>Michael performs</strong> live at your rental for up to 90 minutes, the moment the whole trip is remembered by.</p></div>
+                <div class="itin-step"><div class="step-dot"></div><p class="step-text"><strong>11:30 PM — Bar Crawl or Wind Down</strong><br>Choose your own adventure: a <a href="/king-street-bar-crawl/index.html"><strong>bar crawl on Upper King</strong></a> or keep the party going at the rental. Your night, your call.</p></div>
             </div>
+            <div class="itin-cta"><a href="#book" class="btn-gold">Book This Night</a><a href="/bach-party/experiences/index.html">More girls trip ideas →</a></div>
         </div>
     </div>
-
 </section>
 
 
-<!-- ══════════════════════════════════
-     COST BREAKDOWN
-══════════════════════════════════ -->
+<!-- ══════════ COST BREAKDOWN ══════════ -->
 <section class="cost-section">
     <div class="container mb-5">
         <div class="section-header">
@@ -1298,165 +708,197 @@
             <h2 class="section-title">What Your <em>Girls Night Out</em><br>Charleston Will Cost</h2>
         </div>
     </div>
-
     <div class="cost-grid">
         <div class="cost-tier">
-            <span class="tier-name">Budget Night</span>
-            <span class="tier-price">$75</span>
-            <span class="tier-pp">per person</span>
-            <ul class="tier-includes">
-                <li>Casual dinner ($15–20)</li>
-                <li>Happy hour drinks ($20–30)</li>
-                <li>Shared rideshares ($10–15)</li>
-                <li>Cover charges &amp; tips ($10)</li>
-                <li>Pre-game at the rental</li>
-            </ul>
+            <span class="tier-name">Budget Night</span><span class="tier-price">$75</span><span class="tier-pp">per person</span>
+            <ul class="tier-includes"><li>Casual dinner ($15–20)</li><li>Happy hour drinks ($20–30)</li><li>Shared rideshares ($10–15)</li><li>Cover charges &amp; tips ($10)</li><li>Pre-game at the rental</li></ul>
         </div>
-
         <div class="cost-tier featured">
-            <span class="tier-name">The Sweet Spot</span>
-            <span class="tier-price">$175</span>
-            <span class="tier-pp">per person · most popular</span>
-            <ul class="tier-includes">
-                <li>Nice group dinner ($50–75)</li>
-                <li>Craft cocktail bars ($40–60)</li>
-                <li>Girls Night Out show ($200, split by the group)*</li>
-                <li>Private transport ($20–30)</li>
-                <li>Activity or club entry ($25–40)</li>
-            </ul>
+            <span class="tier-name">The Sweet Spot</span><span class="tier-price">$175</span><span class="tier-pp">per person · most popular</span>
+            <ul class="tier-includes"><li>Nice group dinner ($50–75)</li><li>Craft cocktail bars ($40–60)</li><li>Girls Night Out show ($200, split by the group)*</li><li>Private transport ($20–30)</li><li>Activity or club entry ($25–40)</li></ul>
         </div>
-
         <div class="cost-tier">
-            <span class="tier-name">Full Boujee</span>
-            <span class="tier-price">$400<span style="font-size:1.5rem">+</span></span>
-            <span class="tier-pp">per person</span>
-            <ul class="tier-includes">
-                <li>Spa at Charleston Place ($100–150)</li>
-                <li>Fine dining at Peninsula Grill ($100–150)</li>
-                <li>Girls Night Out show ($200, split by the group)*</li>
-                <li>Party bus all night ($50–100)</li>
-                <li>VIP bottle service ($80–150)</li>
-            </ul>
+            <span class="tier-name">Full Boujee</span><span class="tier-price">$400<span style="font-size:1.5rem">+</span></span><span class="tier-pp">per person</span>
+            <ul class="tier-includes"><li>Spa at Charleston Place ($100–150)</li><li>Fine dining at Peninsula Grill ($100–150)</li><li>Girls Night Out show ($200, split by the group)*</li><li>Party bus all night ($50–100)</li><li>VIP bottle service ($80–150)</li></ul>
         </div>
     </div>
-
     <p style="text-align:center;font-size:0.85rem;color:var(--text-muted);margin-top:24px;padding:0 24px;">
-        *Michael's show is a flat $200 for up to 90 minutes, paid on arrival by cash, Venmo, or Cash App. Book directly at <a href="https://michaelatyourplace.com" style="color:var(--gold);">michaelatyourplace.com</a> or call or text 843-360-9438.
+        *Michael's show is a flat $200 for up to 90 minutes, paid on arrival by cash, Venmo or Cash App. Split ten ways, that's $20 each. <a href="#book">Price it for your group</a>.
     </p>
 </section>
 
 
-<!-- ══════════════════════════════════
-     FAQ
-══════════════════════════════════ -->
-<section style="padding:80px 0;">
-    <div class="container mb-5">
+<!-- ══════════ GOOD TO KNOW ══════════ -->
+<section class="know-section">
+    <div class="container mb-4">
         <div class="section-header">
-            <span class="section-eyebrow">Common Questions</span>
-            <h2 class="section-title">Girls Night Out Charleston<br><em>FAQ</em></h2>
+            <span class="section-eyebrow">Good to Know</span>
+            <h2 class="section-title">Girls Night Out Charleston<br><em>Details</em></h2>
         </div>
     </div>
-
-    <div class="faq-section" style="max-width:760px;margin:0 auto;padding:0 24px;">
-
-        <div class="faq-item">
-            <div class="faq-q">What exactly is Girls Night Out?</div>
-            <p class="faq-a">Girls Night Out is a private live show in Charleston, SC, with Michael as the performer. It's crowd-interactive, with music, games, comedy, and personalized moments, held at your rental or venue. It costs $200 for up to 90 minutes. Think live show meets celebration, not a bar night.</p>
+    <div class="know-grid">
+        <div class="know-item">
+            <h3>What Girls Night Out Is</h3>
+            <p>Girls Night Out is a private live show in Charleston, SC, with Michael as the performer. It's crowd-interactive, with music, dancing, games and comedy, held at your rental or venue. It costs $200 for up to 90 minutes. Think live show meets celebration, not a bar night.</p>
         </div>
-
-        <div class="faq-item">
-            <div class="faq-q">How do I book Girls Night Out Charleston with Michael?</div>
-            <p class="faq-a">Call or text <a href="tel:+18433609438" style="color:var(--gold);">843-360-9438</a>, or visit <a href="https://michaelatyourplace.com" style="color:var(--gold);">michaelatyourplace.com</a>. No forms, and you pay on arrival. Last-minute dates are welcome, but weekends from March through October fill fast, so book ahead when you can.</p>
+        <div class="know-item">
+            <h3>How to Book Michael</h3>
+            <p>Call or text <a href="tel:+18433609438">843-360-9438</a>, or visit <a href="https://michaelatyourplace.com" target="_blank" rel="noopener">michaelatyourplace.com</a>. No forms, and you pay on arrival. Last-minute dates are welcome, but weekends from March through October fill fast.</p>
         </div>
-
-        <div class="faq-item">
-            <div class="faq-q">Where does the show take place?</div>
-            <p class="faq-a">At your location: an Airbnb, vacation rental, private home, or event space anywhere in the Charleston area, including downtown Charleston, Mount Pleasant, Isle of Palms, Folly Beach, and Sullivan's Island. You provide the space, Michael provides the show.</p>
+        <div class="know-item">
+            <h3>Where the Show Happens</h3>
+            <p>At your location: an Airbnb, vacation rental, private home or event space anywhere in the Charleston area, including downtown Charleston, Mount Pleasant, Isle of Palms, Folly Beach and Sullivan's Island.</p>
         </div>
-
-        <div class="faq-item">
-            <div class="faq-q">How large does the group need to be?</div>
-            <p class="faq-a">The show works for groups from 8 to 40 guests, and 10–20 is the sweet spot for the most interaction. For bigger groups, call or text ahead to plan the setup.</p>
+        <div class="know-item">
+            <h3>Group Size</h3>
+            <p>The show works for groups from 8 to 40 guests, and 10–20 is the sweet spot for the most interaction. For bigger groups, call or text ahead to plan the setup.</p>
         </div>
-
-        <div class="faq-item">
-            <div class="faq-q">What other girls night out activities pair well with the show?</div>
-            <p class="faq-a">It works best as the evening's centerpiece. Pair it with dinner on King Street beforehand (The Macintosh or The Ordinary), then bars like Prohibition or Uptown Social after. For full-day plans, add the spa at Charleston Place, a harbor cruise, or candle-making at Candlefish.</p>
+        <div class="know-item">
+            <h3>What Pairs Well With the Show</h3>
+            <p>It works best as the evening's centerpiece. Pair it with dinner beforehand at <a href="/bach-party/experiences/church-and-union-bachelorette-brunch-dinner.html">Church and Union</a> or The Ordinary, then bars like Prohibition or Uptown Social after. For full-day plans, add the spa at Charleston Place, a <a href="/bach-party/experiences/charleston-party-cat-byob-bachelorette-boat.html">harbor party boat</a> or <a href="/bach-party/experiences/craft-diy-crafting-mimosas-workshop.html">crafting with mimosas</a>.</p>
         </div>
-
-        <div class="faq-item">
-            <div class="faq-q">What ages is the show for?</div>
-            <p class="faq-a">The show is for adults 18 and over. Whether your group is 18 or 51, it's built to entertain: mixed-age friend groups, moms celebrating birthdays, college sorority nights, divorce parties, and girls trips are all welcome.</p>
+        <div class="know-item">
+            <h3>Ages</h3>
+            <p>The show is for adults 18 and over. Mixed-age friend groups, moms celebrating birthdays, college sorority nights, divorce parties and girls trips are all welcome. Under 21? See <a href="/parties/college.html">college nightlife in Charleston</a>.</p>
         </div>
-
     </div>
 </section>
 
 
-<!-- ══════════════════════════════════
-     BOOKING CTA
-══════════════════════════════════ -->
+<!-- ══════════ BOOKING CTA ══════════ -->
 <section class="booking-section">
     <div class="container">
         <h2>Ready for the Best<br><em>Girls Night Out</em> in Charleston?</h2>
-        <p>
-            Stop scrolling bar crawl lists and planning around surge pricing. Book Girls Night Out and let the entertainment come to you. $200 for up to 90 minutes, paid on arrival.
-        </p>
-
+        <p>Skip the bar crawl lists and surge pricing. Book Girls Night Out and let the entertainment come to you. $200 for up to 90 minutes, paid on arrival.</p>
         <div class="booking-details">
-            <div class="booking-detail">
-                <span class="detail-label">Price</span>
-                <span class="detail-value">$200 Flat</span>
-            </div>
-            <div class="booking-detail">
-                <span class="detail-label">Show Length</span>
-                <span class="detail-value">Up to 90 min</span>
-            </div>
-            <div class="booking-detail">
-                <span class="detail-label">Group Size</span>
-                <span class="detail-value">8–40 Guests</span>
-            </div>
-            <div class="booking-detail">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Charleston SC</span>
-            </div>
+            <div class="booking-detail"><span class="detail-label">Price</span><span class="detail-value">$200 Flat</span></div>
+            <div class="booking-detail"><span class="detail-label">Show Length</span><span class="detail-value">Up to 90 min</span></div>
+            <div class="booking-detail"><span class="detail-label">Group Size</span><span class="detail-value">8–40 Guests</span></div>
+            <div class="booking-detail"><span class="detail-label">Location</span><span class="detail-value">Charleston SC</span></div>
         </div>
-
-        <div class="hero-cta-group">
-            <a href="sms:+18433609438" class="btn-gold">Text to Book</a>
-            <a href="https://michaelatyourplace.com" class="btn-outline-gold">Visit Michael At Your Place</a>
+        <div class="hero-cta-group justify-content-center">
+            <a href="sms:+18433609438?&amp;body=Hi%20Michael%2C%20I'd%20like%20to%20book%20a%20girls%20night%20out%20show%20in%20Charleston." class="btn-gold js-sms">Text to Book</a>
+            <a href="https://michaelatyourplace.com" class="btn-outline-gold" target="_blank" rel="noopener">Visit Michael At Your Place</a>
         </div>
     </div>
 </section>
 
 
-<!-- ══════════════════════════════════
-     FOOTER
-══════════════════════════════════ -->
-<footer class="site-footer">
-    <div class="gold-rule" style="max-width:200px;margin:0 auto 40px;"></div>
-
-    <div class="footer-links">
-        <a href="https://michaelatyourplace.com">Book the Show</a>
-        <a href="https://bachelorettepartay.com">Bachelorette Parties</a>
+<!-- ══════════ MORE GUIDES ══════════ -->
+<section class="more-section">
+    <div class="container">
+        <div class="section-header" style="margin-bottom:34px;">
+            <span class="section-eyebrow">Keep Planning</span>
+        </div>
     </div>
+    <div class="more-links">
+        <a href="/bach-party/experiences/index.html"><strong>Experiences</strong><span>20 things to book in Charleston</span></a>
+        <a href="/king-street-bar-crawl/index.html"><strong>King Street</strong><span>The bar crawl route</span></a>
+        <a href="/charleston-party-scene/index.html"><strong>Party Scene</strong><span>Where Charleston goes out</span></a>
+        <a href="/bach-party/index.html"><strong>Bachelorettes</strong><span>The full weekend guide</span></a>
+    </div>
+</section>
 
-    <div class="gold-rule" style="max-width:400px;margin:0 auto 24px;"></div>
 
-    <p class="footer-copy">
-        &copy; 2026 Girls Night Out Charleston &bull; Mount Pleasant &bull; Isle of Palms &bull; Folly Beach &bull; Sullivan's Island
-    </p>
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-6 col-lg-3">
+                <h4>Bachelorette Parties</h4>
+                <ul>
+                    <li><a href="/bach-party/index.html">Bachelorette Guide</a></li>
+                    <li><a href="/bach-party/experiences/index.html">Experiences</a></li>
+                    <li><a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4>Charleston Party Scene</h4>
+                <ul>
+                    <li><a href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+                    <li><a href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4>King Street Bar Crawl</h4>
+                <ul>
+                    <li><a href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+                    <li><a href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+                    <li><a href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4>Parties</h4>
+                <ul>
+                    <li><a href="/parties/index.html">All Party Guides</a></li>
+                    <li><a href="/parties/college.html">College Scene</a></li>
+                    <li><a href="/parties/girls-night-out.html">Girls Night Out</a></li>
+                    <li><a href="/about.html">About</a> · <a href="/privacy-policy.html">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gold-rule" style="max-width:400px;margin:36px auto 0;"></div>
+        <p class="footer-copy">&copy; 2026 Charleston Party Hub · Girls Night Out Charleston &bull; Mount Pleasant &bull; Isle of Palms &bull; Folly Beach &bull; Sullivan's Island</p>
+    </div>
 </footer>
+
+
+<!-- ══════════ STICKY MOBILE BOOK BAR ══════════ -->
+<div class="book-bar" id="bookBar">
+    <a class="bb-text js-sms" href="sms:+18433609438?&amp;body=Hi%20Michael%2C%20I'd%20like%20to%20book%20a%20girls%20night%20out%20show%20in%20Charleston.">Text to Book</a>
+    <a class="bb-call" href="tel:+18433609438">Call</a>
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 function showTab(e, tab) {
-    document.querySelectorAll('.itinerary-panel').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.itab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.itinerary-panel').forEach(function (p) { p.classList.remove('active'); });
+    document.querySelectorAll('.itab').forEach(function (b) { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
     document.getElementById('tab-' + tab).classList.add('active');
     e.currentTarget.classList.add('active');
+    e.currentTarget.setAttribute('aria-selected', 'true');
 }
+
+(function () {
+    var PHONE = '+18433609438';
+    var size = document.getElementById('gnoSize');
+    var sizeOut = document.getElementById('gnoSizeOut');
+    var each = document.getElementById('gnoEach');
+    var total = document.getElementById('gnoTotal');
+    var date = document.getElementById('gnoDate');
+    var area = document.getElementById('gnoArea');
+    var send = document.getElementById('gnoSend');
+
+    function smsLink(body) { return 'sms:' + PHONE + '?&body=' + encodeURIComponent(body); }
+
+    function update() {
+        var n = parseInt(size.value, 10);
+        sizeOut.textContent = n;
+        var per = 200 / n;
+        each.textContent = '$' + (per % 1 === 0 ? per : per.toFixed(2));
+        total.textContent = '$200 total';
+        var when = 'a date I can share';
+        if (date.value) {
+            var d = new Date(date.value + 'T12:00:00');
+            when = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+        }
+        var msg = 'Hi Michael, I found you on Party Charleston. I\'d like to book a girls night out show on ' + when +
+                  ' in ' + area.value + ' for about ' + n + ' guests. Is that date open?';
+        send.setAttribute('href', smsLink(msg));
+    }
+    [size, date, area].forEach(function (el) { el.addEventListener('input', update); el.addEventListener('change', update); });
+    update();
+
+    // Sticky mobile bar appears after the hero
+    var bar = document.getElementById('bookBar');
+    var hero = document.querySelector('.hero');
+    if ('IntersectionObserver' in window && bar && hero) {
+        new IntersectionObserver(function (entries) {
+            bar.classList.toggle('show', !entries[0].isIntersecting);
+        }).observe(hero);
+    } else if (bar) { bar.classList.add('show'); }
+})();
 </script>
 </body>
 </html>

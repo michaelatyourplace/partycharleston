@@ -3,318 +3,573 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Parties Charleston</title>
-    <meta name="description" content="Complete guide to planning unforgettable parties in Charleston, SC. Discover the best nightclubs, party venues, entertainment, and decorators for bachelor parties, bachelorette parties, and celebrations.">
-    
-    <!-- Local Business Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Charleston Party Planning Guide",
-      "description": "Comprehensive resource for planning bachelor parties, bachelorette parties, and celebrations in Charleston, SC",
-      "areaServed": {
-        "@type": "City",
-        "name": "Charleston",
-        "containedInPlace": {
-          "@type": "State",
-          "name": "South Carolina"
-        },
-        "sameAs": "https://en.wikipedia.org/wiki/Charleston,_South_Carolina"
-      },
-      "hasMap": "https://www.google.com/maps/place/Charleston,+SC",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "250"
-      }
-    }
-    </script>
-    
+    <link rel="canonical" href="https://www.partycharleston.com/">
+
+    <title>Charleston: The Ultimate Party City | Nightlife in Charleston & More</title>
+    <meta name="description" content="Party Charleston is your guide to the Charleston party scene: bachelorette parties, King Street bar crawls, rooftop bars, nightlife, college formals and girls nights out.">
+    <meta property="og:title" content="Charleston: The Ultimate Party City | Nightlife in Charleston & More">
+    <meta property="og:description" content="Bachelorette parties, King Street bar crawls, rooftop bars and the Charleston party scene, all in one guide.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.partycharleston.com/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; background: #f8f9fa; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        
-        /* Hero Header */
-        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
-        .hero h1 { font-size: 3em; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        .hero p { font-size: 1.3em; max-width: 800px; margin: 0 auto; opacity: 0.95; }
-        
-        /* Section Styling */
-        section { background: white; margin: 40px 0; padding: 50px 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h2 { color: #667eea; font-size: 2.5em; margin-bottom: 25px; border-bottom: 4px solid #667eea; padding-bottom: 15px; }
-        h3 { color: #764ba2; font-size: 1.8em; margin: 35px 0 20px; }
-        p { margin-bottom: 20px; font-size: 1.1em; }
-        
-        /* Party Types Grid */
-        .party-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0; }
-        .party-card { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 35px; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); transition: transform 0.3s; }
-        .party-card:hover { transform: translateY(-5px); }
-        .party-card h3 { color: white; margin-top: 0; font-size: 1.6em; }
-        
-        /* Venue List */
-        .venue-list { margin: 30px 0; }
-        .venue-item { background: #f8f9fa; padding: 25px; margin-bottom: 20px; border-left: 5px solid #667eea; border-radius: 8px; transition: all 0.3s; }
-        .venue-item:hover { box-shadow: 0 4px 8px rgba(0,0,0,0.1); transform: translateX(5px); }
-        .venue-item h4 { color: #667eea; font-size: 1.5em; margin-bottom: 10px; }
-        .venue-item .venue-type { display: inline-block; background: #667eea; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; margin-bottom: 10px; }
-        
-        /* Decorator Grid */
-        .decorator-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 30px 0; }
-        .decorator-card { background: white; border: 2px solid #667eea; padding: 25px; border-radius: 10px; text-align: center; transition: all 0.3s; }
-        .decorator-card:hover { background: #f8f9fa; transform: scale(1.05); }
-        .decorator-card h4 { color: #764ba2; margin-bottom: 15px; }
-        
-        /* Lists */
-        ul { margin: 20px 0 20px 40px; }
-        li { margin-bottom: 15px; font-size: 1.05em; line-height: 1.7; }
-        
-        /* Highlight Box */
-        .highlight-box { background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%); padding: 35px; border-radius: 10px; margin: 40px 0; border-left: 8px solid #e17055; }
-        .highlight-box h3 { color: #d63031; margin-top: 0; }
-        
-        /* CTA Box */
-        .cta-box { text-align: center; padding: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 15px; margin: 50px 0; }
-        .cta-box h2 { color: white; border: none; }
-        .cta-button { display: inline-block; background: white; color: #667eea; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-size: 1.2em; font-weight: bold; margin-top: 20px; transition: all 0.3s; }
-        .cta-button:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1, h2, h3, h4, .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .celebration-section {
+            background-color: #f8f9fa;
+        }
+
+        .celebration-item {
+            font-size: 1.05rem;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .celebration-item .icon {
+            color: #0d6efd;
+            font-size: 1.6rem;
+        }
+
+        .celebration-item a {
+            color: #212529;
+            text-decoration: none;
+        }
+
+        .celebration-item a:hover {
+            color: #0d6efd;
+        }
+
+        .hero-section {
+            /* Beach photo as the hero background; the original Unsplash image sits underneath as a fallback */
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                url('parties/images/folly.jpeg') no-repeat center center,
+                url('https://images.unsplash.com/photo-1620332372333-e38054a54c60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80') no-repeat center center;
+            background-size: cover, cover, cover;
+            background-color: #212529;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .hero-section .lead {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-intro {
+            max-width: 720px;
+            margin: -24px auto 40px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 1.1rem;
+        }
+
+        /* Site directory */
+        .directory-card {
+            height: 100%;
+            background: #ffffff;
+            border: 1px solid #dee2e6;
+            border-top: 4px solid #0d6efd;
+            border-radius: 15px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .directory-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .directory-card .icon {
+            font-size: 2.4rem;
+            color: #0d6efd;
+            line-height: 1;
+        }
+
+        .directory-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 14px 0 8px;
+        }
+
+        .directory-card h3 a {
+            color: #212529;
+            text-decoration: none;
+        }
+
+        .directory-card h3 a:hover {
+            color: #0d6efd;
+        }
+
+        .directory-card p {
+            color: #6c757d;
+        }
+
+        .directory-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
+
+        .directory-links li {
+            border-bottom: 1px solid #f1f3f5;
+        }
+
+        .directory-links a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            color: #212529;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .directory-links a:hover {
+            color: #0d6efd;
+        }
+
+        .directory-links a .bi {
+            color: #0d6efd;
+        }
+
+        .directory-card .btn {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+        .beach-blurb-img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .listicle-item {
+            height: calc(100% - 30px);
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid #dee2e6;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .listicle-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .listicle-item .icon {
+            font-size: 3rem;
+            color: #0d6efd; /* Bootstrap Primary Color */
+            margin-bottom: 15px;
+        }
+
+        .nightlife-heading {
+            font-weight: 700;
+            font-size: 1.5rem;
+            padding-left: 14px;
+            border-left: 4px solid #0d6efd;
+            margin-bottom: 16px;
+        }
+
+        #nightlife p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .travel-section {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .footer {
+            background-color: #212529;
+            color: #adb5bd;
+        }
+
+        .footer a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+
+        .footer h4 {
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 767px) {
+            .hero-section {
+                padding: 100px 0;
+            }
+
+            .hero-section h1 {
+                font-size: 2.6rem;
+            }
+
+            .hero-section .lead {
+                font-size: 1.2rem;
+            }
+
+            .beach-blurb-img {
+                height: 240px;
+            }
+        }
+
     </style>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","name":"Party Charleston","alternateName":"Charleston Party Hub","url":"https://www.partycharleston.com/"}
+    </script>
 </head>
-<body>    
-    
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Ultimate Charleston Party Planning Guide</h1>
-        <p>Your complete resource for planning unforgettable parties, <a href="../bach-party/bachelorette-brunch-show-charleston-sc.html">bach brunch activities</a>, birthdays, and celebrations in Charleston, South Carolina</p>
-    </div>
-    
+<body>
+
+
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-        <!-- Introduction -->
-        <section>
-            <h2>Welcome to Charleston - The Perfect Party Destination</h2>
-            <p>Charleston, South Carolina has emerged as one of the Southeast's premier party destinations, combining Southern hospitality, world-class dining, vibrant nightlife, and stunning historic charm. Whether you're planning a wild bachelor party, an unforgettable bachelorette celebration, a milestone birthday, or any special occasion, Charleston offers the perfect blend of sophistication and excitement.</p>
-            
-            <p>From rooftop bars overlooking the harbor to high-energy nightclubs on King Street, from private entertainment at luxury hotels to beach house celebrations on nearby islands, Charleston provides endless possibilities for creating memorable experiences. This comprehensive guide covers everything you need to know about planning the perfect party in the Holy City.</p>
-        </section>
-        
-        <!-- Types of Parties -->
-        <section>
-            <h2>Types of Parties We Help You Plan</h2>
-            <p>Charleston is the ideal backdrop for virtually any celebration. Here are the most popular party types we help coordinate:</p>
-            
-            <div class="party-grid">
-                <div class="party-card">
-                    <h3>🎉 Bachelorette Parties</h3>
-                    <p>Charleston is one of the hottest bachelorette party destinations in the country. Celebrate the bride-to-be with daytime activities like harbor cruises and spa treatments, followed by evening entertainment, dinner at award-winning restaurants, and dancing at top nightclubs. From private home entertainment to rooftop bars, we cover all the essentials for an unforgettable girls' weekend.</p>
-                </div>
-                
-                <div class="party-card">
-                    <h3>🍻 Bachelor Parties</h3>
-                    <p>Guys, Charleston delivers for bachelor parties! Golf at championship courses, deep sea fishing charters, brewery tours, cigar bars, sports bars with massive screens, and nightclubs that stay open until 2 AM. Whether you want a classy celebration or wild weekend, Charleston has the venues and activities to make it legendary.</p>
-                </div>
-                
-                <div class="party-card">
-                    <h3>🎂 Birthday Celebrations</h3>
-                    <p>Milestone birthdays deserve special treatment. Charleston offers everything from intimate dinner parties at James Beard-nominated restaurants to large-scale celebrations at clubs and event spaces. Turn 21, 30, 40, 50, or any age in style with Charleston's diverse party options.</p>
-                </div>
-                
-                <div class="party-card">
-                    <h3>🎊 Anniversary & Special Occasions</h3>
-                    <p>Celebrate relationship milestones, job promotions, retirements, or any special achievement in Charleston. The city's romantic settings, excellent dining, and celebration-friendly atmosphere make it perfect for marking life's important moments.</p>
-                </div>
-                
-                <div class="party-card">
-                    <h3>🎓 College Spring Break & Groups</h3>
-                    <p>College groups flock to Charleston for spring break and weekend trips. With its proximity to several major universities, affordable accommodation options, and energetic nightlife scene, Charleston provides the perfect alternative to traditional spring break destinations.</p>
-                </div>
-                
-                <div class="party-card">
-                    <h3>💼 Corporate Events & Team Building</h3>
-                    <p>Mix business with pleasure at Charleston corporate events. After conferences and meetings, enjoy team building activities, group dinners, and networking at upscale venues. Charleston's professional yet fun atmosphere works perfectly for corporate celebrations.</p>
-                </div>
-            </div>
-        </section>
-        
-        
-        <!-- Entertainment Options -->
-        <section>
-            <h2>Private Entertainment & Experiences</h2>
-            <p>Beyond nightclubs, Charleston offers exceptional private entertainment options for bachelor and bachelorette parties:</p>
-            
-            <div class="highlight-box">
-                <h3>Private Home & Hotel Entertainment</h3>
-                <p>For bachelorette parties seeking unforgettable private entertainment, <a href="https://michaelatyourplace.com/about" style="color: #d63031; font-weight: bold;">Michael At Your Place</a> provides professional acrobatic entertainment directly to your hotel suite, vacation rental, or private home. Combining Vegas-style performance with impressive acrobatic skills, this service creates memorable celebrations in the privacy of your own space.</p>
-                <p>Perfect for groups staying at downtown Charleston hotels, Mount Pleasant rentals, or beach houses on Folly Beach and Isle of Palms. Professional, reliable, and consistently five-star rated by hundreds of bachelorette parties throughout Charleston.</p>
-            </div>
-            
-            <h3>Additional Entertainment Options:</h3>
-            <ul>
-                <li><strong>Harbor Cruises & Boat Parties:</strong> Charter boats for sunset cruises, harbor tours, or floating party experiences</li>
-                <li><strong>Private Chefs & Catering:</strong> Arrange in-home chef experiences at vacation rentals</li>
-                <li><strong>Spa Days:</strong> Group spa packages at Charleston's luxury spas</li>
-                <li><strong>Bar Crawls:</strong> Organized pub crawls through historic downtown</li>
-                <li><strong>Brewery Tours:</strong> Visit Charleston's growing craft brewery scene</li>
-                <li><strong>Golf Outings:</strong> Championship courses for bachelor party groups</li>
-                <li><strong>Fishing Charters:</strong> Deep sea or inshore fishing adventures</li>
+        <a class="navbar-brand" href="index.html"><i class="bi bi-cup-straw"></i> Charleston Party Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <!-- Dropdown 1: Party Guides -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPartyGuides" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Party Guides
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownPartyGuides">
+                        <li><a class="dropdown-item" href="/parties/college.html">College Scene</a></li>
+                        <li><a class="dropdown-item" href="/parties/girls-night-out.html">Girls Night</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown 2: Charleston Info -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCharlestonInfo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Bach Info
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownCharlestonInfo">
+                        <li><a class="dropdown-item" href="bach-party/charleston-bachelor-party.html">Bachelor</a></li>
+                        <li><a class="dropdown-item" href="/parties/girls-night-out.html">Girls Night Out</a></li>
+                        <li><a class="dropdown-item" href="https://bachelorettepartay.com">Bachelorette Partay</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+                </li>
             </ul>
-        </section>
-        
-        <!-- Party Decorators -->
-        <section>
-            <h2>Charleston's Top Party Decorators & Event Planners</h2>
-            <p>Elevate your celebration with professional decorations and planning services from Charleston's best:</p>
-            
-            <div class="decorator-grid">
-                <div class="decorator-card">
-                    <h4>Holy City Party</h4>
-                    <p>Full-service party decoration company specializing in balloons, banners, and custom installations. Perfect for hotel rooms, vacation rentals, and event spaces. Known for beautiful designs and helpful service.</p>
-                </div>
-                
-                <div class="decorator-card">
-                    <h4>Charleston Balloon</h4>
-                    <p>Every balloon you can imagine plus beautiful balloon installations for any event. Jill and her team create custom balloon art that transforms spaces. Experienced with bachelorette parties, birthdays, and corporate events.</p>
-                </div>
-                
-                <div class="decorator-card">
-                    <h4>Southern Soirée</h4>
-                    <p>One-stop-shop offering decoration packages for bachelorettes, birthdays, bridal showers, and baby showers. Also provides custom sugar cookies and "buzzcakes." Can stock fridges and decorate rentals before arrival. Book at least one month in advance.</p>
-                </div>
-                
-                <div class="decorator-card">
-                    <h4>Pop the Bubbly Events</h4>
-                    <p>Creative event planning and decoration services perfect for celebrations. Known for themed installations and attention to detail. Excellent for bachelorette party decorations at hotels and vacation rentals.</p>
-                </div>
-                
-                <div class="decorator-card">
-                    <h4>Loluma</h4>
-                    <p>High-end event planning and decoration for parties and corporate events. Beautiful aesthetic and professional execution. Clients wish they lived in Charleston to use them for every event.</p>
-                </div>
-                
-                <div class="decorator-card">
-                    <h4>Teacups and Trucks, LLC</h4>
-                    <p>Balloon delivery service offering reasonable prices and flexible scheduling including Sunday deliveries. Perfect for last-minute decoration needs or surprise elements for your celebration.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Planning Tips -->
-        <section>
-            <h2>Essential Charleston Party Planning Tips</h2>
-            
-            <h3>When to Visit</h3>
-            <p><strong>Peak Season (March-June, September-November):</strong> Best weather, most events, highest energy nightlife. Book accommodations and entertainment well in advance.</p>
-            <p><strong>Summer (July-August):</strong> Hot and humid but still vibrant. Good hotel deals and beach weather.</p>
-            <p><strong>Winter (December-February):</strong> Mild temperatures, fewer crowds, better prices. Nightlife still active on weekends.</p>
-            
-            <h3>Where to Stay</h3>
-            <ul>
-                <li><strong>Downtown Hotels:</strong> Walking distance to everything - restaurants, bars, nightclubs. Highest convenience but pricier.</li>
-                <li><strong>Vacation Rentals:</strong> Airbnb and VRBO throughout downtown, Mount Pleasant, and beach areas. More space and privacy for groups.</li>
-                <li><strong>Beach Properties:</strong> Folly Beach, Isle of Palms, Sullivan's Island for beach vibes with 15-30 minute drive to downtown.</li>
-                <li><strong>Mount Pleasant:</strong> Quieter option with easy access to both beaches and downtown.</li>
-            </ul>
-            
-            <h3>Transportation</h3>
-            <ul>
-                <li>Downtown is walkable - many venues within strolling distance</li>
-                <li>Uber and Lyft readily available</li>
-                <li>Designated driver essential if staying outside downtown</li>
-                <li>Party buses available for large groups</li>
-                <li>Bike rentals for daytime exploring</li>
-            </ul>
-            
-            <h3>Reservations & Timing</h3>
-            <ul>
-                <li>Book accommodations 2-3 months ahead for weekends</li>
-                <li>Reserve private entertainment 4-8 weeks in advance</li>
-                <li>Restaurant reservations essential for large groups</li>
-                <li>Most nightclubs open Thursday-Saturday until 2 AM</li>
-                <li>Rooftop bars often close at midnight</li>
-                <li>Plan dinner 6-8 PM, entertainment 8-10 PM, clubs 10 PM-2 AM</li>
-            </ul>
-            
-            <h3>Budget Considerations</h3>
-            <ul>
-                <li>Downtown hotel suites: $200-500+ per night</li>
-                <li>Vacation rentals: $150-400+ per night (split among group)</li>
-                <li>Dinner at nice restaurants: $40-80 per person</li>
-                <li>Nightclub cover charges: $10-30</li>
-                <li>Bottle service at clubs: $300-1000+</li>
-                <li>Private entertainment: varies by service</li>
-                <li>Decorations: $100-500 depending on scale</li>
-            </ul>
-        </section>
-        
-        <!-- Neighborhoods Guide -->
-        <section>
-            <h2>Charleston Party Neighborhoods</h2>
-            
-            <h3>King Street (Downtown)</h3>
-            <p>The epicenter of Charleston nightlife. Upper King Street features most major nightclubs, rooftop bars, and restaurants. Middle King offers shopping and dining. Lower King provides historic charm. Stay here for maximum walkability to entertainment.</p>
-            
-            <h3>Market Street Area</h3>
-            <p>Near the famous Charleston City Market, this area offers hotels, bars, and easy access to waterfront. Great for groups wanting central location with historic atmosphere.</p>
-            
-            <h3>Mount Pleasant</h3>
-            <p>Across the Ravenel Bridge from downtown, Mount Pleasant provides quieter accommodations with easy access to both downtown (15 minutes) and beaches (10-15 minutes). Good balance of convenience and value.</p>
-            
-            <h3>Folly Beach</h3>
-            <p>Laid-back surfer town with beach bars and casual dining. About 20 minutes from downtown. Perfect for groups wanting beach days and downtown nights.</p>
-            
-            <h3>Isle of Palms / Sullivan's Island</h3>
-            <p>Upscale beach communities 20-30 minutes from downtown. Beautiful properties, family-friendly atmosphere, with easy access to both beach and city nightlife.</p>
-        </section>
-        
-        <!-- Special Considerations -->
-        <section>
-            <h2>Bachelor vs. Bachelorette Party Considerations</h2>
-            
-            <h3>For Bachelorette Parties</h3>
-            <ul>
-                <li>Republic Garden & Lounge for VIP bottle service experience</li>
-                <li>Private entertainment at hotel or vacation rental</li>
-                <li>Rooftop bar crawls for Instagram-worthy photos</li>
-                <li>Spa days at Charleston luxury spas</li>
-                <li>Brunch at trendy restaurants</li>
-                <li>Professional party decorators for hotel/rental decorations</li>
-                <li>Harbor sunset cruises</li>
-            </ul>
-            
-            <h3>For Bachelor Parties</h3>
-            <ul>
-                <li>Trio for EDM and high-energy clubbing</li>
-                <li>Bay Street Biergarten for sports viewing</li>
-                <li>Golf at championship courses</li>
-                <li>Deep sea fishing charters</li>
-                <li>Cigar bars and whiskey tastings</li>
-                <li>Brewery tours</li>
-                <li>Poker nights at hotels or rentals</li>
-            </ul>
-        </section>
-        
-        <!-- Safety & Etiquette -->
-        <section>
-            <h2>Safety & Charleston Party Etiquette</h2>
-            <ul>
-                <li><strong>Drink Responsibly:</strong> Charleston takes public intoxication seriously. Stay safe and use rideshares.</li>
-                <li><strong>Respect Noise Ordinances:</strong> Especially in residential areas and vacation rentals. Keep celebrations at appropriate volume.</li>
-                <li><strong>Dress Codes:</strong> Many upscale clubs enforce dress codes. Check ahead - no flip flops or athletic wear at nice venues.</li>
-                <li><strong>Tipping:</strong> Standard 18-20% at restaurants and bars. More for exceptional bottle service.</li>
-                <li><strong>Be Kind to Locals:</strong> Charleston thrives on tourism but residents appreciate respectful visitors.</li>
-                <li><strong>Stay Together:</strong> Keep your group together, especially late at night.</li>
-                <li><strong>Plan Transportation:</strong> Never drink and drive. Uber, Lyft, and taxis readily available.</li>
-            </ul>
-        </section>
-        
-        <!-- Final CTA -->
-        <div class="cta-box">
-            <h2>Ready to Plan Your Charleston Celebration?</h2>
-            <p style="font-size: 1.2em; margin: 20px 0;">Charleston offers everything you need for unforgettable bachelor parties, bachelorette parties, birthdays, and special celebrations. From world-class nightclubs to private entertainment, from rooftop bars to beach venues, the Holy City delivers memories that last a lifetime.</p>
-            <p style="font-size: 1.1em;">Start planning today and discover why Charleston is the Southeast's premier party destination!</p>
         </div>
-        
     </div>
-    
+</nav>
+
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3">Nights You Won't Forget</h1>
+            <p class="lead">Discover Why Charleston is the East Coast's Premier Party Destination.</p>
+            <a href="#reasons" class="btn btn-primary btn-lg mt-3">Find Out Why</a>
+            <a href="#explore" class="btn btn-outline-light btn-lg mt-3 ms-sm-2">Explore the Guides</a>
+        </div>
+    </header>
+
+
+    <!-- Site directory: table of contents for the whole site -->
+    <section id="explore" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Explore Party Charleston</h2>
+            <p class="section-intro">Four guides cover the whole Charleston party scene. Start with the one that fits your trip, or jump straight to a page below.</p>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="directory-card">
+                        <div class="icon"><i class="bi bi-stars"></i></div>
+                        <h3><a href="bach-party/index.html">Bachelorette Parties</a></h3>
+                        <p>Plan a Charleston bachelorette weekend, from brunch shows and boat parties to bookable group experiences.</p>
+                        <ul class="directory-links">
+                            <li><a href="bach-party/index.html">Charleston Bachelorette Party Guide <i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="bach-party/experiences/index.html">Bachelorette Experiences <i class="bi bi-chevron-right"></i></a></li>
+                            
+                            <li><a href="bach-party/bachelorette-brunch-show-charleston-sc.html">Bachelorette Brunch Show <i class="bi bi-chevron-right"></i></a></li>
+                            <!-- Confirm full file name: fun-things-to-do-in-charleston-sc-girls-... -->
+                            <li><a href="bach-party/fun-things-to-do-in-charleston-sc-girls-trip.html">Fun Things to Do on a Girls Trip <i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="bach-party/mount-pleasant-bachelorette.html">Mount Pleasant Bachelorette <i class="bi bi-chevron-right"></i></a></li>
+                        </ul>
+                        <a href="bach-party/index.html" class="btn btn-primary">Bachelorette Guide</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="directory-card">
+                        <div class="icon"><i class="bi bi-music-note-beamed"></i></div>
+                        <h3><a href="charleston-party-scene/index.html">Charleston Party Scene</a></h3>
+                        <p>Where Charleston goes out at night: clubs, live music, dance floors and spots for every age group.</p>
+                        <ul class="directory-links">
+                            <li><a href="charleston-party-scene/index.html">Charleston Party Scene Guide <i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="charleston-party-scene/charleston-nightlife-under-21.html">Charleston Nightlife Under 21 <i class="bi bi-chevron-right"></i></a></li>
+                        </ul>
+                        <a href="charleston-party-scene/index.html" class="btn btn-primary">Party Scene Guide</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="directory-card">
+                        <div class="icon"><i class="bi bi-signpost-split"></i></div>
+                        <h3><a href="king-street-bar-crawl/index.html">King Street Bar Crawl</a></h3>
+                        <p>A route down Charleston's busiest street, with rooftop bars for sunset and late-night food for the walk home.</p>
+                        <ul class="directory-links">
+                            <li><a href="king-street-bar-crawl/index.html">King Street Bar Crawl Route <i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="king-street-bar-crawl/rooftop-bars.html">Charleston Rooftop Bars <i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="king-street-bar-crawl/late-night-food.html">Late-Night Food <i class="bi bi-chevron-right"></i></a></li>
+                        </ul>
+                        <a href="king-street-bar-crawl/index.html" class="btn btn-primary">Bar Crawl Guide</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="directory-card">
+                        <div class="icon"><i class="bi bi-balloon-heart"></i></div>
+                        <h3><a href="parties/index.html">Parties</a></h3>
+                        <p>Guides for group celebrations in Charleston, from college formals to a night out with the girls.</p>
+                        <ul class="directory-links">
+                            <li><a href="parties/college.html">College Formals &amp; the College Scene <i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="parties/girls-night-out.html">Girls Night Out <i class="bi bi-chevron-right"></i></a></li>
+                        </ul>
+                        <a href="parties/index.html" class="btn btn-primary">Party Guides</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="celebration-section py-5">
+        <div class="container">
+            <h2 class="section-title">A City for Every Celebration</h2>
+            <div class="row text-center justify-content-center">
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="celebration-item"><i class="bi bi-mortarboard-fill icon"></i><a href="parties/college.html">College Formals</a></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="celebration-item"><i class="bi bi-heart-fill icon"></i><a href="parties/girls-night-out.html">Girls Nite</a></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="celebration-item"><i class="bi bi-stars icon"></i><a href="bach-party/index.html">Bachelorette Parties</a></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="celebration-item"><i class="bi bi-cup-straw icon"></i><a href="king-street-bar-crawl/index.html">Bar Crawls</a></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="celebration-item"><i class="bi bi-building icon"></i><a href="king-street-bar-crawl/rooftop-bars.html">Rooftop Nights</a></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="celebration-item"><i class="bi bi-music-note-beamed icon"></i><a href="charleston-party-scene/charleston-nightlife-under-21.html">Under 21 Nights</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beach Blurb Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="parties/images/folly.jpeg" alt="Sunny day at a Charleston area beach" class="beach-blurb-img shadow">
+                </div>
+                <div class="col-md-6">
+                    <h3>Don't Forget the Beaches!</h3>
+                    <p class="lead">The party starts long before sunset. Charleston is minutes away from classy beaches that are destinations in their own right. Don't forget the Charleston nightlife scene is upbeat as well.</p>
+                    <p>Head to <strong>Folly Beach</strong> for a laid-back, bohemian surf vibe with lively beachfront bars, or visit <strong>Isle of Palms</strong> for a slightly more upscale scene with great restaurants and wide, sandy shores. They're the perfect places to day-drink, catch some sun, and get the party started early.</p>
+                    <p class="mb-0">Planning a bachelorette across the bridge? See the <a href="bach-party/mount-pleasant-bachelorette.html">Mount Pleasant bachelorette guide</a> for Shem Creek and Isle of Palms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="container my-5">
+        <section id="reasons" class="py-5">
+            <h2 class="section-title">Top 4 Reasons Charleston is Your Ultimate Party Destination</h2>
+            <div class="row">
+                <div class="col-md-6 col-xl-3">
+                    <div class="listicle-item text-center">
+                        <div class="icon"><i class="bi bi-shop"></i></div>
+                        <h3>The Legendary Bar Scene</h3>
+                        <p>From the bustling nightlife of King Street with its rooftop bars and high-energy clubs to the cozy, historic pubs in the French Quarter, Charleston offers a bar for every mood and every crowd. The options are endless and the drinks are always flowing.</p>
+                        <p class="mb-0"><a href="king-street-bar-crawl/index.html">Plan a King Street bar crawl</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="listicle-item text-center">
+                        <div class="icon"><i class="bi bi-brightness-high-fill"></i></div>
+                        <h3>Day Parties & Beach Vibes</h3>
+                        <p>The party doesn't wait for the sun to go down! Head to Folly Beach or Isle of Palms for legendary beach bars and day-drinking culture. Boat parties on the harbor are a local favorite, offering booze cruises with stunning views of the city. Everyone goes to the beaches at least once while in the lowcountry.</p>
+                        <p class="mb-0"><a href="bach-party/experiences/index.html">Browse boat parties and experiences</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="listicle-item text-center">
+                        <div class="icon"><i class="bi bi-calendar-event"></i></div>
+                        <h3>World-Class Events & Festivals</h3>
+                        <p>Charleston's calendar is packed with reasons to celebrate. From the Spoleto Festival USA to the Charleston Wine + Food Festival, there's always a large-scale event happening that brings an electric, celebratory energy to the entire city. Even down to local events like dance shows, theater or private party performances like events at the <a href="https://charlestonmusichall.com/">Music Hall</a>, or <a href="https://www.northcharlestoncoliseumpac.com/best-of-broadway">Best of Broadway</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="listicle-item text-center">
+                        <div class="icon"><i class="bi bi-bag-heart"></i></div>
+                        <h3>Shopping All Day</h3>
+                        <p>During the day take a stroll down King street to visit the many vibrant clothing and gift shops. Charleston is full of places to buy nice clothing fashion, food snack treats and of course places to eat.</p>
+                        <p class="mb-0"><a href="king-street-bar-crawl/late-night-food.html">Where to eat late on King Street</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="travel" class="py-5 travel-section rounded">
+            <div class="container text-center">
+                <h2 class="section-title text-white">More Than Just a Party: Charleston, The Traveler's Choice</h2>
+                <p class="lead">While the nightlife is second to none, it's just one piece of the puzzle.</p>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <i class="bi bi-building fs-1 mb-2"></i>
+                        <h4>Historic Charm</h4>
+                        <p>Cobblestone streets, horse-drawn carriages, and pastel antebellum houses make it one of the most beautiful and historic cities in America.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi bi-egg-fried fs-1 mb-2"></i>
+                        <h4>Culinary Capital</h4>
+                        <p>Charleston is a foodie paradise, boasting James Beard award-winning chefs and a culinary scene that's celebrated globally. It's the perfect place to refuel after a long night out.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi bi-geo-alt-fill fs-1 mb-2"></i>
+                        <h4>Easy to Reach</h4>
+                        <p>With a major international airport (CHS) and its position as a top-tier destination, people from all over the world flock to Charleston for its unique blend of history, food, and unforgettable party atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nightlife" class="pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h3 class="nightlife-heading">Charleston Nightlife Punches Above Its Size</h3>
+                    <p>For a city this small, Charleston goes out hard. You won't find a giant club district. The scene is rooftop bars, cocktail lounges, dive bars and live music, packed into a downtown you can walk end to end. Spring and fall weekends are the busiest, when bachelorette and wedding groups fill the sidewalks. Bars close at 2 am, so nights start early: sunset drinks at one of the <a href="king-street-bar-crawl/rooftop-bars.html">rooftop bars</a>, dinner, then a band at <a href="https://thecommodorechs.com/" target="_blank" rel="noopener">The Commodore</a> or <a href="https://charlestonpourhouse.com/" target="_blank" rel="noopener">the Pour House</a>. Our <a href="charleston-party-scene/index.html">Charleston party scene guide</a> covers it neighborhood by neighborhood.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="nightlife-heading">Where to Go Out in Charleston</h3>
+                    <p>Most nights start on Upper King, north of Calhoun Street. <a href="https://www.uptownsocialchs.com/" target="_blank" rel="noopener">Uptown Social</a>, <a href="https://www.opentable.com/r/prohibition-charleston" target="_blank" rel="noopener">Prohibition</a> and <a href="https://republicreign.com/" target="_blank" rel="noopener">Republic Garden &amp; Lounge</a> are a few blocks apart, and Trio on Calhoun handles the late DJ crowd. Our <a href="king-street-bar-crawl/index.html">King Street bar crawl</a> maps the route. Locals tend to head off the main strip to <a href="https://www.theroyalamerican.com/" target="_blank" rel="noopener">The Royal American</a> on Morrison Drive for backyard shows, or across the river to James Island. Under 21? See <a href="charleston-party-scene/charleston-nightlife-under-21.html">Charleston nightlife under 21</a>.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-6 col-lg-3">
+                    <h4>Bachelorette Parties</h4>
+                    <ul class="footer-links">
+                        <li><a href="bach-party/index.html">Bachelorette Guide</a></li>
+                        <li><a href="bach-party/experiences/index.html">Experiences</a></li>
+                        <li><a href="bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4>Charleston Party Scene</h4>
+                    <ul class="footer-links">
+                        <li><a href="charleston-party-scene/index.html">Party Scene Guide</a></li>
+                        <li><a href="charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4>King Street Bar Crawl</h4>
+                    <ul class="footer-links">
+                        <li><a href="king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+                        <li><a href="king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+                        <li><a href="king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4>Parties</h4>
+                    <ul class="footer-links">
+                        <li><a href="parties/college.html">College Formals</a></li>
+                        <li><a href="parties/girls-night-out.html">Girls Night Out</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center border-top border-secondary pt-4">
+                <p>&copy; 2026 Charleston Party Hub. All Rights Reserved.</p>
+                <p class="mb-0">
+                    <a href="#" class="px-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="px-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="px-2" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

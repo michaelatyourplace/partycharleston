@@ -3,157 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>King Street Under 21 Bachelorette Party Guide</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>King Street Bar Crawl Guides | Party Charleston</title>
+    <meta name="description" content="King Street bar crawl hub: rooftop bars, late-night food, guided Charleston pub crawl tours and under-21 options.">
+    <meta name="robots" content="noindex, follow">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.7;
+        :root{
+            --night:#14171f; --night-2:#1e222d; --brick:#c8553d; --brick-dark:#a8432e;
+            --butter:#f6d365; --cream:#fbf7f0; --ink:#1d1f24; --muted:#5d636e; --line:#e7e0d4;
         }
-        .prose h2 {
-            font-size: 1.875rem; /* 2.25rem */
-            font-weight: 700;
-            margin-top: 2em;
-            margin-bottom: 0.75em;
+        *{box-sizing:border-box;}
+        html{scroll-behavior:smooth;}
+        body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;}
+        h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--night);}
+        a{color:var(--brick);font-weight:600;}
+        a:hover{color:var(--brick-dark);}
+        section{scroll-margin-top:84px;}
+
+        .navbar{background:var(--night)!important;padding:.85rem 0;border-bottom:3px solid var(--butter);}
+        .navbar-brand{font-family:'DM Serif Display',serif;font-size:1.4rem;color:#fff!important;}
+        .navbar-brand span{color:var(--butter);}
+        .nav-link{color:#e9e6df!important;font-weight:600;font-size:.94rem;}
+        .nav-link:hover,.nav-link.active{color:var(--butter)!important;}
+        .dropdown-menu{background:var(--night-2);border:0;}
+        .dropdown-item{color:#e9e6df;}
+        .dropdown-item:hover,.dropdown-item.active{background:var(--brick);color:#fff;}
+
+        .hero{background:radial-gradient(circle at 85% 15%,rgba(246,211,101,.22),transparent 40%),radial-gradient(circle at 10% 90%,rgba(200,85,61,.35),transparent 45%),var(--night);color:#fff;padding:4rem 0 3.5rem;}
+        .back{display:inline-block;color:var(--butter);font-weight:600;text-decoration:none;font-size:.95rem;margin-bottom:1rem;}
+        .back:hover{color:#fff;}
+        .kicker{display:inline-block;background:var(--butter);color:var(--night);font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .8rem;border-radius:999px;}
+        .hero h1{color:#fff;font-size:clamp(2.3rem,5.5vw,3.8rem);line-height:1.05;margin:1rem 0 1.1rem;}
+        .hero h1 em{color:var(--butter);}
+        .hero p{color:rgba(255,255,255,.86);font-size:1.1rem;max-width:640px;}
+        .hero-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;border:4px solid var(--butter);box-shadow:0 24px 50px rgba(0,0,0,.45);background:var(--night-2);display:block;transform:rotate(1.5deg);}
+        .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.5rem;}
+        .chips a{color:#fff;text-decoration:none;border:1.5px solid rgba(255,255,255,.5);border-radius:999px;padding:.32rem .9rem;font-size:.88rem;font-weight:600;}
+        .chips a:hover{background:var(--butter);color:var(--night);border-color:var(--butter);}
+
+        .wrap{max-width:900px;margin:0 auto;}
+        .lede{font-size:1.15rem;color:var(--muted);}
+        .sec-title{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:.4rem;}
+        .sec-kicker{color:var(--brick);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;}
+        .wide-img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:18px;background:#e7e0d4;display:block;}
+
+        .card-x{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.6rem 1.7rem;box-shadow:0 10px 26px rgba(20,23,31,.06);height:100%;position:relative;}
+        .card-x h3{font-size:1.5rem;margin:.2rem 0 .5rem;}
+        .card-x p{margin-bottom:.8rem;}
+        .num{font-family:'DM Serif Display',serif;font-size:2.6rem;line-height:1;color:var(--brick);}
+        .tag{display:inline-block;background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem;font-size:.8rem;font-weight:600;color:var(--muted);margin:0 .3rem .3rem 0;}
+        .tag.hot{background:var(--butter);border-color:var(--butter);color:var(--night);}
+        .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:1rem;}
+        .fact{background:var(--cream);border-radius:12px;padding:.75rem .9rem;font-size:.9rem;}
+        .fact b{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brick);margin-bottom:.15rem;}
+
+        .time{display:inline-block;background:var(--night);color:var(--butter);font-weight:700;font-size:.8rem;border-radius:8px;padding:.2rem .6rem;margin-bottom:.6rem;}
+
+        .band{background:var(--night);color:#fff;border-radius:22px;padding:2.4rem;}
+        .band h2,.band h3{color:#fff;}
+        .band p{color:rgba(255,255,255,.85);}
+        .band a{color:var(--butter);}
+        .plan{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.2rem 1.3rem;height:100%;}
+        .plan h3{font-size:1.35rem;margin-bottom:.4rem;}
+        .plan p{margin:0;}
+
+        .more a{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem;color:var(--ink);height:100%;transition:transform .15s ease,border-color .15s ease;}
+        .more a:hover{transform:translateY(-3px);border-color:var(--brick);color:var(--ink);}
+        .more strong{display:block;font-family:'DM Serif Display',serif;font-weight:400;font-size:1.2rem;color:var(--night);}
+        .more span{font-size:.9rem;color:var(--muted);font-weight:400;}
+
+        footer{background:var(--night);color:rgba(255,255,255,.75);padding:2.6rem 0 2rem;font-size:.92rem;border-top:3px solid var(--butter);margin-top:4rem;}
+        footer h4{font-family:'Inter',sans-serif;font-weight:700;color:var(--butter);font-size:.95rem;margin-bottom:.7rem;}
+        footer ul{list-style:none;padding:0;margin:0;}
+        footer li{margin-bottom:.35rem;}
+        footer a{color:rgba(255,255,255,.85);font-weight:500;text-decoration:none;}
+        footer a:hover{color:var(--butter);}
+
+        @media (max-width:767px){
+            .facts{grid-template-columns:1fr;}
+            .band{padding:1.6rem;}
+            .hero{padding:3rem 0 2.6rem;}
+            .hero-img{transform:none;}
         }
-        .prose h3 {
-            font-size: 1.25rem; /* 1.5rem */
-            font-weight: 600;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-        }
-        .prose p {
-            font-size: 1.125rem; /* lg */
-            margin-bottom: 1.25em;
-        }
-        .prose ul {
-            list-style-type: disc;
-            margin-left: 1.5em;
-            margin-bottom: 1.25em;
-            font-size: 1.125rem; /* lg */
-        }
-        .prose li {
-            margin-bottom: 0.5em;
-        }
-        .prose a {
-            color: #d32f2f; /* Red-700 */
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .prose a:hover {
-            text-decoration: underline;
-        }
-        .prose .under-21-link {
-            color: #5b21b6; /* Indigo 700 */
-        }
+        @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="text-3xl font-bold text-gray-900">
-                <a href="https://www.partycharleston.com">Party<span class="text-indigo-600">Charleston</span></a>
-            </div>
-        </nav>
-    </header>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html">Party<span>Charleston</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="siteNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bachelorette</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/bach-party/index.html">Bachelorette Guide</a></li>
+            <li><a class="dropdown-item" href="/bach-party/experiences/index.html">Experiences</a></li>
+            <li><a class="dropdown-item" href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Party Scene</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+            <li><a class="dropdown-item" href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">King Street</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" aria-current="page" href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+            <li><a class="dropdown-item" href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parties</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/parties/index.html">All Party Guides</a></li>
+            <li><a class="dropdown-item" href="/parties/college.html">College Scene</a></li>
+            <li><a class="dropdown-item" href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- Article Main Content -->
-    <main class="container mx-auto px-6 py-16">
-        <article class="max-w-4xl mx-auto prose">
-            
-            <!-- Article Header -->
-            <div class="text-center mb-12">
-                <a href="https://www.partycharleston.com/king-street-bar-crawl/index.html" class="text-indigo-600 font-semibold text-lg">&larr; Back to the King Street Guide</a>
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-4">The Under-21 Bachelorette Guide to a King Street</h1>
-                <img src="images/king8.png" class="img-fluid" alt="">
-                <p class="text-xl text-gray-600">You see "King Street Bar Crawl" everywhere, but half your group is under 21. Does that mean the bachelorette party is a bust? Absolutely not. The secret is to stop thinking of King Street as just a collection of bars and start seeing it for what it really is: a mile-long runway of fashion, food, and fun.</p>
-                <p class="text-xl text-gray-600">This is your guide to the *other* King Street crawl—one that's all about experiences, world-class desserts, and late-night laughs, <a href="../parties/girls-night-out.html">a night out with the girls</a> and no ID required. Plus, we'll cover the "sleep in" part: where to have that perfect, lazy bachelorette brunch. Instead of evening need a midday idea? Try this <a href="/bach-party/bachelorette-brunch-show-charleston-sc.html">brunch show Charleston</a>.</p>
-            </div>
+<header class="hero">
+  <div class="container">
+    <span class="kicker">King Street · Charleston</span>
+    <h1>King Street <em>Bar Crawl</em> Guides</h1>
+    <p>Everything on Party Charleston for a night on King Street: rooftops, late-night food, guided pub crawls you can book, and where to go if your group is under 21.</p>
+    <nav class="chips" aria-label="Jump to a section">
+      <a href="#guides">🗺️ King Street guides</a>
+      <a href="#book">🎟️ Book a pub crawl</a>
+      <a href="#diy">🍸 Build your own</a>
+      <a href="#under21">🎤 Under 21</a>
+    </nav>
+  </div>
+</header>
 
-            <img src="images/king.png" alt="A group of friends laughing and shopping on King Street" class="rounded-lg shadow-lg mb-12 w-full">
+<main class="container my-5">
 
-            <!-- Section 1: The "Crawl" -->
-            <h2>Phase 1: The "Crawl" (The King Street Experience)</h2>
-            <p>Your "crawl" starts in the afternoon and goes right into the night. It's all about capturing that "main character" energy with the whole group.</p>
+  <section id="guides">
+    <div class="sec-kicker">Start Here</div>
+    <h2 class="sec-title mb-4">King Street Guides</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <a class="card-x d-block text-decoration-none" href="/king-street-bar-crawl/rooftop-bars.html" style="color:inherit;">
+          <span class="tag hot">Sunset to last call</span>
+          <h3>The 7 Best Rooftop Bars Near King Street</h3>
+          <p class="mb-0" style="color:var(--muted);">The Vendue, Stars, Ritual, Uptown Social and more, with two rooftop crawl plans.</p>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a class="card-x d-block text-decoration-none" href="/king-street-bar-crawl/late-night-food.html" style="color:inherit;">
+          <span class="tag hot">After 1 AM</span>
+          <h3>The Best Late-Night Food on King Street</h3>
+          <p class="mb-0" style="color:var(--muted);">Giant slices, bar food and the Cook Out run for when the lights come on.</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-            <h3>The Pre-Game: Shopping & Sightseeing (4 PM - 7 PM)</h3>
-            <p>This is the true "King Street" experience. Start on Lower King (below Market Street) and browse the high-end window displays at Gucci and Louis Vuitton. As you walk north past Market, you'll hit the core shopping district with stores like Sephora, Lululemon, and tons of local boutiques. This is the perfect time for the group to find accessories for the night, people-watch, and just soak in the scene. Stop for a group photo at the corner of Market and King, one of the most iconic intersections in the city.</p>
-
-            <h3>The Main Event: Group Activities (7 PM - 9 PM)</h3>
-            <p>This is where you plan your anchor activity. Instead of a bar, you're booking an *experience*.
-            <ul>
-                <li><strong>The Top Pick: Break Out Charleston.</strong> It's an escape room located right on King Street. It's the perfect ice-breaker and a high-energy, collaborative way to spend an hour.</li>
-                <li><strong>The Creative Pick:</strong> Book a private candle-making class at <strong>Candlefish</strong>. It's a classic bachelorette move for a reason. It's fun, hands-on, and everyone gets a party favor.</li>
-                <li><strong>The Laugh-Out-Loud Pick:</strong> Go to an improv show at <strong>Theatre 99</strong>. It's cheap, hilarious, and a perfect all-ages group activity.</li>
-                <li><strong>The Craziest Thought:</strong> Show At Your Location <strong>Entertainer</strong>. It's cheap, fun, and a perfect for ladies night activity. <a href="../bach-party/charleston-bachelorette-show.html">Party Show</a> - Click Here </li>
-            </ul>
-            </p>
-
-            <img src="images/king7.png" class="img-fluid" alt="King Street Crawl">
-
-            <h3>The "Nightcap": The Dessert Crawl (9 PM - Late)</h3>
-            <p>This is your "bar hop." After your activity, it's time for the legendary Charleston dessert scene. These aren't just restaurants; they are late-night social hubs.
-            <ul>
-                <li><strong>Stop 1: Kaminsky's Dessert Café.</strong> This is your "cozy, romantic" stop. It's known for its dim lighting and massive, towering cakes. Get a few to share.</li>
-                <li><strong>Stop 2: Carmella's Cafe & Dessert Bar.</strong> This is your "high-energy" stop. It's bright, loud, and feels like a party. Get gelato or their famous cannoli cake. We broke down the full battle in our <a href="https://www.partycharleston.com/options-under-21/late-night-desserts.html" class="prose under-21-link">Late-Night Dessert Battle guide</a>.</li>
-                <li><strong>Stop 3: Kudu Coffee.</strong> If you're not ready to go home, grab a late-night coffee and sit in their magical courtyard. It's a key <a href="https://www.partycharleston.com/options-under-21/late-night-coffee-hangouts.html" class="prose under-21-link">social hangout</a> for the under-21 crowd.</li>
-            </ul>
-            </p>
-
-            <img src="images/king6.png" alt="A beautiful table set for a bachelorette brunch" class="rounded-lg shadow-lg my-12 w-full">
-            
-            <!-- Section 2: The "Sleep In Fun" -->
-            <h2>Phase 2: The "Sleep In Fun" (The Bachelorette Brunch)</h2>
-            <p>After a long night of walking and eating, the "sleep in" is key. The grand finale of your under-21 bachelorette party is the iconic Charleston brunch. Here are the top spots for a fun, group-friendly (and delicious) morning-after meal.</p>
-
-            <h3>1. Miller's All Day</h3>
-            <p>Located on Lower King, Miller's is an Instagram dream. It's a retro, stylish diner that's famous for one thing: breakfast all day. The vibes are immaculate. It's perfect for a group that wants to take photos, eat delicious pancakes and bacon, and debrief on the night before. Be prepared for a wait, but it's worth it.</p>
-
-            <h3>2. Poogan's Porch</h3>
-            <p>A true Charleston classic. You'll be eating in a beautiful, historic Victorian house, and the food is pure, upscale Southern comfort. Think shrimp and grits, massive biscuits, and chicken and waffles. It's the quintessential "Southern Bachelorette" experience and a fantastic way to end the trip on a high note.</p>
-
-            <h3>3. The "At Home" Option: Callie's Hot Little Biscuit</h3>
-            <p>Don't want to get dressed and face a 2-hour wait with a big group? Send one person on a "biscuit run" to Callie's Hot Little Biscuit. Bring back a dozen of their incredible, buttery biscuits (in all flavors) to the hotel or Airbnb. Pair with some coffee, and you have the most delicious, low-stress bachelorette brunch imaginable.</p>
-
-            <!-- Conclusion -->
-            <h2>The Verdict: An Unforgettable Bachelorette</h2>
-            <p>See? You can have a full, "classic" Charleston bachelorette party weekend without ever worrying about a 21+ wristband. The King Street experience is about the energy, the food, and the fashion—all of which are perfectly accessible for an under-21 group. It's all about swapping the "bar crawl" for a "dessert crawl" and enjoying the best of what the city has to offer.</p>
-        </article>
-    </main>
-
-    <!-- Footer with Required Links -->
-    <footer class="bg-gray-900 text-white mt-16">
-        <div class="container mx-auto px-6 py-12">
-            <div class="text-center">
-                <h4 class="text-lg font-semibold mb-3">Explore More</h4>
-                <ul class="space-y-2">
-                    <li>
-                        <!-- Link 1: To King Street pillar page -->
-                        <a href="https://www.partycharleston.com/king-street-bar-crawl/index.html" class="text-gray-300 hover:text-white">Back to the King Street Guide</a>
-                    </li>
-                    <li>
-                        <!-- Link 2: To Under 21 pillar page -->
-                        <a href="https://www.partycharleston.com/options-under-21/index.html" class="text-gray-300 hover:text-white">The Under 21 Fun Guide</a>
-                    </li>
-                    <li>
-                        <!-- Link 3: To college page -->
-                        <a href="https://www.partycharleston.com/parties/college.html" class="text-gray-300 hover:text-white">The Charleston College Scene</a>
-                    </li>
-                    <li>
-                        <!-- Link 3: To college page -->
-                        <a href="https://www.partycharleston.com/parties/girls-night-out.html" class="text-gray-300 hover:text-white">The Charleston College Scene</a>
-                    </li>
-                    
-                </ul>
-                <div class="mt-8 border-t border-gray-700 pt-6 text-gray-500">
-                    &copy; 2025 PartyCharleston. All rights reserved.
-                </div>
-            </div>
+  <section id="book" class="mt-5 pt-2">
+    <div class="sec-kicker">Book a Guide</div>
+    <h2 class="sec-title">Charleston Pub Crawl Tours</h2>
+    <p class="lede mb-4">Want someone else to plan the route? These local companies run guided bar crawls downtown. All are 21+ with a valid ID; check current times and prices when you book.</p>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card-x">
+          <span class="tag hot">Bachelorette favorite</span><span class="tag">French Quarter</span>
+          <h3><a href="https://pubtourcharleston.com/bachelorette-party-group-tours-charleston-sc/" target="_blank" rel="noopener">The Original Charleston Pub &amp; Brewery Tour</a></h3>
+          <p>A walking crawl through about 10 blocks of the oldest part of the city, with a dedicated bachelorette version and group tours for up to 50.</p>
+          <div class="facts"><div class="fact"><b>Length</b>About 2.5 hours</div><div class="fact"><b>Stops</b>3–5 historic pubs</div><div class="fact"><b>Good to know</b>Drinks bought at each stop</div></div>
         </div>
-    </footer>
+      </div>
+      <div class="col-md-6">
+        <div class="card-x">
+          <span class="tag hot">Themed crawls</span><span class="tag">Nightly at 9 PM</span>
+          <h3><a href="https://revelry.tours/charleston/" target="_blank" rel="noopener">Revelry Tours</a></h3>
+          <p>Three story-driven crawls: Bay Street Bastards (true crime), <a href="https://revelry.tours/charleston/speakeasy-pub-crawl/" target="_blank" rel="noopener">Speakeasy Sagas</a> (Prohibition) and 'Til Death Do Us Part, which they pitch to bachelorettes.</p>
+          <div class="facts"><div class="fact"><b>Starts</b>9 PM nightly</div><div class="fact"><b>Ages</b>21+</div><div class="fact"><b>Good to know</b>Pick the theme that fits</div></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-x">
+          <span class="tag hot">Ghost stories</span><span class="tag">City Market</span>
+          <h3><a href="https://nightlyspirits.com/charleston-haunted-pub-crawl/" target="_blank" rel="noopener">Nightly Spirits Haunted Pub Crawl</a></h3>
+          <p>Haunted history at old downtown bars, leaving from Henry's on the Market. Runs most evenings, rain or shine.</p>
+          <div class="facts"><div class="fact"><b>Length</b>About 2.5 hours</div><div class="fact"><b>Meet</b>54 N Market St</div><div class="fact"><b>Good to know</b>Drinks not included</div></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-x">
+          <span class="tag">More options</span>
+          <h3>Cocktail Tours &amp; Self-Guided Crawls</h3>
+          <p class="mb-2">Prefer cocktails to pubs? Try the <a href="https://www.greetwell.com/us/direct/upper-king-street-cocktail-tasting-tour-charleston" target="_blank" rel="noopener">Upper King Street cocktail tasting tour</a>. Want to go at your own pace? There's an app-based <a href="https://www.scavengerhunt.com/bar-crawl/charleston-sc" target="_blank" rel="noopener">Charleston bar crawl scavenger hunt</a>.</p>
+          <p class="mb-0">Compare more on <a href="https://charlestonscactivities.com/tours-activities/pub-crawl/" target="_blank" rel="noopener">Charleston SC Activities</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="diy" class="mt-5 pt-2">
+    <div class="band">
+      <h2 class="mb-3">Build Your Own King Street Crawl</h2>
+      <p>Rather do it yourself? Start with sunset at the <a href="/king-street-bar-crawl/rooftop-bars.html">rooftop bars</a>, grab a <a href="/bach-party/experiences/republic-garden-lounge-vip-table.html">VIP table at Republic</a>, dance to live funk at <a href="/bach-party/experiences/the-commodore-live-funk-dance-night.html">The Commodore</a>, and finish with <a href="/king-street-bar-crawl/late-night-food.html">late-night food</a>. Bars close at 2 AM, so start early.</p>
+      <div class="row g-3 mt-2">
+        <div class="col-md-4"><div class="plan"><h3>Before Dark</h3><p><a href="/bach-party/experiences/high-wire-distilling-tour-whiskey-flight.html">High Wire distillery tour</a> or <a href="/bach-party/experiences/craft-diy-crafting-mimosas-workshop.html">crafting and mimosas</a> on King.</p></div></div>
+        <div class="col-md-4"><div class="plan"><h3>Dinner</h3><p><a href="/bach-party/experiences/church-and-union-bachelorette-brunch-dinner.html">Church and Union</a> or a <a href="/bach-party/experiences/charleston-culinary-tours-bachelorette-food-tour.html">walking food tour</a>.</p></div></div>
+        <div class="col-md-4"><div class="plan"><h3>Off the Strip</h3><p>Free deck shows at the <a href="/bach-party/experiences/charleston-pour-house-live-music-night.html">Pour House</a> on James Island.</p></div></div>
+      </div>
+      <p class="mt-4 mb-0">See where else the city goes out in the <a href="/charleston-party-scene/index.html">Charleston party scene guide</a>.</p>
+    </div>
+  </section>
+
+  <section id="under21" class="mt-5">
+    <div class="card-x">
+      <span class="tag hot">18 to 20</span>
+      <h3>Under 21 on King Street</h3>
+      <p class="mb-0">The pub crawls above are 21+, but King Street still works: shop Upper King, book an <a href="/bach-party/experiences/break-out-charleston-escape-room.html">escape room</a>, then do a dessert crawl. The full list of 18+ clubs and shows is in our <a href="/charleston-party-scene/charleston-nightlife-under-21.html">Charleston nightlife under 21 guide</a>, and students can see the <a href="/parties/college.html">college nightlife guide</a>.</p>
+    </div>
+  </section>
+</main>
+
+<section class="container mt-5">
+    <div class="wrap" style="max-width:1100px;">
+      <div class="sec-kicker mb-2">Keep Exploring</div>
+      <div class="row g-3 more">
+        <div class="col-sm-6 col-lg-3"><a href="/parties/girls-night-out.html"><strong>Girls Night Out</strong><span>Charleston ladies night</span></a></div>
+        <div class="col-sm-6 col-lg-3"><a href="/bach-party/index.html"><strong>Bachelorette Guide</strong><span>The full weekend</span></a></div>
+        <div class="col-sm-6 col-lg-3"><a href="/bach-party/experiences/index.html"><strong>20 Experiences</strong><span>Things to book</span></a></div>
+        <div class="col-sm-6 col-lg-3"><a href="/parties/index.html"><strong>All Party Guides</strong><span>Every celebration</span></a></div>
+      </div>
+    </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-6 col-lg-3">
+        <h4>Bachelorette Parties</h4>
+        <ul>
+          <li><a href="/bach-party/index.html">Bachelorette Guide</a></li>
+          <li><a href="/bach-party/experiences/index.html">Experiences</a></li>
+          <li><a href="/bach-party/mount-pleasant-bachelorette.html">Mount Pleasant</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Charleston Party Scene</h4>
+        <ul>
+          <li><a href="/charleston-party-scene/index.html">Party Scene Guide</a></li>
+          <li><a href="/charleston-party-scene/charleston-nightlife-under-21.html">Nightlife Under 21</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>King Street Bar Crawl</h4>
+        <ul>
+          <li><a href="/king-street-bar-crawl/index.html">Bar Crawl Route</a></li>
+          <li><a href="/king-street-bar-crawl/rooftop-bars.html">Rooftop Bars</a></li>
+          <li><a href="/king-street-bar-crawl/late-night-food.html">Late-Night Food</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Parties</h4>
+        <ul>
+          <li><a href="/parties/index.html">All Party Guides</a></li>
+          <li><a href="/parties/college.html">College Scene</a></li>
+          <li><a href="/parties/girls-night-out.html">Girls Night Out</a></li>
+          <li><a href="/about.html">About</a> · <a href="/privacy-policy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center mb-0 pt-3" style="border-top:1px solid rgba(255,255,255,.2);">&copy; 2026 Charleston Party Hub. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
