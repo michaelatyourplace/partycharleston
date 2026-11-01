@@ -21,12 +21,204 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <style>
+        :root {
+            --pc-blue: #0d6efd;
+            --pc-pink: #ff6b7a;
+            --pc-night: #11131c;
+            --pc-night-2: #1b1f2e;
+            --pc-gradient: linear-gradient(90deg, var(--pc-blue), var(--pc-pink));
+        }
+
         body {
             font-family: 'Roboto', sans-serif;
         }
 
         h1, h2, h3, h4, .navbar-brand {
             font-family: 'Poppins', sans-serif;
+        }
+
+        /* ===== Navbar design ===== */
+        .navbar-party {
+            background: rgba(17, 19, 28, 0.94);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+            padding: 12px 0;
+        }
+
+        .navbar-party::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            background: var(--pc-gradient);
+        }
+
+        .navbar-party .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .brand-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--pc-gradient);
+            color: #fff;
+            font-size: 1.1rem;
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+        }
+
+        .navbar-party .nav-link {
+            position: relative;
+            font-weight: 500;
+            margin: 0 4px;
+        }
+
+        .navbar-party .nav-link:not(.dropdown-toggle)::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 2px;
+            width: 0;
+            height: 2px;
+            background: var(--pc-gradient);
+            transition: width 0.25s ease, left 0.25s ease;
+        }
+
+        .navbar-party .nav-link:hover::after,
+        .navbar-party .nav-link.active::after {
+            left: 15%;
+            width: 70%;
+        }
+
+        .navbar-party .dropdown-menu {
+            border: 0;
+            border-top: 3px solid var(--pc-pink);
+            border-radius: 0 0 10px 10px;
+            background: var(--pc-night-2);
+        }
+
+        .navbar-party .dropdown-item:hover {
+            background: rgba(255, 107, 122, 0.15);
+        }
+
+        /* ===== Hero design ===== */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            /* Beach photo as the hero background; the original Unsplash image sits underneath as a fallback */
+            background:
+                linear-gradient(135deg, rgba(10, 14, 32, 0.80) 0%, rgba(13, 40, 110, 0.55) 50%, rgba(255, 107, 122, 0.45) 100%),
+                url('bach-party/images/hero.png') no-repeat center center,
+                url('https://images.unsplash.com/photo-1620332372333-e38054a54c60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80') no-repeat center center;
+            background-size: cover, cover, cover;
+            background-color: #212529;
+            color: white;
+            padding: 150px 0 190px;
+            text-align: center;
+        }
+
+        /* Dotted string-light pattern over the photo */
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.18) 1.2px, transparent 1.2px);
+            background-size: 26px 26px;
+            mask-image: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 70%);
+            -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* Soft glow behind the headline */
+        .hero-section::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 620px;
+            height: 620px;
+            transform: translate(-50%, -55%);
+            background: radial-gradient(circle, rgba(255, 107, 122, 0.25) 0%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            margin-bottom: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(4px);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-eyebrow .bi {
+            color: var(--pc-pink);
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .hero-divider {
+            width: 90px;
+            height: 4px;
+            margin: 18px auto 20px;
+            border-radius: 4px;
+            background: var(--pc-gradient);
+        }
+
+        .hero-section .lead {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .hero-section .btn-primary {
+            border: 0;
+            background: var(--pc-gradient);
+            box-shadow: 0 8px 20px rgba(255, 107, 122, 0.35);
+        }
+
+        .hero-section .btn-primary:hover {
+            filter: brightness(1.08);
+        }
+
+        .hero-wave {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -1px;
+            z-index: 1;
+            line-height: 0;
+        }
+
+        .hero-wave svg {
+            width: 100%;
+            height: 110px;
+            display: block;
         }
 
         .celebration-section {
@@ -54,30 +246,6 @@
 
         .celebration-item a:hover {
             color: #0d6efd;
-        }
-
-        .hero-section {
-            /* Beach photo as the hero background; the original Unsplash image sits underneath as a fallback */
-            background:
-                linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-                url('bach-party/images/hero.png') no-repeat center center,
-                url('https://images.unsplash.com/photo-1620332372333-e38054a54c60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80') no-repeat center center;
-            background-size: cover, cover, cover;
-            background-color: #212529;
-            color: white;
-            padding: 150px 0;
-            text-align: center;
-        }
-
-        .hero-section h1 {
-            font-size: 4rem;
-            font-weight: 900;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-        }
-
-        .hero-section .lead {
-            font-size: 1.5rem;
-            font-weight: 400;
         }
 
         .section-title {
@@ -224,26 +392,82 @@
         .travel-section h4 { color: #fff; font-weight: 700; }
         .travel-section .bi { color: #ff6b7a; display: inline-block; }
 
+        /* ===== Footer design ===== */
         .footer {
-            background-color: #212529;
+            position: relative;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(13, 110, 253, 0.18) 0%, transparent 45%),
+                radial-gradient(circle at 85% 80%, rgba(255, 107, 122, 0.16) 0%, transparent 45%),
+                linear-gradient(180deg, var(--pc-night-2) 0%, var(--pc-night) 100%);
             color: #adb5bd;
+            padding-top: 0 !important;
+        }
+
+        .footer-wave {
+            line-height: 0;
+            margin-bottom: 40px;
+        }
+
+        .footer-wave svg {
+            width: 100%;
+            height: 90px;
+            display: block;
         }
 
         .footer a {
             color: #adb5bd;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.3s, padding-left 0.3s;
         }
 
         .footer a:hover {
             color: #ffffff;
         }
 
+        .footer-brand {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding-bottom: 28px;
+            margin-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-brand .name {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .footer-brand .tagline {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
         .footer h4 {
+            position: relative;
             color: #ffffff;
             font-size: 1rem;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+        }
+
+        .footer h4::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 34px;
+            height: 3px;
+            border-radius: 3px;
+            background: var(--pc-gradient);
         }
 
         .footer-links {
@@ -253,12 +477,49 @@
         }
 
         .footer-links li {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
+        }
+
+        .footer-links a:hover {
+            padding-left: 4px;
+        }
+
+        .footer-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            margin-left: 8px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: background 0.3s, border-color 0.3s, color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: var(--pc-gradient);
+            border-color: transparent;
+            color: #fff;
         }
 
         @media (max-width: 767px) {
             .hero-section {
-                padding: 100px 0;
+                padding: 100px 0 140px;
             }
 
             .hero-section h1 {
@@ -267,6 +528,23 @@
 
             .hero-section .lead {
                 font-size: 1.2rem;
+            }
+
+            .hero-wave svg {
+                height: 60px;
+            }
+
+            .footer-wave svg {
+                height: 50px;
+            }
+
+            .footer-bottom {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .social-icons a:first-child {
+                margin-left: 0;
             }
 
             .beach-blurb-img {
@@ -283,9 +561,9 @@
 
 
  <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+ <nav class="navbar navbar-expand-lg navbar-dark navbar-party sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><i class="bi bi-cup-straw"></i> Charleston Party Hub</a>
+        <a class="navbar-brand" href="index.html"><span class="brand-badge"><i class="bi bi-cup-straw"></i></span> Charleston Party Hub</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -329,10 +607,18 @@
 
     <header class="hero-section">
         <div class="container">
+            <span class="hero-eyebrow"><i class="bi bi-geo-alt-fill"></i> Charleston, SC</span>
             <h1 class="display-3">Nights You Won't Forget</h1>
+            <div class="hero-divider"></div>
             <p class="lead">Discover Why Charleston is the East Coast's Premier Party Destination.</p>
             <a href="#reasons" class="btn btn-primary btn-lg mt-3">Find Out Why</a>
             <a href="#explore" class="btn btn-outline-light btn-lg mt-3 ms-sm-2">Explore the Guides</a>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,60 C240,110 480,10 720,40 C960,70 1200,100 1440,50 L1440,110 L0,110 Z" fill="#ffffff" opacity="0.35"/>
+                <path d="M0,80 C260,40 520,110 780,80 C1040,50 1240,70 1440,85 L1440,110 L0,110 Z" fill="#ffffff"/>
+            </svg>
         </div>
     </header>
 
@@ -534,8 +820,17 @@
 
     </main>
 
-    <footer class="footer pt-5 pb-4">
+    <footer class="footer pb-4">
+        <div class="footer-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 L1440,0 L1440,30 C1200,80 960,10 720,40 C480,70 240,20 0,55 Z" fill="#ffffff"/>
+            </svg>
+        </div>
         <div class="container">
+            <div class="footer-brand">
+                <div class="name"><span class="brand-badge"><i class="bi bi-cup-straw"></i></span> Charleston Party Hub</div>
+                <p class="tagline">Bachelorette parties, bar crawls and nightlife in Charleston, SC.</p>
+            </div>
             <div class="row g-4 mb-4">
                 <div class="col-6 col-lg-3">
                     <h4>Bachelorette Parties</h4>
@@ -570,13 +865,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="text-center border-top border-secondary pt-4">
+            <div class="footer-bottom">
                 <p>&copy; 2026 Charleston Party Hub. All Rights Reserved.</p>
-                <p class="mb-0">
-                    <a href="#" class="px-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="px-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="px-2" aria-label="X"><i class="bi bi-twitter-x"></i></a>
-                </p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                </div>
             </div>
         </div>
     </footer>
