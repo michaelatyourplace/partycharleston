@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Folly Beach Bachelorette Party: Center Street, Eats &amp; Stays</title>
+  <meta name="description" content="Plan a Folly Beach bachelorette weekend: paddling the Folly River with dolphins, brunch on Center Street, the pier, the lighthouse at sunset, and where to stay.">
+  <link rel="canonical" href="https://partycharleston.com/bach-party/index.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Folly Beach Bachelorette Party: Center Street, Eats &amp; Stays">
+  <meta property="og:description" content="Dolphins on the Folly River, Center Street bars, a lighthouse sunset, and a two-day plan for a bachelorette weekend at the Edge of America.">
+  <meta property="og:image" content="https://partycharleston.com/bach-party/img/folly-beach-pier.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800;1,900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --paper: #F8F6F2;
+      --paper-deep: #E8E5DF;
+      --ink: #0B0B0B;
+      --ink-soft: #4A4744;
+      --pink: #E23D5E;
+      --pink-ink: #B8213F;
+      --orange: #F7953B;
+      --line: #D8D4CD;
+      --display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+      --body: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 1.125rem;
+      line-height: 1.7;
+    }
+
+    a { color: var(--pink); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: var(--pink-ink); }
+    :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 3px; }
+
+    .skip { position: absolute; left: -999px; top: 0; background: var(--pink); color: #fff; padding: .6rem 1rem; z-index: 2000; }
+    .skip:focus { left: 0; }
+
+    .shell { width: min(1540px, 100% - 2rem); margin-inline: auto; }
+    .read { width: min(950px, 100% - 2rem); margin-inline: auto; }
+
+    /* ---------- Header ---------- */
+    .topbar { background: var(--ink); position: sticky; top: 0; z-index: 1000; box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+    .topbar .navbar { padding-block: 1rem; }
+    .brand { font-family: var(--body); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.03em; color: #fff; text-decoration: none; line-height: 1; }
+    .brand span { color: var(--pink); }
+    .brand:hover { color: #fff; }
+    .topbar .nav-link { color: #fff; font-weight: 500; font-size: 1.05rem; padding-inline: .75rem !important; }
+    .topbar .nav-link:hover, .topbar .nav-link.active { color: var(--orange); }
+    .topbar .dropdown-menu { background: var(--ink); border: 1px solid #333; border-radius: 12px; }
+    .topbar .dropdown-item { color: #fff; }
+    .topbar .dropdown-item:hover, .topbar .dropdown-item.active { background: #222; color: var(--orange); }
+    .navbar-toggler { border-color: rgba(255,255,255,.4); }
+    .navbar-toggler-icon { filter: invert(1); }
+    .pill-btn {
+      display: inline-block; background: var(--pink); color: #fff; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .03em; text-decoration: none; border-radius: 999px; padding: .75rem 1.75rem; line-height: 1.2;
+    }
+    .pill-btn:hover { background: var(--pink-ink); color: #fff; }
+
+    /* ---------- Article head ---------- */
+    .crumbs { font-size: .95rem; color: var(--ink-soft); padding-top: 1.75rem; }
+    .crumbs a { color: var(--ink-soft); text-decoration: none; }
+    .crumbs a:hover { color: var(--pink); }
+    .crumbs .sep { margin-inline: .45rem; }
+    .crumbs [aria-current] { color: var(--ink); font-weight: 500; }
+
+    .tag {
+      display: inline-block; margin-top: 2.25rem; background: var(--orange); color: #fff; font-weight: 700;
+      font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; border-radius: 999px; padding: .35rem 1rem;
+    }
+
+    h1, h2 {
+      font-family: var(--display); font-style: italic; font-weight: 900; text-transform: uppercase;
+      letter-spacing: .005em; line-height: .98; color: var(--ink);
+    }
+    h1 { font-size: clamp(2.8rem, 7vw, 5rem); max-width: 18ch; margin: 1.25rem 0 1.75rem; }
+    h2 { font-size: clamp(2.1rem, 4.6vw, 3.25rem); margin: 3.5rem 0 1.25rem; }
+    h3 { font-family: var(--body); font-weight: 700; font-size: 1.3rem; margin: 2rem 0 .5rem; }
+
+    .meta { border-top: 1px solid var(--line); padding-top: 1.25rem; color: var(--ink-soft); font-size: 1rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; }
+    .meta .bar { color: var(--line); }
+
+    .hero-photo { margin: 2.5rem 0 0; border-radius: 22px; overflow: hidden; background: var(--paper-deep); aspect-ratio: 16 / 7; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 767px) { .hero-photo { aspect-ratio: 4 / 3; border-radius: 16px; } }
+
+    /* ---------- Share ---------- */
+    .share { display: flex; align-items: center; gap: .7rem; margin: 2.5rem 0 1.75rem; flex-wrap: wrap; }
+    .share__label { font-weight: 700; font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); margin-right: .6rem; }
+    .share a, .share button {
+      width: 46px; height: 46px; border-radius: 50%; background: var(--ink); color: #fff; border: 0;
+      display: inline-grid; place-items: center; text-decoration: none; cursor: pointer;
+    }
+    .share a:hover, .share button:hover { background: var(--pink); color: #fff; }
+    .share svg { width: 20px; height: 20px; fill: currentColor; }
+    .share .copied { font-size: .9rem; color: var(--pink); font-weight: 600; }
+
+    /* ---------- Article body ---------- */
+    .body p { margin-bottom: 1.35rem; }
+    .lead-line { font-size: 1.25rem; }
+    .pick { margin-bottom: 1.35rem; }
+    .pick > strong:first-child, .pick > a:first-child { font-weight: 700; }
+    .pick > a:first-child { color: var(--pink); }
+
+    .photo { margin: 2.5rem 0; }
+    .photo__frame { border-radius: 22px; overflow: hidden; background: var(--paper-deep); aspect-ratio: 3 / 2; }
+    .photo__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .photo.is-empty .photo__frame img, .hero-photo.is-empty img { display: none; }
+    .photo figcaption { font-size: .95rem; color: var(--ink-soft); margin-top: .7rem; }
+
+    .callout {
+      background: var(--ink); color: #fff; border-radius: 22px; padding: clamp(1.75rem, 4vw, 2.75rem); margin: 2.75rem 0;
+    }
+    .callout h2 { color: #fff; margin-top: 0; }
+    .callout p { color: rgba(255,255,255,.88); }
+    .callout p:last-child { margin-bottom: 0; }
+    .callout a:not(.pill-btn) { color: #FF8AA2; }
+
+    /* Itinerary table */
+    .plan-wrap { margin: 1.75rem 0 1rem; }
+    .plan { width: 100%; border-collapse: collapse; font-size: 1.05rem; line-height: 1.5; background: var(--paper); }
+    .plan th { background: var(--ink); color: #fff; font-weight: 700; text-align: left; padding: 1rem 1.1rem; }
+    .plan td { border: 1px solid var(--line); padding: 1rem 1.1rem; vertical-align: top; }
+    .plan td:first-child { background: var(--paper-deep); font-weight: 700; width: 28%; }
+    @media (max-width: 680px) {
+      .plan thead { position: absolute; left: -9999px; }
+      .plan, .plan tbody, .plan tr, .plan td { display: block; width: 100% !important; }
+      .plan tr { border: 1px solid var(--line); margin-bottom: 1rem; border-radius: 12px; overflow: hidden; }
+      .plan td { border: 0; border-top: 1px solid var(--line); }
+      .plan td:first-child { border-top: 0; }
+      .plan td[data-label]:not(:first-child)::before { content: attr(data-label); display: block; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: .2rem; }
+    }
+
+    /* Rules strip */
+    .rules { border-top: 4px solid var(--ink); padding-top: .5rem; }
+
+    /* Keep planning cards */
+    .more { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+    .more a { display: block; height: 100%; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 1.4rem 1.4rem 1.5rem; color: var(--ink); text-decoration: none; transition: transform .15s ease, border-color .15s ease; }
+    .more a:hover { border-color: var(--pink); transform: translateY(-3px); color: var(--ink); }
+    .more strong { font-family: var(--display); font-style: italic; font-weight: 800; text-transform: uppercase; font-size: 1.6rem; line-height: 1; display: block; margin-bottom: .5rem; }
+    .more span { color: var(--ink-soft); font-size: 1rem; line-height: 1.45; display: block; }
+    @media (max-width: 860px) { .more { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { .more a { transition: none; } .more a:hover { transform: none; } }
+
+    /* ---------- Footer ---------- */
+    .foot { background: var(--ink); color: #fff; margin-top: 5rem; }
+    .foot__main { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; padding-block: 4.5rem 3.5rem; }
+    .foot h2 { color: #fff; font-size: clamp(2.3rem, 4vw, 3.3rem); margin: 0 0 1.25rem; max-width: 12ch; }
+    .foot__cta p { color: #fff; max-width: 34rem; margin-bottom: 2rem; }
+    .foot__cta .pill-btn { display: block; max-width: 34rem; text-align: center; font-size: 1.1rem; padding-block: .95rem; }
+    .foot h3 { color: #fff; font-family: var(--body); font-weight: 600; text-transform: uppercase; font-size: 1.15rem; letter-spacing: .02em; margin: .6rem 0 1.4rem; }
+    .foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .8rem; }
+    .foot ul a { color: #A9A6A2; text-decoration: none; font-weight: 500; }
+    .foot ul a:hover { color: #fff; }
+    .foot__also { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: .6rem 1.75rem; padding-bottom: 2.75rem; }
+    .foot__also strong { font-weight: 500; font-size: 1.3rem; text-transform: uppercase; }
+    .foot__also a { color: #A9A6A2; text-decoration: none; }
+    .foot__also a:hover { color: #fff; }
+    .foot__base { border-top: 1px solid #333; }
+    .foot__base .shell { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2.5rem; padding-block: 1.6rem; font-weight: 600; font-size: 1rem; }
+    .foot__base nav { display: flex; flex-wrap: wrap; gap: .75rem 2.5rem; }
+    .foot__base a { color: #fff; text-decoration: none; }
+    .foot__base a:hover { color: var(--orange); }
+    @media (max-width: 991px) { .foot__main { grid-template-columns: 1fr 1fr; } .foot__cta { grid-column: 1 / -1; } }
+    @media (max-width: 575px) { .foot__main { grid-template-columns: 1fr; } .foot__also { justify-content: flex-start; } }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Folly Beach Bachelorette Weekend",
+        "description": "Plan a Folly Beach bachelorette weekend: paddling the Folly River with dolphins, brunch on Center Street, the pier, the lighthouse at sunset, and where to stay.",
+        "image": "https://partycharleston.com/bach-party/img/folly-beach-pier.png",
+        "datePublished": "2026-11-18",
+        "dateModified": "2026-11-18",
+        "mainEntityOfPage": "https://partycharleston.com/bach-party/folly-beach-bachelorette.html",
+        "about": { "@type": "Place", "name": "Folly Beach, South Carolina" },
+        "author": { "@type": "Organization", "name": "Party Charleston", "url": "https://partycharleston.com/" },
+        "publisher": { "@type": "Organization", "name": "Party Charleston", "url": "https://partycharleston.com/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://partycharleston.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Charleston Bachelorette", "item": "https://partycharleston.com/bach-party/index.html" },
+          { "@type": "ListItem", "position": 3, "name": "Folly Beach" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="topbar">
+    <nav class="navbar navbar-expand-lg shell" aria-label="Main">
+      <a class="brand" href="/">party<span>charleston</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/bach-party/index.html">Bachelorette Guide</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">Nightlife</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3 my-3 my-lg-0"><a class="pill-btn" href="../index.html">Plan Your Weekend</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article class="read">
+
+      <!-- ===== ARTICLE HEAD ===== -->
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="sep">/</span><a href="/bach-party/">Bachelorette</a><span class="sep">/</span><span aria-current="page">Folly Beach</span>
+      </nav>
+
+      <span class="tag">Beach Towns</span>
+      <h1>Folly Beach Bachelorette Weekend</h1>
+
+      <div class="meta">
+        <span>Updated Nov 18, 2026</span><span class="bar" aria-hidden="true">|</span><span>7 min read</span>
+      </div>
+
+      <!-- HERO PHOTO: img/folly-beach-pier.png (1600 x 700 or larger) -->
+      <figure class="hero-photo">
+        <img src="img/folly-beach-pier.png" alt="Bachelorette group on the beach beside the Folly Beach Pier" width="1600" height="700" fetchpriority="high" onerror="this.closest('figure').classList.add('is-empty')">
+      </figure>
+
+      <!-- ===== BODY ===== -->
+      <div class="body">
+        <p class="lead-line">Folly Beach runs on sand, salt water, and Center Street. Get on the river in the morning, spend the afternoon on the beach, and eat and drink within a few blocks of the pier. Book a house close to the action and nobody needs a car until it's time to leave.</p>
+        <p>Folly sits at the end of Folly Road, about twenty minutes south of downtown Charleston. Locals call it the Edge of America, and it's the most laid-back of the Charleston beaches, with surf shops, taco joints, and dive bars where the dress code is a cover-up. This guide covers what to do, where to eat, where to stay, a two-day plan, and the local rules worth knowing before anyone books a house. For the downtown side of the trip, start with our <a href="/bach-party/index.html">Charleston SC bachelorette guide</a>.</p>
+
+        <h2>Why Folly Beach works (and where it falls short)</h2>
+        <p>The island gives a group three things downtown can't: an ocean beach out the back door, dolphins in the river behind it, and a main street you can walk end to end in flip-flops. Late spring and early fall are the sweet spots. Summer works if the group paddles early and hits the sand before the parking fills.</p>
+        <p>The shortfall is the dance floor. Center Street has plenty of bars and live music, but nothing on the island compares to a night on King Street. Keep one big night downtown, rideshare up Folly Road, and use the island for everything else.</p>
+
+        <h2>The best water for a bachelorette group</h2>
+        <p>There are four places to get on or beside the water, and each one suits a different part of the day.</p>
+        <p class="pick"><a href="#">The Folly River.</a> Calm marsh water on the back side of the island, with bottlenose dolphins feeding most days. It's the easiest place in the area to put a first-timer on a kayak or paddleboard.</p>
+        <p class="pick"><a href="https://www.ccprc.com/">Folly Beach Pier.</a> The rebuilt pier stretches more than 1,000 feet over the Atlantic from the middle of the island. Walk it at sunset, then grab drinks at <a href="#">Pier 101 Restaurant &amp; Bar</a> at its base.</p>
+        <p class="pick"><a href="#">Lighthouse Inlet Heritage Preserve.</a> At the quiet north end of the island, a short walk out the old road ends with the Morris Island Lighthouse standing offshore. It's the sunset photo of the weekend.</p>
+        <p class="pick"><a href="#">Folly Beach County Park.</a> Wide sand at the west end, with lifeguards in season, restrooms, showers, and chair and umbrella rentals. Pick it for a full beach day when the group wants space to spread out.</p>
+
+        <h2>Daytime Folly Beach bachelorette ideas</h2>
+        <figure class="photo">
+          <div class="photo__frame">
+            <img src="img/folly-beach-paddleboard.png" alt="Bachelorette group paddleboarding on the Folly River" width="1200" height="800" loading="lazy" onerror="this.closest('figure').classList.add('is-empty')">
+          </div>
+          <figcaption>Paddleboards on the Folly River.</figcaption>
+        </figure>
+        <p>Give each day one booked activity and let the rest happen around it. These are the anchors that work best for a group.</p>
+        <p class="pick"><a href="#">Paddle with Charleston SUP Safaris.</a> Its kayak and paddleboard dolphin tours leave from Center Street and start with a short ground school on land, so beginners are fine. Morning and sunset tours both run, and private groups are welcome.</p>
+        <p class="pick"><a href="#">Boat tour with Flipper Finders.</a> For a group that would rather ride than paddle, its guided boat and kayak tours go out from the edge of the Folly River, a short walk from Center Street.</p>
+        <p class="pick"><a href="#">Party cruise on the Dolphin Queen.</a> A private three-hour charter on the Folly River, with the boat to yourselves. It's the easiest way to keep a big group together on the water.</p>
+        <p class="pick"><a href="#">Surf lesson at McKevlin's.</a> Folly is where Charleston learns to surf, and the Washout stretch on East Ashley is the local break. Book a group lesson and get the bride standing up by lunch.</p>
+        <p class="pick"><a href="#">Golf cart cruise.</a> Rent a street-legal cart for the weekend and roll from the house to Center Street. Every cart needs its state and City of Folly Beach stickers, so rent from a local shop that handles them.</p>
+        <p class="pick"><a href="#">Center Street shopping.</a> Surf shops, swimwear, and beach-town boutiques line the few blocks between the bridge and the pier. Pick up matching hats or cover-ups for the group photo.</p>
+
+        <div class="callout">
+          <h2>The private show comes to you</h2>
+          <div class="d-flex justify-content-center" >
+            <img src="mtpleasant/michael-charleston.png" class="img-fluid" style="width: 30%;" alt="entertainment">
+          </div>
+          <p>Folly Beach has no club for this, so <a href="https://michaelatyourplace.com">Michael At Your Place</a> brings the show to your beach house or hotel suite. One entertainer performs a traditional, interactive show, booked for brunch or late night cap to <a href="../parties/girls-night-out.html">girls night out</a>.</p>
+          <p>It's $200 for up to 90 minutes, paid on arrival by cash, Venmo, or Cash App. Last-minute dates are welcome, so call or text 843-360-9438.</p>
+        </div>
+
+        <h2>Where to eat, from brunch to the last round</h2>
+        <p>Beach cafes in the morning, tacos and seafood by afternoon, and Center Street bars at night. Book ahead for groups larger than six, especially on summer weekends.</p>
+        <h3>Brunch</h3>
+        <p><a href="https://lostdogfollybeach.com">Lost Dog Cafe</a> on West Huron Avenue is the island's breakfast institution, a few blocks from the pier. Order the eggs Benedict and a Mason jar mimosa, and expect a wait on Saturdays. <a href="#">Rita's Seaside Grille</a> at 1 Center Street serves weekend brunch steps from the sand. <a href="#">Lowlife Bar</a> on Hudson Avenue does the most creative brunch plates on the island, with a rooftop to match.</p>
+        <h3>Lunch and sunset on the island</h3>
+        <p>Center Street keeps everything within walking distance. <a href="#">Taco Boy</a> is the group lunch, with a big patio and frozen margaritas. <a href="#">Chico Feo</a> on East Ashley is the backyard hangout with live music and the island's best vibe. <a href="#">Folly Beach Crab Shack</a> covers the steamed seafood, and <a href="#">Loggerhead's Beach Grill</a> on West Ashley has a deck a block from the water. For the last round, <a href="#">The Washout</a> and <a href="#">Jack of Cups Saloon</a> on Center Street keep the night going.</p>
+        <h3>The celebration dinner</h3>
+        <p><a href="#">BLU Beach Bar &amp; Grill</a> at Tides Folly Beach is the dressier option, with ocean views beside the pier. <a href="#">Jack of Cups</a> trades seafood for globally inspired comfort food and craft beer. On the way onto the island, <a href="#">Bowens Island Restaurant</a> serves roasted oysters with one of the best sunset views in Charleston.</p>
+
+        <!-- PHOTO: img/folly-beach-center-street-eats.png -->
+        <figure class="photo">
+          <div class="photo__frame">
+            <img src="img/folly-beach-center-street-eats.png" alt="Bachelorette group sharing tacos and drinks on Center Street in Folly Beach" width="1200" height="800" loading="lazy" onerror="this.closest('figure').classList.add('is-empty')">
+          </div>
+          <figcaption>Tacos, seafood, and drinks on Center Street.</figcaption>
+        </figure>
+
+        <h2>Where to stay on the island</h2>
+        <p>Folly is a beach-house town with only a couple of hotels, so decide early which one your group needs.</p>
+        <p><a href="#">Tides Folly Beach</a> sits on the oceanfront next to the pier, with a pool and every Center Street bar a short walk away. <a href="#">Hotel Folly</a>, the big pink building just over the bridge, is the casual alternative on the river side. A block of rooms keeps the group together without any of the rental questions.</p>
+        <p>A house gives everyone one kitchen, one porch, and room for a private show, and most groups pick one within walking distance of Center Street. Folly caps investor short-term rental licenses and has paused most new ones, so ask the host for the city business license number and tell them it's a bachelorette group before you pay a deposit.</p>
+
+        <figure class="photo">
+          <div class="photo__frame">
+            <img src="img/folly-beach-group-rental.png" alt="Bachelorette group on the porch of a Folly Beach rental house" width="1200" height="800" loading="lazy" onerror="this.closest('figure').classList.add('is-empty')">
+          </div>
+          <figcaption>One house, one porch, the whole crew.</figcaption>
+        </figure>
+
+        <h2>A two-day plan that actually works</h2>
+        <p>Copy it, swap pieces, but keep the order. Water early, beach midday, Center Street at night, and downtown once.</p>
+        <div class="plan-wrap">
+          <table class="plan">
+            <thead>
+              <tr><th scope="col">When</th><th scope="col">Plan</th><th scope="col">What makes it work</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Day 1, morning</td><td data-label="Plan">Check in, drop bags, coffee, then a walk out the Folly Beach Pier.</td><td data-label="What makes it work">Pin one meeting spot in the group chat for the whole weekend.</td></tr>
+              <tr><td>Day 1, midday</td><td data-label="Plan">Tacos and margaritas on the patio at Taco Boy.</td><td data-label="What makes it work">Walk to lunch, so nobody gives up a parking spot.</td></tr>
+              <tr><td>Day 1, afternoon</td><td data-label="Plan">Beach time by the pier, then drinks at Pier 101.</td><td data-label="What makes it work">Bring cans of soda for the sand and save the drinks for the bar.</td></tr>
+              <tr><td>Day 1, night</td><td data-label="Plan">Celebration dinner at BLU, then the private show back at the house.</td><td data-label="What makes it work">Book the show for an hour after dinner, not during it.</td></tr>
+              <tr><td>Day 2, morning</td><td data-label="Plan">Kayaks or paddleboards on the Folly River with Charleston SUP Safaris.</td><td data-label="What makes it work">The river is calmest early, and dolphins feed in the morning.</td></tr>
+              <tr><td>Day 2, midday</td><td data-label="Plan">Brunch at Lost Dog Cafe.</td><td data-label="What makes it work">Get there early or put a name on the list and walk Center Street.</td></tr>
+              <tr><td>Day 2, golden hour</td><td data-label="Plan">Group photos at Lighthouse Inlet with the Morris Island Lighthouse.</td><td data-label="What makes it work">Leave 20 minutes for the walk out from the parking lot.</td></tr>
+              <tr><td>Day 2, night</td><td data-label="Plan">Rideshare up Folly Road for King Street.</td><td data-label="What makes it work">Book the ride back early. Cars thin out on the island late at night.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="rules">
+          <h2>Rules to know before you book</h2>
+          <p><strong>On the beach.</strong> Folly bans alcohol and glass on the sand, along with plastic bags, balloons, and Styrofoam, and fines can top $1,000. Smoking is banned on the sand and the beach accesses. A group of more than 25 people on the beach needs a city permit. Pack fabric banners, and skip the confetti and glitter, which the pier and county parks also ban.</p>
+          <p><strong>Rentals.</strong> A listing without a City of Folly Beach license can be shut down mid-stay. Read the house rules on noise and guest counts, and confirm parking for every car.</p>
+          <p><strong>Getting around.</strong> Street parking is free only if all four tires are off the road, and the island fills fast on summer weekends. Carpool in, walk or cart once you're here, and plan a rideshare for any night that includes drinks.</p>
+          <p style="font-size:.98rem;color:var(--ink-soft)">Rules come from the City of Folly Beach and Charleston County Parks, and they change. Check the city's website before the trip. All picks here are our own, and no business paid to be listed.</p>
+        </div>
+
+        <h2>Keep planning</h2>
+        <ul class="more">
+          <li><a href="../index.html"><strong>The full guide</strong><span>Activities, ideas, nightlife, and where to stay downtown.</span></a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="foot">
+    <div class="shell foot__main">
+      <div class="foot__cta">
+        <h2>Plan the weekend she'll talk about</h2>
+        <p>Tell us your dates and group size, and we'll point you to the activities, tables, and entertainment that fit your crew on Folly Beach.</p>
+        <a class="pill-btn" href="/contact.html">Start Planning</a>
+      </div>
+      <div>
+        <h3>Bachelorette</h3>
+        <ul>
+          <li><a href="/bach-party/index.html">Downtown Bachelorette Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Information</h3>
+        <ul>
+          <li><a href="/">Nightlife</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="shell foot__also">
+      <strong>Also of interest</strong>
+      <a href="/bach-party/index.html">Downtown Bachelorette Activities</a>
+    </div>
+    <div class="foot__base">
+      <div class="shell">
+        <span>&copy; 2026 Party Charleston. All Rights Reserved.</span>
+        <nav aria-label="Legal">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms &amp; Conditions</a>
+          <a href="#top">Back to Top</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      var btn = document.getElementById('copyLink');
+      var msg = document.getElementById('copiedMsg');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var url = window.location.href.split('#')[0];
+        try {
+          navigator.clipboard.writeText(url).then(function () {
+            msg.textContent = 'Link copied';
+            setTimeout(function () { msg.textContent = ''; }, 2000);
+          });
+        } catch (e) {
+          msg.textContent = url;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
